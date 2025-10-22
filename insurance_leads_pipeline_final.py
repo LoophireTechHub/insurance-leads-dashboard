@@ -249,9 +249,9 @@ class LeadsPipeline:
 
     def is_insurance_related(self, job: Dict) -> bool:
         """Check if job is insurance-related"""
-        title = job.get('title', '').lower()
-        company = job.get('company_name', '').lower()
-        description = job.get('description', '').lower()[:1000]
+title = (job.get('title') or '').lower()
+        company = (job.get('company_name') or '').lower()
+        description = (job.get('description') or '')[:1000].lower()
         
         insurance_keywords = [
             'insurance', 'underwriter', 'commercial lines', 'p&c',

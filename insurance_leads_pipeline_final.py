@@ -176,7 +176,7 @@ class LeadsPipeline:
             if not company or company == 'N/A':
                 return job
             
-            headers = {"api_key": self.apollo_token, "Content-Type": "application/json"}
+            headers = {"X-Api-Key": self.apollo_token, "Content-Type": "application/json"}
             search_data = {"q_organization_name": company, "page": 1, "per_page": 1}
             
             response = requests.post(
@@ -206,7 +206,7 @@ class LeadsPipeline:
     def get_apollo_contacts(self, org_id: str, company: str) -> List[Dict]:
         """Get leadership contacts"""
         try:
-            headers = {"api_key": self.apollo_token, "Content-Type": "application/json"}
+            headers = {"X-Api-Key": self.apollo_token, "Content-Type": "application/json"}
             search_data = {
                 "q_organization_id": org_id,
                 "titles": ["CEO", "President", "Director", "Manager", "VP"],

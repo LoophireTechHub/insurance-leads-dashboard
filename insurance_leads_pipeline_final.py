@@ -246,6 +246,21 @@ class LeadsPipeline:
         except:
             return 0.0
     
+
+    def is_insurance_related(self, job: Dict) -> bool:
+        """Check if job is insurance-related"""
+        title = job.get('title', '').lower()
+        company = job.get('company_name', '').lower()
+        description = job.get('description', '').lower()[:1000]
+        
+        insurance_keywords = [
+            'insurance', 'underwriter', 'commercial lines', 'p&c',
+            'casualty', 'risk manager', 'broker', 'claims', 'surety',
+            'actuary', 'policy', 'premium', 'coverage'
+        ]
+        
+        return any(kw in title for kw in insurance_keywords) or                any(kw in company for kw in insurance_keywords) or                any(kw in description for kw in insurance_keywords)
+
     def save_to_csv(self, jobs: List[Dict]) -> str:
         """Save to CSV with all fields"""
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -314,6 +329,9 @@ class LeadsPipeline:
             filtered_jobs = jobs[:20]
         
         unique_jobs = []
+        # Filter for insurance-related jobs only
+        filtered_jobs = [job for job in filtered_jobs if self.is_insurance_related(job)]
+        logger.info(f"Filtered to {len(filtered_jobs)} insurance-related jobs")
         seen_ids = set()
         for job in filtered_jobs:
             lead_id = self.generate_lead_id(job)

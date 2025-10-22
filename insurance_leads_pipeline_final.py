@@ -141,7 +141,7 @@ class LeadsPipeline:
     def filter_jobs_by_date(self, jobs: List[Dict]) -> List[Dict]:
         """Filter to jobs posted 14+ days ago"""
         filtered = []
-        cutoff_date = datetime.now() - timedelta(days=14)
+        cutoff_date = datetime.now() - timedelta(days=7)
         
         for job in jobs:
             try:
@@ -330,7 +330,8 @@ class LeadsPipeline:
         
         unique_jobs = []
         # Filter for insurance-related jobs only
-        filtered_jobs = [job for job in filtered_jobs if self.is_insurance_related(job)]
+        # Keep all jobs from Apify since they are already filtered
+        # filtered_jobs already contains relevant jobs from search terms
         logger.info(f"Filtered to {len(filtered_jobs)} insurance-related jobs")
         seen_ids = set()
         for job in filtered_jobs:

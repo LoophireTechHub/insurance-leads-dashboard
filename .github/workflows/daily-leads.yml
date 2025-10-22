@@ -40,7 +40,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-git fetch origin main
+    git fetch origin main
     git rebase origin/main
         git add -A
             git commit -m "Update leads dashboard - $(date)" || echo "Nothing to commit"

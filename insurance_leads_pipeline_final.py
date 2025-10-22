@@ -145,7 +145,7 @@ class LeadsPipeline:
         
         for job in jobs:
             try:
-                posted_date_str = job.get('postedAt', job.get('posted_at', job.get('date', '')))
+                posted_date_str = job.get('posted_date', '')
                 if not posted_date_str:
                     continue
                 
@@ -271,10 +271,10 @@ class LeadsPipeline:
                 
                 row = {
                     'Job Title': job.get('title', ''),
-                    'Company Name': job.get('company', ''),
+                    'Company Name': job.get('company_name', ''),
                     'Location': job.get('location', ''),
-                    'Job URL': job.get('url', job.get('link', '')),
-                    'Posted Date': job.get('postedAt', job.get('date', '')),
+                    'Job URL': job.get('platform_url', job.get('official_url', '')),
+                    'Posted Date': job.get('posted_date', ''),
                     'Days Open': days_open,
                     'Company Website': job.get('company_website', ''),
                     'Phone Number': job.get('company_phone', ''),

@@ -87,12 +87,14 @@ class LeadsPipeline:
         search_query = search_term.replace(" ", "+")
         indeed_url = f"https://www.indeed.com/jobs?q={search_query}&l=United+States"
 
+        # Try simple URL-based input
         actor_input = {
-            "scrapeJobs": {
-                "searchUrl": indeed_url,
-                "maxItems": max_items
-            }
+            "search_url": indeed_url,
+            "max_items": max_items
         }
+
+        logger.info(f"  Indeed URL: {indeed_url}")
+        logger.info(f"  Actor input: {json.dumps(actor_input, indent=2)}")
 
         response = requests.post(
             f"{APIFY_BASE_URL}/acts/{INDEED_ACTOR_ID}/runs",

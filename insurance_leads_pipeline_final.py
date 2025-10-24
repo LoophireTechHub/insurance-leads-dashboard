@@ -181,7 +181,8 @@ class LeadsPipeline:
         """Add Apollo.io data"""
         try:
             # Get company name from Apify data (company_name field)
-            company = job.get('company_name', '').strip()
+            company = job.get('company_name', '') or ''
+            company = company.strip() if company else ''
             if not company or company == 'N/A':
                 logger.debug(f"Skipping Apollo for job '{job.get('title', 'Unknown')}' - no company name")
                 return job

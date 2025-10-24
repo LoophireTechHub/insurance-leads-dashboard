@@ -43,4 +43,5 @@ jobs:
         git fetch origin main
         git add -A
         git commit -m "Update leads dashboard - $(date)" || echo "Nothing to commit"
+        git pull --rebase origin main || true
         git push origin main

@@ -234,31 +234,34 @@ class LeadsPipeline:
 
             time.sleep(2)  # Rate limiting between searches
 
-        # Fetch from LinkedIn for each search term
-        logger.info("Fetching from LinkedIn...")
-        for search_term in SEARCH_TERMS:
-            linkedin_jobs = self.fetch_jobs_from_linkedin(search_term, count=50)
+        # Fetch from LinkedIn for each search term (DISABLED - Actor not rented)
+        # TODO: Enable when LinkedIn actor is rented
+        # logger.info("Fetching from LinkedIn...")
+        # for search_term in SEARCH_TERMS:
+        #     linkedin_jobs = self.fetch_jobs_from_linkedin(search_term, count=50)
+        #
+        #     # Normalize LinkedIn job data to common format
+        #     for job in linkedin_jobs:
+        #         normalized_job = {
+        #             'title': job.get('title', job.get('jobTitle', '')),
+        #             'company_name': job.get('companyName', job.get('company', '')),
+        #             'company_website': job.get('companyUrl', job.get('companyWebsite', '')),
+        #             'location': job.get('location', ''),
+        #             'location_type': job.get('workplaceType', job.get('locationType', '')),
+        #             'posted_date': job.get('postedAt', job.get('listedAt', '')),
+        #             'platform_url': job.get('link', job.get('url', '')),
+        #             'description': job.get('description', '')[:1000],
+        #             'salary_min': '',  # LinkedIn often doesn't provide salary
+        #             'salary_max': '',
+        #             'salary_currency': '',
+        #             'employment_type': job.get('employmentType', ''),
+        #             'source': 'linkedin'
+        #         }
+        #         all_jobs.append(normalized_job)
+        #
+        #     time.sleep(2)  # Rate limiting between searches
 
-            # Normalize LinkedIn job data to common format
-            for job in linkedin_jobs:
-                normalized_job = {
-                    'title': job.get('title', job.get('jobTitle', '')),
-                    'company_name': job.get('companyName', job.get('company', '')),
-                    'company_website': job.get('companyUrl', job.get('companyWebsite', '')),
-                    'location': job.get('location', ''),
-                    'location_type': job.get('workplaceType', job.get('locationType', '')),
-                    'posted_date': job.get('postedAt', job.get('listedAt', '')),
-                    'platform_url': job.get('link', job.get('url', '')),
-                    'description': job.get('description', '')[:1000],
-                    'salary_min': '',  # LinkedIn often doesn't provide salary
-                    'salary_max': '',
-                    'salary_currency': '',
-                    'employment_type': job.get('employmentType', ''),
-                    'source': 'linkedin'
-                }
-                all_jobs.append(normalized_job)
-
-            time.sleep(2)  # Rate limiting between searches
+        logger.info("LinkedIn scraping disabled (actor not rented)")
 
         logger.info(f"Retrieved {len(all_jobs)} total jobs from all platforms")
 

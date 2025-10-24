@@ -88,9 +88,10 @@ class LeadsPipeline:
         indeed_url = f"https://www.indeed.com/jobs?q={search_query}&l=United+States"
 
         actor_input = {
-            "searchUrls": [indeed_url],
-            "jobsNeeded": max_items,
-            "useResidentialProxies": False
+            "scrapeJobs": {
+                "searchUrl": indeed_url,
+                "maxItems": max_items
+            }
         }
 
         response = requests.post(

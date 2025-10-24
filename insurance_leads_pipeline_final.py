@@ -134,6 +134,14 @@ class LeadsPipeline:
         if results_response.status_code == 200:
             jobs = results_response.json()
             logger.info(f"Retrieved {len(jobs)} total jobs")
+
+            # Log sample job structure for debugging
+            if jobs:
+                sample_job = jobs[0]
+                logger.info(f"Sample job fields: {list(sample_job.keys())}")
+                logger.info(f"Sample company: '{sample_job.get('company_name', 'MISSING')}'")
+                logger.info(f"Sample title: '{sample_job.get('title', 'MISSING')}'")
+
             return jobs
         
         return []
@@ -141,7 +149,7 @@ class LeadsPipeline:
     def filter_jobs_by_date(self, jobs: List[Dict]) -> List[Dict]:
         """Filter to jobs posted 14+ days ago"""
         filtered = []
-        cutoff_date = datetime.now() - timedelta(days=7)
+        cutoff_date = datetime.now() - timedelta(days=14)
         
         for job in jobs:
             try:
@@ -172,35 +180,45 @@ class LeadsPipeline:
     def enrich_with_apollo(self, job: Dict) -> Dict:
         """Add Apollo.io data"""
         try:
-            company = job.get('company', '').strip()
+            # Get company name from Apify data (company_name field)
+            company = job.get('company_name', '').strip()
             if not company or company == 'N/A':
+                logger.debug(f"Skipping Apollo for job '{job.get('title', 'Unknown')}' - no company name")
                 return job
-            
+
+            logger.info(f"Enriching: {company}")
             headers = {"X-Api-Key": self.apollo_token, "Content-Type": "application/json"}
             search_data = {"q_organization_name": company, "page": 1, "per_page": 1}
-            
+
             response = requests.post(
                 f"{APOLLO_BASE_URL}/organizations/search",
                 headers=headers,
                 json=search_data,
                 timeout=10
             )
-            
+
             if response.status_code == 200:
                 data = response.json()
                 if data.get('organizations'):
                     org = data['organizations'][0]
                     job['company_website'] = org.get('website_url', '')
                     job['company_phone'] = org.get('phone', '')
-                    
+                    logger.info(f"  ✓ Found org: {org.get('name', company)}")
+
                     contacts = self.get_apollo_contacts(org.get('id'), company)
                     for i, contact in enumerate(contacts[:3], 1):
                         job[f'leadership_{i}_name'] = contact.get('name', '')
                         job[f'leadership_{i}_title'] = contact.get('title', '')
                         job[f'leadership_{i}_email'] = contact.get('email', '')
+                    if contacts:
+                        logger.info(f"  ✓ Found {len(contacts)} contacts")
+                else:
+                    logger.warning(f"  ✗ No org found for: {company}")
+            else:
+                logger.warning(f"  ✗ Apollo API error {response.status_code} for: {company}")
         except Exception as e:
-            logger.debug(f"Apollo enrichment error: {e}")
-        
+            logger.error(f"Apollo enrichment error for {job.get('company_name', 'Unknown')}: {e}")
+
         return job
     
     def get_apollo_contacts(self, org_id: str, company: str) -> List[Dict]:

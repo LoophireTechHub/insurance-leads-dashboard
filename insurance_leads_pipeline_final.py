@@ -28,7 +28,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Apify Actor IDs
-INDEED_ACTOR_ID = "databro~indeedjobsscraper"  # DataBro - Best for company names
+INDEED_ACTOR_ID = "curious_coder/indeed-scraper"  # curious_coder - Most reliable and popular
 LINKEDIN_ACTOR_ID = "gdbRh93zn42kBYDyS"  # curious_coder - Fast & reliable
 
 APIFY_BASE_URL = "https://api.apify.com/v2"
@@ -80,13 +80,17 @@ class LeadsPipeline:
         return hashlib.md5(unique_str.encode()).hexdigest()
     
     def fetch_jobs_from_indeed(self, search_term: str, max_items: int = 50) -> List[Dict]:
-        """Fetch jobs from Indeed using DataBro scraper"""
+        """Fetch jobs from Indeed using curious_coder scraper"""
         logger.info(f"Fetching Indeed jobs for: {search_term}")
 
+        # Build Indeed search URL
+        search_query = search_term.replace(" ", "+")
+        indeed_url = f"https://www.indeed.com/jobs?q={search_query}&l=United+States"
+
         actor_input = {
-            "searchKeyword": search_term,
-            "location": "United States",
-            "maxItems": max_items
+            "searchUrls": [indeed_url],
+            "jobsNeeded": max_items,
+            "useResidentialProxies": False
         }
 
         response = requests.post(
@@ -215,19 +219,20 @@ class LeadsPipeline:
 
             # Normalize Indeed job data to common format
             for job in indeed_jobs:
+                # Support multiple field name formats from different scrapers
                 normalized_job = {
-                    'title': job.get('jobTitle', job.get('title', '')),
-                    'company_name': job.get('companyName', job.get('company', '')),
-                    'company_website': job.get('companyWebsite', ''),
-                    'location': job.get('jobLocation', job.get('location', '')),
-                    'location_type': job.get('locationType', ''),
-                    'posted_date': job.get('datePosted', ''),
-                    'platform_url': job.get('url', job.get('jobUrl', '')),
+                    'title': job.get('jobTitle', job.get('title', job.get('positionName', ''))),
+                    'company_name': job.get('companyName', job.get('company', job.get('company_name', ''))),
+                    'company_website': job.get('companyWebsite', job.get('company_website', job.get('companyUrl', ''))),
+                    'location': job.get('jobLocation', job.get('location', job.get('jobLocationCity', ''))),
+                    'location_type': job.get('locationType', job.get('location_type', '')),
+                    'posted_date': job.get('datePosted', job.get('date_posted', job.get('postedDate', ''))),
+                    'platform_url': job.get('url', job.get('jobUrl', job.get('link', ''))),
                     'description': job.get('jobDescription', job.get('description', ''))[:1000],
-                    'salary_min': job.get('salaryMin', ''),
-                    'salary_max': job.get('salaryMax', ''),
-                    'salary_currency': job.get('salaryCurrency', ''),
-                    'employment_type': job.get('employmentType', ''),
+                    'salary_min': job.get('salaryMin', job.get('salary_min', '')),
+                    'salary_max': job.get('salaryMax', job.get('salary_max', '')),
+                    'salary_currency': job.get('salaryCurrency', job.get('salary_currency', '')),
+                    'employment_type': job.get('employmentType', job.get('employment_type', '')),
                     'source': 'indeed'
                 }
                 all_jobs.append(normalized_job)

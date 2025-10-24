@@ -28,7 +28,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Apify Actor IDs
-INDEED_ACTOR_ID = "curious_coder/indeed-scraper"  # curious_coder - Most reliable and popular
+INDEED_ACTOR_ID = "curious_coder~indeed-scraper"  # curious_coder - Most reliable and popular
 LINKEDIN_ACTOR_ID = "gdbRh93zn42kBYDyS"  # curious_coder - Fast & reliable
 
 APIFY_BASE_URL = "https://api.apify.com/v2"

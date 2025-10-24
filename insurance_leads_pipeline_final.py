@@ -88,7 +88,7 @@ class LeadsPipeline:
             "keyword": search_term,
             "location": "United States",
             "maxResults": max_items,
-            "country": "US"
+            "country": "us"  # Must be lowercase
         }
 
         logger.info(f"  Search keyword: {search_term}")

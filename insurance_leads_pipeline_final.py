@@ -139,6 +139,70 @@ class LeadsPipeline:
 
         return []
 
+    def fetch_jobs_from_linkedin(self, search_term: str, count: int = 50) -> List[Dict]:
+        """Fetch jobs from LinkedIn using curious_coder scraper"""
+        logger.info(f"Fetching LinkedIn jobs for: {search_term}")
+
+        # Build LinkedIn search URL
+        # Format: keywords with spaces become +, location filter
+        keywords = search_term.replace(" ", "+")
+        linkedin_url = f"https://www.linkedin.com/jobs/search/?keywords={keywords}&location=United+States&f_TPR=r2592000"  # Posted in last 30 days
+
+        actor_input = {
+            "urls": [linkedin_url],
+            "count": count
+        }
+
+        response = requests.post(
+            f"{APIFY_BASE_URL}/acts/{LINKEDIN_ACTOR_ID}/runs",
+            headers={
+                "Authorization": f"Bearer {self.apify_token}",
+                "Content-Type": "application/json"
+            },
+            json=actor_input
+        )
+
+        if response.status_code != 201:
+            logger.error(f"Failed to start LinkedIn scraper: {response.text}")
+            return []
+
+        run_data = response.json()['data']
+        run_id = run_data['id']
+        logger.info(f"  LinkedIn actor run started: {run_id}")
+
+        # Wait for completion
+        max_wait = 300
+        start_time = time.time()
+
+        while time.time() - start_time < max_wait:
+            status_response = requests.get(
+                f"{APIFY_BASE_URL}/actor-runs/{run_id}",
+                headers={"Authorization": f"Bearer {self.apify_token}"}
+            )
+
+            if status_response.status_code == 200:
+                status = status_response.json()['data']['status']
+                if status in ['SUCCEEDED', 'FAILED', 'ABORTED']:
+                    logger.info(f"  LinkedIn run completed: {status}")
+                    break
+            time.sleep(5)
+            print(".", end="", flush=True)
+
+        print()
+
+        dataset_id = run_data['defaultDatasetId']
+        results_response = requests.get(
+            f"{APIFY_BASE_URL}/datasets/{dataset_id}/items",
+            headers={"Authorization": f"Bearer {self.apify_token}"}
+        )
+
+        if results_response.status_code == 200:
+            jobs = results_response.json()
+            logger.info(f"  Retrieved {len(jobs)} LinkedIn jobs for '{search_term}'")
+            return jobs
+
+        return []
+
     def fetch_jobs_from_apify(self) -> List[Dict]:
         """Fetch jobs from all platforms"""
         logger.info(f"Starting multi-platform job search for {len(SEARCH_TERMS)} job titles...")
@@ -170,16 +234,57 @@ class LeadsPipeline:
 
             time.sleep(2)  # Rate limiting between searches
 
+        # Fetch from LinkedIn for each search term
+        logger.info("Fetching from LinkedIn...")
+        for search_term in SEARCH_TERMS:
+            linkedin_jobs = self.fetch_jobs_from_linkedin(search_term, count=50)
+
+            # Normalize LinkedIn job data to common format
+            for job in linkedin_jobs:
+                normalized_job = {
+                    'title': job.get('title', job.get('jobTitle', '')),
+                    'company_name': job.get('companyName', job.get('company', '')),
+                    'company_website': job.get('companyUrl', job.get('companyWebsite', '')),
+                    'location': job.get('location', ''),
+                    'location_type': job.get('workplaceType', job.get('locationType', '')),
+                    'posted_date': job.get('postedAt', job.get('listedAt', '')),
+                    'platform_url': job.get('link', job.get('url', '')),
+                    'description': job.get('description', '')[:1000],
+                    'salary_min': '',  # LinkedIn often doesn't provide salary
+                    'salary_max': '',
+                    'salary_currency': '',
+                    'employment_type': job.get('employmentType', ''),
+                    'source': 'linkedin'
+                }
+                all_jobs.append(normalized_job)
+
+            time.sleep(2)  # Rate limiting between searches
+
         logger.info(f"Retrieved {len(all_jobs)} total jobs from all platforms")
 
+        # Deduplicate jobs based on company + title + location
+        unique_jobs = []
+        seen_combinations = set()
+
+        for job in all_jobs:
+            # Create unique key from company, title, and location
+            key = f"{job.get('company_name', '').lower()}|{job.get('title', '').lower()}|{job.get('location', '').lower()}"
+
+            if key not in seen_combinations and job.get('company_name'):
+                seen_combinations.add(key)
+                unique_jobs.append(job)
+
+        logger.info(f"After deduplication: {len(unique_jobs)} unique jobs")
+
         # Log sample job structure for debugging
-        if all_jobs:
-            sample_job = all_jobs[0]
+        if unique_jobs:
+            sample_job = unique_jobs[0]
             logger.info(f"Sample job fields: {list(sample_job.keys())}")
             logger.info(f"Sample company: '{sample_job.get('company_name', 'MISSING')}'")
             logger.info(f"Sample title: '{sample_job.get('title', 'MISSING')}'")
+            logger.info(f"Sample source: '{sample_job.get('source', 'MISSING')}'")
 
-        return all_jobs
+        return unique_jobs
     
     def filter_jobs_by_date(self, jobs: List[Dict]) -> List[Dict]:
         """Filter to jobs posted 14+ days ago"""

@@ -28,7 +28,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Apify Actor IDs
-INDEED_ACTOR_ID = "curious_coder~indeed-scraper"  # curious_coder - Most reliable and popular
+INDEED_ACTOR_ID = "borderline~indeed-scraper"  # Pay-per-result, simple input, 4.5★ rating
 LINKEDIN_ACTOR_ID = "gdbRh93zn42kBYDyS"  # curious_coder - Fast & reliable
 
 APIFY_BASE_URL = "https://api.apify.com/v2"
@@ -80,21 +80,19 @@ class LeadsPipeline:
         return hashlib.md5(unique_str.encode()).hexdigest()
     
     def fetch_jobs_from_indeed(self, search_term: str, max_items: int = 50) -> List[Dict]:
-        """Fetch jobs from Indeed using curious_coder scraper"""
+        """Fetch jobs from Indeed using borderline PPR scraper"""
         logger.info(f"Fetching Indeed jobs for: {search_term}")
 
-        # Build Indeed search URL
-        search_query = search_term.replace(" ", "+")
-        indeed_url = f"https://www.indeed.com/jobs?q={search_query}&l=United+States"
-
-        # Try simple URL-based input
+        # Simple keyword-based input
         actor_input = {
-            "search_url": indeed_url,
-            "max_items": max_items
+            "keyword": search_term,
+            "location": "United States",
+            "maxResults": max_items,
+            "country": "US"
         }
 
-        logger.info(f"  Indeed URL: {indeed_url}")
-        logger.info(f"  Actor input: {json.dumps(actor_input, indent=2)}")
+        logger.info(f"  Search keyword: {search_term}")
+        logger.info(f"  Max results: {max_items}")
 
         response = requests.post(
             f"{APIFY_BASE_URL}/acts/{INDEED_ACTOR_ID}/runs",

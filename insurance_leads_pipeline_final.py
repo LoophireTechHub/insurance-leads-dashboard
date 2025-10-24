@@ -27,7 +27,10 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-APIFY_ACTOR_ID = "8QfidRKcSVYICkwrq"
+# Apify Actor IDs
+INDEED_ACTOR_ID = "databro~indeedjobsscraper"  # DataBro - Best for company names
+LINKEDIN_ACTOR_ID = "gdbRh93zn42kBYDyS"  # curious_coder - Fast & reliable
+
 APIFY_BASE_URL = "https://api.apify.com/v2"
 APOLLO_BASE_URL = "https://api.apollo.io/v1"
 
@@ -73,78 +76,110 @@ class LeadsPipeline:
             json.dump(list(self.collected_leads), f, indent=2)
     
     def generate_lead_id(self, job: Dict) -> str:
-        unique_str = f"{job.get('company', '')}{job.get('title', '')}{job.get('location', '')}"
+        unique_str = f"{job.get('company_name', '')}{job.get('title', '')}{job.get('location', '')}"
         return hashlib.md5(unique_str.encode()).hexdigest()
     
-    def fetch_jobs_from_apify(self) -> List[Dict]:
-        """Fetch jobs using correct Apify format"""
-        logger.info(f"Starting Apify search for {len(SEARCH_TERMS)} job titles...")
-        
+    def fetch_jobs_from_indeed(self, search_term: str, max_items: int = 50) -> List[Dict]:
+        """Fetch jobs from Indeed using DataBro scraper"""
+        logger.info(f"Fetching Indeed jobs for: {search_term}")
+
         actor_input = {
-            "search_terms": SEARCH_TERMS,
-            "max_results": 50,
-            "posted_since": "1 month",
+            "searchKeyword": search_term,
             "location": "United States",
-            "country": "United States"
+            "maxItems": max_items
         }
-        
+
         response = requests.post(
-            f"{APIFY_BASE_URL}/acts/{APIFY_ACTOR_ID}/runs",
+            f"{APIFY_BASE_URL}/acts/{INDEED_ACTOR_ID}/runs",
             headers={
                 "Authorization": f"Bearer {self.apify_token}",
                 "Content-Type": "application/json"
             },
             json=actor_input
         )
-        
+
         if response.status_code != 201:
-            logger.error(f"Failed to start: {response.text}")
+            logger.error(f"Failed to start Indeed scraper: {response.text}")
             return []
-        
+
         run_data = response.json()['data']
         run_id = run_data['id']
-        logger.info(f"Actor run started: {run_id}")
-        
-        logger.info("Waiting for results (this may take 1-3 minutes)...")
+        logger.info(f"  Indeed actor run started: {run_id}")
+
+        # Wait for completion
         max_wait = 300
         start_time = time.time()
-        
+
         while time.time() - start_time < max_wait:
             status_response = requests.get(
                 f"{APIFY_BASE_URL}/actor-runs/{run_id}",
                 headers={"Authorization": f"Bearer {self.apify_token}"}
             )
-            
+
             if status_response.status_code == 200:
                 status = status_response.json()['data']['status']
                 if status in ['SUCCEEDED', 'FAILED', 'ABORTED']:
-                    logger.info(f"Run completed with status: {status}")
+                    logger.info(f"  Indeed run completed: {status}")
                     break
             time.sleep(5)
             print(".", end="", flush=True)
-        
+
         print()
-        
+
         dataset_id = run_data['defaultDatasetId']
         results_response = requests.get(
             f"{APIFY_BASE_URL}/datasets/{dataset_id}/items",
             headers={"Authorization": f"Bearer {self.apify_token}"}
         )
-        
+
         if results_response.status_code == 200:
             jobs = results_response.json()
-            logger.info(f"Retrieved {len(jobs)} total jobs")
-
-            # Log sample job structure for debugging
-            if jobs:
-                sample_job = jobs[0]
-                logger.info(f"Sample job fields: {list(sample_job.keys())}")
-                logger.info(f"Sample company: '{sample_job.get('company_name', 'MISSING')}'")
-                logger.info(f"Sample title: '{sample_job.get('title', 'MISSING')}'")
-
+            logger.info(f"  Retrieved {len(jobs)} Indeed jobs for '{search_term}'")
             return jobs
-        
+
         return []
+
+    def fetch_jobs_from_apify(self) -> List[Dict]:
+        """Fetch jobs from all platforms"""
+        logger.info(f"Starting multi-platform job search for {len(SEARCH_TERMS)} job titles...")
+
+        all_jobs = []
+
+        # Fetch from Indeed for each search term
+        for search_term in SEARCH_TERMS:
+            indeed_jobs = self.fetch_jobs_from_indeed(search_term, max_items=50)
+
+            # Normalize Indeed job data to common format
+            for job in indeed_jobs:
+                normalized_job = {
+                    'title': job.get('jobTitle', job.get('title', '')),
+                    'company_name': job.get('companyName', job.get('company', '')),
+                    'company_website': job.get('companyWebsite', ''),
+                    'location': job.get('jobLocation', job.get('location', '')),
+                    'location_type': job.get('locationType', ''),
+                    'posted_date': job.get('datePosted', ''),
+                    'platform_url': job.get('url', job.get('jobUrl', '')),
+                    'description': job.get('jobDescription', job.get('description', ''))[:1000],
+                    'salary_min': job.get('salaryMin', ''),
+                    'salary_max': job.get('salaryMax', ''),
+                    'salary_currency': job.get('salaryCurrency', ''),
+                    'employment_type': job.get('employmentType', ''),
+                    'source': 'indeed'
+                }
+                all_jobs.append(normalized_job)
+
+            time.sleep(2)  # Rate limiting between searches
+
+        logger.info(f"Retrieved {len(all_jobs)} total jobs from all platforms")
+
+        # Log sample job structure for debugging
+        if all_jobs:
+            sample_job = all_jobs[0]
+            logger.info(f"Sample job fields: {list(sample_job.keys())}")
+            logger.info(f"Sample company: '{sample_job.get('company_name', 'MISSING')}'")
+            logger.info(f"Sample title: '{sample_job.get('title', 'MISSING')}'")
+
+        return all_jobs
     
     def filter_jobs_by_date(self, jobs: List[Dict]) -> List[Dict]:
         """Filter to jobs posted 14+ days ago"""
@@ -284,32 +319,42 @@ class LeadsPipeline:
         """Save to CSV with all fields"""
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         csv_file = self.output_dir / f"insurance_leads_{timestamp}.csv"
-        
+
         fieldnames = [
-            'Job Title', 'Company Name', 'Location', 'Job URL', 'Posted Date',
-            'Days Open', 'Company Website', 'Phone Number',
+            'Job Title', 'Company Name', 'Location', 'Location Type', 'Job URL', 'Posted Date',
+            'Days Open', 'Salary Range', 'Employment Type', 'Source', 'Company Website', 'Phone Number',
             'Leadership 1 Name', 'Leadership 1 Title', 'Leadership 1 Email',
             'Leadership 2 Name', 'Leadership 2 Title', 'Leadership 2 Email',
             'Leadership 3 Name', 'Leadership 3 Title', 'Leadership 3 Email',
             'Urgency Score'
         ]
-        
+
         with open(csv_file, 'w', newline='', encoding='utf-8') as f:
             writer = csv.DictWriter(f, fieldnames=fieldnames)
             writer.writeheader()
-            
+
             for job in jobs:
                 days_open = 0
                 if job.get('posted_date_parsed'):
                     days_open = (datetime.now() - job['posted_date_parsed']).days
-                
+
+                # Format salary range
+                salary_range = ''
+                if job.get('salary_min') and job.get('salary_max'):
+                    currency = job.get('salary_currency', 'USD')
+                    salary_range = f"{currency} {job['salary_min']}-{job['salary_max']}"
+
                 row = {
                     'Job Title': job.get('title', ''),
                     'Company Name': job.get('company_name', ''),
                     'Location': job.get('location', ''),
-                    'Job URL': job.get('platform_url', job.get('official_url', '')),
+                    'Location Type': job.get('location_type', ''),
+                    'Job URL': job.get('platform_url', ''),
                     'Posted Date': job.get('posted_date', ''),
                     'Days Open': days_open,
+                    'Salary Range': salary_range,
+                    'Employment Type': job.get('employment_type', ''),
+                    'Source': job.get('source', 'indeed'),
                     'Company Website': job.get('company_website', ''),
                     'Phone Number': job.get('company_phone', ''),
                     'Leadership 1 Name': job.get('leadership_1_name', ''),
@@ -324,7 +369,7 @@ class LeadsPipeline:
                     'Urgency Score': f"{job.get('urgency_score', 0):.2f}"
                 }
                 writer.writerow(row)
-        
+
         return str(csv_file)
     
     def run(self):

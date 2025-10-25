@@ -1,10 +1,10 @@
 {
   "stats": {
     "total_leads": 2,
-    "high_priority": 1,
+    "high_priority": 2,
     "with_contacts": 2,
     "unique_companies": 2,
-    "last_updated": "October 25, 2025 at 04:38 PM EST",
+    "last_updated": "October 25, 2025 at 06:35 PM EST",
     "update_date": "2025-10-25"
   },
   "leads": [
@@ -33,18 +33,18 @@
       "Urgency Score": "100.00"
     },
     {
-      "Job Title": "Full Stack Developer",
-      "Company Name": "AES Drilling Fluids LLC",
-      "Location": "Houston, TX, US",
+      "Job Title": "Web Developers",
+      "Company Name": "Systems USA",
+      "Location": "Farmington Hills, MI, US",
       "Location Type": "On-site",
       "Job URL": "",
-      "Posted Date": "2025-10-07",
-      "Days Open": "18",
+      "Posted Date": "2024-11-23",
+      "Days Open": "336",
       "Salary Range": "",
-      "Employment Type": "FULL_TIME",
+      "Employment Type": "",
       "Source": "indeed",
       "Company Website": "",
-      "Phone Number": "",
+      "Phone Number": "+1 952-487-9500",
       "Leadership 1 Name": "Mike Braham",
       "Leadership 1 Title": "Chief Growth Officer and Board of Directors",
       "Leadership 1 Email": "email_not_unlocked@domain.com",
@@ -54,7 +54,7 @@
       "Leadership 3 Name": "J Montes",
       "Leadership 3 Title": "Director of Sales",
       "Leadership 3 Email": "email_not_unlocked@domain.com",
-      "Urgency Score": "5.26"
+      "Urgency Score": "100.00"
     }
   ]
 }

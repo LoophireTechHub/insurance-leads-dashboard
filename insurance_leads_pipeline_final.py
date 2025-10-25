@@ -28,7 +28,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Apify Actor IDs
-INDEED_ACTOR_ID = "borderline~indeed-scraper"  # Pay-per-result, simple input, 4.5★ rating
+INDEED_ACTOR_ID = "databro~indeedjobsscraper"  # DataBro - Already rented, add filtering
 LINKEDIN_ACTOR_ID = "gdbRh93zn42kBYDyS"  # curious_coder - Fast & reliable
 
 APIFY_BASE_URL = "https://api.apify.com/v2"
@@ -80,15 +80,14 @@ class LeadsPipeline:
         return hashlib.md5(unique_str.encode()).hexdigest()
     
     def fetch_jobs_from_indeed(self, search_term: str, max_items: int = 50) -> List[Dict]:
-        """Fetch jobs from Indeed using borderline PPR scraper"""
+        """Fetch jobs from Indeed using DataBro scraper with strict filtering"""
         logger.info(f"Fetching Indeed jobs for: {search_term}")
 
-        # Simple keyword-based input
+        # DataBro input format
         actor_input = {
-            "keyword": search_term,
+            "searchKeyword": search_term,
             "location": "United States",
-            "maxResults": max_items,
-            "country": "us"  # Must be lowercase
+            "maxItems": max_items
         }
 
         logger.info(f"  Search keyword: {search_term}")
@@ -218,7 +217,9 @@ class LeadsPipeline:
         for search_term in SEARCH_TERMS:
             indeed_jobs = self.fetch_jobs_from_indeed(search_term, max_items=50)
 
-            # Normalize Indeed job data to common format
+            # Normalize Indeed job data to common format and filter for insurance jobs
+            insurance_count = 0
+            filtered_count = 0
             for job in indeed_jobs:
                 # Support multiple field name formats from different scrapers
                 normalized_job = {
@@ -236,8 +237,16 @@ class LeadsPipeline:
                     'employment_type': job.get('employmentType', job.get('employment_type', '')),
                     'source': 'indeed'
                 }
-                all_jobs.append(normalized_job)
 
+                # STRICT FILTER: Only add if insurance-related
+                if self.is_insurance_related(normalized_job):
+                    all_jobs.append(normalized_job)
+                    insurance_count += 1
+                else:
+                    filtered_count += 1
+                    logger.debug(f"  Filtered out non-insurance job: {normalized_job.get('title', 'Unknown')}")
+
+            logger.info(f"  Insurance jobs: {insurance_count}, Filtered out: {filtered_count}")
             time.sleep(2)  # Rate limiting between searches
 
         # Fetch from LinkedIn for each search term (DISABLED - Actor not rented)

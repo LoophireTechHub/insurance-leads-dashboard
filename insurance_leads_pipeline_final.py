@@ -437,7 +437,7 @@ class LeadsPipeline:
             'php', 'wordpress', 'node.js', 'nodejs', '.net developer', 'c# developer',
             'ruby', 'programmer', 'coding', 'devops', 'data engineer', 'ml engineer',
             'app developer', 'mobile developer', 'ios developer', 'android developer',
-            'ui developer', 'ux developer', 'web app', 'software dev', 'engineer -',
+            'ui developer', 'ux developer', 'web app', 'software dev',
             'drupal', 'magento', 'laravel', 'django', 'flask', 'spring', 'hibernate',
             'css', 'html', 'typescript', 'sql developer', 'database developer',
             'cloud engineer', 'solutions architect', 'technical architect', 'it specialist',
@@ -448,7 +448,7 @@ class LeadsPipeline:
         # Reject if ANY web dev keyword in title
         for keyword in web_dev_reject_keywords:
             if keyword in title:
-                logger.debug(f"  ❌ REJECTED (web dev): '{title}' contains '{keyword}'")
+                logger.info(f"  ❌ REJECTED (web dev): '{title}' contains '{keyword}'")
                 return False
 
         # REQUIRED: Title MUST contain insurance-specific keywords
@@ -462,17 +462,22 @@ class LeadsPipeline:
         # Title must have insurance keyword
         title_has_insurance = any(kw in title for kw in required_title_keywords)
         if not title_has_insurance:
-            logger.debug(f"  ❌ REJECTED (no insurance keyword in title): '{title}'")
+            logger.info(f"  ❌ REJECTED (no insurance keyword in title): '{title}'")
             return False
 
-        # Description should also confirm insurance context
+        # If description is too short or empty, just rely on title
+        if len(description) < 50:
+            logger.info(f"  ✅ APPROVED (title match, short description): '{title}'")
+            return True
+
+        # Description should also confirm insurance context (if it's substantial)
         description_keywords = [
             'insurance', 'underwrite', 'broker', 'policy', 'premium', 'coverage',
             'claims', 'risk', 'casualty', 'liability', 'actuary'
         ]
         description_has_insurance = any(kw in description for kw in description_keywords)
         if not description_has_insurance:
-            logger.debug(f"  ❌ REJECTED (no insurance context in description): '{title}'")
+            logger.info(f"  ❌ REJECTED (no insurance context in description): '{title}'")
             return False
 
         # PASSED ALL CHECKS

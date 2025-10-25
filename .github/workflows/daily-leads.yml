@@ -23,7 +23,7 @@ jobs:
     
     - name: Install dependencies
       run: |
-        pip install requests python-dotenv
+        pip install -r requirements.txt
     
     - name: Run leads pipeline
       env:

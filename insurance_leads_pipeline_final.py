@@ -11,20 +11,12 @@ import logging
 import requests
 import csv
 import time
-import pandas as pd
 from datetime import datetime, timedelta
 from typing import List, Dict
 from pathlib import Path
 import hashlib
 
-# JobSpy import
-try:
-    from jobspy import scrape_jobs
-except ImportError:
-    logger.error("JobSpy not installed. Run: pip install python-jobspy")
-    sys.exit(1)
-
-# Configure logging
+# Configure logging FIRST
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -34,6 +26,15 @@ logging.basicConfig(
     ]
 )
 logger = logging.getLogger(__name__)
+
+# JobSpy import (after logging is configured)
+try:
+    from jobspy import scrape_jobs
+    import pandas as pd
+except ImportError as e:
+    logger.error(f"Required library not installed: {e}")
+    logger.error("Run: pip install python-jobspy pandas")
+    sys.exit(1)
 
 APOLLO_BASE_URL = "https://api.apollo.io/v1"
 

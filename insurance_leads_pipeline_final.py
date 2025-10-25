@@ -425,18 +425,59 @@ class LeadsPipeline:
     
 
     def is_insurance_related(self, job: Dict) -> bool:
-        """Check if job is insurance-related"""
+        """ULTRA STRICT: Only allow exact insurance job titles - ZERO tolerance for web dev"""
         title = (job.get('title') or '').lower()
-        company = (job.get('company_name') or '').lower()
         description = (job.get('description') or '')[:1000].lower()
-        
-        insurance_keywords = [
-            'insurance', 'underwriter', 'commercial lines', 'p&c',
-            'casualty', 'risk manager', 'broker', 'claims', 'surety',
-            'actuary', 'policy', 'premium', 'coverage'
+
+        # IMMEDIATE REJECTION: Web developer/software keywords in title
+        web_dev_reject_keywords = [
+            'web developer', 'web design', 'software developer', 'software engineer',
+            'full stack', 'front end', 'front-end', 'backend', 'back-end', 'back end',
+            'react', 'angular', 'vue', 'javascript', 'python developer', 'java developer',
+            'php', 'wordpress', 'node.js', 'nodejs', '.net developer', 'c# developer',
+            'ruby', 'programmer', 'coding', 'devops', 'data engineer', 'ml engineer',
+            'app developer', 'mobile developer', 'ios developer', 'android developer',
+            'ui developer', 'ux developer', 'web app', 'software dev', 'engineer -',
+            'drupal', 'magento', 'laravel', 'django', 'flask', 'spring', 'hibernate',
+            'css', 'html', 'typescript', 'sql developer', 'database developer',
+            'cloud engineer', 'solutions architect', 'technical architect', 'it specialist',
+            'systems administrator', 'network engineer', 'security engineer', 'qa engineer',
+            'test engineer', 'automation engineer', 'site reliability', 'sre', 'platform engineer'
         ]
-        
-        return any(kw in title for kw in insurance_keywords) or                any(kw in company for kw in insurance_keywords) or                any(kw in description for kw in insurance_keywords)
+
+        # Reject if ANY web dev keyword in title
+        for keyword in web_dev_reject_keywords:
+            if keyword in title:
+                logger.debug(f"  ❌ REJECTED (web dev): '{title}' contains '{keyword}'")
+                return False
+
+        # REQUIRED: Title MUST contain insurance-specific keywords
+        required_title_keywords = [
+            'insurance', 'underwriter', 'underwriting', 'broker', 'brokerage',
+            'claims', 'actuary', 'actuarial', 'risk manager', 'risk management',
+            'p&c', 'p & c', 'property casualty', 'commercial lines', 'personal lines',
+            'surety', 'reinsurance', 'loss control'
+        ]
+
+        # Title must have insurance keyword
+        title_has_insurance = any(kw in title for kw in required_title_keywords)
+        if not title_has_insurance:
+            logger.debug(f"  ❌ REJECTED (no insurance keyword in title): '{title}'")
+            return False
+
+        # Description should also confirm insurance context
+        description_keywords = [
+            'insurance', 'underwrite', 'broker', 'policy', 'premium', 'coverage',
+            'claims', 'risk', 'casualty', 'liability', 'actuary'
+        ]
+        description_has_insurance = any(kw in description for kw in description_keywords)
+        if not description_has_insurance:
+            logger.debug(f"  ❌ REJECTED (no insurance context in description): '{title}'")
+            return False
+
+        # PASSED ALL CHECKS
+        logger.info(f"  ✅ APPROVED: '{title}'")
+        return True
 
     def save_to_csv(self, jobs: List[Dict]) -> str:
         """Save to CSV with all fields"""

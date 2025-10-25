@@ -124,19 +124,20 @@ class LeadsPipeline:
             filtered_count = 0
             for job in indeed_jobs:
                 # JobSpy returns consistent field names
+                # Convert all values to strings to handle floats/None
                 normalized_job = {
-                    'title': job.get('title', ''),
-                    'company_name': job.get('company', ''),
-                    'company_website': job.get('company_url', ''),
-                    'location': job.get('location', ''),
-                    'location_type': job.get('job_type', ''),  # remote, onsite, hybrid
-                    'posted_date': str(job.get('date_posted', '')),
-                    'platform_url': job.get('job_url', ''),
-                    'description': str(job.get('description', ''))[:1000],
-                    'salary_min': job.get('min_amount', ''),
-                    'salary_max': job.get('max_amount', ''),
-                    'salary_currency': job.get('currency', ''),
-                    'employment_type': job.get('job_type', ''),
+                    'title': str(job.get('title', '') or ''),
+                    'company_name': str(job.get('company', '') or ''),
+                    'company_website': str(job.get('company_url', '') or ''),
+                    'location': str(job.get('location', '') or ''),
+                    'location_type': str(job.get('job_type', '') or ''),
+                    'posted_date': str(job.get('date_posted', '') or ''),
+                    'platform_url': str(job.get('job_url', '') or ''),
+                    'description': str(job.get('description', '') or '')[:1000],
+                    'salary_min': str(job.get('min_amount', '') or ''),
+                    'salary_max': str(job.get('max_amount', '') or ''),
+                    'salary_currency': str(job.get('currency', '') or ''),
+                    'employment_type': str(job.get('job_type', '') or ''),
                     'source': 'indeed_jobspy'
                 }
 

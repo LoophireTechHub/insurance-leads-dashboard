@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Insurance Leads Pipeline - Production Version
-Pulls jobs from Apify, enriches with Apollo, scores by urgency
+Insurance Leads Pipeline - Production Version with JobSpy
+Pulls jobs from Indeed via JobSpy, enriches with Apollo, scores by urgency
 """
 
 import os
@@ -11,10 +11,18 @@ import logging
 import requests
 import csv
 import time
+import pandas as pd
 from datetime import datetime, timedelta
 from typing import List, Dict
 from pathlib import Path
 import hashlib
+
+# JobSpy import
+try:
+    from jobspy import scrape_jobs
+except ImportError:
+    logger.error("JobSpy not installed. Run: pip install python-jobspy")
+    sys.exit(1)
 
 # Configure logging
 logging.basicConfig(
@@ -27,39 +35,32 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Apify Actor IDs
-INDEED_ACTOR_ID = "databro~indeedjobsscraper"  # DataBro - Already rented, add filtering
-LINKEDIN_ACTOR_ID = "gdbRh93zn42kBYDyS"  # curious_coder - Fast & reliable
-
-APIFY_BASE_URL = "https://api.apify.com/v2"
 APOLLO_BASE_URL = "https://api.apollo.io/v1"
 
+# Precise insurance search terms with Boolean operators to exclude tech jobs
 SEARCH_TERMS = [
-    "Commercial Insurance Underwriter",
-    "Commercial Lines Manager",
-    "Insurance Risk Manager",
-    "Commercial P&C Specialist",
-    "Commercial Insurance Broker",
-    "Risk Assessment Manager"
+    '"Commercial Insurance Underwriter" insurance -software -developer -web',
+    '"Commercial Lines Manager" insurance -software -developer -web',
+    '"Insurance Risk Manager" insurance -software -developer -web',
+    '"Commercial P&C Specialist" insurance -software -developer -web',
+    '"Commercial Insurance Broker" insurance -software -developer -web',
+    '"Risk Assessment Manager" insurance -software -developer -web'
 ]
 
 class LeadsPipeline:
     def __init__(self):
-        self.apify_token = os.environ.get('APIFY_API_TOKEN')
         self.apollo_token = os.environ.get('APOLLO_API_TOKEN')
-        
-        if not self.apify_token:
-            raise ValueError("APIFY_API_TOKEN not set")
+
         if not self.apollo_token:
             raise ValueError("APOLLO_API_TOKEN not set")
-        
+
         self.output_dir = Path("leads_output")
         self.output_dir.mkdir(exist_ok=True)
-        
+
         self.collected_leads_file = Path("collected_leads.json")
         self.collected_leads = self.load_collected_leads()
-        
-        logger.info("Pipeline initialized successfully")
+
+        logger.info("Pipeline initialized successfully with JobSpy")
     
     def load_collected_leads(self) -> set:
         if self.collected_leads_file.exists():
@@ -79,163 +80,63 @@ class LeadsPipeline:
         unique_str = f"{job.get('company_name', '')}{job.get('title', '')}{job.get('location', '')}"
         return hashlib.md5(unique_str.encode()).hexdigest()
     
-    def fetch_jobs_from_indeed(self, search_term: str, max_items: int = 50) -> List[Dict]:
-        """Fetch jobs from Indeed using DataBro scraper with strict filtering"""
-        logger.info(f"Fetching Indeed jobs for: {search_term}")
+    def fetch_jobs_from_indeed_jobspy(self, search_term: str, results_wanted: int = 50) -> List[Dict]:
+        """Fetch jobs from Indeed using JobSpy library - direct scraping"""
+        logger.info(f"🔍 Scraping Indeed with JobSpy for: {search_term}")
 
-        # DataBro input format
-        actor_input = {
-            "searchKeyword": search_term,
-            "location": "United States",
-            "maxItems": max_items
-        }
-
-        logger.info(f"  Search keyword: {search_term}")
-        logger.info(f"  Max results: {max_items}")
-
-        response = requests.post(
-            f"{APIFY_BASE_URL}/acts/{INDEED_ACTOR_ID}/runs",
-            headers={
-                "Authorization": f"Bearer {self.apify_token}",
-                "Content-Type": "application/json"
-            },
-            json=actor_input
-        )
-
-        if response.status_code != 201:
-            logger.error(f"Failed to start Indeed scraper: {response.text}")
-            return []
-
-        run_data = response.json()['data']
-        run_id = run_data['id']
-        logger.info(f"  Indeed actor run started: {run_id}")
-
-        # Wait for completion
-        max_wait = 300
-        start_time = time.time()
-
-        while time.time() - start_time < max_wait:
-            status_response = requests.get(
-                f"{APIFY_BASE_URL}/actor-runs/{run_id}",
-                headers={"Authorization": f"Bearer {self.apify_token}"}
+        try:
+            jobs_df = scrape_jobs(
+                site_name=["indeed"],
+                search_term=search_term,
+                location="United States",
+                results_wanted=results_wanted,
+                hours_old=2160,  # 90 days
+                country_indeed='USA'
             )
 
-            if status_response.status_code == 200:
-                status = status_response.json()['data']['status']
-                if status in ['SUCCEEDED', 'FAILED', 'ABORTED']:
-                    logger.info(f"  Indeed run completed: {status}")
-                    break
-            time.sleep(5)
-            print(".", end="", flush=True)
+            if jobs_df is None or jobs_df.empty:
+                logger.warning(f"  No jobs found for: {search_term}")
+                return []
 
-        print()
+            logger.info(f"  ✅ Retrieved {len(jobs_df)} Indeed jobs for '{search_term}'")
 
-        dataset_id = run_data['defaultDatasetId']
-        results_response = requests.get(
-            f"{APIFY_BASE_URL}/datasets/{dataset_id}/items",
-            headers={"Authorization": f"Bearer {self.apify_token}"}
-        )
+            # Convert DataFrame to list of dicts
+            jobs_list = jobs_df.to_dict('records')
+            return jobs_list
 
-        if results_response.status_code == 200:
-            jobs = results_response.json()
-            logger.info(f"  Retrieved {len(jobs)} Indeed jobs for '{search_term}'")
-            return jobs
-
-        return []
-
-    def fetch_jobs_from_linkedin(self, search_term: str, count: int = 50) -> List[Dict]:
-        """Fetch jobs from LinkedIn using curious_coder scraper"""
-        logger.info(f"Fetching LinkedIn jobs for: {search_term}")
-
-        # Build LinkedIn search URL
-        # Format: keywords with spaces become +, location filter
-        keywords = search_term.replace(" ", "+")
-        linkedin_url = f"https://www.linkedin.com/jobs/search/?keywords={keywords}&location=United+States&f_TPR=r2592000"  # Posted in last 30 days
-
-        actor_input = {
-            "urls": [linkedin_url],
-            "count": count
-        }
-
-        response = requests.post(
-            f"{APIFY_BASE_URL}/acts/{LINKEDIN_ACTOR_ID}/runs",
-            headers={
-                "Authorization": f"Bearer {self.apify_token}",
-                "Content-Type": "application/json"
-            },
-            json=actor_input
-        )
-
-        if response.status_code != 201:
-            logger.error(f"Failed to start LinkedIn scraper: {response.text}")
+        except Exception as e:
+            logger.error(f"  ❌ JobSpy error for '{search_term}': {e}")
             return []
 
-        run_data = response.json()['data']
-        run_id = run_data['id']
-        logger.info(f"  LinkedIn actor run started: {run_id}")
-
-        # Wait for completion
-        max_wait = 300
-        start_time = time.time()
-
-        while time.time() - start_time < max_wait:
-            status_response = requests.get(
-                f"{APIFY_BASE_URL}/actor-runs/{run_id}",
-                headers={"Authorization": f"Bearer {self.apify_token}"}
-            )
-
-            if status_response.status_code == 200:
-                status = status_response.json()['data']['status']
-                if status in ['SUCCEEDED', 'FAILED', 'ABORTED']:
-                    logger.info(f"  LinkedIn run completed: {status}")
-                    break
-            time.sleep(5)
-            print(".", end="", flush=True)
-
-        print()
-
-        dataset_id = run_data['defaultDatasetId']
-        results_response = requests.get(
-            f"{APIFY_BASE_URL}/datasets/{dataset_id}/items",
-            headers={"Authorization": f"Bearer {self.apify_token}"}
-        )
-
-        if results_response.status_code == 200:
-            jobs = results_response.json()
-            logger.info(f"  Retrieved {len(jobs)} LinkedIn jobs for '{search_term}'")
-            return jobs
-
-        return []
-
-    def fetch_jobs_from_apify(self) -> List[Dict]:
-        """Fetch jobs from all platforms"""
-        logger.info(f"Starting multi-platform job search for {len(SEARCH_TERMS)} job titles...")
+    def fetch_jobs_with_jobspy(self) -> List[Dict]:
+        """Fetch jobs using JobSpy - fast and accurate"""
+        logger.info(f"🚀 Starting JobSpy scraping for {len(SEARCH_TERMS)} insurance job types...")
 
         all_jobs = []
 
-        # Fetch from Indeed for each search term
+        # Fetch from Indeed for each search term using JobSpy
         for search_term in SEARCH_TERMS:
-            indeed_jobs = self.fetch_jobs_from_indeed(search_term, max_items=50)
+            indeed_jobs = self.fetch_jobs_from_indeed_jobspy(search_term, results_wanted=50)
 
-            # Normalize Indeed job data to common format and filter for insurance jobs
+            # Normalize JobSpy data to common format and filter for insurance jobs
             insurance_count = 0
             filtered_count = 0
             for job in indeed_jobs:
-                # Support multiple field name formats from different scrapers
+                # JobSpy returns consistent field names
                 normalized_job = {
-                    'title': job.get('jobTitle', job.get('title', job.get('positionName', ''))),
-                    'company_name': job.get('companyName', job.get('company', job.get('company_name', ''))),
-                    'company_website': job.get('companyWebsite', job.get('company_website', job.get('companyUrl', ''))),
-                    'location': job.get('jobLocation', job.get('location', job.get('jobLocationCity', ''))),
-                    'location_type': job.get('locationType', job.get('location_type', '')),
-                    'posted_date': job.get('datePosted', job.get('date_posted', job.get('postedDate', ''))),
-                    'platform_url': job.get('url', job.get('jobUrl', job.get('link', ''))),
-                    'description': job.get('jobDescription', job.get('description', ''))[:1000],
-                    'salary_min': job.get('salaryMin', job.get('salary_min', '')),
-                    'salary_max': job.get('salaryMax', job.get('salary_max', '')),
-                    'salary_currency': job.get('salaryCurrency', job.get('salary_currency', '')),
-                    'employment_type': job.get('employmentType', job.get('employment_type', '')),
-                    'source': 'indeed'
+                    'title': job.get('title', ''),
+                    'company_name': job.get('company', ''),
+                    'company_website': job.get('company_url', ''),
+                    'location': job.get('location', ''),
+                    'location_type': job.get('job_type', ''),  # remote, onsite, hybrid
+                    'posted_date': str(job.get('date_posted', '')),
+                    'platform_url': job.get('job_url', ''),
+                    'description': str(job.get('description', ''))[:1000],
+                    'salary_min': job.get('min_amount', ''),
+                    'salary_max': job.get('max_amount', ''),
+                    'salary_currency': job.get('currency', ''),
+                    'employment_type': job.get('job_type', ''),
+                    'source': 'indeed_jobspy'
                 }
 
                 # STRICT FILTER: Only add if insurance-related
@@ -244,41 +145,11 @@ class LeadsPipeline:
                     insurance_count += 1
                 else:
                     filtered_count += 1
-                    logger.debug(f"  Filtered out non-insurance job: {normalized_job.get('title', 'Unknown')}")
 
             logger.info(f"  Insurance jobs: {insurance_count}, Filtered out: {filtered_count}")
-            time.sleep(2)  # Rate limiting between searches
+            time.sleep(3)  # Rate limiting between searches
 
-        # Fetch from LinkedIn for each search term (DISABLED - Actor not rented)
-        # TODO: Enable when LinkedIn actor is rented
-        # logger.info("Fetching from LinkedIn...")
-        # for search_term in SEARCH_TERMS:
-        #     linkedin_jobs = self.fetch_jobs_from_linkedin(search_term, count=50)
-        #
-        #     # Normalize LinkedIn job data to common format
-        #     for job in linkedin_jobs:
-        #         normalized_job = {
-        #             'title': job.get('title', job.get('jobTitle', '')),
-        #             'company_name': job.get('companyName', job.get('company', '')),
-        #             'company_website': job.get('companyUrl', job.get('companyWebsite', '')),
-        #             'location': job.get('location', ''),
-        #             'location_type': job.get('workplaceType', job.get('locationType', '')),
-        #             'posted_date': job.get('postedAt', job.get('listedAt', '')),
-        #             'platform_url': job.get('link', job.get('url', '')),
-        #             'description': job.get('description', '')[:1000],
-        #             'salary_min': '',  # LinkedIn often doesn't provide salary
-        #             'salary_max': '',
-        #             'salary_currency': '',
-        #             'employment_type': job.get('employmentType', ''),
-        #             'source': 'linkedin'
-        #         }
-        #         all_jobs.append(normalized_job)
-        #
-        #     time.sleep(2)  # Rate limiting between searches
-
-        logger.info("LinkedIn scraping disabled (actor not rented)")
-
-        logger.info(f"Retrieved {len(all_jobs)} total jobs from all platforms")
+        logger.info(f"✅ Retrieved {len(all_jobs)} total insurance jobs from JobSpy")
 
         # Deduplicate jobs based on company + title + location
         unique_jobs = []
@@ -544,11 +415,11 @@ class LeadsPipeline:
     def run(self):
         """Main pipeline execution"""
         logger.info("="*50)
-        logger.info("Starting Insurance Leads Pipeline")
+        logger.info("Starting Insurance Leads Pipeline with JobSpy")
         logger.info("="*50)
-        
-        logger.info("Step 1: Fetching jobs from Apify...")
-        jobs = self.fetch_jobs_from_apify()
+
+        logger.info("Step 1: Fetching jobs from Indeed via JobSpy...")
+        jobs = self.fetch_jobs_with_jobspy()
         
         if not jobs:
             logger.warning("No jobs fetched")

@@ -462,15 +462,32 @@ class LeadsPipeline:
         
         logger.info("Step 6: Saving to CSV...")
         csv_file = self.save_to_csv(top_leads)
-        
+
         for job in top_leads:
             self.collected_leads.add(job.get('lead_id'))
         self.save_collected_leads()
-        
+
+        logger.info("Step 7: Generating HTML dashboard...")
+        try:
+            import subprocess
+            result = subprocess.run(
+                ["python3", "generate_dashboard.py"],
+                capture_output=True,
+                text=True,
+                timeout=30
+            )
+            if result.returncode == 0:
+                logger.info("  ✅ Dashboard generated successfully")
+            else:
+                logger.warning(f"  ⚠️ Dashboard generation had issues: {result.stderr}")
+        except Exception as e:
+            logger.warning(f"  ⚠️ Could not generate dashboard: {e}")
+
         logger.info("="*50)
         logger.info(f"✅ Pipeline completed!")
-        logger.info(f"📁 Output: {csv_file}")
+        logger.info(f"📁 CSV Output: {csv_file}")
         logger.info(f"📊 Saved {len(top_leads)} leads")
+        logger.info(f"🌐 Dashboard: docs/index.html")
         logger.info("="*50)
 
 if __name__ == "__main__":

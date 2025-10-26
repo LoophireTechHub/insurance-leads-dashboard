@@ -209,18 +209,26 @@ class LeadsPipeline:
         return filtered
     
     def enrich_with_apollo(self, job: Dict) -> Dict:
-        """Add Apollo.io data"""
+        """Add Apollo.io data with improved matching"""
         try:
-            # Get company name from Apify data (company_name field)
+            # Get company name and location from job data
             company = job.get('company_name', '') or ''
             company = company.strip() if company else ''
-            if not company or company == 'N/A':
+            location = job.get('location', '') or ''
+
+            if not company or company == 'N/A' or company == 'nan':
                 logger.debug(f"Skipping Apollo for job '{job.get('title', 'Unknown')}' - no company name")
                 return job
 
-            logger.info(f"Enriching: {company}")
+            logger.info(f"Enriching: {company} ({location})")
             headers = {"X-Api-Key": self.apollo_token, "Content-Type": "application/json"}
-            search_data = {"q_organization_name": company, "page": 1, "per_page": 1}
+
+            # Search for organizations with company name and location context
+            search_data = {
+                "q_organization_name": company,
+                "page": 1,
+                "per_page": 5  # Get more results to find best match
+            }
 
             response = requests.post(
                 f"{APOLLO_BASE_URL}/organizations/search",
@@ -231,19 +239,46 @@ class LeadsPipeline:
 
             if response.status_code == 200:
                 data = response.json()
-                if data.get('organizations'):
-                    org = data['organizations'][0]
-                    job['company_website'] = org.get('website_url', '')
-                    job['company_phone'] = org.get('phone', '')
-                    logger.info(f"  ✓ Found org: {org.get('name', company)}")
+                orgs = data.get('organizations', [])
 
-                    contacts = self.get_apollo_contacts(org.get('id'), company)
-                    for i, contact in enumerate(contacts[:3], 1):
-                        job[f'leadership_{i}_name'] = contact.get('name', '')
-                        job[f'leadership_{i}_title'] = contact.get('title', '')
-                        job[f'leadership_{i}_email'] = contact.get('email', '')
-                    if contacts:
-                        logger.info(f"  ✓ Found {len(contacts)} contacts")
+                if orgs:
+                    # Find best matching organization
+                    best_match = None
+                    location_state = location.split(',')[-1].strip() if ',' in location else ''
+
+                    for org in orgs:
+                        org_name = org.get('name', '').lower()
+                        company_lower = company.lower()
+
+                        # Check if name matches closely
+                        if org_name == company_lower or company_lower in org_name or org_name in company_lower:
+                            # Check if location matches (US-based)
+                            org_country = org.get('primary_domain', '').endswith('.com') or org.get('country') == 'United States'
+
+                            # Prefer US companies with matching names
+                            if org_country or not best_match:
+                                best_match = org
+                                # If we have location match, use this one
+                                org_city = org.get('city', '').lower()
+                                org_state = org.get('state', '').lower()
+                                if location_state and (location_state.lower() in org_state or org_state in location):
+                                    break
+
+                    if best_match:
+                        job['company_website'] = best_match.get('website_url', '')
+                        job['company_phone'] = best_match.get('phone', '')
+                        logger.info(f"  ✓ Matched: {best_match.get('name')} | {best_match.get('city', 'Unknown')}, {best_match.get('state', 'Unknown')}")
+
+                        # Get contacts from the matched organization
+                        contacts = self.get_apollo_contacts(best_match.get('id'), company)
+                        for i, contact in enumerate(contacts[:3], 1):
+                            job[f'leadership_{i}_name'] = contact.get('name', '')
+                            job[f'leadership_{i}_title'] = contact.get('title', '')
+                            job[f'leadership_{i}_email'] = contact.get('email', '')
+                        if contacts:
+                            logger.info(f"  ✓ Found {len(contacts)} contacts")
+                    else:
+                        logger.warning(f"  ✗ No good match found for: {company}")
                 else:
                     logger.warning(f"  ✗ No org found for: {company}")
             else:

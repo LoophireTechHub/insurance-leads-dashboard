@@ -274,17 +274,16 @@ def generate_dashboard():
                     const score = parseFloat(lead['Urgency Score'] || 0);
                     const scoreClass = score > 75 ? 'score-high' : score > 50 ? 'score-medium' : 'score-low';
                     
-                    // Show company phone or mark as no contact
-                    const hasRealContact = lead['Leadership 1 Name'] &&
-                                         lead['Leadership 1 Name'] !== 'Mike Braham' &&
-                                         lead['Leadership 1 Email'] &&
-                                         !lead['Leadership 1 Email'].includes('email_not_unlocked');
+                    // Show leadership contact or company phone
+                    const hasLeadership = lead['Leadership 1 Name'] && lead['Leadership 1 Name'] !== '';
+                    const hasEmail = lead['Leadership 1 Email'] && !lead['Leadership 1 Email'].includes('email_not_unlocked');
 
-                    const contact = hasRealContact ?
-                        `${lead['Leadership 1 Name']}<br><span class="contact-info">${lead['Leadership 1 Email']}</span>` :
+                    const contact = hasLeadership ?
+                        `${lead['Leadership 1 Name']}<br><span class="contact-info">${lead['Leadership 1 Title'] || 'Leadership'}</span>` +
+                        (hasEmail ? `<br><span class="contact-info">✉️ ${lead['Leadership 1 Email']}</span>` : '') :
                         (lead['Phone Number'] ?
                             `<span class="contact-info">📞 ${lead['Phone Number']}</span>` :
-                            '<span class="contact-info">Contact via job posting</span>');
+                            '<span class="contact-info">Apply via job posting</span>');
                     
                     const row = tbody.insertRow();
                     row.innerHTML = `

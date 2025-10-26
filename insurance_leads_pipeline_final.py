@@ -253,16 +253,22 @@ class LeadsPipeline:
                         # Check if name matches closely
                         if org_name == company_lower or company_lower in org_name or org_name in company_lower:
                             # Check if location matches (US-based)
-                            org_country = org.get('primary_domain', '').endswith('.com') or org.get('country') == 'United States'
+                            primary_domain = org.get('primary_domain') or ''
+                            org_country = primary_domain.endswith('.com') or org.get('country') == 'United States'
 
-                            # Prefer US companies with matching names
-                            if org_country or not best_match:
+                            # Check location match (state)
+                            org_city = org.get('city', '').lower()
+                            org_state = org.get('state', '').lower()
+                            location_matches = location_state and (location_state.lower() in org_state or org_state in location.lower())
+
+                            # Prioritize: 1) US + location match, 2) US only, 3) any match
+                            if location_matches and org_country:
                                 best_match = org
-                                # If we have location match, use this one
-                                org_city = org.get('city', '').lower()
-                                org_state = org.get('state', '').lower()
-                                if location_state and (location_state.lower() in org_state or org_state in location):
-                                    break
+                                break  # Perfect match - stop searching
+                            elif org_country and not best_match:
+                                best_match = org  # Good match - keep looking for better
+                            elif not best_match:
+                                best_match = org  # Acceptable match - keep looking
 
                     if best_match:
                         job['company_website'] = best_match.get('website_url', '')

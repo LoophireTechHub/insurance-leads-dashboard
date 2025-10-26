@@ -1,45 +1,17 @@
 #!/usr/bin/env python3
+"""
+Quick script to regenerate dashboard HTML from existing data.json
+"""
 import json
-import csv
 from pathlib import Path
-from datetime import datetime
-import os
 
-def generate_dashboard():
-    output_dir = Path("leads_output")
-    csv_files = sorted(output_dir.glob("insurance_leads_*.csv"), reverse=True)
-    
-    if not csv_files:
-        print("No CSV files found")
-        return
-    
-    latest_csv = csv_files[0]
-    print(f"Processing {latest_csv}")
-    
-    leads = []
-    with open(latest_csv, 'r', encoding='utf-8') as f:
-        reader = csv.DictReader(f)
-        leads = list(reader)
-    
-    stats = {
-        'total_leads': len(leads),
-        'high_priority': len([l for l in leads if float(l.get('Urgency Score', 0)) > 75]),
-        'with_contacts': sum(1 for l in leads if l.get('Leadership 1 Email')),
-        'unique_companies': len(set(l.get('Company Name', '') for l in leads if l.get('Company Name'))),
-        'last_updated': datetime.now().strftime('%B %d, %Y at %I:%M %p EST'),
-        'update_date': datetime.now().strftime('%Y-%m-%d')
-    }
-    
-    docs_dir = Path("docs")
-    docs_dir.mkdir(exist_ok=True)
-    
-    with open(docs_dir / "data.json", 'w') as f:
-        json.dump({
-            'stats': stats,
-            'leads': leads[:50]
-        }, f, indent=2)
-    
-    html = """<!DOCTYPE html>
+# Read existing data
+data_file = Path("docs/data.json")
+with open(data_file, 'r') as f:
+    data = json.load(f)
+
+# Generate updated HTML with contact fix
+html = """<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -147,7 +119,7 @@ def generate_dashboard():
         .score-badge {
             display: inline-block;
             padding: 5px 10px;
-            border-radius: 20px;
+            borderRadius: 20px;
             font-weight: 600;
             font-size: 0.85em;
         }
@@ -258,34 +230,28 @@ def generate_dashboard():
             try {
                 const response = await fetch('data.json?t=' + new Date().getTime());
                 const data = await response.json();
-                
+
                 document.getElementById('lastUpdate').textContent = data.stats.last_updated;
-                
+
                 const statCards = document.querySelectorAll('.stat-value');
                 statCards[0].textContent = data.stats.total_leads;
                 statCards[1].textContent = data.stats.high_priority;
                 statCards[2].textContent = data.stats.unique_companies;
                 statCards[3].textContent = data.stats.with_contacts;
-                
+
                 const tbody = document.querySelector('#leadsTable tbody');
                 tbody.innerHTML = '';
-                
+
                 data.leads.forEach(lead => {
                     const score = parseFloat(lead['Urgency Score'] || 0);
                     const scoreClass = score > 75 ? 'score-high' : score > 50 ? 'score-medium' : 'score-low';
-                    
-                    // Show company phone or mark as no contact
-                    const hasRealContact = lead['Leadership 1 Name'] &&
-                                         lead['Leadership 1 Name'] !== 'Mike Braham' &&
-                                         lead['Leadership 1 Email'] &&
-                                         !lead['Leadership 1 Email'].includes('email_not_unlocked');
 
-                    const contact = hasRealContact ?
-                        `${lead['Leadership 1 Name']}<br><span class="contact-info">${lead['Leadership 1 Email']}</span>` :
-                        (lead['Phone Number'] ?
-                            `<span class="contact-info">📞 ${lead['Phone Number']}</span>` :
-                            '<span class="contact-info">Contact via job posting</span>');
-                    
+                    // Show company phone number instead of fake Apollo contacts
+                    const phone = lead['Phone Number'] || '';
+                    const contact = phone && phone !== '' ?
+                        `<span class="contact-info">📞 ${phone}</span>` :
+                        '<span class="contact-info">Apply via job posting</span>';
+
                     const row = tbody.insertRow();
                     row.innerHTML = `
                         <td><span class="score-badge ${scoreClass}">${score.toFixed(1)}</span></td>
@@ -299,37 +265,36 @@ def generate_dashboard():
                         </td>
                     `;
                 });
-                
+
                 document.getElementById('searchInput').addEventListener('input', filterTable);
-                
+
             } catch (error) {
                 console.error('Error loading data:', error);
-                document.querySelector('#leadsTable tbody').innerHTML = 
+                document.querySelector('#leadsTable tbody').innerHTML =
                     '<tr><td colspan="7" style="text-align:center; color:red;">Error loading data. Please refresh.</td></tr>';
             }
         }
-        
+
         function filterTable() {
             const searchTerm = document.getElementById('searchInput').value.toLowerCase();
             const rows = document.querySelectorAll('#leadsTable tbody tr');
-            
+
             rows.forEach(row => {
                 const text = row.textContent.toLowerCase();
                 row.style.display = text.includes(searchTerm) ? '' : 'none';
             });
         }
-        
+
         loadDashboard();
         setInterval(loadDashboard, 300000);
     </script>
 </body>
 </html>"""
-    
-    with open(docs_dir / "index.html", 'w') as f:
-        f.write(html)
-    
-    print(f"✅ Dashboard generated in docs/index.html")
-    print(f"📊 Processed {len(leads)} leads")
 
-if __name__ == "__main__":
-    generate_dashboard()
+# Write updated HTML
+index_file = Path("docs/index.html")
+with open(index_file, 'w') as f:
+    f.write(html)
+
+print("✅ Dashboard HTML updated - now shows company phone numbers instead of fake contacts")
+print("📊 Dashboard file: docs/index.html")

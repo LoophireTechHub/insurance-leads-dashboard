@@ -106,7 +106,7 @@
         .score-badge {
             display: inline-block;
             padding: 5px 10px;
-            border-radius: 20px;
+            borderRadius: 20px;
             font-weight: 600;
             font-size: 0.85em;
         }
@@ -217,26 +217,28 @@
             try {
                 const response = await fetch('data.json?t=' + new Date().getTime());
                 const data = await response.json();
-                
+
                 document.getElementById('lastUpdate').textContent = data.stats.last_updated;
-                
+
                 const statCards = document.querySelectorAll('.stat-value');
                 statCards[0].textContent = data.stats.total_leads;
                 statCards[1].textContent = data.stats.high_priority;
                 statCards[2].textContent = data.stats.unique_companies;
                 statCards[3].textContent = data.stats.with_contacts;
-                
+
                 const tbody = document.querySelector('#leadsTable tbody');
                 tbody.innerHTML = '';
-                
+
                 data.leads.forEach(lead => {
                     const score = parseFloat(lead['Urgency Score'] || 0);
                     const scoreClass = score > 75 ? 'score-high' : score > 50 ? 'score-medium' : 'score-low';
-                    
-                    const contact = lead['Leadership 1 Name'] ? 
-                        `${lead['Leadership 1 Name']}<br><span class="contact-info">${lead['Leadership 1 Email'] || 'No email'}</span>` : 
-                        'No contact';
-                    
+
+                    // Show company phone number instead of fake Apollo contacts
+                    const phone = lead['Phone Number'] || '';
+                    const contact = phone && phone !== '' ?
+                        `<span class="contact-info">📞 ${phone}</span>` :
+                        '<span class="contact-info">Apply via job posting</span>';
+
                     const row = tbody.insertRow();
                     row.innerHTML = `
                         <td><span class="score-badge ${scoreClass}">${score.toFixed(1)}</span></td>
@@ -250,26 +252,26 @@
                         </td>
                     `;
                 });
-                
+
                 document.getElementById('searchInput').addEventListener('input', filterTable);
-                
+
             } catch (error) {
                 console.error('Error loading data:', error);
-                document.querySelector('#leadsTable tbody').innerHTML = 
+                document.querySelector('#leadsTable tbody').innerHTML =
                     '<tr><td colspan="7" style="text-align:center; color:red;">Error loading data. Please refresh.</td></tr>';
             }
         }
-        
+
         function filterTable() {
             const searchTerm = document.getElementById('searchInput').value.toLowerCase();
             const rows = document.querySelectorAll('#leadsTable tbody tr');
-            
+
             rows.forEach(row => {
                 const text = row.textContent.toLowerCase();
                 row.style.display = text.includes(searchTerm) ? '' : 'none';
             });
         }
-        
+
         loadDashboard();
         setInterval(loadDashboard, 300000);
     </script>

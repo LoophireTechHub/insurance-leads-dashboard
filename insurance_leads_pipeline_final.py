@@ -299,24 +299,31 @@ class LeadsPipeline:
         try:
             headers = {"X-Api-Key": self.apollo_token, "Content-Type": "application/json"}
             search_data = {
-                "q_organization_id": org_id,
-                "titles": ["CEO", "President", "Director", "Manager", "VP"],
+                "organization_ids": [org_id],  # Changed from q_organization_id to organization_ids (array)
+                "person_titles": ["CEO", "CFO", "President", "VP", "Director", "Manager", "Owner", "Partner"],
                 "page": 1,
                 "per_page": 3
             }
-            
+
+            logger.debug(f"  Searching people for org_id: {org_id}")
+
             response = requests.post(
-                f"{APOLLO_BASE_URL}/people/search",
+                f"{APOLLO_BASE_URL}/mixed_people/search",  # Changed from /people/search to /mixed_people/search
                 headers=headers,
                 json=search_data,
                 timeout=10
             )
-            
+
             if response.status_code == 200:
                 data = response.json()
-                return data.get('people', [])[:3]
-        except:
-            pass
+                people = data.get('people', [])
+                if people:
+                    logger.debug(f"  Got {len(people)} people: {[p.get('name') for p in people]}")
+                return people[:3]
+            else:
+                logger.warning(f"  People search failed: {response.status_code} - {response.text[:200]}")
+        except Exception as e:
+            logger.warning(f"  Error getting contacts: {e}")
         return []
     
     def calculate_urgency_score(self, job: Dict) -> float:

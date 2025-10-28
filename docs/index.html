@@ -79,6 +79,36 @@
             margin-bottom: 20px;
             font-size: 1.8em;
         }
+        .session-divider {
+            margin: 40px 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .session-divider h3 {
+            color: white;
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+        .session-divider p {
+            color: rgba(255,255,255,0.9);
+            font-size: 0.9em;
+        }
+        .session-stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+        .session-stat {
+            color: white;
+            font-size: 0.85em;
+        }
+        .session-stat strong {
+            font-size: 1.2em;
+        }
         table {
             width: 100%;
             border-collapse: separate;
@@ -215,68 +245,93 @@
     <script>
         async function loadDashboard() {
             try {
-                const response = await fetch('data.json?t=' + new Date().getTime());
-                const data = await response.json();
-                
-                document.getElementById('lastUpdate').textContent = data.stats.last_updated;
-                
+                const response = await fetch('data_history.json?t=' + new Date().getTime());
+                const history = await response.json();
+
+                if (history.length === 0) return;
+
+                // Update header with latest stats
+                const latest = history[0];
+                document.getElementById('lastUpdate').textContent = latest.stats.last_updated;
+
                 const statCards = document.querySelectorAll('.stat-value');
-                statCards[0].textContent = data.stats.total_leads;
-                statCards[1].textContent = data.stats.high_priority;
-                statCards[2].textContent = data.stats.unique_companies;
-                statCards[3].textContent = data.stats.with_contacts;
-                
+                statCards[0].textContent = latest.stats.total_leads;
+                statCards[1].textContent = latest.stats.high_priority;
+                statCards[2].textContent = latest.stats.unique_companies;
+                statCards[3].textContent = latest.stats.with_contacts;
+
                 const tbody = document.querySelector('#leadsTable tbody');
                 tbody.innerHTML = '';
-                
-                data.leads.forEach(lead => {
-                    const score = parseFloat(lead['Urgency Score'] || 0);
-                    const scoreClass = score > 75 ? 'score-high' : score > 50 ? 'score-medium' : 'score-low';
-                    
-                    // Show leadership contact or company phone
-                    const hasLeadership = lead['Leadership 1 Name'] && lead['Leadership 1 Name'] !== '';
-                    const hasEmail = lead['Leadership 1 Email'] && !lead['Leadership 1 Email'].includes('email_not_unlocked');
 
-                    const contact = hasLeadership ?
-                        `${lead['Leadership 1 Name']}<br><span class="contact-info">${lead['Leadership 1 Title'] || 'Leadership'}</span>` +
-                        (hasEmail ? `<br><span class="contact-info">✉️ ${lead['Leadership 1 Email']}</span>` : '') :
-                        (lead['Phone Number'] ?
-                            `<span class="contact-info">📞 ${lead['Phone Number']}</span>` :
-                            '<span class="contact-info">Apply via job posting</span>');
-                    
-                    const row = tbody.insertRow();
-                    row.innerHTML = `
-                        <td><span class="score-badge ${scoreClass}">${score.toFixed(1)}</span></td>
-                        <td class="company-name">${lead['Company Name'] || 'N/A'}</td>
-                        <td>${lead['Job Title'] || 'N/A'}</td>
-                        <td>${lead['Location'] || 'N/A'}</td>
-                        <td>${lead['Days Open'] || 'N/A'}</td>
-                        <td>${contact}</td>
-                        <td>
-                            ${lead['Job URL'] ? `<a href="${lead['Job URL']}" target="_blank" class="btn">View Job</a>` : 'N/A'}
-                        </td>
-                    `;
+                // Display all sessions with dividers
+                history.forEach((session, index) => {
+                    // Add session divider
+                    if (index > 0) {
+                        const dividerRow = tbody.insertRow();
+                        dividerRow.innerHTML = `
+                            <td colspan="7" style="padding: 0;">
+                                <div class="session-divider">
+                                    <h3>📅 ${session.timestamp}</h3>
+                                    <div class="session-stats">
+                                        <div class="session-stat"><strong>${session.stats.total_leads}</strong> Leads</div>
+                                        <div class="session-stat"><strong>${session.stats.high_priority}</strong> High Priority</div>
+                                        <div class="session-stat"><strong>${session.stats.with_contacts}</strong> With Contacts</div>
+                                    </div>
+                                </div>
+                            </td>
+                        `;
+                    }
+
+                    // Add leads for this session
+                    session.leads.forEach(lead => {
+                        const score = parseFloat(lead['Urgency Score'] || 0);
+                        const scoreClass = score > 75 ? 'score-high' : score > 50 ? 'score-medium' : 'score-low';
+
+                        // Show leadership contact or company phone
+                        const hasLeadership = lead['Leadership 1 Name'] && lead['Leadership 1 Name'] !== '';
+                        const hasEmail = lead['Leadership 1 Email'] && !lead['Leadership 1 Email'].includes('email_not_unlocked');
+
+                        const contact = hasLeadership ?
+                            `${lead['Leadership 1 Name']}<br><span class="contact-info">${lead['Leadership 1 Title'] || 'Leadership'}</span>` +
+                            (hasEmail ? `<br><span class="contact-info">✉️ ${lead['Leadership 1 Email']}</span>` : '') :
+                            (lead['Phone Number'] ?
+                                `<span class="contact-info">📞 ${lead['Phone Number']}</span>` :
+                                '<span class="contact-info">Apply via job posting</span>');
+
+                        const row = tbody.insertRow();
+                        row.innerHTML = `
+                            <td><span class="score-badge ${scoreClass}">${score.toFixed(1)}</span></td>
+                            <td class="company-name">${lead['Company Name'] || 'N/A'}</td>
+                            <td>${lead['Job Title'] || 'N/A'}</td>
+                            <td>${lead['Location'] || 'N/A'}</td>
+                            <td>${lead['Days Open'] || 'N/A'}</td>
+                            <td>${contact}</td>
+                            <td>
+                                ${lead['Job URL'] ? `<a href="${lead['Job URL']}" target="_blank" class="btn">View Job</a>` : 'N/A'}
+                            </td>
+                        `;
+                    });
                 });
-                
+
                 document.getElementById('searchInput').addEventListener('input', filterTable);
-                
+
             } catch (error) {
                 console.error('Error loading data:', error);
-                document.querySelector('#leadsTable tbody').innerHTML = 
+                document.querySelector('#leadsTable tbody').innerHTML =
                     '<tr><td colspan="7" style="text-align:center; color:red;">Error loading data. Please refresh.</td></tr>';
             }
         }
-        
+
         function filterTable() {
             const searchTerm = document.getElementById('searchInput').value.toLowerCase();
             const rows = document.querySelectorAll('#leadsTable tbody tr');
-            
+
             rows.forEach(row => {
                 const text = row.textContent.toLowerCase();
                 row.style.display = text.includes(searchTerm) ? '' : 'none';
             });
         }
-        
+
         loadDashboard();
         setInterval(loadDashboard, 300000);
     </script>

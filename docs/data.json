@@ -1,11 +1,11 @@
 {
   "stats": {
     "total_leads": 20,
-    "high_priority": 6,
-    "with_contacts": 17,
+    "high_priority": 5,
+    "with_contacts": 16,
     "unique_companies": 14,
-    "last_updated": "October 29, 2025 at 02:13 PM EST",
-    "update_date": "2025-10-29"
+    "last_updated": "October 30, 2025 at 02:11 PM EST",
+    "update_date": "2025-10-30"
   },
   "leads": [
     {
@@ -15,7 +15,7 @@
       "Location Type": "fulltime",
       "Job URL": "https://www.indeed.com/viewjob?jk=5d984093acd6b5f7",
       "Posted Date": "2024-04-01",
-      "Days Open": "576",
+      "Days Open": "577",
       "Salary Range": "nan nan-nan",
       "Employment Type": "fulltime",
       "Source": "indeed_jobspy",
@@ -33,37 +33,13 @@
       "Urgency Score": "100.00"
     },
     {
-      "Job Title": "Lead Underwriter, Propane Gas (Fully Remote)",
-      "Company Name": "NIP Group",
-      "Location": "Woodbridge, NJ, US",
-      "Location Type": "nan",
-      "Job URL": "https://www.indeed.com/viewjob?jk=24a22791ec8d3d17",
-      "Posted Date": "2025-08-01",
-      "Days Open": "89",
-      "Salary Range": "nan nan-nan",
-      "Employment Type": "nan",
-      "Source": "indeed_jobspy",
-      "Company Website": "http://www.nipgroup.com",
-      "Phone Number": "+1 800-446-7647",
-      "Leadership 1 Name": "Jennifer Pressley",
-      "Leadership 1 Title": "Senior Vice President and Chief Financial Officer",
-      "Leadership 1 Email": "email_not_unlocked@domain.com",
-      "Leadership 2 Name": "Richard Augustyn",
-      "Leadership 2 Title": "Founder and CEO",
-      "Leadership 2 Email": "email_not_unlocked@domain.com",
-      "Leadership 3 Name": "Brian Erlandsen",
-      "Leadership 3 Title": "VP",
-      "Leadership 3 Email": "email_not_unlocked@domain.com",
-      "Urgency Score": "98.68"
-    },
-    {
       "Job Title": "Insurance Agent/Producer",
       "Company Name": "Anastasi Insurance Agency Inc",
       "Location": "Charlton City, MA, US",
       "Location Type": "fulltime",
       "Job URL": "https://www.indeed.com/viewjob?jk=d411cfeb9fc3cfff",
       "Posted Date": "2025-08-04",
-      "Days Open": "86",
+      "Days Open": "87",
       "Salary Range": "USD 75000.0-110000.0",
       "Employment Type": "fulltime",
       "Source": "indeed_jobspy",
@@ -78,7 +54,7 @@
       "Leadership 3 Name": "",
       "Leadership 3 Title": "",
       "Leadership 3 Email": "",
-      "Urgency Score": "94.74"
+      "Urgency Score": "96.05"
     },
     {
       "Job Title": "Insurance Risk Manager",
@@ -87,7 +63,7 @@
       "Location Type": "fulltime",
       "Job URL": "https://www.indeed.com/viewjob?jk=4975514d50a91740",
       "Posted Date": "2025-08-06",
-      "Days Open": "84",
+      "Days Open": "85",
       "Salary Range": "nan nan-nan",
       "Employment Type": "fulltime",
       "Source": "indeed_jobspy",
@@ -102,7 +78,7 @@
       "Leadership 3 Name": "Kevin Timochenko",
       "Leadership 3 Title": "President",
       "Leadership 3 Email": "email_not_unlocked@domain.com",
-      "Urgency Score": "92.11"
+      "Urgency Score": "93.42"
     },
     {
       "Job Title": "Insurance Risk Manager",
@@ -111,7 +87,7 @@
       "Location Type": "fulltime",
       "Job URL": "https://www.indeed.com/viewjob?jk=e72d79bb82ce330f",
       "Posted Date": "2025-08-07",
-      "Days Open": "83",
+      "Days Open": "84",
       "Salary Range": "USD 140000.0-155000.0",
       "Employment Type": "fulltime",
       "Source": "indeed_jobspy",
@@ -126,7 +102,7 @@
       "Leadership 3 Name": "Olga Rodriguez",
       "Leadership 3 Title": "Property Manager",
       "Leadership 3 Email": "email_not_unlocked@domain.com",
-      "Urgency Score": "90.79"
+      "Urgency Score": "92.11"
     },
     {
       "Job Title": "Insurance Risk Manager",
@@ -135,7 +111,7 @@
       "Location Type": "nan",
       "Job URL": "https://www.indeed.com/viewjob?jk=7b3dc9bec9b9651f",
       "Posted Date": "2025-08-14",
-      "Days Open": "76",
+      "Days Open": "77",
       "Salary Range": "nan nan-nan",
       "Employment Type": "nan",
       "Source": "indeed_jobspy",
@@ -144,13 +120,13 @@
       "Leadership 1 Name": "Jason Johnson",
       "Leadership 1 Title": "President & CEO",
       "Leadership 1 Email": "email_not_unlocked@domain.com",
-      "Leadership 2 Name": "Greg Nelson",
-      "Leadership 2 Title": "Chief Financial Officer",
+      "Leadership 2 Name": "Charles Lacey",
+      "Leadership 2 Title": "CFO",
       "Leadership 2 Email": "email_not_unlocked@domain.com",
-      "Leadership 3 Name": "Charles Lacey",
-      "Leadership 3 Title": "CFO",
+      "Leadership 3 Name": "Greg Nelson",
+      "Leadership 3 Title": "Chief Financial Officer",
       "Leadership 3 Email": "email_not_unlocked@domain.com",
-      "Urgency Score": "81.58"
+      "Urgency Score": "82.89"
     },
     {
       "Job Title": "WP Commercial E&S Underwriter",
@@ -159,22 +135,22 @@
       "Location Type": "fulltime",
       "Job URL": "https://www.indeed.com/viewjob?jk=8b01aecc42c622b0",
       "Posted Date": "2025-08-28",
-      "Days Open": "62",
+      "Days Open": "63",
       "Salary Range": "USD 70000.0-90000.0",
       "Employment Type": "fulltime",
       "Source": "indeed_jobspy",
       "Company Website": "http://www.wpipng.com",
       "Phone Number": "",
-      "Leadership 1 Name": "Dennis Reva",
-      "Leadership 1 Title": "Founder, CEO & Director",
+      "Leadership 1 Name": "Jeffrey Kepoli",
+      "Leadership 1 Title": "Chief Executive Officer",
       "Leadership 1 Email": "email_not_unlocked@domain.com",
-      "Leadership 2 Name": "Jeffrey Kepoli",
-      "Leadership 2 Title": "Chief Executive Officer",
+      "Leadership 2 Name": "Dennis Reva",
+      "Leadership 2 Title": "Founder, CEO & Director",
       "Leadership 2 Email": "email_not_unlocked@domain.com",
       "Leadership 3 Name": "Christine Cruz",
       "Leadership 3 Title": "Finance Manager",
       "Leadership 3 Email": "email_not_unlocked@domain.com",
-      "Urgency Score": "63.16"
+      "Urgency Score": "64.47"
     },
     {
       "Job Title": "Senior Underwriter \u2013 Wholesale & MGA Insurance",
@@ -183,22 +159,22 @@
       "Location Type": "nan",
       "Job URL": "https://www.indeed.com/viewjob?jk=8a4f479c6545f3b1",
       "Posted Date": "2025-08-28",
-      "Days Open": "62",
+      "Days Open": "63",
       "Salary Range": "USD 90000.0-110000.0",
       "Employment Type": "nan",
       "Source": "indeed_jobspy",
       "Company Website": "http://www.wpipng.com",
       "Phone Number": "",
-      "Leadership 1 Name": "Dennis Reva",
-      "Leadership 1 Title": "Founder, CEO & Director",
+      "Leadership 1 Name": "Jeffrey Kepoli",
+      "Leadership 1 Title": "Chief Executive Officer",
       "Leadership 1 Email": "email_not_unlocked@domain.com",
-      "Leadership 2 Name": "Jeffrey Kepoli",
-      "Leadership 2 Title": "Chief Executive Officer",
+      "Leadership 2 Name": "Dennis Reva",
+      "Leadership 2 Title": "Founder, CEO & Director",
       "Leadership 2 Email": "email_not_unlocked@domain.com",
       "Leadership 3 Name": "Christine Cruz",
       "Leadership 3 Title": "Finance Manager",
       "Leadership 3 Email": "email_not_unlocked@domain.com",
-      "Urgency Score": "63.16"
+      "Urgency Score": "64.47"
     },
     {
       "Job Title": "AVP, Claims - Public Entities (Fully Remote)",
@@ -207,7 +183,7 @@
       "Location Type": "nan",
       "Job URL": "https://www.indeed.com/viewjob?jk=b1c6149dd8fafb65",
       "Posted Date": "2025-08-28",
-      "Days Open": "62",
+      "Days Open": "63",
       "Salary Range": "USD 140000.0-175000.0",
       "Employment Type": "nan",
       "Source": "indeed_jobspy",
@@ -222,7 +198,7 @@
       "Leadership 3 Name": "Brian Erlandsen",
       "Leadership 3 Title": "VP",
       "Leadership 3 Email": "email_not_unlocked@domain.com",
-      "Urgency Score": "63.16"
+      "Urgency Score": "64.47"
     },
     {
       "Job Title": "Commercial Insurance Broker",
@@ -231,7 +207,7 @@
       "Location Type": "fulltime",
       "Job URL": "https://www.indeed.com/viewjob?jk=ca143b14005f16d8",
       "Posted Date": "2025-08-29",
-      "Days Open": "61",
+      "Days Open": "62",
       "Salary Range": "USD 50000.0-200000.0",
       "Employment Type": "fulltime",
       "Source": "indeed_jobspy",
@@ -246,7 +222,7 @@
       "Leadership 3 Name": "",
       "Leadership 3 Title": "",
       "Leadership 3 Email": "",
-      "Urgency Score": "61.84"
+      "Urgency Score": "63.16"
     },
     {
       "Job Title": "Commercial Insurance Broker",
@@ -255,7 +231,7 @@
       "Location Type": "nan",
       "Job URL": "https://www.indeed.com/viewjob?jk=7a05883217597f3f",
       "Posted Date": "2025-08-29",
-      "Days Open": "61",
+      "Days Open": "62",
       "Salary Range": "nan nan-nan",
       "Employment Type": "nan",
       "Source": "indeed_jobspy",
@@ -267,10 +243,10 @@
       "Leadership 2 Name": "Gary Lavery",
       "Leadership 2 Title": "Partner & Senior Vice President",
       "Leadership 2 Email": "email_not_unlocked@domain.com",
-      "Leadership 3 Name": "Nicolle Robinson",
-      "Leadership 3 Title": "Director of Operations | Vice President",
+      "Leadership 3 Name": "Michael Caprio",
+      "Leadership 3 Title": "Vice President, Manager",
       "Leadership 3 Email": "email_not_unlocked@domain.com",
-      "Urgency Score": "61.84"
+      "Urgency Score": "63.16"
     },
     {
       "Job Title": "Senior Underwriter, Middle Markets Construction",
@@ -279,7 +255,7 @@
       "Location Type": "fulltime",
       "Job URL": "https://www.indeed.com/viewjob?jk=660d2f7ac94ecde9",
       "Posted Date": "2025-09-19",
-      "Days Open": "40",
+      "Days Open": "41",
       "Salary Range": "USD 75000.0-212000.0",
       "Employment Type": "fulltime",
       "Source": "indeed_jobspy",
@@ -288,13 +264,13 @@
       "Leadership 1 Name": "Karen Fang",
       "Leadership 1 Title": "VP, CFO",
       "Leadership 1 Email": "email_not_unlocked@domain.com",
-      "Leadership 2 Name": "Julie Haase",
-      "Leadership 2 Title": "EVP and Chief Financial Officer, Liberty Mutual Insurance",
+      "Leadership 2 Name": "Matt Johnson",
+      "Leadership 2 Title": "EVP & Chief Financial Officer, U.S. Retail Markets",
       "Leadership 2 Email": "email_not_unlocked@domain.com",
-      "Leadership 3 Name": "Matt Johnson",
-      "Leadership 3 Title": "EVP & Chief Financial Officer, U.S. Retail Markets",
+      "Leadership 3 Name": "Julie Haase",
+      "Leadership 3 Title": "EVP and Chief Financial Officer, Liberty Mutual Insurance",
       "Leadership 3 Email": "email_not_unlocked@domain.com",
-      "Urgency Score": "34.21"
+      "Urgency Score": "35.53"
     },
     {
       "Job Title": "Senior Underwriter, Middle Markets Construction",
@@ -303,7 +279,7 @@
       "Location Type": "fulltime",
       "Job URL": "https://www.indeed.com/viewjob?jk=34aecb39b913f877",
       "Posted Date": "2025-09-19",
-      "Days Open": "40",
+      "Days Open": "41",
       "Salary Range": "USD 75000.0-212000.0",
       "Employment Type": "fulltime",
       "Source": "indeed_jobspy",
@@ -318,7 +294,7 @@
       "Leadership 3 Name": "Matt Johnson",
       "Leadership 3 Title": "EVP & Chief Financial Officer, U.S. Retail Markets",
       "Leadership 3 Email": "email_not_unlocked@domain.com",
-      "Urgency Score": "34.21"
+      "Urgency Score": "35.53"
     },
     {
       "Job Title": "Senior Underwriter, Middle Markets Construction",
@@ -327,7 +303,7 @@
       "Location Type": "fulltime",
       "Job URL": "https://www.indeed.com/viewjob?jk=da2f4c67482e50d8",
       "Posted Date": "2025-09-19",
-      "Days Open": "40",
+      "Days Open": "41",
       "Salary Range": "USD 75000.0-212000.0",
       "Employment Type": "fulltime",
       "Source": "indeed_jobspy",
@@ -342,7 +318,7 @@
       "Leadership 3 Name": "Matt Johnson",
       "Leadership 3 Title": "EVP & Chief Financial Officer, U.S. Retail Markets",
       "Leadership 3 Email": "email_not_unlocked@domain.com",
-      "Urgency Score": "34.21"
+      "Urgency Score": "35.53"
     },
     {
       "Job Title": "Insurance Risk Manager",
@@ -351,7 +327,7 @@
       "Location Type": "nan",
       "Job URL": "https://www.indeed.com/viewjob?jk=898d31a267e7b3d5",
       "Posted Date": "2025-09-20",
-      "Days Open": "39",
+      "Days Open": "40",
       "Salary Range": "nan nan-nan",
       "Employment Type": "nan",
       "Source": "indeed_jobspy",
@@ -360,37 +336,13 @@
       "Leadership 1 Name": "Ross Partrich",
       "Leadership 1 Title": "CEO",
       "Leadership 1 Email": "email_not_unlocked@domain.com",
-      "Leadership 2 Name": "Melanie Corridore",
-      "Leadership 2 Title": "Chief Compliance Officer and Vice President of Financial Reporting",
+      "Leadership 2 Name": "Pete Schoppe",
+      "Leadership 2 Title": "Regional Vice President",
       "Leadership 2 Email": "email_not_unlocked@domain.com",
-      "Leadership 3 Name": "Stacey Mecham",
-      "Leadership 3 Title": "Regional Vice President",
+      "Leadership 3 Name": "Melanie Corridore",
+      "Leadership 3 Title": "Chief Compliance Officer and Vice President of Financial Reporting",
       "Leadership 3 Email": "email_not_unlocked@domain.com",
-      "Urgency Score": "32.89"
-    },
-    {
-      "Job Title": "Insurance Account Executive",
-      "Company Name": "Insurance Centers Inc.",
-      "Location": "Kingwood, WV, US",
-      "Location Type": "fulltime",
-      "Job URL": "https://www.indeed.com/viewjob?jk=7d94f6f70fc5f292",
-      "Posted Date": "2025-09-25",
-      "Days Open": "34",
-      "Salary Range": "USD 15.0-22.0",
-      "Employment Type": "fulltime",
-      "Source": "indeed_jobspy",
-      "Company Website": "http://www.insurancecenters.com",
-      "Phone Number": "+1 304-379-2260",
-      "Leadership 1 Name": "Scott Lorince",
-      "Leadership 1 Title": "Vice President, Benefit Sales & Service",
-      "Leadership 1 Email": "email_not_unlocked@domain.com",
-      "Leadership 2 Name": "Heather McCoy",
-      "Leadership 2 Title": "Commercial Department Manager",
-      "Leadership 2 Email": "email_not_unlocked@domain.com",
-      "Leadership 3 Name": "Karla Perez",
-      "Leadership 3 Title": "Account Manager",
-      "Leadership 3 Email": "email_not_unlocked@domain.com",
-      "Urgency Score": "26.32"
+      "Urgency Score": "34.21"
     },
     {
       "Job Title": "Commercial Lines Manager",
@@ -399,7 +351,7 @@
       "Location Type": "nan",
       "Job URL": "https://www.indeed.com/viewjob?jk=cf320a8043bce070",
       "Posted Date": "2025-09-26",
-      "Days Open": "33",
+      "Days Open": "34",
       "Salary Range": "nan nan-nan",
       "Employment Type": "nan",
       "Source": "indeed_jobspy",
@@ -411,10 +363,10 @@
       "Leadership 2 Name": "Jack Cowie",
       "Leadership 2 Title": "Senior Vice President",
       "Leadership 2 Email": "email_not_unlocked@domain.com",
-      "Leadership 3 Name": "Lindsay Wing",
-      "Leadership 3 Title": "Vice President - Surety",
+      "Leadership 3 Name": "Steven Coward",
+      "Leadership 3 Title": "Vice President, Surety",
       "Leadership 3 Email": "email_not_unlocked@domain.com",
-      "Urgency Score": "25.00"
+      "Urgency Score": "26.32"
     },
     {
       "Job Title": "Commercial Lines Manager",
@@ -423,7 +375,7 @@
       "Location Type": "nan",
       "Job URL": "https://www.indeed.com/viewjob?jk=439b7a7e17718bea",
       "Posted Date": "2025-09-26",
-      "Days Open": "33",
+      "Days Open": "34",
       "Salary Range": "nan nan-nan",
       "Employment Type": "nan",
       "Source": "indeed_jobspy",
@@ -435,10 +387,10 @@
       "Leadership 2 Name": "Jack Cowie",
       "Leadership 2 Title": "Senior Vice President",
       "Leadership 2 Email": "email_not_unlocked@domain.com",
-      "Leadership 3 Name": "Lindsay Wing",
-      "Leadership 3 Title": "Vice President - Surety",
+      "Leadership 3 Name": "Steven Coward",
+      "Leadership 3 Title": "Vice President, Surety",
       "Leadership 3 Email": "email_not_unlocked@domain.com",
-      "Urgency Score": "25.00"
+      "Urgency Score": "26.32"
     },
     {
       "Job Title": "Personal Lines Insurance Agent",
@@ -447,7 +399,7 @@
       "Location Type": "fulltime",
       "Job URL": "https://www.indeed.com/viewjob?jk=808ded4a2a8104e1",
       "Posted Date": "2025-09-30",
-      "Days Open": "29",
+      "Days Open": "30",
       "Salary Range": "USD 48000.0-53000.0",
       "Employment Type": "fulltime",
       "Source": "indeed_jobspy",
@@ -462,7 +414,7 @@
       "Leadership 3 Name": "Amy Donley",
       "Leadership 3 Title": "Marketing and Communications Manager",
       "Leadership 3 Email": "email_not_unlocked@domain.com",
-      "Urgency Score": "19.74"
+      "Urgency Score": "21.05"
     },
     {
       "Job Title": "Senior Account Executive, P&C (Fully Remote)",
@@ -471,7 +423,7 @@
       "Location Type": "nan",
       "Job URL": "https://www.indeed.com/viewjob?jk=961d2d00c82b323f",
       "Posted Date": "2025-10-01",
-      "Days Open": "28",
+      "Days Open": "29",
       "Salary Range": "USD 110000.0-130000.0",
       "Employment Type": "nan",
       "Source": "indeed_jobspy",
@@ -486,7 +438,55 @@
       "Leadership 3 Name": "Brian Erlandsen",
       "Leadership 3 Title": "VP",
       "Leadership 3 Email": "email_not_unlocked@domain.com",
+      "Urgency Score": "19.74"
+    },
+    {
+      "Job Title": "Commercial Insurance Underwriter",
+      "Company Name": "Granada Insurance Company",
+      "Location": "Miami, FL, US",
+      "Location Type": "fulltime",
+      "Job URL": "https://www.indeed.com/viewjob?jk=3098ecdee6707993",
+      "Posted Date": "2025-10-02",
+      "Days Open": "28",
+      "Salary Range": "nan nan-nan",
+      "Employment Type": "fulltime",
+      "Source": "indeed_jobspy",
+      "Company Website": "http://www.granadainsurance.com",
+      "Phone Number": "+1 305-554-0353",
+      "Leadership 1 Name": "Celia Galvin",
+      "Leadership 1 Title": "VP Underwriting",
+      "Leadership 1 Email": "email_not_unlocked@domain.com",
+      "Leadership 2 Name": "Del Campana",
+      "Leadership 2 Title": "Vice-President of Claims",
+      "Leadership 2 Email": "email_not_unlocked@domain.com",
+      "Leadership 3 Name": "",
+      "Leadership 3 Title": "",
+      "Leadership 3 Email": "",
       "Urgency Score": "18.42"
+    },
+    {
+      "Job Title": "Insurance Telemarketer Hybrid",
+      "Company Name": "nan",
+      "Location": "Baker, LA, US",
+      "Location Type": "parttime",
+      "Job URL": "https://www.indeed.com/viewjob?jk=1f014877a2912e36",
+      "Posted Date": "2025-10-10",
+      "Days Open": "20",
+      "Salary Range": "USD 15.0-20.0",
+      "Employment Type": "parttime",
+      "Source": "indeed_jobspy",
+      "Company Website": "nan",
+      "Phone Number": "",
+      "Leadership 1 Name": "",
+      "Leadership 1 Title": "",
+      "Leadership 1 Email": "",
+      "Leadership 2 Name": "",
+      "Leadership 2 Title": "",
+      "Leadership 2 Email": "",
+      "Leadership 3 Name": "",
+      "Leadership 3 Title": "",
+      "Leadership 3 Email": "",
+      "Urgency Score": "7.89"
     }
   ]
 }

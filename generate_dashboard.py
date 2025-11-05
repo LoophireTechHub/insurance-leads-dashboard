@@ -364,10 +364,12 @@ def generate_dashboard():
                         // Show leadership contact or company phone
                         const hasLeadership = lead['Leadership 1 Name'] && lead['Leadership 1 Name'] !== '';
                         const hasEmail = lead['Leadership 1 Email'] && !lead['Leadership 1 Email'].includes('email_not_unlocked');
+                        const hasLinkedIn = lead['Leadership 1 LinkedIn'] && lead['Leadership 1 LinkedIn'] !== '';
 
                         const contact = hasLeadership ?
                             `${lead['Leadership 1 Name']}<br><span class="contact-info">${lead['Leadership 1 Title'] || 'Leadership'}</span>` +
-                            (hasEmail ? `<br><span class="contact-info">✉️ ${lead['Leadership 1 Email']}</span>` : '') :
+                            (hasEmail ? `<br><span class="contact-info">✉️ ${lead['Leadership 1 Email']}</span>` : '') +
+                            (hasLinkedIn ? `<br><span class="contact-info"><a href="${lead['Leadership 1 LinkedIn']}" target="_blank" style="color: #0077b5; text-decoration: none;">🔗 LinkedIn</a></span>` : '') :
                             (lead['Phone Number'] ?
                                 `<span class="contact-info">📞 ${lead['Phone Number']}</span>` :
                                 '<span class="contact-info">Apply via job posting</span>');

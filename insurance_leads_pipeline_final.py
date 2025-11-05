@@ -11,6 +11,7 @@ import logging
 import requests
 import csv
 import time
+import random
 from datetime import datetime, timedelta
 from typing import List, Dict
 from pathlib import Path
@@ -515,9 +516,27 @@ class LeadsPipeline:
             enriched_job['urgency_score'] = self.calculate_urgency_score(enriched_job)
             time.sleep(0.5)
         
-        logger.info("Step 5: Selecting top 50 leads...")
-        sorted_jobs = sorted(unique_jobs, key=lambda x: x.get('urgency_score', 0), reverse=True)
-        top_leads = sorted_jobs[:50]
+        logger.info("Step 5: Selecting top 50 leads with randomization...")
+
+        # Add random component to shuffle while still favoring higher urgency
+        # Group jobs into tiers, then shuffle within each tier
+        high_urgency = [j for j in unique_jobs if j.get('urgency_score', 0) > 75]
+        medium_urgency = [j for j in unique_jobs if 50 < j.get('urgency_score', 0) <= 75]
+        low_urgency = [j for j in unique_jobs if j.get('urgency_score', 0) <= 50]
+
+        # Shuffle each tier
+        random.shuffle(high_urgency)
+        random.shuffle(medium_urgency)
+        random.shuffle(low_urgency)
+
+        # Combine shuffled tiers
+        shuffled_jobs = high_urgency + medium_urgency + low_urgency
+
+        # Take top 50 from shuffled list
+        top_leads = shuffled_jobs[:50]
+
+        logger.info(f"  Selected {len(high_urgency)} high urgency (>75), {len(medium_urgency)} medium (50-75), {len(low_urgency)} low (<=50)")
+        logger.info(f"  Final selection: {len(top_leads)} leads")
         
         logger.info("Step 6: Saving to CSV...")
         csv_file = self.save_to_csv(top_leads)

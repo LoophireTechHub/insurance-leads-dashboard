@@ -502,12 +502,14 @@ class LeadsPipeline:
         seen_ids = set()
         for job in filtered_jobs:
             lead_id = self.generate_lead_id(job)
-            if lead_id not in seen_ids and lead_id not in self.collected_leads:
+            # REMOVED: lead_id not in self.collected_leads
+            # Allow leads to reappear each day with shuffling for variety
+            if lead_id not in seen_ids:
                 seen_ids.add(lead_id)
                 job['lead_id'] = lead_id
                 unique_jobs.append(job)
-        
-        logger.info(f"Step 3: {len(unique_jobs)} unique new jobs")
+
+        logger.info(f"Step 3: {len(unique_jobs)} unique jobs (deduplicated within this run)")
         
         logger.info("Step 4: Enriching with Apollo.io...")
         for i, job in enumerate(unique_jobs, 1):
@@ -541,9 +543,8 @@ class LeadsPipeline:
         logger.info("Step 6: Saving to CSV...")
         csv_file = self.save_to_csv(top_leads)
 
-        for job in top_leads:
-            self.collected_leads.add(job.get('lead_id'))
-        self.save_collected_leads()
+        # REMOVED: collected_leads tracking
+        # Leads are now shuffled daily for variety instead of being permanently excluded
 
         logger.info("Step 7: Generating HTML dashboard...")
         try:

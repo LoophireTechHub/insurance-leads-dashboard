@@ -223,9 +223,10 @@ class LeadsPipeline:
             logger.info(f"Enriching: {company} ({location})")
             headers = {"X-Api-Key": self.apollo_token, "Content-Type": "application/json"}
 
-            # Search for organizations with company name and location context
+            # Search for organizations with company name, location context, and size filter
             search_data = {
                 "q_organization_name": company,
+                "organization_num_employees_ranges": ["10,20", "20,50", "51,100", "101,200", "201,500"],  # 10-500 employees
                 "page": 1,
                 "per_page": 5  # Get more results to find best match
             }
@@ -271,9 +272,15 @@ class LeadsPipeline:
                                 best_match = org  # Acceptable match - keep looking
 
                     if best_match:
+                        # Verify company size is within range (10-500 employees)
+                        employee_count = best_match.get('estimated_num_employees', 0)
+                        if employee_count < 10 or employee_count > 500:
+                            logger.info(f"  ✗ Skipped: {best_match.get('name')} - {employee_count} employees (outside 10-500 range)")
+                            return job
+
                         job['company_website'] = best_match.get('website_url', '')
                         job['company_phone'] = best_match.get('phone', '')
-                        logger.info(f"  ✓ Matched: {best_match.get('name')} | {best_match.get('city', 'Unknown')}, {best_match.get('state', 'Unknown')}")
+                        logger.info(f"  ✓ Matched: {best_match.get('name')} | {best_match.get('city', 'Unknown')}, {best_match.get('state', 'Unknown')} | {employee_count} employees")
 
                         # Get contacts from the matched organization
                         contacts = self.get_apollo_contacts(best_match.get('id'), company)

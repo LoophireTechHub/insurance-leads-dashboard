@@ -82,25 +82,28 @@ class LeadsPipeline:
         unique_str = f"{job.get('company_name', '')}{job.get('title', '')}{job.get('location', '')}"
         return hashlib.md5(unique_str.encode()).hexdigest()
     
-    def fetch_jobs_from_indeed_jobspy(self, search_term: str, results_wanted: int = 50) -> List[Dict]:
-        """Fetch jobs from Indeed using JobSpy library - direct scraping"""
-        logger.info(f"🔍 Scraping Indeed with JobSpy for: {search_term}")
+    def fetch_jobs_from_multiple_sources(self, search_term: str, results_wanted: int = 50) -> List[Dict]:
+        """Fetch jobs from multiple job boards using JobSpy library"""
+        logger.info(f"🔍 Scraping multiple job boards with JobSpy for: {search_term}")
 
         try:
+            # Scrape from Indeed, LinkedIn, ZipRecruiter, and Glassdoor
             jobs_df = scrape_jobs(
-                site_name=["indeed"],
+                site_name=["indeed", "linkedin", "zip_recruiter", "glassdoor"],
                 search_term=search_term,
                 location="United States",
                 results_wanted=results_wanted,
                 hours_old=2160,  # 90 days
-                country_indeed='USA'
+                country_indeed='USA',
+                linkedin_fetch_description=False,  # Faster scraping
+                offset=0  # Start from beginning
             )
 
             if jobs_df is None or jobs_df.empty:
                 logger.warning(f"  No jobs found for: {search_term}")
                 return []
 
-            logger.info(f"  ✅ Retrieved {len(jobs_df)} Indeed jobs for '{search_term}'")
+            logger.info(f"  ✅ Retrieved {len(jobs_df)} jobs from multiple sources for '{search_term}'")
 
             # Convert DataFrame to list of dicts
             jobs_list = jobs_df.to_dict('records')
@@ -116,14 +119,14 @@ class LeadsPipeline:
 
         all_jobs = []
 
-        # Fetch from Indeed for each search term using JobSpy
+        # Fetch from multiple job boards for each search term using JobSpy
         for search_term in SEARCH_TERMS:
-            indeed_jobs = self.fetch_jobs_from_indeed_jobspy(search_term, results_wanted=50)
+            multi_source_jobs = self.fetch_jobs_from_multiple_sources(search_term, results_wanted=50)
 
             # Normalize JobSpy data to common format and filter for insurance jobs
             insurance_count = 0
             filtered_count = 0
-            for job in indeed_jobs:
+            for job in multi_source_jobs:
                 # JobSpy returns consistent field names
                 # Convert all values to strings to handle floats/None
                 normalized_job = {
@@ -139,7 +142,7 @@ class LeadsPipeline:
                     'salary_max': str(job.get('max_amount', '') or ''),
                     'salary_currency': str(job.get('currency', '') or ''),
                     'employment_type': str(job.get('job_type', '') or ''),
-                    'source': 'indeed_jobspy'
+                    'source': str(job.get('site', 'unknown') or 'unknown')  # Track which job board
                 }
 
                 # STRICT FILTER: Only add if insurance-related
@@ -152,7 +155,14 @@ class LeadsPipeline:
             logger.info(f"  Insurance jobs: {insurance_count}, Filtered out: {filtered_count}")
             time.sleep(3)  # Rate limiting between searches
 
-        logger.info(f"✅ Retrieved {len(all_jobs)} total insurance jobs from JobSpy")
+        logger.info(f"✅ Retrieved {len(all_jobs)} total insurance jobs from multiple sources")
+
+        # Log source breakdown
+        source_counts = {}
+        for job in all_jobs:
+            source = job.get('source', 'unknown')
+            source_counts[source] = source_counts.get(source, 0) + 1
+        logger.info(f"  Source breakdown: {source_counts}")
 
         # Deduplicate jobs based on company + title + location
         unique_jobs = []

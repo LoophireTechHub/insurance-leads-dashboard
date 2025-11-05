@@ -235,9 +235,17 @@ def generate_dashboard():
             font-size: 0.85em;
             font-weight: 500;
             transition: opacity 0.3s ease;
+            margin: 2px;
         }
         .btn:hover {
             opacity: 0.9;
+        }
+        .btn-linkedin {
+            background: #0077b5;
+        }
+        .btn-linkedin:hover {
+            background: #005885;
+            opacity: 1;
         }
         .loading {
             text-align: center;
@@ -306,11 +314,12 @@ def generate_dashboard():
                         <th>Location</th>
                         <th>Days Open</th>
                         <th>Contact</th>
+                        <th>LinkedIn</th>
                         <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td colspan="7" class="loading">Loading leads data...</td></tr>
+                    <tr><td colspan="8" class="loading">Loading leads data...</td></tr>
                 </tbody>
             </table>
         </div>
@@ -343,7 +352,7 @@ def generate_dashboard():
                     if (index > 0) {
                         const dividerRow = tbody.insertRow();
                         dividerRow.innerHTML = `
-                            <td colspan="7" style="padding: 0;">
+                            <td colspan="8" style="padding: 0;">
                                 <div class="session-divider">
                                     <h3>📅 ${session.timestamp}</h3>
                                     <div class="session-stats">
@@ -368,11 +377,14 @@ def generate_dashboard():
 
                         const contact = hasLeadership ?
                             `${lead['Leadership 1 Name']}<br><span class="contact-info">${lead['Leadership 1 Title'] || 'Leadership'}</span>` +
-                            (hasEmail ? `<br><span class="contact-info">✉️ ${lead['Leadership 1 Email']}</span>` : '') +
-                            (hasLinkedIn ? `<br><span class="contact-info"><a href="${lead['Leadership 1 LinkedIn']}" target="_blank" style="color: #0077b5; text-decoration: none;">🔗 LinkedIn</a></span>` : '') :
+                            (hasEmail ? `<br><span class="contact-info">✉️ ${lead['Leadership 1 Email']}</span>` : '') :
                             (lead['Phone Number'] ?
                                 `<span class="contact-info">📞 ${lead['Phone Number']}</span>` :
                                 '<span class="contact-info">Apply via job posting</span>');
+
+                        const linkedInButton = hasLinkedIn ?
+                            `<a href="${lead['Leadership 1 LinkedIn']}" target="_blank" class="btn btn-linkedin">LinkedIn</a>` :
+                            '<span style="color: #cbd5e0; font-size: 0.85em;">N/A</span>';
 
                         const row = tbody.insertRow();
                         row.innerHTML = `
@@ -382,6 +394,7 @@ def generate_dashboard():
                             <td>${lead['Location'] || 'N/A'}</td>
                             <td>${lead['Days Open'] || 'N/A'}</td>
                             <td>${contact}</td>
+                            <td>${linkedInButton}</td>
                             <td>
                                 ${lead['Job URL'] ? `<a href="${lead['Job URL']}" target="_blank" class="btn">View Job</a>` : 'N/A'}
                             </td>
@@ -394,7 +407,7 @@ def generate_dashboard():
             } catch (error) {
                 console.error('Error loading data:', error);
                 document.querySelector('#leadsTable tbody').innerHTML =
-                    '<tr><td colspan="7" style="text-align:center; color:red;">Error loading data. Please refresh.</td></tr>';
+                    '<tr><td colspan="8" style="text-align:center; color:red;">Error loading data. Please refresh.</td></tr>';
             }
         }
 

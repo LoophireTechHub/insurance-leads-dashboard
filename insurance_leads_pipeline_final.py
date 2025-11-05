@@ -504,9 +504,9 @@ class LeadsPipeline:
             enriched_job['urgency_score'] = self.calculate_urgency_score(enriched_job)
             time.sleep(0.5)
         
-        logger.info("Step 5: Selecting top 20 leads...")
+        logger.info("Step 5: Selecting top 50 leads...")
         sorted_jobs = sorted(unique_jobs, key=lambda x: x.get('urgency_score', 0), reverse=True)
-        top_leads = sorted_jobs[:20]
+        top_leads = sorted_jobs[:50]
         
         logger.info("Step 6: Saving to CSV...")
         csv_file = self.save_to_csv(top_leads)

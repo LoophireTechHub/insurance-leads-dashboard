@@ -315,12 +315,13 @@ def generate_dashboard():
                         <th>Source</th>
                         <th>Days Open</th>
                         <th>Contact</th>
+                        <th>Phone</th>
                         <th>LinkedIn</th>
                         <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td colspan="9" class="loading">Loading leads data...</td></tr>
+                    <tr><td colspan="10" class="loading">Loading leads data...</td></tr>
                 </tbody>
             </table>
         </div>
@@ -353,7 +354,7 @@ def generate_dashboard():
                     if (index > 0) {
                         const dividerRow = tbody.insertRow();
                         dividerRow.innerHTML = `
-                            <td colspan="9" style="padding: 0;">
+                            <td colspan="10" style="padding: 0;">
                                 <div class="session-divider">
                                     <h3>📅 ${session.timestamp}</h3>
                                     <div class="session-stats">
@@ -371,19 +372,21 @@ def generate_dashboard():
                         const score = parseFloat(lead['Urgency Score'] || 0);
                         const scoreClass = score > 75 ? 'score-high' : score > 50 ? 'score-medium' : 'score-low';
 
-                        // Show leadership contact or company phone
+                        // Show leadership contact info (name, title, email only)
                         const hasLeadership = lead['Leadership 1 Name'] && lead['Leadership 1 Name'] !== '';
                         const hasEmail = lead['Leadership 1 Email'] && !lead['Leadership 1 Email'].includes('email_not_unlocked');
-                        const hasPhone = lead['Leadership 1 Phone'] && lead['Leadership 1 Phone'] !== '';
+                        const hasContactPhone = lead['Leadership 1 Phone'] && lead['Leadership 1 Phone'] !== '';
                         const hasLinkedIn = lead['Leadership 1 LinkedIn'] && lead['Leadership 1 LinkedIn'] !== '';
 
                         const contact = hasLeadership ?
                             `${lead['Leadership 1 Name']}<br><span class="contact-info">${lead['Leadership 1 Title'] || 'Leadership'}</span>` +
-                            (hasEmail ? `<br><span class="contact-info">✉️ ${lead['Leadership 1 Email']}</span>` : '') +
-                            (hasPhone ? `<br><span class="contact-info">📞 ${lead['Leadership 1 Phone']}</span>` : '') :
-                            (lead['Phone Number'] ?
-                                `<span class="contact-info">📞 ${lead['Phone Number']}</span>` :
-                                '<span class="contact-info">Apply via job posting</span>');
+                            (hasEmail ? `<br><span class="contact-info">✉️ ${lead['Leadership 1 Email']}</span>` : '') :
+                            '<span class="contact-info">Apply via job posting</span>';
+
+                        // Separate phone number column - show contact phone or company phone
+                        const phoneNumber = hasContactPhone ?
+                            lead['Leadership 1 Phone'] :
+                            (lead['Phone Number'] || 'N/A');
 
                         const linkedInButton = hasLinkedIn ?
                             `<a href="${lead['Leadership 1 LinkedIn']}" target="_blank" class="btn btn-linkedin">LinkedIn</a>` :
@@ -401,6 +404,7 @@ def generate_dashboard():
                             <td><span style="font-size: 0.85em; color: #667eea; font-weight: 500;">${sourceDisplay}</span></td>
                             <td>${lead['Days Open'] || 'N/A'}</td>
                             <td>${contact}</td>
+                            <td>${phoneNumber}</td>
                             <td>${linkedInButton}</td>
                             <td>
                                 ${lead['Job URL'] ? `<a href="${lead['Job URL']}" target="_blank" class="btn">View Job</a>` : 'N/A'}
@@ -414,7 +418,7 @@ def generate_dashboard():
             } catch (error) {
                 console.error('Error loading data:', error);
                 document.querySelector('#leadsTable tbody').innerHTML =
-                    '<tr><td colspan="9" style="text-align:center; color:red;">Error loading data. Please refresh.</td></tr>';
+                    '<tr><td colspan="10" style="text-align:center; color:red;">Error loading data. Please refresh.</td></tr>';
             }
         }
 

@@ -312,6 +312,7 @@ def generate_dashboard():
                         <th>Company</th>
                         <th>Job Title</th>
                         <th>Location</th>
+                        <th>Source</th>
                         <th>Days Open</th>
                         <th>Contact</th>
                         <th>LinkedIn</th>
@@ -319,7 +320,7 @@ def generate_dashboard():
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td colspan="8" class="loading">Loading leads data...</td></tr>
+                    <tr><td colspan="9" class="loading">Loading leads data...</td></tr>
                 </tbody>
             </table>
         </div>
@@ -352,7 +353,7 @@ def generate_dashboard():
                     if (index > 0) {
                         const dividerRow = tbody.insertRow();
                         dividerRow.innerHTML = `
-                            <td colspan="8" style="padding: 0;">
+                            <td colspan="9" style="padding: 0;">
                                 <div class="session-divider">
                                     <h3>📅 ${session.timestamp}</h3>
                                     <div class="session-stats">
@@ -386,12 +387,16 @@ def generate_dashboard():
                             `<a href="${lead['Leadership 1 LinkedIn']}" target="_blank" class="btn btn-linkedin">LinkedIn</a>` :
                             '<span style="color: #cbd5e0; font-size: 0.85em;">N/A</span>';
 
+                        const source = (lead['Source'] || 'unknown').toLowerCase();
+                        const sourceDisplay = source.charAt(0).toUpperCase() + source.slice(1);
+
                         const row = tbody.insertRow();
                         row.innerHTML = `
                             <td><span class="score-badge ${scoreClass}">${score.toFixed(1)}</span></td>
                             <td class="company-name">${lead['Company Name'] || 'N/A'}</td>
                             <td>${lead['Job Title'] || 'N/A'}</td>
                             <td>${lead['Location'] || 'N/A'}</td>
+                            <td><span style="font-size: 0.85em; color: #667eea; font-weight: 500;">${sourceDisplay}</span></td>
                             <td>${lead['Days Open'] || 'N/A'}</td>
                             <td>${contact}</td>
                             <td>${linkedInButton}</td>
@@ -407,7 +412,7 @@ def generate_dashboard():
             } catch (error) {
                 console.error('Error loading data:', error);
                 document.querySelector('#leadsTable tbody').innerHTML =
-                    '<tr><td colspan="8" style="text-align:center; color:red;">Error loading data. Please refresh.</td></tr>';
+                    '<tr><td colspan="9" style="text-align:center; color:red;">Error loading data. Please refresh.</td></tr>';
             }
         }
 

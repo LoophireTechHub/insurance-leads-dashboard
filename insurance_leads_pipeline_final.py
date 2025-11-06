@@ -300,6 +300,7 @@ class LeadsPipeline:
                             job[f'leadership_{i}_title'] = contact.get('title', '')
                             job[f'leadership_{i}_email'] = contact.get('email', '')
                             job[f'leadership_{i}_linkedin'] = contact.get('linkedin_url', '')
+                            job[f'leadership_{i}_phone'] = contact.get('phone_numbers', [{}])[0].get('sanitized_number', '') if contact.get('phone_numbers') else ''
                         if contacts:
                             logger.info(f"  ✓ Found {len(contacts)} contacts")
                     else:
@@ -432,9 +433,9 @@ class LeadsPipeline:
         fieldnames = [
             'Job Title', 'Company Name', 'Location', 'Location Type', 'Job URL', 'Posted Date',
             'Days Open', 'Salary Range', 'Employment Type', 'Source', 'Company Website', 'Phone Number',
-            'Leadership 1 Name', 'Leadership 1 Title', 'Leadership 1 Email', 'Leadership 1 LinkedIn',
-            'Leadership 2 Name', 'Leadership 2 Title', 'Leadership 2 Email', 'Leadership 2 LinkedIn',
-            'Leadership 3 Name', 'Leadership 3 Title', 'Leadership 3 Email', 'Leadership 3 LinkedIn',
+            'Leadership 1 Name', 'Leadership 1 Title', 'Leadership 1 Email', 'Leadership 1 Phone', 'Leadership 1 LinkedIn',
+            'Leadership 2 Name', 'Leadership 2 Title', 'Leadership 2 Email', 'Leadership 2 Phone', 'Leadership 2 LinkedIn',
+            'Leadership 3 Name', 'Leadership 3 Title', 'Leadership 3 Email', 'Leadership 3 Phone', 'Leadership 3 LinkedIn',
             'Urgency Score'
         ]
 
@@ -469,14 +470,17 @@ class LeadsPipeline:
                     'Leadership 1 Name': job.get('leadership_1_name', ''),
                     'Leadership 1 Title': job.get('leadership_1_title', ''),
                     'Leadership 1 Email': job.get('leadership_1_email', ''),
+                    'Leadership 1 Phone': job.get('leadership_1_phone', ''),
                     'Leadership 1 LinkedIn': job.get('leadership_1_linkedin', ''),
                     'Leadership 2 Name': job.get('leadership_2_name', ''),
                     'Leadership 2 Title': job.get('leadership_2_title', ''),
                     'Leadership 2 Email': job.get('leadership_2_email', ''),
+                    'Leadership 2 Phone': job.get('leadership_2_phone', ''),
                     'Leadership 2 LinkedIn': job.get('leadership_2_linkedin', ''),
                     'Leadership 3 Name': job.get('leadership_3_name', ''),
                     'Leadership 3 Title': job.get('leadership_3_title', ''),
                     'Leadership 3 Email': job.get('leadership_3_email', ''),
+                    'Leadership 3 Phone': job.get('leadership_3_phone', ''),
                     'Leadership 3 LinkedIn': job.get('leadership_3_linkedin', ''),
                     'Urgency Score': f"{job.get('urgency_score', 0):.2f}"
                 }

@@ -532,13 +532,36 @@ class LeadsPipeline:
             enriched_job['urgency_score'] = self.calculate_urgency_score(enriched_job)
             time.sleep(0.5)
         
-        logger.info("Step 5: Selecting top 50 leads with randomization...")
+        logger.info("Step 5: Selecting top 50 leads with company diversity...")
 
-        # Add random component to shuffle while still favoring higher urgency
+        # Deduplicate by company - keep only the highest urgency job per company
+        company_jobs = {}
+        for job in unique_jobs:
+            company = job.get('company_name', '').lower().strip()
+            if not company or company == 'nan' or company == 'n/a':
+                # Keep jobs without company names
+                if 'no_company' not in company_jobs:
+                    company_jobs['no_company'] = []
+                company_jobs['no_company'].append(job)
+            else:
+                if company not in company_jobs:
+                    company_jobs[company] = []
+                company_jobs[company].append(job)
+
+        # For each company, keep only the highest urgency job
+        diverse_jobs = []
+        for company, jobs_list in company_jobs.items():
+            # Sort by urgency score descending
+            jobs_list.sort(key=lambda x: x.get('urgency_score', 0), reverse=True)
+            # Take only the top job from this company
+            diverse_jobs.append(jobs_list[0])
+
+        logger.info(f"  Reduced from {len(unique_jobs)} to {len(diverse_jobs)} jobs (one per company)")
+
         # Group jobs into tiers, then shuffle within each tier
-        high_urgency = [j for j in unique_jobs if j.get('urgency_score', 0) > 75]
-        medium_urgency = [j for j in unique_jobs if 50 < j.get('urgency_score', 0) <= 75]
-        low_urgency = [j for j in unique_jobs if j.get('urgency_score', 0) <= 50]
+        high_urgency = [j for j in diverse_jobs if j.get('urgency_score', 0) > 75]
+        medium_urgency = [j for j in diverse_jobs if 50 < j.get('urgency_score', 0) <= 75]
+        low_urgency = [j for j in diverse_jobs if j.get('urgency_score', 0) <= 50]
 
         # Shuffle each tier
         random.shuffle(high_urgency)

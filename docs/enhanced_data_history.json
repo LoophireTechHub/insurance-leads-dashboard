@@ -1,14 +1,14 @@
 [
   {
     "date": "2025-11-12",
-    "timestamp": "November 12, 2025 at 08:14 AM EST",
+    "timestamp": "November 12, 2025 at 02:21 PM EST",
     "stats": {
-      "total_leads": 14,
+      "total_leads": 15,
       "high_score": 1,
       "growing": 0,
-      "hiring": 14,
-      "with_contacts": 12,
-      "last_updated": "November 12, 2025 at 08:14 AM EST",
+      "hiring": 15,
+      "with_contacts": 13,
+      "last_updated": "November 12, 2025 at 02:21 PM EST",
       "update_date": "2025-11-12"
     },
     "leads": [
@@ -48,16 +48,16 @@
             "source": "linkedin"
           },
           {
-            "title": "Remote Salesperson (No Experience Needed, Will Train, Flexible Schedule)",
+            "title": "Remote Sales (No Experience Needed, Will Train)",
             "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4335612928",
+            "url": "https://www.linkedin.com/jobs/view/4335812656",
             "date_posted": "",
             "source": "linkedin"
           },
           {
-            "title": "Remote Sales (No Experience Needed, Will Train)",
+            "title": "Remote Salesperson (No Experience Needed, Will Train, Flexible Schedule)",
             "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4335812656",
+            "url": "https://www.linkedin.com/jobs/view/4335612928",
             "date_posted": "",
             "source": "linkedin"
           },
@@ -309,6 +309,13 @@
           },
           {
             "title": "Account Executive | Investigations",
+            "location": "Florida, United States",
+            "url": "https://www.linkedin.com/jobs/view/4315089567",
+            "date_posted": "2025-11-06",
+            "source": "linkedin"
+          },
+          {
+            "title": "Account Executive | Investigations",
             "location": "Illinois, United States",
             "url": "https://www.linkedin.com/jobs/view/4315087699",
             "date_posted": "2025-11-06",
@@ -325,13 +332,6 @@
             "title": "Sr Group Underwriter (Group Life/Health, Voluntary, CI/DI)",
             "location": "",
             "url": "https://www.linkedin.com/jobs/view/4320831018",
-            "date_posted": "2025-11-05",
-            "source": "linkedin"
-          },
-          {
-            "title": "Insurance Placement Manager - Bellaire",
-            "location": "Bellaire, TX",
-            "url": "https://www.linkedin.com/jobs/view/4320897470",
             "date_posted": "2025-11-05",
             "source": "linkedin"
           },
@@ -490,6 +490,43 @@
       },
       {
         "Composite Score": "35.0",
+        "Company Name": "Miller Family Agency",
+        "Location": "Frisco, Texas",
+        "Website": "http://www.millerfamilyagency.com",
+        "Phone": "",
+        "Current Headcount": "37",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "37",
+        "Days Tracked": "0",
+        "Active Jobs": "1",
+        "Industry": "insurance",
+        "Contact 1 Name": "Stephanie Lor",
+        "Contact 1 Title": "Director of Operations",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/stephanie-lor-18164549",
+        "Contact 2 Name": "",
+        "Contact 2 Title": "",
+        "Contact 2 Email": "",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "",
+        "Contact 3 Name": "",
+        "Contact 3 Title": "",
+        "Contact 3 Email": "",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "",
+        "job_details": [
+          {
+            "title": "Work from Home Case Manager - Will train",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4335823674",
+            "date_posted": "",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "35.0",
         "Company Name": "Independent Insurance Agents and Brokers of America",
         "Location": "Alexandria, Virginia",
         "Website": "http://www.independentagent.com",
@@ -584,11 +621,11 @@
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
         "Contact 2 LinkedIn": "http://www.linkedin.com/in/david-a-sampson-23a54911",
-        "Contact 3 Name": "Mark Sektnan",
+        "Contact 3 Name": "Karen Collins",
         "Contact 3 Title": "Vice President",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/mark-sektnan-9481897",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/karenherrcollins",
         "job_details": [
           {
             "title": "Director/Sr Director Personal Lines",
@@ -596,6 +633,43 @@
             "url": "https://www.linkedin.com/jobs/view/4333908957",
             "date_posted": "2025-11-03",
             "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "35.0",
+        "Company Name": "WalkerHughes Insurance",
+        "Location": "Indianapolis, Indiana",
+        "Website": "http://www.walkerhughes.com",
+        "Phone": "+1 800-651-7895",
+        "Current Headcount": "95",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "95",
+        "Days Tracked": "0",
+        "Active Jobs": "1",
+        "Industry": "insurance",
+        "Contact 1 Name": "Pam Hecklinski",
+        "Contact 1 Title": "Vice President",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/pam-hecklinski-ba10a7b",
+        "Contact 2 Name": "Nick Mehdikhan",
+        "Contact 2 Title": "EVP, Chief Sales Officer",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/nmehdikhan",
+        "Contact 3 Name": "Benjamin Schoettmer",
+        "Contact 3 Title": "CEO | WalkerHughes Insurance",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/benjamin-schoettmer",
+        "job_details": [
+          {
+            "title": "Commercial Lines Account Manager",
+            "location": "Lebanon, IN, US",
+            "url": "https://www.indeed.com/viewjob?jk=48dff311a493dd1f",
+            "date_posted": "2025-10-28",
+            "source": "indeed"
           }
         ]
       },
@@ -701,43 +775,6 @@
       },
       {
         "Composite Score": "35.0",
-        "Company Name": "WalkerHughes Insurance",
-        "Location": "Indianapolis, Indiana",
-        "Website": "http://www.walkerhughes.com",
-        "Phone": "+1 800-651-7895",
-        "Current Headcount": "95",
-        "Growth Rate %": "0.0",
-        "Previous Headcount": "95",
-        "Days Tracked": "0",
-        "Active Jobs": "1",
-        "Industry": "insurance",
-        "Contact 1 Name": "Pam Hecklinski",
-        "Contact 1 Title": "Vice President",
-        "Contact 1 Email": "email_not_unlocked@domain.com",
-        "Contact 1 Phone": "",
-        "Contact 1 LinkedIn": "http://www.linkedin.com/in/pam-hecklinski-ba10a7b",
-        "Contact 2 Name": "Nick Mehdikhan",
-        "Contact 2 Title": "EVP, Chief Sales Officer",
-        "Contact 2 Email": "email_not_unlocked@domain.com",
-        "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/nmehdikhan",
-        "Contact 3 Name": "Benjamin Schoettmer",
-        "Contact 3 Title": "CEO | WalkerHughes Insurance",
-        "Contact 3 Email": "email_not_unlocked@domain.com",
-        "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/benjamin-schoettmer",
-        "job_details": [
-          {
-            "title": "Commercial Lines Account Manager",
-            "location": "Lebanon, IN, US",
-            "url": "https://www.indeed.com/viewjob?jk=48dff311a493dd1f",
-            "date_posted": "2025-10-28",
-            "source": "indeed"
-          }
-        ]
-      },
-      {
-        "Composite Score": "35.0",
         "Company Name": "Peachy Insurance",
         "Location": "Atlanta, Georgia",
         "Website": "http://www.peachyinsurance.com",
@@ -758,11 +795,11 @@
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
         "Contact 2 LinkedIn": "http://www.linkedin.com/in/paris-kerr-669a14174",
-        "Contact 3 Name": "Patrick Oliver",
+        "Contact 3 Name": "Paola Serna",
         "Contact 3 Title": "Customer Experience Manager",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/patrick-oliver-a7a31723",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/paola-serna-994263105",
         "job_details": [
           {
             "title": "Account Manager",

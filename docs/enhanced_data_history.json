@@ -1,14 +1,14 @@
 [
   {
     "date": "2025-11-12",
-    "timestamp": "November 12, 2025 at 09:40 AM EST",
+    "timestamp": "November 12, 2025 at 03:48 PM EST",
     "stats": {
       "total_leads": 13,
       "high_score": 1,
       "growing": 0,
       "hiring": 13,
       "with_contacts": 12,
-      "last_updated": "November 12, 2025 at 09:40 AM EST",
+      "last_updated": "November 12, 2025 at 03:48 PM EST",
       "update_date": "2025-11-12"
     },
     "leads": [
@@ -22,7 +22,7 @@
         "Growth Rate %": "0.0",
         "Previous Headcount": "44",
         "Days Tracked": "0",
-        "Active Jobs": "7",
+        "Active Jobs": "6",
         "Industry": "insurance",
         "Contact 1 Name": "Daron Skipper",
         "Contact 1 Title": "CFO",
@@ -65,13 +65,6 @@
             "title": "Territory Sales Manager (Charlotte) - National General",
             "location": "Charlotte, NC",
             "url": "https://www.linkedin.com/jobs/view/4318682563",
-            "date_posted": "2025-10-25",
-            "source": "linkedin"
-          },
-          {
-            "title": "Territory Sales Manager (Syracuse, NY) - National General",
-            "location": "New York, United States",
-            "url": "https://www.linkedin.com/jobs/view/4308862447",
             "date_posted": "2025-10-25",
             "source": "linkedin"
           },
@@ -561,11 +554,11 @@
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
         "Contact 2 LinkedIn": "http://www.linkedin.com/in/david-a-sampson-23a54911",
-        "Contact 3 Name": "Mark Sektnan",
+        "Contact 3 Name": "Lauren Pavluk",
         "Contact 3 Title": "Vice President",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/mark-sektnan-9481897",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/lauren-pavluk-396117110",
         "job_details": [
           {
             "title": "Director/Sr Director Personal Lines",

@@ -25,16 +25,26 @@ jobs:
       run: |
         pip install -r requirements.txt
     
-    - name: Run leads pipeline
+    - name: Run job-based leads pipeline
       env:
         APIFY_API_TOKEN: ${{ secrets.APIFY_API_TOKEN }}
         APOLLO_API_TOKEN: ${{ secrets.APOLLO_API_TOKEN }}
       run: |
         python insurance_leads_pipeline_final.py
-    
-    - name: Generate dashboard
+
+    - name: Run enhanced multi-signal pipeline
+      env:
+        APOLLO_API_TOKEN: ${{ secrets.APOLLO_API_TOKEN }}
+      run: |
+        python insurance_leads_enhanced.py
+
+    - name: Generate job-based dashboard
       run: |
         python generate_dashboard.py
+
+    - name: Generate enhanced dashboard
+      run: |
+        python generate_enhanced_dashboard.py
     
     - name: Commit and push dashboard
       run: |

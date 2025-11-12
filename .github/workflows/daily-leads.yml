@@ -2,7 +2,7 @@ name: Daily Insurance Leads Update
 
 on:
   schedule:
-    - cron: '0 14 * * *'  # 8:00 AM CST (2:00 PM UTC)
+    - cron: '0 13 * * *'  # 8:00 AM CDT (Central Daylight Time) - 1:00 PM UTC
   workflow_dispatch:
   push:
     branches: [main]

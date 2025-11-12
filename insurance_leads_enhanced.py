@@ -182,9 +182,9 @@ class EnhancedLeadsPipeline:
         try:
             jobs_df = scrape_jobs(
                 site_name=["indeed", "linkedin"],
-                search_term=f'"{company_name}" insurance',
+                search_term=f'"{company_name}" (producer OR "account manager" OR underwriter OR operations OR sales OR "commercial lines")',
                 location="United States",
-                results_wanted=10,  # Reduced to find companies faster
+                results_wanted=20,
                 hours_old=720,  # 30 days
                 country_indeed='USA',
                 linkedin_fetch_description=False
@@ -197,9 +197,36 @@ class EnhancedLeadsPipeline:
                     jobs_df['company'].str.lower().str.contains(company_lower, na=False, regex=False)
                 ]
 
-                # Extract job details
-                job_list = []
+                # Filter OUT entry-level and remote positions
+                # Filter OUT job titles containing these keywords
+                exclude_keywords = ['entry level', 'entry-level', 'junior', 'intern', 'trainee',
+                                   'customer service', 'call center', 'claims adjuster', 'claims representative']
+
+                # Filter FOR commercial insurance roles
+                include_keywords = ['producer', 'account manager', 'account executive', 'underwriter',
+                                   'sales', 'commercial lines', 'operations', 'director', 'manager',
+                                   'vp', 'vice president', 'ceo', 'cfo', 'president', 'broker']
+
+                filtered_jobs = []
                 for _, job in matching_jobs.iterrows():
+                    title = str(job.get('title', '') or '').lower()
+                    location = str(job.get('location', '') or '').lower()
+
+                    # Skip if remote-only
+                    if 'remote' in location and not any(x in location for x in ['hybrid', 'onsite', 'on-site', 'on site']):
+                        continue
+
+                    # Skip if entry-level or excluded role
+                    if any(keyword in title for keyword in exclude_keywords):
+                        continue
+
+                    # Only include if matches commercial insurance roles
+                    if any(keyword in title for keyword in include_keywords):
+                        filtered_jobs.append(job)
+
+                # Extract job details from filtered jobs
+                job_list = []
+                for job in filtered_jobs:
                     job_list.append({
                         'title': str(job.get('title', '') or ''),
                         'location': str(job.get('location', '') or ''),
@@ -208,7 +235,7 @@ class EnhancedLeadsPipeline:
                         'source': str(job.get('site', '') or '')
                     })
 
-                return {'count': len(matching_jobs), 'jobs': job_list}
+                return {'count': len(job_list), 'jobs': job_list}
         except Exception as e:
             logger.debug(f"Job search error for {company_name}: {e}")
 

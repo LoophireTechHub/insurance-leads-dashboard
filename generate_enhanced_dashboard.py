@@ -23,6 +23,22 @@ def generate_enhanced_dashboard():
         reader = csv.DictReader(f)
         leads = list(reader)
 
+    # Load corresponding JSON file with job details
+    json_file = latest_csv.with_suffix('.json')
+    job_details_map = {}
+    if json_file.exists():
+        with open(json_file, 'r', encoding='utf-8') as f:
+            full_data = json.load(f)
+            # Create a map of company_name -> job_details
+            for company in full_data:
+                company_name = company.get('company_name', '')
+                job_details_map[company_name] = company.get('job_details', [])
+
+    # Add job details to leads
+    for lead in leads:
+        company_name = lead.get('Company Name', '')
+        lead['job_details'] = job_details_map.get(company_name, [])
+
     # Sort by composite score
     leads.sort(key=lambda x: float(x.get('Composite Score', 0)), reverse=True)
 
@@ -244,6 +260,65 @@ def generate_enhanced_dashboard():
         .btn-linkedin:hover {
             background: #005885;
         }
+        .expandable-row {
+            cursor: pointer;
+        }
+        .expandable-row:hover {
+            background: #edf2f7 !important;
+        }
+        .job-details-row {
+            display: none;
+            background: #f7fafc;
+        }
+        .job-details-row.expanded {
+            display: table-row;
+        }
+        .job-details-cell {
+            padding: 20px !important;
+            border-bottom: 2px solid #e2e8f0 !important;
+        }
+        .job-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .job-item {
+            padding: 12px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .job-item:last-child {
+            border-bottom: none;
+        }
+        .job-title {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 5px;
+        }
+        .job-meta {
+            font-size: 0.85em;
+            color: #718096;
+            margin-top: 4px;
+        }
+        .job-link {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 6px 12px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.85em;
+            transition: background 0.3s ease;
+        }
+        .job-link:hover {
+            background: #5568d3;
+        }
+        .expand-icon {
+            display: inline-block;
+            margin-left: 8px;
+            font-size: 0.8em;
+            color: #667eea;
+        }
         @media (max-width: 768px) {
             .stats-grid { grid-template-columns: 1fr 1fr; }
             table { font-size: 0.85em; }
@@ -332,7 +407,7 @@ def generate_enhanced_dashboard():
                 const tbody = document.querySelector('#leadsTable tbody');
                 tbody.innerHTML = '';
 
-                latest.leads.forEach(lead => {
+                latest.leads.forEach((lead, index) => {
                     const score = parseFloat(lead['Composite Score'] || 0);
                     const scoreClass = score >= 50 ? 'score-high' : score >= 25 ? 'score-medium' : 'score-low';
 
@@ -343,7 +418,7 @@ def generate_enhanced_dashboard():
                         `<span class="growth-indicator">↑ ${growthRate}%</span>` : '';
 
                     const jobsBadge = activeJobs > 0 ?
-                        `<span class="jobs-indicator">${activeJobs} jobs</span>` : '';
+                        `<span class="jobs-indicator clickable">${activeJobs} jobs</span>` : '';
 
                     const contact1Name = lead['Contact 1 Name'] || '';
                     const contact1Title = lead['Contact 1 Title'] || '';
@@ -362,9 +437,11 @@ def generate_enhanced_dashboard():
                         'N/A';
 
                     const row = tbody.insertRow();
+                    row.className = 'expandable-row';
+                    row.dataset.index = index;
                     row.innerHTML = `
                         <td><span class="score-badge ${scoreClass}">${score.toFixed(0)}</span></td>
-                        <td class="company-name">${lead['Company Name'] || 'N/A'}${growthBadge}${jobsBadge}</td>
+                        <td class="company-name">${lead['Company Name'] || 'N/A'}${growthBadge}${jobsBadge}<span class="expand-icon">▼</span></td>
                         <td>${lead['Location'] || 'N/A'}</td>
                         <td>${lead['Current Headcount'] || '0'}</td>
                         <td>${growthRate > 0 ? '+' + growthRate + '%' : (growthRate < 0 ? growthRate + '%' : '--')}</td>
@@ -375,6 +452,50 @@ def generate_enhanced_dashboard():
                         <td>${linkedInButton}</td>
                         <td>${websiteLink}</td>
                     `;
+
+                    // Create job details row
+                    const jobDetailsRow = tbody.insertRow();
+                    jobDetailsRow.className = 'job-details-row';
+                    jobDetailsRow.dataset.index = index;
+
+                    const jobDetails = lead.job_details || [];
+                    let jobsHTML = '<p style="color: #718096;">No job details available</p>';
+
+                    if (jobDetails.length > 0) {
+                        jobsHTML = '<ul class="job-list">';
+                        jobDetails.forEach(job => {
+                            const jobTitle = job.title || 'Untitled Position';
+                            const jobLocation = job.location || 'Location not specified';
+                            const jobDate = job.date_posted || 'Date unknown';
+                            const jobSource = (job.source || 'indeed').charAt(0).toUpperCase() + (job.source || 'indeed').slice(1);
+                            const jobUrl = job.url || '#';
+
+                            jobsHTML += `
+                                <li class="job-item">
+                                    <div class="job-title">${jobTitle}</div>
+                                    <div class="job-meta">
+                                        📍 ${jobLocation} • 📅 ${jobDate} • 🔗 ${jobSource}
+                                    </div>
+                                    <a href="${jobUrl}" target="_blank" class="job-link">View Job →</a>
+                                </li>
+                            `;
+                        });
+                        jobsHTML += '</ul>';
+                    }
+
+                    jobDetailsRow.innerHTML = `
+                        <td colspan="11" class="job-details-cell">
+                            <h3 style="margin-bottom: 15px; color: #2d3748;">Open Positions at ${lead['Company Name']}</h3>
+                            ${jobsHTML}
+                        </td>
+                    `;
+
+                    // Add click handler
+                    row.addEventListener('click', () => {
+                        jobDetailsRow.classList.toggle('expanded');
+                        const icon = row.querySelector('.expand-icon');
+                        icon.textContent = jobDetailsRow.classList.contains('expanded') ? '▲' : '▼';
+                    });
                 });
 
                 document.getElementById('searchInput').addEventListener('input', filterTable);

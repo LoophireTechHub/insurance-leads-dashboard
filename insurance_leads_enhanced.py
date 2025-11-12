@@ -42,7 +42,7 @@ APOLLO_BASE_URL = "https://api.apollo.io/v1"
 # Target insurance company criteria
 TARGET_CRITERIA = {
     'industries': ['Insurance', 'Insurance Agencies and Brokerages', 'Commercial Insurance'],
-    'employee_ranges': ["10,20", "20,50", "51,100", "101,200", "201,500"],  # 10-500 employees
+    'employee_ranges': ["10,20", "20,50", "51,100", "101,200", "201,300"],  # 10-300 employees (smaller companies are easier targets)
     'job_titles': ["CEO", "CFO", "President", "VP", "Director", "Manager", "Owner", "Partner"],
 }
 
@@ -174,17 +174,17 @@ class EnhancedLeadsPipeline:
 
         return growth_signal
 
-    def search_company_jobs(self, company_name: str) -> int:
-        """Search for active job postings from a company"""
+    def search_company_jobs(self, company_name: str) -> Dict:
+        """Search for active job postings from a company - returns count and job details"""
         if not JOBSPY_AVAILABLE:
-            return 0
+            return {'count': 0, 'jobs': []}
 
         try:
             jobs_df = scrape_jobs(
                 site_name=["indeed", "linkedin"],
                 search_term=f'"{company_name}" insurance',
                 location="United States",
-                results_wanted=20,
+                results_wanted=10,  # Reduced to find companies faster
                 hours_old=720,  # 30 days
                 country_indeed='USA',
                 linkedin_fetch_description=False
@@ -194,13 +194,25 @@ class EnhancedLeadsPipeline:
                 # Filter for actual company matches
                 company_lower = company_name.lower()
                 matching_jobs = jobs_df[
-                    jobs_df['company'].str.lower().str.contains(company_lower, na=False)
+                    jobs_df['company'].str.lower().str.contains(company_lower, na=False, regex=False)
                 ]
-                return len(matching_jobs)
+
+                # Extract job details
+                job_list = []
+                for _, job in matching_jobs.iterrows():
+                    job_list.append({
+                        'title': str(job.get('title', '') or ''),
+                        'location': str(job.get('location', '') or ''),
+                        'url': str(job.get('job_url', '') or ''),
+                        'date_posted': str(job.get('date_posted', '') or ''),
+                        'source': str(job.get('site', '') or '')
+                    })
+
+                return {'count': len(matching_jobs), 'jobs': job_list}
         except Exception as e:
             logger.debug(f"Job search error for {company_name}: {e}")
 
-        return 0
+        return {'count': 0, 'jobs': []}
 
     def search_company_news(self, company_name: str, domain: str) -> Dict:
         """Search for recent company news (funding, expansion, etc.)"""
@@ -332,6 +344,12 @@ class EnhancedLeadsPipeline:
                     filtered_count += 1
                     continue
 
+                # Filter out companies with 300+ employees (focus on smaller, easier targets)
+                current_headcount = company.get('estimated_num_employees', 0)
+                if current_headcount >= 300:
+                    filtered_count += 1
+                    continue
+
                 company_id = company.get('id')
                 company_name = company.get('name', '')
                 domain = company.get('primary_domain', '')
@@ -353,10 +371,12 @@ class EnhancedLeadsPipeline:
 
                 # Signal 2: Active Job Postings
                 if JOBSPY_AVAILABLE:
-                    job_count = self.search_company_jobs(company_name)
-                    signals['active_jobs'] = job_count
+                    job_data = self.search_company_jobs(company_name)
+                    signals['active_jobs'] = job_data['count']
+                    signals['job_details'] = job_data['jobs']
                 else:
                     signals['active_jobs'] = 0
+                    signals['job_details'] = []
 
                 # Signal 3: News/Funding
                 news_signal = self.search_company_news(company_name, domain)
@@ -370,10 +390,8 @@ class EnhancedLeadsPipeline:
                 # Calculate composite score
                 signals['composite_score'] = self.calculate_composite_score(signals)
 
-                # Only include leads with score > 10 or with growth/jobs signals
-                if (signals['composite_score'] >= 10 or
-                    growth_signal.get('is_growing') or
-                    signals['active_jobs'] > 0):
+                # Only include leads with hiring signals (jobs or growth)
+                if (growth_signal.get('is_growing') or signals['active_jobs'] > 0):
                     enriched_leads.append(signals)
 
                 time.sleep(0.5)  # Rate limiting
@@ -443,6 +461,13 @@ class EnhancedLeadsPipeline:
                 writer.writerow(row)
 
         logger.info(f"📁 Saved to: {csv_file}")
+
+        # Also save job details to JSON for dashboard
+        json_file = self.output_dir / f"enhanced_leads_{timestamp}.json"
+        with open(json_file, 'w', encoding='utf-8') as f:
+            json.dump(leads, f, indent=2)
+        logger.info(f"📁 Job details saved to: {json_file}")
+
         return str(csv_file)
 
     def run(self):

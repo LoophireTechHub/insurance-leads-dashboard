@@ -289,16 +289,49 @@ class EnhancedLeadsPipeline:
 
         return min(score, 100.0)
 
+    def is_insurance_company(self, company: Dict) -> bool:
+        """Filter to ensure company is actually in insurance industry"""
+        industry = (company.get('industry', '') or '').lower()
+        company_name = (company.get('name', '') or '').lower()
+
+        # Exclude non-insurance industries
+        excluded_industries = [
+            'staffing', 'recruiting', 'information technology', 'it services',
+            'publishing', 'human resources', 'consulting', 'outsourcing',
+            'offshoring', 'higher education', 'mental health', 'nonprofit',
+            'financial services', 'government'
+        ]
+
+        # Check if industry matches excluded list
+        for excluded in excluded_industries:
+            if excluded in industry:
+                return False
+
+        # Whitelist insurance-related keywords
+        insurance_keywords = ['insurance', 'underwriting', 'broker', 'risk management']
+
+        # Check if company name or industry contains insurance keywords
+        has_insurance_keyword = any(keyword in industry or keyword in company_name
+                                   for keyword in insurance_keywords)
+
+        return has_insurance_keyword
+
     def process_companies(self, companies: List[Dict]) -> List[Dict]:
         """Process companies and gather all signals"""
         logger.info("📊 Processing companies and gathering signals...")
 
         enriched_leads = []
+        filtered_count = 0
 
         for i, company in enumerate(companies, 1):
             print(f"Processing {i}/{len(companies)}: {company.get('name', 'Unknown')}", end="\r")
 
             try:
+                # Filter out non-insurance companies
+                if not self.is_insurance_company(company):
+                    filtered_count += 1
+                    continue
+
                 company_id = company.get('id')
                 company_name = company.get('name', '')
                 domain = company.get('primary_domain', '')
@@ -349,7 +382,9 @@ class EnhancedLeadsPipeline:
                 logger.error(f"Error processing {company.get('name')}: {e}")
 
         print()  # New line after progress
-        logger.info(f"✅ Processed {len(companies)} companies, {len(enriched_leads)} qualified leads")
+        logger.info(f"✅ Processed {len(companies)} companies")
+        logger.info(f"   - Filtered out {filtered_count} non-insurance companies")
+        logger.info(f"   - {len(enriched_leads)} insurance companies qualified as leads")
 
         return enriched_leads
 

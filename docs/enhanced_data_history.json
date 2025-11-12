@@ -1,14 +1,14 @@
 [
   {
     "date": "2025-11-12",
-    "timestamp": "November 12, 2025 at 01:35 PM EST",
+    "timestamp": "November 12, 2025 at 02:07 PM EST",
     "stats": {
-      "total_leads": 23,
+      "total_leads": 24,
       "high_score": 5,
       "growing": 0,
-      "hiring": 23,
-      "with_contacts": 20,
-      "last_updated": "November 12, 2025 at 01:35 PM EST",
+      "hiring": 24,
+      "with_contacts": 21,
+      "last_updated": "November 12, 2025 at 02:07 PM EST",
       "update_date": "2025-11-12"
     },
     "leads": [
@@ -190,16 +190,16 @@
             "source": "linkedin"
           },
           {
-            "title": "Work from Home Entry Level Sales Specialist (No experience needed, Will train)",
+            "title": "Entry Level- Work From Home Client Specialist (Flexible Schedule)",
             "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4335672865",
+            "url": "https://www.linkedin.com/jobs/view/4335782683",
             "date_posted": "",
             "source": "linkedin"
           },
           {
-            "title": "Entry Level- Work From Home Client Specialist (Flexible Schedule)",
+            "title": "Work from Home Entry Level Sales Specialist (No experience needed, Will train)",
             "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4335782683",
+            "url": "https://www.linkedin.com/jobs/view/4335672865",
             "date_posted": "",
             "source": "linkedin"
           },
@@ -341,37 +341,9 @@
             "source": "linkedin"
           },
           {
-            "title": "Work from Home Client Representative (No experience Needed)",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4335355843",
-            "date_posted": "",
-            "source": "linkedin"
-          },
-          {
             "title": "Work from Home Case Manager - Will train",
             "location": "",
             "url": "https://www.linkedin.com/jobs/view/4335415444",
-            "date_posted": "",
-            "source": "linkedin"
-          },
-          {
-            "title": "Entry-Level Client Care Representative - Work from Home",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4335535263",
-            "date_posted": "",
-            "source": "linkedin"
-          },
-          {
-            "title": "Entry-Level Consulting Specialist - Remote",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4335455493",
-            "date_posted": "",
-            "source": "linkedin"
-          },
-          {
-            "title": "Entry-Level Client Care Support Specialist (Work from Home)",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4335575288",
             "date_posted": "",
             "source": "linkedin"
           },
@@ -390,9 +362,37 @@
             "source": "linkedin"
           },
           {
+            "title": "Entry-Level Client Care Support Specialist (Work from Home)",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4335653889",
+            "date_posted": "",
+            "source": "linkedin"
+          },
+          {
+            "title": "Work from Home Client Resolution Specialist (Entry Level)",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4335515120",
+            "date_posted": "",
+            "source": "linkedin"
+          },
+          {
             "title": "Remote Client Onboarding Specialist",
             "location": "",
             "url": "https://www.linkedin.com/jobs/view/4335385680",
+            "date_posted": "",
+            "source": "linkedin"
+          },
+          {
+            "title": "Remote Client Onboarding Specialist - Will Train",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4335435489",
+            "date_posted": "",
+            "source": "linkedin"
+          },
+          {
+            "title": "Work from Home Financial Services Specialist (No Experience Required)",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4335385698",
             "date_posted": "",
             "source": "linkedin"
           }
@@ -455,16 +455,16 @@
             "source": "linkedin"
           },
           {
-            "title": "Entry-Level Salesperson (Remote, No Experience Needed, Will Train)",
+            "title": "Remote Salesperson-Entry Level, No Experience Needed, Will Train",
             "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4335623078",
+            "url": "https://www.linkedin.com/jobs/view/4335662904",
             "date_posted": "",
             "source": "linkedin"
           },
           {
-            "title": "Remote Salesperson-Entry Level, No Experience Needed, Will Train",
+            "title": "Entry-Level Salesperson (Remote, No Experience Needed, Will Train)",
             "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4335662904",
+            "url": "https://www.linkedin.com/jobs/view/4335623078",
             "date_posted": "",
             "source": "linkedin"
           },
@@ -578,11 +578,11 @@
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
         "Contact 2 LinkedIn": "http://www.linkedin.com/in/david-a-sampson-23a54911",
-        "Contact 3 Name": "Bethany Dame",
+        "Contact 3 Name": "Lauren Pavluk",
         "Contact 3 Title": "Vice President",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/bethanydame",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/lauren-pavluk-396117110",
         "job_details": [
           {
             "title": "Legislative Analyst, Compliance Information",
@@ -1000,11 +1000,11 @@
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
         "Contact 2 LinkedIn": "http://www.linkedin.com/in/lee-hill-41932112",
-        "Contact 3 Name": "",
-        "Contact 3 Title": "",
-        "Contact 3 Email": "",
+        "Contact 3 Name": "Rich Scislowski",
+        "Contact 3 Title": "President",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/richscislowski",
         "job_details": [
           {
             "title": "Marketing Specialist - Hybrid",
@@ -1181,11 +1181,11 @@
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
         "Contact 2 LinkedIn": "http://www.linkedin.com/in/paris-kerr-669a14174",
-        "Contact 3 Name": "Paola Serna",
+        "Contact 3 Name": "Patrick Oliver",
         "Contact 3 Title": "Customer Experience Manager",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/paola-serna-994263105",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/patrick-oliver-a7a31723",
         "job_details": [
           {
             "title": "Licensed Insurance Agent",
@@ -1317,6 +1317,43 @@
             "location": "",
             "url": "https://www.linkedin.com/jobs/view/4304804260",
             "date_posted": "2025-10-20",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "35.0",
+        "Company Name": "OTTO Quotes",
+        "Location": "Miami Beach, Florida",
+        "Website": "http://www.ottoinsurance.com",
+        "Phone": "+1 888-596-1534",
+        "Current Headcount": "39",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "39",
+        "Days Tracked": "0",
+        "Active Jobs": "1",
+        "Industry": "insurance",
+        "Contact 1 Name": "Joshua Keller",
+        "Contact 1 Title": "Founder/CEO",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/joshuabkeller",
+        "Contact 2 Name": "Kate Hagan",
+        "Contact 2 Title": "Vice President Operations",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/kate-hagan-05846865",
+        "Contact 3 Name": "Alex Feldman",
+        "Contact 3 Title": "Executive Vice President of Sales",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/feldmanalexander",
+        "job_details": [
+          {
+            "title": "Senior Data Scientist",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4312415245",
+            "date_posted": "2025-10-15",
             "source": "linkedin"
           }
         ]

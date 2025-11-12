@@ -182,9 +182,9 @@ class EnhancedLeadsPipeline:
         try:
             jobs_df = scrape_jobs(
                 site_name=["indeed", "linkedin"],
-                search_term=f'"{company_name}" (producer OR "account manager" OR underwriter OR operations OR sales OR "commercial lines")',
+                search_term=f'"{company_name}" insurance',  # Broader search
                 location="United States",
-                results_wanted=20,
+                results_wanted=30,  # Increased from 20
                 hours_old=720,  # 30 days
                 country_indeed='USA',
                 linkedin_fetch_description=False
@@ -197,30 +197,61 @@ class EnhancedLeadsPipeline:
                     jobs_df['company'].str.lower().str.contains(company_lower, na=False, regex=False)
                 ]
 
-                # Filter OUT entry-level and remote positions
-                # Filter OUT job titles containing these keywords
-                exclude_keywords = ['entry level', 'entry-level', 'junior', 'intern', 'trainee',
-                                   'customer service', 'call center', 'claims adjuster', 'claims representative']
+                # EXCLUDE these roles completely
+                exclude_keywords = [
+                    # Entry level
+                    'entry level', 'entry-level', 'junior', 'intern', 'trainee',
+                    # Customer service / claims
+                    'customer service', 'call center', 'claims adjuster', 'claims representative',
+                    'claims processor', 'claims examiner',
+                    # Generic sales without insurance context
+                    'salesperson', 'sales rep',
+                    # Remote indicators in title
+                    'remote', 'work from home', 'work-from-home', 'wfh'
+                ]
 
-                # Filter FOR commercial insurance roles
-                include_keywords = ['producer', 'account manager', 'account executive', 'underwriter',
-                                   'sales', 'commercial lines', 'operations', 'director', 'manager',
-                                   'vp', 'vice president', 'ceo', 'cfo', 'president', 'broker']
+                # INCLUDE these insurance-specific roles
+                include_keywords = [
+                    # Sales & Production
+                    'producer', 'account manager', 'account executive', 'account specialist',
+                    'commercial lines', 'personal lines', 'broker', 'agent',
+                    # Risk & Underwriting
+                    'underwriter', 'risk advisor', 'risk consultant', 'risk manager',
+                    # Operations & Management
+                    'operations manager', 'operations director', 'operations specialist',
+                    'marketing manager', 'marketing director', 'marketing coordinator',
+                    'business development', 'client services',
+                    # Finance & Admin
+                    'accountant', 'accounting manager', 'finance manager', 'controller',
+                    # Leadership
+                    'director', 'vp', 'vice president', 'ceo', 'cfo', 'coo',
+                    'president', 'executive', 'manager', 'supervisor',
+                    # Technical
+                    'insurance analyst', 'insurance specialist', 'insurance coordinator'
+                ]
 
                 filtered_jobs = []
                 for _, job in matching_jobs.iterrows():
                     title = str(job.get('title', '') or '').lower()
                     location = str(job.get('location', '') or '').lower()
+                    description = str(job.get('description', '') or '').lower()
 
-                    # Skip if remote-only
-                    if 'remote' in location and not any(x in location for x in ['hybrid', 'onsite', 'on-site', 'on site']):
-                        continue
-
-                    # Skip if entry-level or excluded role
+                    # SKIP if title contains any exclude keywords
                     if any(keyword in title for keyword in exclude_keywords):
                         continue
 
-                    # Only include if matches commercial insurance roles
+                    # SKIP if location indicates remote-only (no hybrid/onsite mention)
+                    remote_indicators = ['remote', 'work from home', 'wfh', 'telecommute']
+                    onsite_indicators = ['hybrid', 'onsite', 'on-site', 'on site', 'in-office', 'office']
+
+                    has_remote = any(indicator in location for indicator in remote_indicators)
+                    has_onsite = any(indicator in location for indicator in onsite_indicators)
+
+                    # If remote without onsite/hybrid, skip
+                    if has_remote and not has_onsite:
+                        continue
+
+                    # ONLY include if title matches insurance roles
                     if any(keyword in title for keyword in include_keywords):
                         filtered_jobs.append(job)
 

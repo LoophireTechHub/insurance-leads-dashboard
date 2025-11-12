@@ -1,91 +1,19 @@
 [
   {
     "date": "2025-11-12",
-    "timestamp": "November 12, 2025 at 02:21 PM EST",
+    "timestamp": "November 12, 2025 at 09:40 AM EST",
     "stats": {
-      "total_leads": 15,
+      "total_leads": 13,
       "high_score": 1,
       "growing": 0,
-      "hiring": 15,
-      "with_contacts": 13,
-      "last_updated": "November 12, 2025 at 02:21 PM EST",
+      "hiring": 13,
+      "with_contacts": 12,
+      "last_updated": "November 12, 2025 at 09:40 AM EST",
       "update_date": "2025-11-12"
     },
     "leads": [
       {
         "Composite Score": "55.0",
-        "Company Name": "Anderson Agency LLC",
-        "Location": "Port Saint Lucie, Florida",
-        "Website": "http://www.andersonagencygroup.com",
-        "Phone": "",
-        "Current Headcount": "22",
-        "Growth Rate %": "0.0",
-        "Previous Headcount": "22",
-        "Days Tracked": "0",
-        "Active Jobs": "6",
-        "Industry": "insurance",
-        "Contact 1 Name": "Amy Anderson",
-        "Contact 1 Title": "Owner and CEO",
-        "Contact 1 Email": "email_not_unlocked@domain.com",
-        "Contact 1 Phone": "",
-        "Contact 1 LinkedIn": "http://www.linkedin.com/in/amy-anderson-symmetry",
-        "Contact 2 Name": "Bill Anderson",
-        "Contact 2 Title": "Owner/ Agent",
-        "Contact 2 Email": "email_not_unlocked@domain.com",
-        "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/bill-anderson-2044a26",
-        "Contact 3 Name": "Jason Anderson",
-        "Contact 3 Title": "Insurance Agent, Owner Anderson Agency",
-        "Contact 3 Email": "email_not_unlocked@domain.com",
-        "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/jason-anderson-mba-05425931",
-        "job_details": [
-          {
-            "title": "Work From Home Salesperson (No Experience Needed, Will Train)",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4335612922",
-            "date_posted": "",
-            "source": "linkedin"
-          },
-          {
-            "title": "Remote Sales (No Experience Needed, Will Train)",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4335812656",
-            "date_posted": "",
-            "source": "linkedin"
-          },
-          {
-            "title": "Remote Salesperson (No Experience Needed, Will Train, Flexible Schedule)",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4335612928",
-            "date_posted": "",
-            "source": "linkedin"
-          },
-          {
-            "title": "Salesperson (Remote, No Experience Needed, Will Train)",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4335712797",
-            "date_posted": "",
-            "source": "linkedin"
-          },
-          {
-            "title": "Remote Sales (No Experience Needed, Will Train)",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4335822616",
-            "date_posted": "",
-            "source": "linkedin"
-          },
-          {
-            "title": "Remote Salesperson-Will Train, No Cold Calling",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4335712801",
-            "date_posted": "",
-            "source": "linkedin"
-          }
-        ]
-      },
-      {
-        "Composite Score": "45.0",
         "Company Name": "National General",
         "Location": "Winston-Salem, North Carolina",
         "Website": "http://www.nationalgeneral.com",
@@ -94,7 +22,7 @@
         "Growth Rate %": "0.0",
         "Previous Headcount": "44",
         "Days Tracked": "0",
-        "Active Jobs": "4",
+        "Active Jobs": "7",
         "Industry": "insurance",
         "Contact 1 Name": "Daron Skipper",
         "Contact 1 Title": "CFO",
@@ -113,9 +41,30 @@
         "Contact 3 LinkedIn": "http://www.linkedin.com/in/doug-densmore-8a703853",
         "job_details": [
           {
-            "title": "Territory Sales Manager (Albany, NY) - National General",
-            "location": "New York, United States",
-            "url": "https://www.linkedin.com/jobs/view/4308861622",
+            "title": "Direct Sales Agent Specialist (2744) - National General",
+            "location": "Jonesboro, AR, US",
+            "url": "https://www.indeed.com/viewjob?jk=298796e562edddc4",
+            "date_posted": "2025-11-06",
+            "source": "indeed"
+          },
+          {
+            "title": "Regional Sales Manager (Midwest) - National General",
+            "location": "Illinois, United States",
+            "url": "https://www.linkedin.com/jobs/view/4321010897",
+            "date_posted": "2025-11-05",
+            "source": "linkedin"
+          },
+          {
+            "title": "Territory Sales Manager - (South Florida) - National General",
+            "location": "Florida, United States",
+            "url": "https://www.linkedin.com/jobs/view/4320895516",
+            "date_posted": "2025-11-05",
+            "source": "linkedin"
+          },
+          {
+            "title": "Territory Sales Manager (Charlotte) - National General",
+            "location": "Charlotte, NC",
+            "url": "https://www.linkedin.com/jobs/view/4318682563",
             "date_posted": "2025-10-25",
             "source": "linkedin"
           },
@@ -144,6 +93,64 @@
       },
       {
         "Composite Score": "45.0",
+        "Company Name": "PetPartners Pet Insurance",
+        "Location": "Raleigh, North Carolina",
+        "Website": "http://www.petpartners.com",
+        "Phone": "+1 866-774-1113",
+        "Current Headcount": "75",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "75",
+        "Days Tracked": "0",
+        "Active Jobs": "4",
+        "Industry": "insurance",
+        "Contact 1 Name": "Michelle Yates",
+        "Contact 1 Title": "Executive Vice President",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/michelle-yates-36a04b73",
+        "Contact 2 Name": "Jonathan Snell",
+        "Contact 2 Title": "Vice President of Business Development",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/jonathan-snell-796b1780",
+        "Contact 3 Name": "Sonya Kim",
+        "Contact 3 Title": "Business Development Executive",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/sonya-kim-441a7117",
+        "job_details": [
+          {
+            "title": "Insurance Agent",
+            "location": "Ohio, United States",
+            "url": "https://www.linkedin.com/jobs/view/4313087203",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Insurance Agent",
+            "location": "Arizona, United States",
+            "url": "https://www.linkedin.com/jobs/view/4313095095",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Insurance Agent",
+            "location": "North Carolina, United States",
+            "url": "https://www.linkedin.com/jobs/view/4313093125",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sales Coordinator - Relationship Management",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4319012607",
+            "date_posted": "2025-10-23",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "45.0",
         "Company Name": "Westwood Insurance Agency",
         "Location": "Los Angeles, California",
         "Website": "http://www.westwoodinsurance.com",
@@ -152,7 +159,7 @@
         "Growth Rate %": "0.0",
         "Previous Headcount": "130",
         "Days Tracked": "0",
-        "Active Jobs": "4",
+        "Active Jobs": "3",
         "Industry": "insurance",
         "Contact 1 Name": "Kimberlee Furcht",
         "Contact 1 Title": "Vice President",
@@ -178,10 +185,10 @@
             "source": "linkedin"
           },
           {
-            "title": "National Sales Assistant - Westwood",
+            "title": "Licensed Auto Insurance Agent - Westwood",
             "location": "Plano, TX",
-            "url": "https://www.linkedin.com/jobs/view/4267515671",
-            "date_posted": "2025-11-08",
+            "url": "https://www.linkedin.com/jobs/view/4334791623",
+            "date_posted": "2025-11-07",
             "source": "linkedin"
           },
           {
@@ -189,64 +196,6 @@
             "location": "Plano, TX",
             "url": "https://www.linkedin.com/jobs/view/4288811764",
             "date_posted": "2025-10-28",
-            "source": "linkedin"
-          },
-          {
-            "title": "National Sales Assistant - Westwood",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4317518619",
-            "date_posted": "nan",
-            "source": "linkedin"
-          }
-        ]
-      },
-      {
-        "Composite Score": "45.0",
-        "Company Name": "Marquee Insurance Group (MIG)",
-        "Location": "Roswell, Georgia",
-        "Website": "http://www.marqueeig.com",
-        "Phone": "+1 678-483-8151",
-        "Current Headcount": "80",
-        "Growth Rate %": "0.0",
-        "Previous Headcount": "80",
-        "Days Tracked": "0",
-        "Active Jobs": "3",
-        "Industry": "insurance",
-        "Contact 1 Name": "Jesse Case",
-        "Contact 1 Title": "Regional Vice President",
-        "Contact 1 Email": "email_not_unlocked@domain.com",
-        "Contact 1 Phone": "",
-        "Contact 1 LinkedIn": "http://www.linkedin.com/in/jesse-case",
-        "Contact 2 Name": "Brett Dykes",
-        "Contact 2 Title": "Senior Vice President",
-        "Contact 2 Email": "email_not_unlocked@domain.com",
-        "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/brett-dykes",
-        "Contact 3 Name": "Evan Cheney",
-        "Contact 3 Title": "Vice President of Engineering",
-        "Contact 3 Email": "email_not_unlocked@domain.com",
-        "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/evan-cheney-99035a197",
-        "job_details": [
-          {
-            "title": "Inside Sales Representative (January Start Date)",
-            "location": "Roswell, GA",
-            "url": "https://www.linkedin.com/jobs/view/4318410257",
-            "date_posted": "2025-10-27",
-            "source": "linkedin"
-          },
-          {
-            "title": "Inside Sales Representative (January Start Date)",
-            "location": "Charleston, SC",
-            "url": "https://www.linkedin.com/jobs/view/4314380800",
-            "date_posted": "2025-10-20",
-            "source": "linkedin"
-          },
-          {
-            "title": "Operations Specialist",
-            "location": "Roswell, GA",
-            "url": "https://www.linkedin.com/jobs/view/4311474863",
-            "date_posted": "2025-10-13",
             "source": "linkedin"
           }
         ]
@@ -261,7 +210,7 @@
         "Growth Rate %": "0.0",
         "Previous Headcount": "56",
         "Days Tracked": "0",
-        "Active Jobs": "19",
+        "Active Jobs": "23",
         "Industry": "insurance",
         "Contact 1 Name": "",
         "Contact 1 Title": "",
@@ -287,16 +236,44 @@
             "source": "linkedin"
           },
           {
-            "title": "AVP, Commercial Lines Underwriting",
-            "location": "Edina, MN",
-            "url": "https://www.linkedin.com/jobs/view/4315761741",
-            "date_posted": "2025-11-08",
+            "title": "Senior Underwriter",
+            "location": "Plano, TX",
+            "url": "https://www.linkedin.com/jobs/view/4283913074",
+            "date_posted": "2025-11-11",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Lines \u2013 Account Manager",
+            "location": "San Antonio, TX",
+            "url": "https://www.linkedin.com/jobs/view/4283911245",
+            "date_posted": "2025-11-11",
+            "source": "linkedin"
+          },
+          {
+            "title": "SVP \u2013 Insurance Technology Consulting",
+            "location": "New York, NY",
+            "url": "https://www.linkedin.com/jobs/view/4321199637",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "SVP - Insurance Technology Consulting",
+            "location": "New York, NY",
+            "url": "https://www.linkedin.com/jobs/view/4321340171",
+            "date_posted": "2025-11-07",
             "source": "linkedin"
           },
           {
             "title": "Senior Casualty Underwriter Large/National Accounts",
             "location": "Dallas, TX",
             "url": "https://www.linkedin.com/jobs/view/4321198109",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Risk Manager | Long Term Care Facility",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4315573443",
             "date_posted": "2025-11-07",
             "source": "linkedin"
           },
@@ -308,16 +285,9 @@
             "source": "linkedin"
           },
           {
-            "title": "Account Executive | Investigations",
-            "location": "Florida, United States",
-            "url": "https://www.linkedin.com/jobs/view/4315089567",
-            "date_posted": "2025-11-06",
-            "source": "linkedin"
-          },
-          {
-            "title": "Account Executive | Investigations",
-            "location": "Illinois, United States",
-            "url": "https://www.linkedin.com/jobs/view/4315087699",
+            "title": "Commercial Lines - Account Manager",
+            "location": "San Antonio, TX",
+            "url": "https://www.linkedin.com/jobs/view/4283571581",
             "date_posted": "2025-11-06",
             "source": "linkedin"
           },
@@ -329,23 +299,23 @@
             "source": "linkedin"
           },
           {
-            "title": "Sr Group Underwriter (Group Life/Health, Voluntary, CI/DI)",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4320831018",
+            "title": "Claims Manager",
+            "location": "Schaumburg, IL",
+            "url": "https://www.linkedin.com/jobs/view/4320851025",
             "date_posted": "2025-11-05",
-            "source": "linkedin"
-          },
-          {
-            "title": "VP of Marketing",
-            "location": "Redlands, CA",
-            "url": "https://www.linkedin.com/jobs/view/4314052075",
-            "date_posted": "2025-11-04",
             "source": "linkedin"
           },
           {
             "title": "Insurance Placement Manager",
             "location": "Bellaire, TX",
             "url": "https://www.linkedin.com/jobs/view/4320634665",
+            "date_posted": "2025-11-04",
+            "source": "linkedin"
+          },
+          {
+            "title": "Client Manager \u2013 Personal Lines HNW",
+            "location": "Dallas, TX",
+            "url": "https://www.linkedin.com/jobs/view/4320604760",
             "date_posted": "2025-11-04",
             "source": "linkedin"
           },
@@ -357,24 +327,24 @@
             "source": "linkedin"
           },
           {
-            "title": "New Business Operations and Client Service Lead (Life/Annuity)",
-            "location": "Des Moines, IA",
-            "url": "https://www.linkedin.com/jobs/view/4320494087",
-            "date_posted": "2025-11-03",
+            "title": "Director of Curriculum",
+            "location": "Dallas, TX",
+            "url": "https://www.linkedin.com/jobs/view/4301990318",
+            "date_posted": "2025-10-30",
             "source": "linkedin"
           },
           {
-            "title": "Risk Control Manager",
-            "location": "California, United States",
-            "url": "https://www.linkedin.com/jobs/view/4319496445",
+            "title": "Commercial Account Manager",
+            "location": "Texas, United States",
+            "url": "https://www.linkedin.com/jobs/view/4310984079",
             "date_posted": "2025-10-29",
             "source": "linkedin"
           },
           {
-            "title": "Account Executive | Investigations | FL",
-            "location": "Florida, United States",
-            "url": "https://www.linkedin.com/jobs/view/4319305252",
-            "date_posted": "2025-10-27",
+            "title": "Risk Manager",
+            "location": "Alexandria, VA",
+            "url": "https://www.linkedin.com/jobs/view/4310040016",
+            "date_posted": "2025-10-28",
             "source": "linkedin"
           },
           {
@@ -392,23 +362,30 @@
             "source": "linkedin"
           },
           {
-            "title": "Account Manager | TPA",
-            "location": "Florida, United States",
-            "url": "https://www.linkedin.com/jobs/view/4299076095",
-            "date_posted": "2025-10-24",
+            "title": "Account Manager - Commercial Lines",
+            "location": "Dallas, TX",
+            "url": "https://www.linkedin.com/jobs/view/4288073499",
+            "date_posted": "2025-10-23",
             "source": "linkedin"
           },
           {
-            "title": "Senior Underwriter",
-            "location": "Plano, TX",
-            "url": "https://www.linkedin.com/jobs/view/4283913074",
+            "title": "Associate Commercial Account Manager",
+            "location": "Fort Worth, TX",
+            "url": "https://www.linkedin.com/jobs/view/4317716066",
+            "date_posted": "2025-10-22",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sr. Product Manager | Claims, Workers\u2019 Compensation",
+            "location": "Massachusetts, United States",
+            "url": "https://www.linkedin.com/jobs/view/4316989550",
             "date_posted": "nan",
             "source": "linkedin"
           },
           {
-            "title": "Commercial Lines \u2013 Account Manager",
-            "location": "San Antonio, TX",
-            "url": "https://www.linkedin.com/jobs/view/4283911245",
+            "title": "Bilingual Commercial Assistant Account Manager",
+            "location": "Texas, United States",
+            "url": "https://www.linkedin.com/jobs/view/4280872860",
             "date_posted": "nan",
             "source": "linkedin"
           }
@@ -453,74 +430,37 @@
       },
       {
         "Composite Score": "35.0",
-        "Company Name": "PetPartners Pet Insurance",
-        "Location": "Raleigh, North Carolina",
-        "Website": "http://www.petpartners.com",
-        "Phone": "+1 866-774-1113",
-        "Current Headcount": "75",
+        "Company Name": "Kingstone Insurance Company",
+        "Location": "Kingston, New York",
+        "Website": "http://www.kingstoneinsurance.com",
+        "Phone": "+1 800-364-7045",
+        "Current Headcount": "99",
         "Growth Rate %": "0.0",
-        "Previous Headcount": "75",
+        "Previous Headcount": "99",
         "Days Tracked": "0",
         "Active Jobs": "1",
         "Industry": "insurance",
-        "Contact 1 Name": "Michelle Yates",
-        "Contact 1 Title": "Executive Vice President",
+        "Contact 1 Name": "Randy Patten",
+        "Contact 1 Title": "Chief Financial Officer, VP and Treasurer",
         "Contact 1 Email": "email_not_unlocked@domain.com",
         "Contact 1 Phone": "",
-        "Contact 1 LinkedIn": "http://www.linkedin.com/in/michelle-yates-36a04b73",
-        "Contact 2 Name": "Jonathan Snell",
-        "Contact 2 Title": "Vice President of Business Development",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/randy-patten-965344110",
+        "Contact 2 Name": "Meryl Golden",
+        "Contact 2 Title": "Chief Executive Officer & President",
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/jonathan-snell-796b1780",
-        "Contact 3 Name": "Sonya Kim",
-        "Contact 3 Title": "Business Development Executive",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/meryl-golden",
+        "Contact 3 Name": "John Reiersen",
+        "Contact 3 Title": "President & CEO",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/sonya-kim-441a7117",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/john-reiersen-30256a25",
         "job_details": [
           {
-            "title": "Sales Coordinator - Relationship Management",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4319012607",
-            "date_posted": "2025-10-23",
-            "source": "linkedin"
-          }
-        ]
-      },
-      {
-        "Composite Score": "35.0",
-        "Company Name": "Miller Family Agency",
-        "Location": "Frisco, Texas",
-        "Website": "http://www.millerfamilyagency.com",
-        "Phone": "",
-        "Current Headcount": "37",
-        "Growth Rate %": "0.0",
-        "Previous Headcount": "37",
-        "Days Tracked": "0",
-        "Active Jobs": "1",
-        "Industry": "insurance",
-        "Contact 1 Name": "Stephanie Lor",
-        "Contact 1 Title": "Director of Operations",
-        "Contact 1 Email": "email_not_unlocked@domain.com",
-        "Contact 1 Phone": "",
-        "Contact 1 LinkedIn": "http://www.linkedin.com/in/stephanie-lor-18164549",
-        "Contact 2 Name": "",
-        "Contact 2 Title": "",
-        "Contact 2 Email": "",
-        "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "",
-        "Contact 3 Name": "",
-        "Contact 3 Title": "",
-        "Contact 3 Email": "",
-        "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "",
-        "job_details": [
-          {
-            "title": "Work from Home Case Manager - Will train",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4335823674",
-            "date_posted": "",
+            "title": "Personal Lines Product Analyst - Property Insurance",
+            "location": "Kingston, NY",
+            "url": "https://www.linkedin.com/jobs/view/4331455107",
+            "date_posted": "2025-10-30",
             "source": "linkedin"
           }
         ]
@@ -621,17 +561,54 @@
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
         "Contact 2 LinkedIn": "http://www.linkedin.com/in/david-a-sampson-23a54911",
-        "Contact 3 Name": "Karen Collins",
+        "Contact 3 Name": "Mark Sektnan",
         "Contact 3 Title": "Vice President",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/karenherrcollins",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/mark-sektnan-9481897",
         "job_details": [
           {
             "title": "Director/Sr Director Personal Lines",
             "location": "Chicago, IL",
             "url": "https://www.linkedin.com/jobs/view/4333908957",
             "date_posted": "2025-11-03",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "35.0",
+        "Company Name": "Marquee Insurance Group (MIG)",
+        "Location": "Roswell, Georgia",
+        "Website": "http://www.marqueeig.com",
+        "Phone": "+1 678-483-8151",
+        "Current Headcount": "80",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "80",
+        "Days Tracked": "0",
+        "Active Jobs": "1",
+        "Industry": "insurance",
+        "Contact 1 Name": "Jesse Case",
+        "Contact 1 Title": "Regional Vice President",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/jesse-case",
+        "Contact 2 Name": "Brett Dykes",
+        "Contact 2 Title": "Senior Vice President",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/brett-dykes",
+        "Contact 3 Name": "Evan Cheney",
+        "Contact 3 Title": "Vice President of Engineering",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/evan-cheney-99035a197",
+        "job_details": [
+          {
+            "title": "Operations Specialist",
+            "location": "Roswell, GA",
+            "url": "https://www.linkedin.com/jobs/view/4311474863",
+            "date_posted": "nan",
             "source": "linkedin"
           }
         ]
@@ -675,106 +652,6 @@
       },
       {
         "Composite Score": "35.0",
-        "Company Name": "Ryan Miller Agency",
-        "Location": "Mesa, Arizona",
-        "Website": "http://www.theryanpmiller.com",
-        "Phone": "",
-        "Current Headcount": "14",
-        "Growth Rate %": "0.0",
-        "Previous Headcount": "14",
-        "Days Tracked": "0",
-        "Active Jobs": "10",
-        "Industry": "insurance",
-        "Contact 1 Name": "",
-        "Contact 1 Title": "",
-        "Contact 1 Email": "",
-        "Contact 1 Phone": "",
-        "Contact 1 LinkedIn": "",
-        "Contact 2 Name": "",
-        "Contact 2 Title": "",
-        "Contact 2 Email": "",
-        "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "",
-        "Contact 3 Name": "",
-        "Contact 3 Title": "",
-        "Contact 3 Email": "",
-        "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "",
-        "job_details": [
-          {
-            "title": "Remote Sales Director for Clients",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4321856955",
-            "date_posted": "",
-            "source": "linkedin"
-          },
-          {
-            "title": "Work from Home Success Broker",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4321976366",
-            "date_posted": "",
-            "source": "linkedin"
-          },
-          {
-            "title": "Work from Home Planning Director",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4321916487",
-            "date_posted": "",
-            "source": "linkedin"
-          },
-          {
-            "title": "Work from Home National Sales Specialist",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4321826974",
-            "date_posted": "",
-            "source": "linkedin"
-          },
-          {
-            "title": "Work from Home Advancement Sales",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4321816617",
-            "date_posted": "",
-            "source": "linkedin"
-          },
-          {
-            "title": "Remote Sales Support Specialist",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4321876684",
-            "date_posted": "",
-            "source": "linkedin"
-          },
-          {
-            "title": "Remote Sales Consumer Manager",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4321986477",
-            "date_posted": "",
-            "source": "linkedin"
-          },
-          {
-            "title": "Remote Client Business Sales Agent",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4321976335",
-            "date_posted": "",
-            "source": "linkedin"
-          },
-          {
-            "title": "Remote Client Home Sales Director",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4321816615",
-            "date_posted": "",
-            "source": "linkedin"
-          },
-          {
-            "title": "Remote Sales Relational Manager",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4321836852",
-            "date_posted": "",
-            "source": "linkedin"
-          }
-        ]
-      },
-      {
-        "Composite Score": "35.0",
         "Company Name": "Peachy Insurance",
         "Location": "Atlanta, Georgia",
         "Website": "http://www.peachyinsurance.com",
@@ -783,7 +660,7 @@
         "Growth Rate %": "0.0",
         "Previous Headcount": "42",
         "Days Tracked": "0",
-        "Active Jobs": "1",
+        "Active Jobs": "2",
         "Industry": "insurance",
         "Contact 1 Name": "Ryan Hill",
         "Contact 1 Title": "Director: Sales Training and Development",
@@ -801,6 +678,13 @@
         "Contact 3 Phone": "",
         "Contact 3 LinkedIn": "http://www.linkedin.com/in/paola-serna-994263105",
         "job_details": [
+          {
+            "title": "Licensed Insurance Agent",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4298517082",
+            "date_posted": "2025-11-09",
+            "source": "linkedin"
+          },
           {
             "title": "Account Manager",
             "location": "Atlanta, GA",

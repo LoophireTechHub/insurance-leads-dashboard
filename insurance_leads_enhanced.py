@@ -42,7 +42,7 @@ APOLLO_BASE_URL = "https://api.apollo.io/v1"
 # Target insurance company criteria
 TARGET_CRITERIA = {
     'industries': ['Insurance', 'Insurance Agencies and Brokerages', 'Commercial Insurance'],
-    'employee_ranges': ["10,20", "20,50", "51,100", "101,200", "201,300"],  # 10-300 employees (smaller companies are easier targets)
+    'employee_ranges': ["10,20", "20,50", "51,100", "101,150"],  # 10-150 employees (smaller companies are easier targets)
     'job_titles': ["CEO", "CFO", "President", "VP", "Director", "Manager", "Owner", "Partner"],
 }
 
@@ -344,9 +344,9 @@ class EnhancedLeadsPipeline:
                     filtered_count += 1
                     continue
 
-                # Filter out companies with 300+ employees (focus on smaller, easier targets)
+                # Filter out companies with 150+ employees (focus on smaller, easier targets)
                 current_headcount = company.get('estimated_num_employees', 0)
-                if current_headcount >= 300:
+                if current_headcount >= 150:
                     filtered_count += 1
                     continue
 

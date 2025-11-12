@@ -35,7 +35,7 @@ def generate_enhanced_dashboard():
         'high_score': len([l for l in leads if float(l.get('Composite Score', 0)) >= 50]),
         'growing': len([l for l in leads if float(l.get('Growth Rate %', 0)) >= 10]),
         'hiring': len([l for l in leads if int(l.get('Active Jobs', 0)) > 0]),
-        'with_contacts': sum(1 for l in leads if l.get('Contact 1 Email') and 'email_not_unlocked' not in l.get('Contact 1 Email', '')),
+        'with_contacts': sum(1 for l in leads if l.get('Contact 1 Name') and l.get('Contact 1 Name').strip()),
         'last_updated': current_timestamp,
         'update_date': current_date
     }

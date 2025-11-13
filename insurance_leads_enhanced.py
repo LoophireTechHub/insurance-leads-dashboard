@@ -42,7 +42,7 @@ APOLLO_BASE_URL = "https://api.apollo.io/v1"
 # Target insurance company criteria
 TARGET_CRITERIA = {
     'industries': ['Insurance', 'Insurance Agencies and Brokerages', 'Commercial Insurance'],
-    'employee_ranges': ["10,20", "20,50", "51,100", "101,150"],  # 10-150 employees (smaller companies are easier targets)
+    'employee_ranges': ["1,10", "10,20", "20,50", "51,100", "101,200", "201,500", "501,1000"],  # 1-1000 employees
     'job_titles': ["CEO", "CFO", "President", "VP", "Director", "Manager", "Owner", "Partner"],
 }
 
@@ -77,42 +77,56 @@ class EnhancedLeadsPipeline:
         with open(self.history_file, 'w') as f:
             json.dump(self.company_history, f, indent=2)
 
-    def search_insurance_companies(self, limit: int = 100) -> List[Dict]:
-        """Search for insurance companies via Apollo"""
+    def search_insurance_companies(self, limit: int = 500) -> List[Dict]:
+        """Search for insurance companies via Apollo with pagination"""
         logger.info(f"🔍 Searching for insurance companies via Apollo...")
 
         companies = []
         headers = {"X-Api-Key": self.apollo_token, "Content-Type": "application/json"}
 
+        # Paginate through results for each industry
         for industry in TARGET_CRITERIA['industries']:
-            try:
-                search_data = {
-                    "q_organization_keyword_tags": [industry],
-                    "organization_num_employees_ranges": TARGET_CRITERIA['employee_ranges'],
-                    "organization_locations": ["United States"],
-                    "page": 1,
-                    "per_page": min(limit, 100)
-                }
+            industry_companies = []
+            page = 1
+            max_pages = 5  # Get 5 pages = 500 companies per industry
 
-                response = requests.post(
-                    f"{APOLLO_BASE_URL}/organizations/search",
-                    headers=headers,
-                    json=search_data,
-                    timeout=15
-                )
+            while page <= max_pages and len(industry_companies) < 200:
+                try:
+                    search_data = {
+                        "q_organization_keyword_tags": [industry],
+                        "organization_num_employees_ranges": TARGET_CRITERIA['employee_ranges'],
+                        "organization_locations": ["United States"],
+                        "page": page,
+                        "per_page": 100
+                    }
 
-                if response.status_code == 200:
-                    data = response.json()
-                    orgs = data.get('organizations', [])
-                    logger.info(f"  ✓ Found {len(orgs)} companies in {industry}")
-                    companies.extend(orgs)
-                else:
-                    logger.warning(f"  ✗ Apollo search failed: {response.status_code}")
+                    response = requests.post(
+                        f"{APOLLO_BASE_URL}/organizations/search",
+                        headers=headers,
+                        json=search_data,
+                        timeout=15
+                    )
 
-                time.sleep(1)  # Rate limiting
+                    if response.status_code == 200:
+                        data = response.json()
+                        orgs = data.get('organizations', [])
+                        if not orgs:
+                            break  # No more results
+                        industry_companies.extend(orgs)
+                        logger.info(f"  ✓ Page {page}: Found {len(orgs)} companies in {industry}")
+                        page += 1
+                    else:
+                        logger.warning(f"  ✗ Apollo search failed: {response.status_code}")
+                        break
 
-            except Exception as e:
-                logger.error(f"Error searching {industry}: {e}")
+                    time.sleep(1)  # Rate limiting
+
+                except Exception as e:
+                    logger.error(f"Error searching {industry} page {page}: {e}")
+                    break
+
+            companies.extend(industry_companies)
+            logger.info(f"  📊 Total for {industry}: {len(industry_companies)} companies")
 
         # Deduplicate by company ID
         seen_ids = set()
@@ -402,11 +416,8 @@ class EnhancedLeadsPipeline:
                     filtered_count += 1
                     continue
 
-                # Filter out companies with 150+ employees (focus on smaller, easier targets)
+                # No headcount filtering - accept all sizes
                 current_headcount = company.get('estimated_num_employees', 0)
-                if current_headcount >= 150:
-                    filtered_count += 1
-                    continue
 
                 company_id = company.get('id')
                 company_name = company.get('name', '')
@@ -448,8 +459,8 @@ class EnhancedLeadsPipeline:
                 # Calculate composite score
                 signals['composite_score'] = self.calculate_composite_score(signals)
 
-                # Only include leads with hiring signals (jobs or growth)
-                if (growth_signal.get('is_growing') or signals['active_jobs'] > 0):
+                # Only include leads with active job postings (remove growth requirement)
+                if signals['active_jobs'] > 0:
                     enriched_leads.append(signals)
 
                 time.sleep(0.5)  # Rate limiting
@@ -535,7 +546,7 @@ class EnhancedLeadsPipeline:
         logger.info("="*60)
 
         # Step 1: Search for insurance companies
-        companies = self.search_insurance_companies(limit=100)
+        companies = self.search_insurance_companies(limit=200)
 
         if not companies:
             logger.warning("No companies found")

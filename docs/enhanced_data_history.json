@@ -1,14 +1,14 @@
 [
   {
     "date": "2025-11-13",
-    "timestamp": "November 13, 2025 at 09:31 AM EST",
+    "timestamp": "November 13, 2025 at 03:46 PM EST",
     "stats": {
       "total_leads": 60,
       "high_score": 9,
       "growing": 0,
       "hiring": 60,
       "with_contacts": 57,
-      "last_updated": "November 13, 2025 at 09:31 AM EST",
+      "last_updated": "November 13, 2025 at 03:46 PM EST",
       "update_date": "2025-11-13"
     },
     "leads": [
@@ -320,11 +320,11 @@
         "Contact 1 Email": "email_not_unlocked@domain.com",
         "Contact 1 Phone": "",
         "Contact 1 LinkedIn": "http://www.linkedin.com/in/magdovitz",
-        "Contact 2 Name": "Aglae Shaw",
-        "Contact 2 Title": "Director of Revenue Operations",
+        "Contact 2 Name": "Katie Ward",
+        "Contact 2 Title": "Associate Creative Director",
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/aglaeshaw",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/katie-ward-aa519a65",
         "Contact 3 Name": "",
         "Contact 3 Title": "",
         "Contact 3 Email": "",
@@ -550,16 +550,16 @@
         "Contact 1 Email": "email_not_unlocked@domain.com",
         "Contact 1 Phone": "",
         "Contact 1 LinkedIn": "http://www.linkedin.com/in/guy-zeltser-4a122a59",
-        "Contact 2 Name": "John Grogg",
+        "Contact 2 Name": "Marcin Mincer",
         "Contact 2 Title": "VP of Engineering",
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/john-grogg-643195a9",
-        "Contact 3 Name": "Marcin Mincer",
-        "Contact 3 Title": "VP of Engineering",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/marcinmincer",
+        "Contact 3 Name": "Brian Lucas",
+        "Contact 3 Title": "Vice President of Sales",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/marcinmincer",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/brian-lucas-a52b804",
         "job_details": [
           {
             "title": "Director, Program Actuary",
@@ -615,7 +615,7 @@
         "Growth Rate %": "0.0",
         "Previous Headcount": "370",
         "Days Tracked": "0",
-        "Active Jobs": "6",
+        "Active Jobs": "5",
         "Industry": "insurance",
         "Contact 1 Name": "Aaron Garcia",
         "Contact 1 Title": "Chief Executive Officer",
@@ -659,13 +659,6 @@
             "location": "Rowland Heights, CA",
             "url": "https://www.linkedin.com/jobs/view/4337983834",
             "date_posted": "2025-11-07",
-            "source": "linkedin"
-          },
-          {
-            "title": "Regional Business Development Manager, North East - MSI",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4334348903",
-            "date_posted": "2025-11-05",
             "source": "linkedin"
           },
           {
@@ -823,6 +816,71 @@
       },
       {
         "Composite Score": "45.0",
+        "Company Name": "Next Insurance",
+        "Location": "Palo Alto, California",
+        "Website": "http://www.nextinsurance.com",
+        "Phone": "+1 855-222-5919",
+        "Current Headcount": "710",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "710",
+        "Days Tracked": "0",
+        "Active Jobs": "5",
+        "Industry": "insurance",
+        "Contact 1 Name": "Guy Goldstein",
+        "Contact 1 Title": "CEO",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/guygoldstein",
+        "Contact 2 Name": "Jeff Garretson",
+        "Contact 2 Title": "Vice President Claims",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/jeff-garretson-7702ab55",
+        "Contact 3 Name": "Aviv Shafir",
+        "Contact 3 Title": "VP of Engineering",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/aviv-shafir-958b171a2",
+        "job_details": [
+          {
+            "title": "P&C Sales Producer",
+            "location": "Rochester, NY",
+            "url": "https://www.linkedin.com/jobs/view/4315037182",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Insurance Product Manager",
+            "location": "Boston, MA",
+            "url": "https://www.linkedin.com/jobs/view/4315023533",
+            "date_posted": "2025-11-06",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sr. Manager, Corporate Finance",
+            "location": "Palo Alto, CA",
+            "url": "https://www.linkedin.com/jobs/view/4319517115",
+            "date_posted": "2025-10-29",
+            "source": "linkedin"
+          },
+          {
+            "title": "Product Manager",
+            "location": "Palo Alto, CA",
+            "url": "https://www.linkedin.com/jobs/view/4318856071",
+            "date_posted": "2025-10-25",
+            "source": "linkedin"
+          },
+          {
+            "title": "Insurance Product Manager, GL",
+            "location": "Boston, MA",
+            "url": "https://www.linkedin.com/jobs/view/4315024510",
+            "date_posted": "2025-10-24",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "45.0",
         "Company Name": "Bamboo Insurance",
         "Location": "Midvale, Utah",
         "Website": "http://www.bambooinsurance.com",
@@ -843,11 +901,11 @@
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
         "Contact 2 LinkedIn": "http://www.linkedin.com/in/john-chu-83491510",
-        "Contact 3 Name": "Brock Christensen",
-        "Contact 3 Title": "Vice President, Operations",
+        "Contact 3 Name": "Jonathan Vitale",
+        "Contact 3 Title": "Vice President of Sales",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/brock-christensen-004a294a",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/jonathan-vitale-32252a32",
         "job_details": [
           {
             "title": "Director of Product Management",
@@ -889,16 +947,16 @@
         "Contact 1 Email": "email_not_unlocked@domain.com",
         "Contact 1 Phone": "",
         "Contact 1 LinkedIn": "http://www.linkedin.com/in/jerryfadden1",
-        "Contact 2 Name": "Vince Vanderlaan",
-        "Contact 2 Title": "Vice President, People",
+        "Contact 2 Name": "Ronald Seman",
+        "Contact 2 Title": "Vice President, Growth",
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/vince-vanderlaan-b12659a8",
-        "Contact 3 Name": "Ronald Seman",
-        "Contact 3 Title": "Vice President, Growth",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/ronald-seman-12198762",
+        "Contact 3 Name": "Justin Wetmore",
+        "Contact 3 Title": "Vice President of Claims",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/ronald-seman-12198762",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/justin-wetmore-a819726",
         "job_details": [
           {
             "title": "Claims Manager",
@@ -1224,7 +1282,7 @@
         "Growth Rate %": "0.0",
         "Previous Headcount": "950",
         "Days Tracked": "0",
-        "Active Jobs": "9",
+        "Active Jobs": "10",
         "Industry": "insurance",
         "Contact 1 Name": "David Pirrung",
         "Contact 1 Title": "Chief Financial Officer",
@@ -1236,11 +1294,11 @@
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
         "Contact 2 LinkedIn": "http://www.linkedin.com/in/yonathan-casilla-01750210",
-        "Contact 3 Name": "Patrick Dolan",
+        "Contact 3 Name": "Craig Golden",
         "Contact 3 Title": "Vice President",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/patrick-j-dolan-81432494",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/craig-golden-6639273a",
         "job_details": [
           {
             "title": "Manager, Claims Legal Operations",
@@ -1257,9 +1315,9 @@
             "source": "linkedin"
           },
           {
-            "title": "Senior E&S Underwriter (P&C - Binding)",
-            "location": "Scottsdale, AZ",
-            "url": "https://www.linkedin.com/jobs/view/4316511845",
+            "title": "Regional Manager, Commercial Surety",
+            "location": "Plano, TX",
+            "url": "https://www.linkedin.com/jobs/view/4316510874",
             "date_posted": "2025-11-10",
             "source": "linkedin"
           },
@@ -1299,9 +1357,16 @@
             "source": "linkedin"
           },
           {
-            "title": "Commercial Surety Underwriter",
-            "location": "California, United States",
-            "url": "https://www.linkedin.com/jobs/view/4316528175",
+            "title": "Commercial Surety Associate Underwriter (Career Transition Opportunity)",
+            "location": "Norristown, PA",
+            "url": "https://www.linkedin.com/jobs/view/4317518685",
+            "date_posted": "2025-10-21",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Truck Underwriter (Fleet)",
+            "location": "Scottsdale, AZ",
+            "url": "https://www.linkedin.com/jobs/view/4316817508",
             "date_posted": "2025-10-18",
             "source": "linkedin"
           }
@@ -1474,57 +1539,6 @@
       },
       {
         "Composite Score": "45.0",
-        "Company Name": "Westwood Insurance Agency",
-        "Location": "Los Angeles, California",
-        "Website": "http://www.westwoodinsurance.com",
-        "Phone": "+1 888-543-6179",
-        "Current Headcount": "130",
-        "Growth Rate %": "0.0",
-        "Previous Headcount": "130",
-        "Days Tracked": "0",
-        "Active Jobs": "3",
-        "Industry": "insurance",
-        "Contact 1 Name": "Chris Geeslin",
-        "Contact 1 Title": "Vice President",
-        "Contact 1 Email": "email_not_unlocked@domain.com",
-        "Contact 1 Phone": "",
-        "Contact 1 LinkedIn": "http://www.linkedin.com/in/chris-geeslin-4561456",
-        "Contact 2 Name": "Martin Minassian",
-        "Contact 2 Title": "AVP",
-        "Contact 2 Email": "email_not_unlocked@domain.com",
-        "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/martin-minassian-539a2551",
-        "Contact 3 Name": "Brandon Mendez",
-        "Contact 3 Title": "AVP",
-        "Contact 3 Email": "email_not_unlocked@domain.com",
-        "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/brandon-mendez-b58b259",
-        "job_details": [
-          {
-            "title": "Sales Supervisor- Westwood Insurance Agency",
-            "location": "Plano, TX",
-            "url": "https://www.linkedin.com/jobs/view/4316353918",
-            "date_posted": "2025-11-08",
-            "source": "linkedin"
-          },
-          {
-            "title": "Licensed Auto Insurance Agent - Westwood",
-            "location": "Plano, TX",
-            "url": "https://www.linkedin.com/jobs/view/4334791623",
-            "date_posted": "2025-11-07",
-            "source": "linkedin"
-          },
-          {
-            "title": "National Sales Agent- Westwood Insurance Agency",
-            "location": "Plano, TX",
-            "url": "https://www.linkedin.com/jobs/view/4288811764",
-            "date_posted": "2025-10-28",
-            "source": "linkedin"
-          }
-        ]
-      },
-      {
-        "Composite Score": "45.0",
         "Company Name": "Heritage Insurance",
         "Location": "Tampa, Florida",
         "Website": "http://www.heritagepci.com",
@@ -1598,6 +1612,57 @@
             "location": "Tampa, FL",
             "url": "https://www.linkedin.com/jobs/view/4334440316",
             "date_posted": "2025-11-05",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "45.0",
+        "Company Name": "Westwood Insurance Agency",
+        "Location": "Los Angeles, California",
+        "Website": "http://www.westwoodinsurance.com",
+        "Phone": "+1 888-543-6179",
+        "Current Headcount": "130",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "130",
+        "Days Tracked": "0",
+        "Active Jobs": "3",
+        "Industry": "insurance",
+        "Contact 1 Name": "Chris Geeslin",
+        "Contact 1 Title": "Vice President",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/chris-geeslin-4561456",
+        "Contact 2 Name": "Martin Minassian",
+        "Contact 2 Title": "AVP",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/martin-minassian-539a2551",
+        "Contact 3 Name": "Brandon Mendez",
+        "Contact 3 Title": "AVP",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/brandon-mendez-b58b259",
+        "job_details": [
+          {
+            "title": "Sales Supervisor- Westwood Insurance Agency",
+            "location": "Plano, TX",
+            "url": "https://www.linkedin.com/jobs/view/4316353918",
+            "date_posted": "2025-11-08",
+            "source": "linkedin"
+          },
+          {
+            "title": "Licensed Auto Insurance Agent - Westwood",
+            "location": "Plano, TX",
+            "url": "https://www.linkedin.com/jobs/view/4334791623",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "National Sales Agent- Westwood Insurance Agency",
+            "location": "Plano, TX",
+            "url": "https://www.linkedin.com/jobs/view/4288811764",
+            "date_posted": "2025-10-28",
             "source": "linkedin"
           }
         ]
@@ -2408,7 +2473,7 @@
         "Growth Rate %": "0.0",
         "Previous Headcount": "760",
         "Days Tracked": "0",
-        "Active Jobs": "31",
+        "Active Jobs": "30",
         "Industry": "insurance",
         "Contact 1 Name": "Charissa Hartmann",
         "Contact 1 Title": "Chief Financial Officer",
@@ -2509,13 +2574,6 @@
             "url": "https://www.indeed.com/viewjob?jk=b92ee7aa475dba73",
             "date_posted": "2025-10-14",
             "source": "indeed"
-          },
-          {
-            "title": "Account Manager - Personal Lines",
-            "location": "Charlotte, NC",
-            "url": "https://www.linkedin.com/jobs/view/4335509593",
-            "date_posted": "2025-11-12",
-            "source": "linkedin"
           },
           {
             "title": "Operations Coordinator",
@@ -2649,7 +2707,7 @@
         "Composite Score": "45.0",
         "Company Name": "AAA Life Insurance Company",
         "Location": "Livonia, Michigan",
-        "Website": "",
+        "Website": "http://www.aaalife.com",
         "Phone": "+1 800-684-4222",
         "Current Headcount": "990",
         "Growth Rate %": "0.0",
@@ -2739,11 +2797,11 @@
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
         "Contact 2 LinkedIn": "http://www.linkedin.com/in/seanborchardt",
-        "Contact 3 Name": "Abe Bedros",
+        "Contact 3 Name": "Fred Weston",
         "Contact 3 Title": "Vice President",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/abe-bedros-cic-cisc-cris-7247bb13",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/fred-weston-a2bb341",
         "job_details": [
           {
             "title": "Commercial Lines Account Executive",
@@ -2953,6 +3011,13 @@
           {
             "title": "Commercial Lines Underwriter",
             "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4332704918",
+            "date_posted": "2025-10-29",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Lines Underwriter",
+            "location": "",
             "url": "https://www.linkedin.com/jobs/view/4332834754",
             "date_posted": "2025-10-29",
             "source": "linkedin"
@@ -2961,13 +3026,6 @@
             "title": "Commercial Lines Underwriter",
             "location": "",
             "url": "https://www.linkedin.com/jobs/view/4332764946",
-            "date_posted": "2025-10-29",
-            "source": "linkedin"
-          },
-          {
-            "title": "Commercial Lines Underwriter",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4332704918",
             "date_posted": "2025-10-29",
             "source": "linkedin"
           },
@@ -3026,28 +3084,28 @@
             "title": "Insurance Sales Agent/ Representative",
             "location": "Porter, TX, US",
             "url": "https://www.indeed.com/viewjob?jk=989f13329c7b265f",
-            "date_posted": "2025-11-02",
+            "date_posted": "2025-11-03",
             "source": "indeed"
           },
           {
             "title": "Insurance Sales Agent/ Representative",
             "location": "Hardeeville, SC, US",
             "url": "https://www.indeed.com/viewjob?jk=98bfd4484c10f5df",
-            "date_posted": "2025-11-02",
+            "date_posted": "2025-11-03",
             "source": "indeed"
           },
           {
             "title": "Insurance Sales Agent/ Representative",
             "location": "Panama City, FL, US",
             "url": "https://www.indeed.com/viewjob?jk=e0bc3512f488a9f8",
-            "date_posted": "2025-11-02",
+            "date_posted": "2025-11-03",
             "source": "indeed"
           },
           {
             "title": "Insurance Sales Agent/ Representative",
             "location": "Orlando, FL, US",
             "url": "https://www.indeed.com/viewjob?jk=26031b2962e4fac5",
-            "date_posted": "2025-10-26",
+            "date_posted": "2025-10-27",
             "source": "indeed"
           }
         ]
@@ -3125,11 +3183,11 @@
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
         "Contact 2 LinkedIn": "http://www.linkedin.com/in/jurgen-meli-4482931b",
-        "Contact 3 Name": "Christina Clancy",
+        "Contact 3 Name": "Bruno Primerano",
         "Contact 3 Title": "Chief Financial Officer",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/christina-c-1b617147",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/brunoprime",
         "job_details": [
           {
             "title": "Ceded Reinsurance Analyst",
@@ -3236,16 +3294,16 @@
         "Contact 1 Email": "email_not_unlocked@domain.com",
         "Contact 1 Phone": "",
         "Contact 1 LinkedIn": "http://www.linkedin.com/in/jennifer-yaross-b72a061a",
-        "Contact 2 Name": "Casey Watkins",
+        "Contact 2 Name": "Brandon Ellison",
         "Contact 2 Title": "Co-Founder/CEO",
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/caseylwatkins",
-        "Contact 3 Name": "Brandon Ellison",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/brandon-ellison-12184758",
+        "Contact 3 Name": "Casey Watkins",
         "Contact 3 Title": "Co-Founder/CEO",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/brandon-ellison-12184758",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/caseylwatkins",
         "job_details": [
           {
             "title": "Independent Life Insurance Agent",
@@ -3287,7 +3345,7 @@
         "Growth Rate %": "0.0",
         "Previous Headcount": "56",
         "Days Tracked": "0",
-        "Active Jobs": "24",
+        "Active Jobs": "23",
         "Industry": "insurance",
         "Contact 1 Name": "",
         "Contact 1 Title": "",
@@ -3400,13 +3458,6 @@
             "title": "Insurance Placement Manager",
             "location": "Bellaire, TX",
             "url": "https://www.linkedin.com/jobs/view/4320634665",
-            "date_posted": "2025-11-04",
-            "source": "linkedin"
-          },
-          {
-            "title": "VP of Marketing",
-            "location": "Redlands, CA",
-            "url": "https://www.linkedin.com/jobs/view/4314052075",
             "date_posted": "2025-11-04",
             "source": "linkedin"
           },
@@ -3528,64 +3579,6 @@
       },
       {
         "Composite Score": "35.0",
-        "Company Name": "Next Insurance",
-        "Location": "Palo Alto, California",
-        "Website": "http://www.nextinsurance.com",
-        "Phone": "+1 855-222-5919",
-        "Current Headcount": "710",
-        "Growth Rate %": "0.0",
-        "Previous Headcount": "710",
-        "Days Tracked": "0",
-        "Active Jobs": "4",
-        "Industry": "insurance",
-        "Contact 1 Name": "Guy Goldstein",
-        "Contact 1 Title": "CEO",
-        "Contact 1 Email": "email_not_unlocked@domain.com",
-        "Contact 1 Phone": "",
-        "Contact 1 LinkedIn": "http://www.linkedin.com/in/guygoldstein",
-        "Contact 2 Name": "Jeff Garretson",
-        "Contact 2 Title": "Vice President Claims",
-        "Contact 2 Email": "email_not_unlocked@domain.com",
-        "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/jeff-garretson-7702ab55",
-        "Contact 3 Name": "Amacalli Duran-Pereda",
-        "Contact 3 Title": "Partner Manager",
-        "Contact 3 Email": "email_not_unlocked@domain.com",
-        "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/amacalli-duran-pereda-2821b0157",
-        "job_details": [
-          {
-            "title": "Insurance Product Manager",
-            "location": "Boston, MA",
-            "url": "https://www.linkedin.com/jobs/view/4315023533",
-            "date_posted": "2025-11-06",
-            "source": "linkedin"
-          },
-          {
-            "title": "Sr. Manager, Corporate Finance",
-            "location": "Palo Alto, CA",
-            "url": "https://www.linkedin.com/jobs/view/4319517115",
-            "date_posted": "2025-10-29",
-            "source": "linkedin"
-          },
-          {
-            "title": "Product Manager",
-            "location": "Palo Alto, CA",
-            "url": "https://www.linkedin.com/jobs/view/4318856071",
-            "date_posted": "2025-10-25",
-            "source": "linkedin"
-          },
-          {
-            "title": "Insurance Product Manager, GL",
-            "location": "Boston, MA",
-            "url": "https://www.linkedin.com/jobs/view/4315024510",
-            "date_posted": "2025-10-24",
-            "source": "linkedin"
-          }
-        ]
-      },
-      {
-        "Composite Score": "35.0",
         "Company Name": "Coalition, Inc.",
         "Location": "San Francisco, California",
         "Website": "http://www.coalitioninc.com",
@@ -3674,7 +3667,7 @@
             "title": "Account Manager",
             "location": "",
             "url": "https://www.linkedin.com/jobs/view/4313089208",
-            "date_posted": "nan",
+            "date_posted": "2025-11-12",
             "source": "linkedin"
           }
         ]
@@ -3696,16 +3689,16 @@
         "Contact 1 Email": "email_not_unlocked@domain.com",
         "Contact 1 Phone": "",
         "Contact 1 LinkedIn": "http://www.linkedin.com/in/cuberoj",
-        "Contact 2 Name": "Ethan Jones",
-        "Contact 2 Title": "Vice President, Enterprise Sales",
+        "Contact 2 Name": "Joe Tofilon",
+        "Contact 2 Title": "VP of Sales & Partnerships",
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/ethanjones22",
-        "Contact 3 Name": "Joe Tofilon",
-        "Contact 3 Title": "VP of Sales & Partnerships",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/joe-tofilon",
+        "Contact 3 Name": "Ethan Jones",
+        "Contact 3 Title": "Vice President, Enterprise Sales",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/joe-tofilon",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/ethanjones22",
         "job_details": [
           {
             "title": "Account Manager",
@@ -3728,21 +3721,21 @@
         "Days Tracked": "0",
         "Active Jobs": "4",
         "Industry": "insurance",
-        "Contact 1 Name": "Josh O'Neill",
-        "Contact 1 Title": "Vice President, E&S Brokerage",
+        "Contact 1 Name": "Matthew Brown",
+        "Contact 1 Title": "Vice President",
         "Contact 1 Email": "email_not_unlocked@domain.com",
         "Contact 1 Phone": "",
-        "Contact 1 LinkedIn": "http://www.linkedin.com/in/josh-o-neill-a2367a11",
-        "Contact 2 Name": "Tim Brewer",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/matthew-brown-39458955",
+        "Contact 2 Name": "Julie Miglin",
         "Contact 2 Title": "Vice President",
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/tim-brewer-afsb-4958121ab",
-        "Contact 3 Name": "Matthew Brown",
-        "Contact 3 Title": "Vice President",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/juliemiglin",
+        "Contact 3 Name": "Josh O'Neill",
+        "Contact 3 Title": "Vice President, E&S Brokerage",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/matthew-brown-39458955",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/josh-o-neill-a2367a11",
         "job_details": [
           {
             "title": "Claims Technical Director - Global Property",
@@ -3891,11 +3884,11 @@
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
         "Contact 2 LinkedIn": "http://www.linkedin.com/in/kirk-undefined-1161442a8",
-        "Contact 3 Name": "Kirk La",
-        "Contact 3 Title": "Group Chief Executive Officer",
+        "Contact 3 Name": "Kathleen McKim",
+        "Contact 3 Title": "Vice President",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/kirk-la-44253119",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/kathleen-mckim-9181ba37",
         "job_details": [
           {
             "title": "Quality Assurance Lead - Personal Lines Underwriting",
@@ -4097,16 +4090,16 @@
         "Contact 1 Email": "email_not_unlocked@domain.com",
         "Contact 1 Phone": "",
         "Contact 1 LinkedIn": "http://www.linkedin.com/in/jared-s-272a579b",
-        "Contact 2 Name": "Lisa Ibrahim",
-        "Contact 2 Title": "VP of Sales",
+        "Contact 2 Name": "Dominic Tassi",
+        "Contact 2 Title": "Senior Vice President",
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/lisa-ibrahim-99802821a",
-        "Contact 3 Name": "Dominic Tassi",
-        "Contact 3 Title": "Senior Vice President",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/dominictassi",
+        "Contact 3 Name": "Jason Tennyson",
+        "Contact 3 Title": "VP of Sales",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/dominictassi",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/jason-tennyson-54ba8b20",
         "job_details": [
           {
             "title": "Commercial Account Manager",
@@ -4349,21 +4342,21 @@
         "Days Tracked": "0",
         "Active Jobs": "1",
         "Industry": "insurance",
-        "Contact 1 Name": "Christine Dickenson",
+        "Contact 1 Name": "Alexandra Whipple",
         "Contact 1 Title": "Vice President",
         "Contact 1 Email": "email_not_unlocked@domain.com",
         "Contact 1 Phone": "",
-        "Contact 1 LinkedIn": "http://www.linkedin.com/in/christine-dickenson-195a038",
-        "Contact 2 Name": "Jan Tourangeau",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/alexandra-whipple-9a775a74",
+        "Contact 2 Name": "Christine Dickenson",
         "Contact 2 Title": "Vice President",
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/jan-tourangeau-397a499",
-        "Contact 3 Name": "Nicole Noland",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/christine-dickenson-195a038",
+        "Contact 3 Name": "Sara Woodley",
         "Contact 3 Title": "Vice President",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/nicole-noland-198aa637",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/sara-woodley-a8330038",
         "job_details": [
           {
             "title": "Underwriter, US Environmental",
@@ -4611,8 +4604,8 @@
           },
           {
             "title": "Sales Manager",
-            "location": "Arlington, VA",
-            "url": "https://www.linkedin.com/jobs/view/4317951919",
+            "location": "Seattle, WA",
+            "url": "https://www.linkedin.com/jobs/view/4317967292",
             "date_posted": "2025-10-23",
             "source": "linkedin"
           },

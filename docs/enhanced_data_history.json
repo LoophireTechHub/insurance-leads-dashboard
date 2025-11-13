@@ -1,17 +1,373 @@
 [
   {
     "date": "2025-11-13",
-    "timestamp": "November 13, 2025 at 02:37 PM EST",
+    "timestamp": "November 13, 2025 at 09:31 AM EST",
     "stats": {
-      "total_leads": 13,
-      "high_score": 1,
+      "total_leads": 60,
+      "high_score": 9,
       "growing": 0,
-      "hiring": 13,
-      "with_contacts": 12,
-      "last_updated": "November 13, 2025 at 02:37 PM EST",
+      "hiring": 60,
+      "with_contacts": 57,
+      "last_updated": "November 13, 2025 at 09:31 AM EST",
       "update_date": "2025-11-13"
     },
     "leads": [
+      {
+        "Composite Score": "55.0",
+        "Company Name": "Ategrity Specialty Insurance Company",
+        "Location": "New York, New York",
+        "Website": "http://www.ategrity.com",
+        "Phone": "+1 480-237-2417",
+        "Current Headcount": "180",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "180",
+        "Days Tracked": "0",
+        "Active Jobs": "13",
+        "Industry": "insurance",
+        "Contact 1 Name": "David Rosenzweig",
+        "Contact 1 Title": "Chief Financial Officer",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/davidjrosenzweig",
+        "Contact 2 Name": "Michael McKenna",
+        "Contact 2 Title": "Assistant Vice President",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/michael-mckenna-ba856728",
+        "Contact 3 Name": "Hilary Young",
+        "Contact 3 Title": "Senior Vice President, Claims",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/hilary-young-2092779",
+        "job_details": [
+          {
+            "title": "Management Liability Underwriter",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4321986361",
+            "date_posted": "2025-11-11",
+            "source": "linkedin"
+          },
+          {
+            "title": "Financial Reporting Manager - New York City",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4321763310",
+            "date_posted": "2025-11-08",
+            "source": "linkedin"
+          },
+          {
+            "title": "Assistant Controller - New York City",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4321703378",
+            "date_posted": "2025-11-08",
+            "source": "linkedin"
+          },
+          {
+            "title": "Underwriter, Brokerage Property - Chicago - Scottsdale - Atlanta - New York",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4320794352",
+            "date_posted": "2025-11-04",
+            "source": "linkedin"
+          },
+          {
+            "title": "Underwriter, Ategrity Small Business",
+            "location": "Scottsdale, AZ",
+            "url": "https://www.linkedin.com/jobs/view/4320604406",
+            "date_posted": "2025-11-04",
+            "source": "linkedin"
+          },
+          {
+            "title": "Underwriter, Specialist Property",
+            "location": "Richmond, VA",
+            "url": "https://www.linkedin.com/jobs/view/4320446384",
+            "date_posted": "2025-11-03",
+            "source": "linkedin"
+          },
+          {
+            "title": "Underwriter, Excess Casualty- New York, NY; Scottsdale, AZ; Atlanta, GA; or Chicago, IL",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4320446496",
+            "date_posted": "2025-11-03",
+            "source": "linkedin"
+          },
+          {
+            "title": "Underwriter, Middle Market Property (Atlanta, Scottsdale, New York, Chicago)",
+            "location": "Richmond, VA",
+            "url": "https://www.linkedin.com/jobs/view/4308848846",
+            "date_posted": "2025-10-27",
+            "source": "linkedin"
+          },
+          {
+            "title": "Casualty Middle Market Underwriter - Scottsdale, AZ; New York City, NY; Atlanta, GA; or Chicago, IL",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4306639359",
+            "date_posted": "2025-10-27",
+            "source": "linkedin"
+          },
+          {
+            "title": "AVP, Middle Market Excess Casualty - Scottsdale, AZ; New York City, NY; Atlanta, GA; or Chicago, IL",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4306637344",
+            "date_posted": "2025-10-23",
+            "source": "linkedin"
+          },
+          {
+            "title": "Underwriter, Ategrity Small Business",
+            "location": "Atlanta, GA",
+            "url": "https://www.linkedin.com/jobs/view/4316634610",
+            "date_posted": "nan",
+            "source": "linkedin"
+          },
+          {
+            "title": "AVP, Professional Liability - A&E",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4314761956",
+            "date_posted": "nan",
+            "source": "linkedin"
+          },
+          {
+            "title": "AVP, Middle Market Property - Midwest",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4315015751",
+            "date_posted": "nan",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "55.0",
+        "Company Name": "The Jonus Group",
+        "Location": "Wayne, Pennsylvania",
+        "Website": "http://www.jonusgroup.com",
+        "Phone": "+1 610-296-7900",
+        "Current Headcount": "160",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "160",
+        "Days Tracked": "0",
+        "Active Jobs": "20",
+        "Industry": "insurance",
+        "Contact 1 Name": "Trevor Odom",
+        "Contact 1 Title": "Owner",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/trevor-odom-57951831b",
+        "Contact 2 Name": "Robbie Wisniewski",
+        "Contact 2 Title": "Owner",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/robbie-wisniewski-58154649",
+        "Contact 3 Name": "Heather Gee",
+        "Contact 3 Title": "Director of Administration",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/hegee",
+        "job_details": [
+          {
+            "title": "Commercial Insurance Account Manager",
+            "location": "Phoenix, AZ",
+            "url": "https://www.linkedin.com/jobs/view/4335671380",
+            "date_posted": "2025-11-12",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Insurance Account Executive",
+            "location": "Atlanta, GA",
+            "url": "https://www.linkedin.com/jobs/view/4335377532",
+            "date_posted": "2025-11-11",
+            "source": "linkedin"
+          },
+          {
+            "title": "Personal Insurance Account Manager - Hybrid",
+            "location": "Brewer, ME",
+            "url": "https://www.linkedin.com/jobs/view/4335514532",
+            "date_posted": "2025-11-11",
+            "source": "linkedin"
+          },
+          {
+            "title": "Bilingual Personal Insurance Account Manager / Agent",
+            "location": "Columbia, MD",
+            "url": "https://www.linkedin.com/jobs/view/4335417569",
+            "date_posted": "2025-11-11",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Insurance Marketing Executive",
+            "location": "Atlanta, GA",
+            "url": "https://www.linkedin.com/jobs/view/4335215759",
+            "date_posted": "2025-11-10",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Lines Account Manager",
+            "location": "St Louis, MO",
+            "url": "https://www.linkedin.com/jobs/view/4335116732",
+            "date_posted": "2025-11-10",
+            "source": "linkedin"
+          },
+          {
+            "title": "Personal Insurance Agent",
+            "location": "Seattle, WA",
+            "url": "https://www.linkedin.com/jobs/view/4334514856",
+            "date_posted": "2025-11-06",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Insurance Account Manager",
+            "location": "San Diego, CA",
+            "url": "https://www.linkedin.com/jobs/view/4334354584",
+            "date_posted": "2025-11-05",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Lines Account Manager",
+            "location": "Plantation, FL",
+            "url": "https://www.linkedin.com/jobs/view/4333688028",
+            "date_posted": "2025-11-03",
+            "source": "linkedin"
+          },
+          {
+            "title": "Personal Lines Sales Manager",
+            "location": "Orlando, FL",
+            "url": "https://www.linkedin.com/jobs/view/4333173730",
+            "date_posted": "2025-10-30",
+            "source": "linkedin"
+          },
+          {
+            "title": "Claims Director-TPA Oversight",
+            "location": "Chicago, IL",
+            "url": "https://www.linkedin.com/jobs/view/4332951790",
+            "date_posted": "2025-10-29",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Insurance Account Manager - Hybrid",
+            "location": "Nashville, TN",
+            "url": "https://www.linkedin.com/jobs/view/4332777090",
+            "date_posted": "2025-10-29",
+            "source": "linkedin"
+          },
+          {
+            "title": "Personal Insurance Account Manager",
+            "location": "Carpinteria, CA",
+            "url": "https://www.linkedin.com/jobs/view/4332797058",
+            "date_posted": "2025-10-29",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Insurance Assistant Account Manager",
+            "location": "Burlingame, CA",
+            "url": "https://www.linkedin.com/jobs/view/4332418594",
+            "date_posted": "2025-10-28",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Insurance Account Manager",
+            "location": "Palm Beach Gardens, FL",
+            "url": "https://www.linkedin.com/jobs/view/4332305222",
+            "date_posted": "2025-10-27",
+            "source": "linkedin"
+          },
+          {
+            "title": "Standard/VIP Client Personal Insurance Account Executive",
+            "location": "Bristol, CT",
+            "url": "https://www.linkedin.com/jobs/view/4335840345",
+            "date_posted": "nan",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Insurance Account Executive - Hybrid",
+            "location": "Bethesda, MD",
+            "url": "https://www.linkedin.com/jobs/view/4335910247",
+            "date_posted": "nan",
+            "source": "linkedin"
+          },
+          {
+            "title": "Personal Insurance Account Manager - Hybrid",
+            "location": "Braintree, MA",
+            "url": "https://www.linkedin.com/jobs/view/4318715769",
+            "date_posted": "nan",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Insurance Account Manager",
+            "location": "Bangor, ME",
+            "url": "https://www.linkedin.com/jobs/view/4335696387",
+            "date_posted": "nan",
+            "source": "linkedin"
+          },
+          {
+            "title": "President - MGA",
+            "location": "Orlando, FL",
+            "url": "https://www.linkedin.com/jobs/view/4335708444",
+            "date_posted": "nan",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "55.0",
+        "Company Name": "Vouch Insurance",
+        "Location": "San Francisco, California",
+        "Website": "http://www.vouch.us",
+        "Phone": "+1 844-488-6728",
+        "Current Headcount": "160",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "160",
+        "Days Tracked": "0",
+        "Active Jobs": "5",
+        "Industry": "insurance",
+        "Contact 1 Name": "Joe Magdovitz",
+        "Contact 1 Title": "Chief Financial Officer",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/magdovitz",
+        "Contact 2 Name": "Aglae Shaw",
+        "Contact 2 Title": "Director of Revenue Operations",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/aglaeshaw",
+        "Contact 3 Name": "",
+        "Contact 3 Title": "",
+        "Contact 3 Email": "",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "",
+        "job_details": [
+          {
+            "title": "Placements Coordinator",
+            "location": "Chicago, IL",
+            "url": "https://www.linkedin.com/jobs/view/4307314615",
+            "date_posted": "2025-11-12",
+            "source": "linkedin"
+          },
+          {
+            "title": "Account Manager",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4287550991",
+            "date_posted": "2025-11-10",
+            "source": "linkedin"
+          },
+          {
+            "title": "Producer",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4321224909",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Business Development Representative",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4311668709",
+            "date_posted": "2025-10-30",
+            "source": "linkedin"
+          },
+          {
+            "title": "Associate Director, Placements",
+            "location": "San Francisco, CA",
+            "url": "https://www.linkedin.com/jobs/view/4319309249",
+            "date_posted": "2025-10-28",
+            "source": "linkedin"
+          }
+        ]
+      },
       {
         "Composite Score": "55.0",
         "Company Name": "National General",
@@ -29,16 +385,16 @@
         "Contact 1 Email": "email_not_unlocked@domain.com",
         "Contact 1 Phone": "",
         "Contact 1 LinkedIn": "http://www.linkedin.com/in/jarango-owino-996629174",
-        "Contact 2 Name": "Rob Owen",
-        "Contact 2 Title": "Vice President",
+        "Contact 2 Name": "Doug Densmore",
+        "Contact 2 Title": "VP",
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/rob-owen-cpcu-aai-arm-9abba123",
-        "Contact 3 Name": "Doug Densmore",
-        "Contact 3 Title": "VP",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/doug-densmore-8a703853",
+        "Contact 3 Name": "Rob Owen",
+        "Contact 3 Title": "Vice President",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/doug-densmore-8a703853",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/rob-owen-cpcu-aai-arm-9abba123",
         "job_details": [
           {
             "title": "Regional Sales Manager (Midwest) - National General",
@@ -79,6 +435,980 @@
             "title": "Field Leadership Manager - National General",
             "location": "",
             "url": "https://www.linkedin.com/jobs/view/4322041943",
+            "date_posted": "nan",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "50.0",
+        "Company Name": "Pie Insurance",
+        "Location": "Denver, Colorado",
+        "Website": "http://www.pieinsurance.com",
+        "Phone": "+1 855-705-2716",
+        "Current Headcount": "430",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "430",
+        "Days Tracked": "0",
+        "Active Jobs": "9",
+        "Industry": "insurance",
+        "Contact 1 Name": "Audra Foglietta",
+        "Contact 1 Title": "Chief Financial Officer",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/audra-foglietta-cpa-1061616",
+        "Contact 2 Name": "Alexander Davis",
+        "Contact 2 Title": "Deputy Chief Financial Officer",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/alexanderstevendavis",
+        "Contact 3 Name": "John Swigart",
+        "Contact 3 Title": "Co-Founder and CEO",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/johnswigart",
+        "job_details": [
+          {
+            "title": "Manager, Underwriting",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4335439885",
+            "date_posted": "2025-11-12",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Underwriter, Small Commercial Workers\u2019 Compensation/Commercial Auto",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4305394752",
+            "date_posted": "2025-11-11",
+            "source": "linkedin"
+          },
+          {
+            "title": "Manager, Premium Audit",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4260279902",
+            "date_posted": "2025-11-08",
+            "source": "linkedin"
+          },
+          {
+            "title": "Director, People Operations and Technology",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4275605737",
+            "date_posted": "2025-11-08",
+            "source": "linkedin"
+          },
+          {
+            "title": "Underwriter, Small Commercial Workers\u2019 Compensation/Commercial Auto",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4076655669",
+            "date_posted": "2025-11-08",
+            "source": "linkedin"
+          },
+          {
+            "title": "Staff Product Manager - Finance & Premium Audit",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4079351811",
+            "date_posted": "2025-11-03",
+            "source": "linkedin"
+          },
+          {
+            "title": "Manager, Integrations Engineering",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4282303827",
+            "date_posted": "2025-11-02",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Reinsurance Accountant III",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4331773984",
+            "date_posted": "2025-11-01",
+            "source": "linkedin"
+          },
+          {
+            "title": "Manager, Pricing & Product",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4331332593",
+            "date_posted": "2025-10-24",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "50.0",
+        "Company Name": "Hippo Insurance",
+        "Location": "San Jose, California",
+        "Website": "http://www.hippo.com",
+        "Phone": "+1 800-747-3214",
+        "Current Headcount": "480",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "480",
+        "Days Tracked": "0",
+        "Active Jobs": "6",
+        "Industry": "insurance",
+        "Contact 1 Name": "Guy Zeltser",
+        "Contact 1 Title": "Chief Financial Officer",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/guy-zeltser-4a122a59",
+        "Contact 2 Name": "John Grogg",
+        "Contact 2 Title": "VP of Engineering",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/john-grogg-643195a9",
+        "Contact 3 Name": "Marcin Mincer",
+        "Contact 3 Title": "VP of Engineering",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/marcinmincer",
+        "job_details": [
+          {
+            "title": "Director, Program Actuary",
+            "location": "Bedminster, NJ, US",
+            "url": "https://www.indeed.com/viewjob?jk=5fab67ea2d38b524",
+            "date_posted": "2025-10-29",
+            "source": "indeed"
+          },
+          {
+            "title": "Homeowner Product Manager",
+            "location": "Dallas, TX, US",
+            "url": "https://www.indeed.com/viewjob?jk=2716f7a17f944b5f",
+            "date_posted": "2025-10-29",
+            "source": "indeed"
+          },
+          {
+            "title": "Catastrophe Risk Portfolio Manager",
+            "location": "Austin, TX, US",
+            "url": "https://www.indeed.com/viewjob?jk=bdf5bdfe48f61122",
+            "date_posted": "2025-10-28",
+            "source": "indeed"
+          },
+          {
+            "title": "Claims Program Manager",
+            "location": "Bedminster, NJ, US",
+            "url": "https://www.indeed.com/viewjob?jk=e776a945ada6249b",
+            "date_posted": "2025-10-16",
+            "source": "indeed"
+          },
+          {
+            "title": "Claims Program Manager",
+            "location": "Bedminster, NJ",
+            "url": "https://www.linkedin.com/jobs/view/4316996735",
+            "date_posted": "2025-10-21",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Manager, Marketing Analytics",
+            "location": "Austin, TX",
+            "url": "https://www.linkedin.com/jobs/view/4322103567",
+            "date_posted": "nan",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "50.0",
+        "Company Name": "MSI",
+        "Location": "Tampa, Florida",
+        "Website": "http://www.msimga.com",
+        "Phone": "+1 844-788-0873",
+        "Current Headcount": "370",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "370",
+        "Days Tracked": "0",
+        "Active Jobs": "6",
+        "Industry": "insurance",
+        "Contact 1 Name": "Aaron Garcia",
+        "Contact 1 Title": "Chief Executive Officer",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/aaron-garcia-cpcu-2a231413",
+        "Contact 2 Name": "Jeff Severino",
+        "Contact 2 Title": "Senior Vice President",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/severinojeff",
+        "Contact 3 Name": "Bill Wilson",
+        "Contact 3 Title": "Senior Vice President",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/billwilson5",
+        "job_details": [
+          {
+            "title": "Operations Supervisor (Shipping and Receiving)",
+            "location": "Jessup, MD, US",
+            "url": "https://www.indeed.com/viewjob?jk=c32c0f2ad6d49693",
+            "date_posted": "2025-11-11",
+            "source": "indeed"
+          },
+          {
+            "title": "Staff Accountant",
+            "location": "Greer, SC, US",
+            "url": "https://www.indeed.com/viewjob?jk=2cd5db228fb14f58",
+            "date_posted": "2025-11-10",
+            "source": "indeed"
+          },
+          {
+            "title": "Staff Accountant",
+            "location": "Greer, SC",
+            "url": "https://www.linkedin.com/jobs/view/4335186707",
+            "date_posted": "2025-11-10",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sales Activities Coordinator",
+            "location": "Rowland Heights, CA",
+            "url": "https://www.linkedin.com/jobs/view/4337983834",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Regional Business Development Manager, North East - MSI",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4334348903",
+            "date_posted": "2025-11-05",
+            "source": "linkedin"
+          },
+          {
+            "title": "State BDM, Personal Lines Product - MSI",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4334138439",
+            "date_posted": "2025-11-04",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "50.0",
+        "Company Name": "NavSav Insurance",
+        "Location": "Beaumont, Texas",
+        "Website": "http://www.navsav.com",
+        "Phone": "+1 888-800-1475",
+        "Current Headcount": "350",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "350",
+        "Days Tracked": "0",
+        "Active Jobs": "6",
+        "Industry": "insurance",
+        "Contact 1 Name": "George Mathews",
+        "Contact 1 Title": "Managing Partner",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/george-mat-mathews-58660614",
+        "Contact 2 Name": "",
+        "Contact 2 Title": "",
+        "Contact 2 Email": "",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "",
+        "Contact 3 Name": "",
+        "Contact 3 Title": "",
+        "Contact 3 Email": "",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "",
+        "job_details": [
+          {
+            "title": "Director of Finance",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4321911207",
+            "date_posted": "2025-11-10",
+            "source": "linkedin"
+          },
+          {
+            "title": "Accounting Controller",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4320733038",
+            "date_posted": "2025-11-04",
+            "source": "linkedin"
+          },
+          {
+            "title": "Accounting Controller",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4319863286",
+            "date_posted": "2025-10-30",
+            "source": "linkedin"
+          },
+          {
+            "title": "Controller",
+            "location": "Spring, TX",
+            "url": "https://www.linkedin.com/jobs/view/4333393023",
+            "date_posted": "2025-10-29",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Insurance Account Manager- Selma, AL",
+            "location": "Selma, AL",
+            "url": "https://www.linkedin.com/jobs/view/4332936004",
+            "date_posted": "2025-10-28",
+            "source": "linkedin"
+          },
+          {
+            "title": "Insurance Accounting Team Manager",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4319272858",
+            "date_posted": "2025-10-27",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "50.0",
+        "Company Name": "Hotchkiss Insurance",
+        "Location": "Carrollton, Texas",
+        "Website": "http://www.hotchkissinsurance.com",
+        "Phone": "+1 713-956-9800",
+        "Current Headcount": "210",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "210",
+        "Days Tracked": "0",
+        "Active Jobs": "6",
+        "Industry": "insurance",
+        "Contact 1 Name": "Brad Burnham",
+        "Contact 1 Title": "Partner/ Vice President",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/brad-burnham-bab32620",
+        "Contact 2 Name": "Greg Hotchkiss",
+        "Contact 2 Title": "CFO",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/greg-hotchkiss-cpa-cic-crm-25367b12",
+        "Contact 3 Name": "Kaycie Berley",
+        "Contact 3 Title": "Vice President",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/kaycie-berley-1734588",
+        "job_details": [
+          {
+            "title": "Assistant Account Manager, Commercial Lines",
+            "location": "Carrollton, TX, US",
+            "url": "https://www.indeed.com/viewjob?jk=424fc277e92517eb",
+            "date_posted": "2025-11-03",
+            "source": "indeed"
+          },
+          {
+            "title": "Assistant Account Manager, Commercial Lines",
+            "location": "Houston, TX, US",
+            "url": "https://www.indeed.com/viewjob?jk=7363b5e7ce236618",
+            "date_posted": "2025-11-03",
+            "source": "indeed"
+          },
+          {
+            "title": "Account Executive, Commercial Lines",
+            "location": "Houston, TX",
+            "url": "https://www.linkedin.com/jobs/view/4305244270",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Insurance Advisor, Personal Lines",
+            "location": "Carrollton, TX",
+            "url": "https://www.linkedin.com/jobs/view/4173157057",
+            "date_posted": "2025-11-03",
+            "source": "linkedin"
+          },
+          {
+            "title": "Assistant Account Manager, Commercial Lines",
+            "location": "Houston, TX",
+            "url": "https://www.linkedin.com/jobs/view/4333798869",
+            "date_posted": "2025-11-03",
+            "source": "linkedin"
+          },
+          {
+            "title": "Assistant Account Manager, Commercial Lines",
+            "location": "Carrollton, TX",
+            "url": "https://www.linkedin.com/jobs/view/4333829233",
+            "date_posted": "2025-11-03",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "45.0",
+        "Company Name": "Bamboo Insurance",
+        "Location": "Midvale, Utah",
+        "Website": "http://www.bambooinsurance.com",
+        "Phone": "+1 833-922-6266",
+        "Current Headcount": "170",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "170",
+        "Days Tracked": "0",
+        "Active Jobs": "3",
+        "Industry": "insurance",
+        "Contact 1 Name": "Timothy Tuller",
+        "Contact 1 Title": "Chief Financial Officer",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/timothy-tuller-9a177937",
+        "Contact 2 Name": "John Chu",
+        "Contact 2 Title": "Founder and CEO",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/john-chu-83491510",
+        "Contact 3 Name": "Brock Christensen",
+        "Contact 3 Title": "Vice President, Operations",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/brock-christensen-004a294a",
+        "job_details": [
+          {
+            "title": "Director of Product Management",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4269690224",
+            "date_posted": "2025-11-09",
+            "source": "linkedin"
+          },
+          {
+            "title": "Technical Project Manager",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4318301512",
+            "date_posted": "2025-10-24",
+            "source": "linkedin"
+          },
+          {
+            "title": "Systems Analyst Manager",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4222354568",
+            "date_posted": "2025-10-24",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "45.0",
+        "Company Name": "Kin Insurance",
+        "Location": "Chicago, Illinois",
+        "Website": "http://www.kin.com",
+        "Phone": "+1 855-717-0022",
+        "Current Headcount": "660",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "660",
+        "Days Tracked": "0",
+        "Active Jobs": "17",
+        "Industry": "insurance",
+        "Contact 1 Name": "Jerry Fadden",
+        "Contact 1 Title": "Chief Financial Officer",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/jerryfadden1",
+        "Contact 2 Name": "Vince Vanderlaan",
+        "Contact 2 Title": "Vice President, People",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/vince-vanderlaan-b12659a8",
+        "Contact 3 Name": "Ronald Seman",
+        "Contact 3 Title": "Vice President, Growth",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/ronald-seman-12198762",
+        "job_details": [
+          {
+            "title": "Claims Manager",
+            "location": "US",
+            "url": "https://www.indeed.com/viewjob?jk=a7d57a57d0ed4af4",
+            "date_posted": "2025-11-07",
+            "source": "indeed"
+          },
+          {
+            "title": "Licensed Sales Agent (Property & Casualty, Personal Lines)",
+            "location": "Denver, CO, US",
+            "url": "https://www.indeed.com/viewjob?jk=59bfce50a74ce0bb",
+            "date_posted": "2025-10-24",
+            "source": "indeed"
+          },
+          {
+            "title": "Licensed Sales Agent (Property & Casualty, Personal Lines)",
+            "location": "US",
+            "url": "https://www.indeed.com/viewjob?jk=7fe2bd2a9819f747",
+            "date_posted": "2025-10-24",
+            "source": "indeed"
+          },
+          {
+            "title": "Licensed Sales Agent (Property & Casualty, Personal Lines)",
+            "location": "AZ, US",
+            "url": "https://www.indeed.com/viewjob?jk=0e5d4099ea1dcdd6",
+            "date_posted": "2025-10-24",
+            "source": "indeed"
+          },
+          {
+            "title": "Licensed Sales Agent (Property & Casualty, Personal Lines)",
+            "location": "Las Vegas, NV, US",
+            "url": "https://www.indeed.com/viewjob?jk=77b3af9969593898",
+            "date_posted": "2025-10-24",
+            "source": "indeed"
+          },
+          {
+            "title": "Licensed Sales Agent (Property & Casualty, Personal Lines)",
+            "location": "Salt Lake City, UT, US",
+            "url": "https://www.indeed.com/viewjob?jk=69b8872347184ff8",
+            "date_posted": "2025-10-24",
+            "source": "indeed"
+          },
+          {
+            "title": "Licensed Sales Agent (Property & Casualty, Personal Lines)",
+            "location": "Spokane, WA, US",
+            "url": "https://www.indeed.com/viewjob?jk=bf8c1d72708c6647",
+            "date_posted": "2025-10-24",
+            "source": "indeed"
+          },
+          {
+            "title": "Licensed Sales Agent (Property & Casualty, Personal Lines)",
+            "location": "TX, US",
+            "url": "https://www.indeed.com/viewjob?jk=f045aca145e842dc",
+            "date_posted": "2025-10-24",
+            "source": "indeed"
+          },
+          {
+            "title": "Senior State Manager, CAT Management",
+            "location": "Saint Petersburg, FL, US",
+            "url": "https://www.indeed.com/viewjob?jk=4aea9fd19e3582e5",
+            "date_posted": "2025-10-21",
+            "source": "indeed"
+          },
+          {
+            "title": "Benefits Manager",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4296235899",
+            "date_posted": "2025-11-12",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior State Manager, CAT Management",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4315474055",
+            "date_posted": "2025-11-12",
+            "source": "linkedin"
+          },
+          {
+            "title": "Claims Manager",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4337997587",
+            "date_posted": "2025-11-08",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Pricing & Risk Manager",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4309587142",
+            "date_posted": "2025-10-30",
+            "source": "linkedin"
+          },
+          {
+            "title": "Licensed Sales Agent (Property & Casualty, Personal Lines)",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4317236241",
+            "date_posted": "2025-10-24",
+            "source": "linkedin"
+          },
+          {
+            "title": "Licensed Sales Agent (Property & Casualty, Personal Lines)",
+            "location": "Washington, United States",
+            "url": "https://www.linkedin.com/jobs/view/4317238201",
+            "date_posted": "2025-10-24",
+            "source": "linkedin"
+          },
+          {
+            "title": "Licensed Sales Agent (Property & Casualty, Personal Lines)",
+            "location": "Arizona, United States",
+            "url": "https://www.linkedin.com/jobs/view/4317241184",
+            "date_posted": "2025-10-24",
+            "source": "linkedin"
+          },
+          {
+            "title": "Licensed Sales Agent (Property & Casualty, Personal Lines)",
+            "location": "Utah, United States",
+            "url": "https://www.linkedin.com/jobs/view/4317248038",
+            "date_posted": "2025-10-24",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "45.0",
+        "Company Name": "Frankenmuth Insurance",
+        "Location": "Frankenmuth, Michigan",
+        "Website": "http://www.fmins.com",
+        "Phone": "+1 989-652-6121",
+        "Current Headcount": "850",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "850",
+        "Days Tracked": "0",
+        "Active Jobs": "9",
+        "Industry": "insurance",
+        "Contact 1 Name": "Dawn Cga",
+        "Contact 1 Title": "CEO Elect - Chief Financial Officer & Treasurer",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/dawnjaffray",
+        "Contact 2 Name": "Fred Edmond",
+        "Contact 2 Title": "Chief Executive Officer",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/fred-edmond-cpcu-b5b38419",
+        "Contact 3 Name": "Ford Rogers",
+        "Contact 3 Title": "Vice President",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/ford-rogers-7bb07975",
+        "job_details": [
+          {
+            "title": "Commercial Lines Underwriting Support Representative",
+            "location": "US",
+            "url": "https://www.indeed.com/viewjob?jk=5dd878dabc53317a",
+            "date_posted": "2025-11-07",
+            "source": "indeed"
+          },
+          {
+            "title": "Commercial Lines Underwriter (South Carolina)",
+            "location": "SC, US",
+            "url": "https://www.indeed.com/viewjob?jk=80903a15b9c73552",
+            "date_posted": "2025-11-07",
+            "source": "indeed"
+          },
+          {
+            "title": "Commercial Lines Underwriter (State of Georgia)",
+            "location": "GA, US",
+            "url": "https://www.indeed.com/viewjob?jk=b89b0bd8309053f3",
+            "date_posted": "2025-11-06",
+            "source": "indeed"
+          },
+          {
+            "title": "Commercial Lines Underwriter (State of Tennessee)",
+            "location": "TN, US",
+            "url": "https://www.indeed.com/viewjob?jk=17071b65bce13582",
+            "date_posted": "2025-11-06",
+            "source": "indeed"
+          },
+          {
+            "title": "Commercial Lines Underwriting Support Representative",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4338165361",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Lines Underwriter (South Carolina)",
+            "location": "South Carolina, United States",
+            "url": "https://www.linkedin.com/jobs/view/4338075982",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Lines Underwriter (State of Tennessee)",
+            "location": "Tennessee, United States",
+            "url": "https://www.linkedin.com/jobs/view/4337968532",
+            "date_posted": "2025-11-06",
+            "source": "linkedin"
+          },
+          {
+            "title": "Director, Commercial Lines Product Management",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4302691590",
+            "date_posted": "2025-11-05",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Lines Underwriter (State of Georgia)",
+            "location": "Georgia, United States",
+            "url": "https://www.linkedin.com/jobs/view/4310216025",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "45.0",
+        "Company Name": "Encova Insurance",
+        "Location": "Columbus, Ohio",
+        "Website": "http://www.encova.com",
+        "Phone": "+1 800-876-6642",
+        "Current Headcount": "870",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "870",
+        "Days Tracked": "0",
+        "Active Jobs": "10",
+        "Industry": "insurance",
+        "Contact 1 Name": "Thomas Obrokta",
+        "Contact 1 Title": "President and CEO",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/thomas-j-%e2%80%9ctj%e2%80%9d-obrokta-jr-634b9015a",
+        "Contact 2 Name": "Chris Howat",
+        "Contact 2 Title": "EVP, Treasurer and CFO at Encova Insurance Group",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/chris-howat-86884290",
+        "Contact 3 Name": "Will Johnson",
+        "Contact 3 Title": "Vice President and Business Director",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/will-johnson-9bb98a9",
+        "job_details": [
+          {
+            "title": "Underwriter, Small Business",
+            "location": "Columbus, OH, US",
+            "url": "https://www.indeed.com/viewjob?jk=7203bf5ed3b6e8a7",
+            "date_posted": "2025-11-07",
+            "source": "indeed"
+          },
+          {
+            "title": "Territory Manager - Personal Lines",
+            "location": "WI, US",
+            "url": "https://www.indeed.com/viewjob?jk=3a4e7d9513f4f141",
+            "date_posted": "2025-10-27",
+            "source": "indeed"
+          },
+          {
+            "title": "Senior Accountant",
+            "location": "Columbus, OH, US",
+            "url": "https://www.indeed.com/viewjob?jk=0add09b525426ea6",
+            "date_posted": "2025-10-17",
+            "source": "indeed"
+          },
+          {
+            "title": "Territory Manager - Personal Lines",
+            "location": "KY, US",
+            "url": "https://www.indeed.com/viewjob?jk=c7a81c6af54c148e",
+            "date_posted": "2025-10-15",
+            "source": "indeed"
+          },
+          {
+            "title": "Senior Accountant",
+            "location": "Columbus, OH",
+            "url": "https://www.linkedin.com/jobs/view/4316377767",
+            "date_posted": "2025-11-08",
+            "source": "linkedin"
+          },
+          {
+            "title": "Underwriter, Small Business",
+            "location": "Columbus, OH",
+            "url": "https://www.linkedin.com/jobs/view/4334858462",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Underwriter, Middle Market - Multi-line",
+            "location": "Illinois, United States",
+            "url": "https://www.linkedin.com/jobs/view/4309680778",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Territory Manager - Personal Lines",
+            "location": "Kentucky, United States",
+            "url": "https://www.linkedin.com/jobs/view/4315195494",
+            "date_posted": "2025-11-06",
+            "source": "linkedin"
+          },
+          {
+            "title": "Territory Manager - Personal Lines",
+            "location": "Wisconsin, United States",
+            "url": "https://www.linkedin.com/jobs/view/4332303331",
+            "date_posted": "2025-10-27",
+            "source": "linkedin"
+          },
+          {
+            "title": "Production Underwriter - Package Lines",
+            "location": "Pennsylvania, United States",
+            "url": "https://www.linkedin.com/jobs/view/4309689607",
+            "date_posted": "2025-10-24",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "45.0",
+        "Company Name": "IAT Insurance Group",
+        "Location": "Raleigh, North Carolina",
+        "Website": "http://www.iatinsurancegroup.com",
+        "Phone": "+1 919-838-4448",
+        "Current Headcount": "950",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "950",
+        "Days Tracked": "0",
+        "Active Jobs": "9",
+        "Industry": "insurance",
+        "Contact 1 Name": "David Pirrung",
+        "Contact 1 Title": "Chief Financial Officer",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/david-pirrung-a1065629",
+        "Contact 2 Name": "Yonathan Casilla",
+        "Contact 2 Title": "Vice President",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/yonathan-casilla-01750210",
+        "Contact 3 Name": "Patrick Dolan",
+        "Contact 3 Title": "Vice President",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/patrick-j-dolan-81432494",
+        "job_details": [
+          {
+            "title": "Manager, Claims Legal Operations",
+            "location": "Raleigh, NC",
+            "url": "https://www.linkedin.com/jobs/view/4317512823",
+            "date_posted": "2025-11-10",
+            "source": "linkedin"
+          },
+          {
+            "title": "Manager, Claims Services (Auto-PD)",
+            "location": "Raleigh, NC",
+            "url": "https://www.linkedin.com/jobs/view/4316805980",
+            "date_posted": "2025-11-10",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior E&S Underwriter (P&C - Binding)",
+            "location": "Scottsdale, AZ",
+            "url": "https://www.linkedin.com/jobs/view/4316511845",
+            "date_posted": "2025-11-10",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Underwriter (multiline P&C production role)",
+            "location": "Overland Park, KS",
+            "url": "https://www.linkedin.com/jobs/view/4316815564",
+            "date_posted": "2025-11-10",
+            "source": "linkedin"
+          },
+          {
+            "title": "Surety Underwriting Manager",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4316817507",
+            "date_posted": "2025-11-09",
+            "source": "linkedin"
+          },
+          {
+            "title": "Underwriting Support Associate Account Manager (Aviation)",
+            "location": "Alpharetta, GA",
+            "url": "https://www.linkedin.com/jobs/view/4317504976",
+            "date_posted": "2025-10-21",
+            "source": "linkedin"
+          },
+          {
+            "title": "Assistant Regional Manager, Contract Surety",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4317511818",
+            "date_posted": "2025-10-21",
+            "source": "linkedin"
+          },
+          {
+            "title": "Underwriting Support Associate Account Manager (Aviation)",
+            "location": "Kansas City, MO",
+            "url": "https://www.linkedin.com/jobs/view/4317506946",
+            "date_posted": "2025-10-21",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Surety Underwriter",
+            "location": "California, United States",
+            "url": "https://www.linkedin.com/jobs/view/4316528175",
+            "date_posted": "2025-10-18",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "45.0",
+        "Company Name": "Amerisure Insurance",
+        "Location": "Farmington Hills, Michigan",
+        "Website": "http://www.amerisure.com",
+        "Phone": "+1 800-257-1900",
+        "Current Headcount": "730",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "730",
+        "Days Tracked": "0",
+        "Active Jobs": "11",
+        "Industry": "insurance",
+        "Contact 1 Name": "Christopher Spaude",
+        "Contact 1 Title": "Chief Financial Officer",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/christopher-spaude-03236098",
+        "Contact 2 Name": "Joe Brossard",
+        "Contact 2 Title": "Vice President",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/joe-brossard-25195b5",
+        "Contact 3 Name": "Josh Johnson",
+        "Contact 3 Title": "Vice President",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/josh-johnson-39280914",
+        "job_details": [
+          {
+            "title": "Senior Marketing Underwriter - Program Business",
+            "location": "Indianapolis, IN",
+            "url": "https://www.linkedin.com/jobs/view/4334589219",
+            "date_posted": "2025-11-06",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Marketing Underwriter - Program Business",
+            "location": "Duluth, GA",
+            "url": "https://www.linkedin.com/jobs/view/4334579510",
+            "date_posted": "2025-11-06",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Marketing Underwriter - Program Business",
+            "location": "Farmington Hills, MI",
+            "url": "https://www.linkedin.com/jobs/view/4334579509",
+            "date_posted": "2025-11-06",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Marketing Underwriter - Program Business",
+            "location": "Memphis, TN",
+            "url": "https://www.linkedin.com/jobs/view/4334640428",
+            "date_posted": "2025-11-06",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Marketing Underwriter - Program Business",
+            "location": "Lisle, IL",
+            "url": "https://www.linkedin.com/jobs/view/4334439974",
+            "date_posted": "2025-11-06",
+            "source": "linkedin"
+          },
+          {
+            "title": "Agency Managing Underwriter (Commercial P&C)",
+            "location": "Indianapolis, IN",
+            "url": "https://www.linkedin.com/jobs/view/4269598347",
+            "date_posted": "2025-11-04",
+            "source": "linkedin"
+          },
+          {
+            "title": "Executive Underwriter - Middle Market (Commercial P&C)",
+            "location": "Tampa, FL",
+            "url": "https://www.linkedin.com/jobs/view/4312323809",
+            "date_posted": "2025-10-30",
+            "source": "linkedin"
+          },
+          {
+            "title": "Executive Underwriter - Middle Market (Commercial P&C)",
+            "location": "Charlotte, NC",
+            "url": "https://www.linkedin.com/jobs/view/4312327684",
+            "date_posted": "2025-10-30",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Lines Underwriter / Renewal Underwriter (Commercial P&C)",
+            "location": "Indianapolis, IN",
+            "url": "https://www.linkedin.com/jobs/view/4335648557",
+            "date_posted": "nan",
+            "source": "linkedin"
+          },
+          {
+            "title": "Executive Underwriter - Middle Market (Commercial P&C)",
+            "location": "Bloomington, MN",
+            "url": "https://www.linkedin.com/jobs/view/4318553595",
+            "date_posted": "nan",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Lines Underwriter / Renewal Underwriter (Commercial P&C)",
+            "location": "Lisle, IL",
+            "url": "https://www.linkedin.com/jobs/view/4335598907",
             "date_posted": "nan",
             "source": "linkedin"
           }
@@ -194,6 +1524,1760 @@
         ]
       },
       {
+        "Composite Score": "45.0",
+        "Company Name": "Heritage Insurance",
+        "Location": "Tampa, Florida",
+        "Website": "http://www.heritagepci.com",
+        "Phone": "+1 855-620-9978",
+        "Current Headcount": "540",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "540",
+        "Days Tracked": "0",
+        "Active Jobs": "7",
+        "Industry": "insurance",
+        "Contact 1 Name": "Kirk Lusk",
+        "Contact 1 Title": "CFO",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/kirk-lusk-16187b25",
+        "Contact 2 Name": "Ernie Garateix",
+        "Contact 2 Title": "Chief Executive Officer",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/ernie-garateix-172b317",
+        "Contact 3 Name": "Sudhanya Mukherjee",
+        "Contact 3 Title": "Senior Vice President",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/sudhanya-mukherjee-bb1b50179",
+        "job_details": [
+          {
+            "title": "Insurance Account Manager",
+            "location": "Fargo, ND, US",
+            "url": "https://www.indeed.com/viewjob?jk=0d21e151812b6d8e",
+            "date_posted": "2025-11-04",
+            "source": "indeed"
+          },
+          {
+            "title": "Territory Manager",
+            "location": "Naples, FL, US",
+            "url": "https://www.indeed.com/viewjob?jk=41d5d9fff71b75c0",
+            "date_posted": "2025-10-24",
+            "source": "indeed"
+          },
+          {
+            "title": "Territory Manager",
+            "location": "Fort Myers, FL, US",
+            "url": "https://www.indeed.com/viewjob?jk=c0df868b41098714",
+            "date_posted": "2025-10-24",
+            "source": "indeed"
+          },
+          {
+            "title": "Territory Manager",
+            "location": "Tampa, FL, US",
+            "url": "https://www.indeed.com/viewjob?jk=571b3805cfd8180f",
+            "date_posted": "2025-10-24",
+            "source": "indeed"
+          },
+          {
+            "title": "Claims Manager",
+            "location": "Johnston, RI, US",
+            "url": "https://www.indeed.com/viewjob?jk=a39e979bff80b8ec",
+            "date_posted": "2025-10-16",
+            "source": "indeed"
+          },
+          {
+            "title": "Claims Support Supervisor",
+            "location": "Tampa, FL, US",
+            "url": "https://www.indeed.com/viewjob?jk=b14daef30b52928b",
+            "date_posted": "2025-10-14",
+            "source": "indeed"
+          },
+          {
+            "title": "Territory Manager",
+            "location": "Tampa, FL",
+            "url": "https://www.linkedin.com/jobs/view/4334440316",
+            "date_posted": "2025-11-05",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "45.0",
+        "Company Name": "Heffernan Insurance Brokers",
+        "Location": "Walnut Creek, California",
+        "Website": "http://www.heffins.com",
+        "Phone": "+1 855-700-1988",
+        "Current Headcount": "610",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "610",
+        "Days Tracked": "0",
+        "Active Jobs": "25",
+        "Industry": "insurance",
+        "Contact 1 Name": "Mike Heffernan",
+        "Contact 1 Title": "President and CEO",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/heffernanmike",
+        "Contact 2 Name": "Philip Mortimer",
+        "Contact 2 Title": "Chief Financial Officer",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/philip-mortimer-fca-cia-9603a966",
+        "Contact 3 Name": "Garrett Yates",
+        "Contact 3 Title": "Vice President",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/garrettyates",
+        "job_details": [
+          {
+            "title": "Employee Benefits Producer",
+            "location": "San Diego, CA",
+            "url": "https://www.linkedin.com/jobs/view/4310244569",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Employee Benefits Producer",
+            "location": "Irvine, CA",
+            "url": "https://www.linkedin.com/jobs/view/4310243382",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Employee Benefits Producer",
+            "location": "Salt Lake City, UT",
+            "url": "https://www.linkedin.com/jobs/view/4310240644",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sales Assistant, Commercial Lines",
+            "location": "Portland, OR",
+            "url": "https://www.linkedin.com/jobs/view/4312173115",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Surety Bonds Producer",
+            "location": "Walnut Creek, CA",
+            "url": "https://www.linkedin.com/jobs/view/4310252197",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Account Manager, Commercial Lines",
+            "location": "Irvine, CA",
+            "url": "https://www.linkedin.com/jobs/view/4321104462",
+            "date_posted": "2025-11-06",
+            "source": "linkedin"
+          },
+          {
+            "title": "Assistant Account Manager, Commercial Lines",
+            "location": "Petaluma, CA",
+            "url": "https://www.linkedin.com/jobs/view/4320121587",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          },
+          {
+            "title": "Associate Account Manager, Commercial Lines",
+            "location": "Petaluma, CA",
+            "url": "https://www.linkedin.com/jobs/view/4320281209",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          },
+          {
+            "title": "Account Manager, Personal Lines (Family Office Division)",
+            "location": "Petaluma, CA",
+            "url": "https://www.linkedin.com/jobs/view/4306693168",
+            "date_posted": "2025-10-27",
+            "source": "linkedin"
+          },
+          {
+            "title": "Vice President - Commercial Lines",
+            "location": "Media, PA",
+            "url": "https://www.linkedin.com/jobs/view/4240246757",
+            "date_posted": "2025-10-21",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Account Manager, Commercial Lines",
+            "location": "Irvine, CA",
+            "url": "https://www.linkedin.com/jobs/view/4291340958",
+            "date_posted": "2025-10-21",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior P&C Underwriter",
+            "location": "Petaluma, CA",
+            "url": "https://www.linkedin.com/jobs/view/4308290331",
+            "date_posted": "2025-10-21",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Account Manager, Commercial Lines",
+            "location": "San Francisco, CA",
+            "url": "https://www.linkedin.com/jobs/view/4336051983",
+            "date_posted": "2025-10-19",
+            "source": "linkedin"
+          },
+          {
+            "title": "Account Manager, Group Benefits",
+            "location": "Walnut Creek, CA",
+            "url": "https://www.linkedin.com/jobs/view/4335892391",
+            "date_posted": "2025-10-19",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Account Manager, Commercial Lines",
+            "location": "Petaluma, CA",
+            "url": "https://www.linkedin.com/jobs/view/4335850291",
+            "date_posted": "2025-10-19",
+            "source": "linkedin"
+          },
+          {
+            "title": "Aviation Producer, Commercial Lines",
+            "location": "Chesterfield, MO",
+            "url": "https://www.linkedin.com/jobs/view/4335942365",
+            "date_posted": "2025-10-19",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Account Manager, Commercial Lines",
+            "location": "Walnut Creek, CA",
+            "url": "https://www.linkedin.com/jobs/view/4335815993",
+            "date_posted": "2025-10-18",
+            "source": "linkedin"
+          },
+          {
+            "title": "Account Manager, Commercial Lines",
+            "location": "Reno, NV",
+            "url": "https://www.linkedin.com/jobs/view/4335746053",
+            "date_posted": "2025-10-18",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Account Manager, Commercial Lines",
+            "location": "San Mateo, CA",
+            "url": "https://www.linkedin.com/jobs/view/4335821104",
+            "date_posted": "2025-10-18",
+            "source": "linkedin"
+          },
+          {
+            "title": "Surety Bonds Producer",
+            "location": "San Francisco, CA",
+            "url": "https://www.linkedin.com/jobs/view/4335823583",
+            "date_posted": "2025-10-18",
+            "source": "linkedin"
+          },
+          {
+            "title": "Aviation Producer, Commercial Lines",
+            "location": "Walnut Creek, CA",
+            "url": "https://www.linkedin.com/jobs/view/4335676186",
+            "date_posted": "2025-10-18",
+            "source": "linkedin"
+          },
+          {
+            "title": "Aviation Producer, Commercial Lines",
+            "location": "San Mateo, CA",
+            "url": "https://www.linkedin.com/jobs/view/4335399631",
+            "date_posted": "2025-10-18",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Account Manager, Commercial Lines",
+            "location": "San Diego, CA",
+            "url": "https://www.linkedin.com/jobs/view/4335447506",
+            "date_posted": "2025-10-17",
+            "source": "linkedin"
+          },
+          {
+            "title": "Aviation Producer, Commercial Lines",
+            "location": "San Francisco, CA",
+            "url": "https://www.linkedin.com/jobs/view/4335414736",
+            "date_posted": "2025-10-17",
+            "source": "linkedin"
+          },
+          {
+            "title": "Account Manager, Group Benefits",
+            "location": "Irvine, CA",
+            "url": "https://www.linkedin.com/jobs/view/4334907821",
+            "date_posted": "2025-10-15",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "45.0",
+        "Company Name": "James River Insurance Company",
+        "Location": "Richmond, Virginia",
+        "Website": "http://www.jrvrgroup.com",
+        "Phone": "+1 804-289-2700",
+        "Current Headcount": "530",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "530",
+        "Days Tracked": "0",
+        "Active Jobs": "14",
+        "Industry": "insurance",
+        "Contact 1 Name": "Tim Macaleese",
+        "Contact 1 Title": "Senior Vice President, Chief Financial Officer",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/tim-macaleese-8986946",
+        "Contact 2 Name": "Richard Schmitzer",
+        "Contact 2 Title": "President/CEO",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/richard-schmitzer-23352131",
+        "Contact 3 Name": "Frank D'Orazio",
+        "Contact 3 Title": "Chief Executive Officer",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/frank-d-orazio-01a26ba",
+        "job_details": [
+          {
+            "title": "Underwriter - Senior Underwriter (Environmental)",
+            "location": "Richmond, VA",
+            "url": "https://www.linkedin.com/jobs/view/4316395726",
+            "date_posted": "2025-11-11",
+            "source": "linkedin"
+          },
+          {
+            "title": "Underwriter - Senior Underwriter - Excess Casualty",
+            "location": "Scottsdale, AZ",
+            "url": "https://www.linkedin.com/jobs/view/4313419199",
+            "date_posted": "2025-11-10",
+            "source": "linkedin"
+          },
+          {
+            "title": "Underwriter (Management Liability)",
+            "location": "Richmond, VA",
+            "url": "https://www.linkedin.com/jobs/view/4275811744",
+            "date_posted": "2025-11-10",
+            "source": "linkedin"
+          },
+          {
+            "title": "Associate Underwriter - Underwriter (Excess Casualty)",
+            "location": "Richmond, VA",
+            "url": "https://www.linkedin.com/jobs/view/4333219537",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          },
+          {
+            "title": "Associate Underwriter - Underwriter (Excess Casualty)",
+            "location": "Scottsdale, AZ",
+            "url": "https://www.linkedin.com/jobs/view/4333398578",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          },
+          {
+            "title": "Underwriter - Senior Underwriter (Allied Health)",
+            "location": "Alpharetta, GA",
+            "url": "https://www.linkedin.com/jobs/view/4333418301",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          },
+          {
+            "title": "Manager - AVP, Underwriting (Allied Health)",
+            "location": "Alpharetta, GA",
+            "url": "https://www.linkedin.com/jobs/view/4333358786",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          },
+          {
+            "title": "Underwriter - Senior Underwriter (Allied Health)",
+            "location": "Scottsdale, AZ",
+            "url": "https://www.linkedin.com/jobs/view/4333259280",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          },
+          {
+            "title": "Underwriter - Senior Underwriter (Allied Health)",
+            "location": "Raleigh, NC",
+            "url": "https://www.linkedin.com/jobs/view/4333388771",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          },
+          {
+            "title": "Associate - Executive Underwriter (Excess Casualty)",
+            "location": "Richmond, VA",
+            "url": "https://www.linkedin.com/jobs/view/4333358785",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          },
+          {
+            "title": "Manager - AVP, Underwriting (Allied Health)",
+            "location": "Raleigh, NC",
+            "url": "https://www.linkedin.com/jobs/view/4333279318",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          },
+          {
+            "title": "Underwriter - Senior Underwriter (Allied Health)",
+            "location": "Richmond, VA",
+            "url": "https://www.linkedin.com/jobs/view/4333368716",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          },
+          {
+            "title": "Manager - AVP, Underwriting (Allied Health)",
+            "location": "Scottsdale, AZ",
+            "url": "https://www.linkedin.com/jobs/view/4333368714",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          },
+          {
+            "title": "Manager - AVP, Underwriting (Allied Health)",
+            "location": "Richmond, VA",
+            "url": "https://www.linkedin.com/jobs/view/4333378644",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "45.0",
+        "Company Name": "FCCI Insurance Group",
+        "Location": "Sarasota, Florida",
+        "Website": "http://www.fcci-group.com",
+        "Phone": "+1 800-226-3224",
+        "Current Headcount": "900",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "900",
+        "Days Tracked": "0",
+        "Active Jobs": "12",
+        "Industry": "insurance",
+        "Contact 1 Name": "Cina Welch",
+        "Contact 1 Title": "President & CEO",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/cinawelch",
+        "Contact 2 Name": "Chris Shoucair",
+        "Contact 2 Title": "CFO",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/chris-shoucair-a3237636",
+        "Contact 3 Name": "Fcci Insurance",
+        "Contact 3 Title": "CEO",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/fccigroup",
+        "job_details": [
+          {
+            "title": "Billing Coordinator",
+            "location": "Sarasota, FL, US",
+            "url": "https://www.indeed.com/viewjob?jk=25c868b9ec6203e7",
+            "date_posted": "2025-11-10",
+            "source": "indeed"
+          },
+          {
+            "title": "Senior E&S Underwriter",
+            "location": "Sarasota, FL, US",
+            "url": "https://www.indeed.com/viewjob?jk=e0be256b71168c92",
+            "date_posted": "2025-11-05",
+            "source": "indeed"
+          },
+          {
+            "title": "Senior Commercial Lines Underwriter",
+            "location": "Carmel, IN, US",
+            "url": "https://www.indeed.com/viewjob?jk=85517267e2618293",
+            "date_posted": "2025-10-29",
+            "source": "indeed"
+          },
+          {
+            "title": "Territory Underwriting Manager- E&S",
+            "location": "Sarasota, FL, US",
+            "url": "https://www.indeed.com/viewjob?jk=cea2ba47e0f7ca5e",
+            "date_posted": "2025-10-28",
+            "source": "indeed"
+          },
+          {
+            "title": "Billing Coordinator",
+            "location": "Sarasota, FL",
+            "url": "https://www.linkedin.com/jobs/view/4335440615",
+            "date_posted": "2025-11-10",
+            "source": "linkedin"
+          },
+          {
+            "title": "Accountant",
+            "location": "Sarasota, FL",
+            "url": "https://www.linkedin.com/jobs/view/4334821601",
+            "date_posted": "2025-11-06",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior E&S Underwriter",
+            "location": "Glen Allen, VA",
+            "url": "https://www.linkedin.com/jobs/view/4334521930",
+            "date_posted": "2025-11-05",
+            "source": "linkedin"
+          },
+          {
+            "title": "Manager, Statistical Reporting",
+            "location": "Sarasota, FL",
+            "url": "https://www.linkedin.com/jobs/view/4333956624",
+            "date_posted": "2025-11-04",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Commercial Lines Underwriter",
+            "location": "East St Louis, IL",
+            "url": "https://www.linkedin.com/jobs/view/4332937652",
+            "date_posted": "2025-10-29",
+            "source": "linkedin"
+          },
+          {
+            "title": "Territory Underwriting Manager- E&S",
+            "location": "Sarasota, FL",
+            "url": "https://www.linkedin.com/jobs/view/4332764622",
+            "date_posted": "2025-10-28",
+            "source": "linkedin"
+          },
+          {
+            "title": "Manager, Product Development E&S",
+            "location": "Glen Allen, VA",
+            "url": "https://www.linkedin.com/jobs/view/4323931807",
+            "date_posted": "2025-10-23",
+            "source": "linkedin"
+          },
+          {
+            "title": "Associate Underwriter - E&S",
+            "location": "Glen Allen, VA",
+            "url": "https://www.linkedin.com/jobs/view/4316029004",
+            "date_posted": "2025-10-16",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "45.0",
+        "Company Name": "CopperPoint Insurance Companies",
+        "Location": "Phoenix, Arizona",
+        "Website": "http://www.copperpoint.com",
+        "Phone": "+1 602-631-2300",
+        "Current Headcount": "890",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "890",
+        "Days Tracked": "0",
+        "Active Jobs": "6",
+        "Industry": "insurance",
+        "Contact 1 Name": "Mark Underwood",
+        "Contact 1 Title": "EVP, Chief Financial Officer",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/mark-underwood-832465374",
+        "Contact 2 Name": "Dale Newton",
+        "Contact 2 Title": "VP and CFO",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/dale-newton-a842b13",
+        "Contact 3 Name": "Don Smith",
+        "Contact 3 Title": "CEO",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/don-smith-5127b99",
+        "job_details": [
+          {
+            "title": "Senior Underwriter",
+            "location": "Texas, United States",
+            "url": "https://www.linkedin.com/jobs/view/4320016204",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Underwriter",
+            "location": "Texas, United States",
+            "url": "https://www.linkedin.com/jobs/view/4320046055",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Underwriter",
+            "location": "Texas, United States",
+            "url": "https://www.linkedin.com/jobs/view/4319996119",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Underwriter",
+            "location": "Phoenix, AZ",
+            "url": "https://www.linkedin.com/jobs/view/4319956242",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Underwriter",
+            "location": "Phoenix, AZ",
+            "url": "https://www.linkedin.com/jobs/view/4319906254",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Underwriter",
+            "location": "Phoenix, AZ",
+            "url": "https://www.linkedin.com/jobs/view/4319846256",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "45.0",
+        "Company Name": "Central Insurance",
+        "Location": "Van Wert, Ohio",
+        "Website": "http://www.central-insurance.com",
+        "Phone": "+1 419-238-5551",
+        "Current Headcount": "660",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "660",
+        "Days Tracked": "0",
+        "Active Jobs": "23",
+        "Industry": "insurance",
+        "Contact 1 Name": "Bola Laniyan",
+        "Contact 1 Title": "Owner/CEO",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/bola-laniyan-153b6130",
+        "Contact 2 Name": "Jessica Seymour",
+        "Contact 2 Title": "Chief Financial Officer",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/jessica-seymour",
+        "Contact 3 Name": "Glenn Cook",
+        "Contact 3 Title": "VP",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/glenn-cook-14516233",
+        "job_details": [
+          {
+            "title": "Senior Regional Sales Manager",
+            "location": "Alpharetta, GA, US",
+            "url": "https://www.indeed.com/viewjob?jk=dbbe501241eaf6de",
+            "date_posted": "2025-11-11",
+            "source": "indeed"
+          },
+          {
+            "title": "Construction Underwriter",
+            "location": "WI, US",
+            "url": "https://www.indeed.com/viewjob?jk=2d14140bc52ced49",
+            "date_posted": "2025-11-07",
+            "source": "indeed"
+          },
+          {
+            "title": "Construction Underwriter",
+            "location": "IL, US",
+            "url": "https://www.indeed.com/viewjob?jk=350c232bed3c1fb1",
+            "date_posted": "2025-11-07",
+            "source": "indeed"
+          },
+          {
+            "title": "Construction Underwriter",
+            "location": "OH, US",
+            "url": "https://www.indeed.com/viewjob?jk=858b115368593f03",
+            "date_posted": "2025-11-07",
+            "source": "indeed"
+          },
+          {
+            "title": "Construction Underwriter",
+            "location": "MI, US",
+            "url": "https://www.indeed.com/viewjob?jk=ef36179298d7e1ce",
+            "date_posted": "2025-11-07",
+            "source": "indeed"
+          },
+          {
+            "title": "Senior Liability Claims Manager",
+            "location": "Waltham, MA, US",
+            "url": "https://www.indeed.com/viewjob?jk=2b53883a63d44186",
+            "date_posted": "2025-11-07",
+            "source": "indeed"
+          },
+          {
+            "title": "Senior Liability Claims Manager",
+            "location": "Alpharetta, GA, US",
+            "url": "https://www.indeed.com/viewjob?jk=ca175c278d347322",
+            "date_posted": "2025-11-07",
+            "source": "indeed"
+          },
+          {
+            "title": "Senior Liability Claims Manager",
+            "location": "Dublin, OH, US",
+            "url": "https://www.indeed.com/viewjob?jk=0763b29c8b8dea00",
+            "date_posted": "2025-11-07",
+            "source": "indeed"
+          },
+          {
+            "title": "Senior Liability Claims Manager",
+            "location": "Irving, TX, US",
+            "url": "https://www.indeed.com/viewjob?jk=24003801f470aab2",
+            "date_posted": "2025-11-07",
+            "source": "indeed"
+          },
+          {
+            "title": "Senior Liability Claims Manager",
+            "location": "Van Wert, OH, US",
+            "url": "https://www.indeed.com/viewjob?jk=08741cc44ac8a21a",
+            "date_posted": "2025-11-07",
+            "source": "indeed"
+          },
+          {
+            "title": "IT Support Manager",
+            "location": "Dublin, OH, US",
+            "url": "https://www.indeed.com/viewjob?jk=13309673713fa615",
+            "date_posted": "2025-10-27",
+            "source": "indeed"
+          },
+          {
+            "title": "IT Support Manager",
+            "location": "Van Wert, OH, US",
+            "url": "https://www.indeed.com/viewjob?jk=9e97070b86268593",
+            "date_posted": "2025-10-27",
+            "source": "indeed"
+          },
+          {
+            "title": "Transportation Underwriter",
+            "location": "Dublin, OH",
+            "url": "https://www.linkedin.com/jobs/view/4317100031",
+            "date_posted": "2025-11-12",
+            "source": "linkedin"
+          },
+          {
+            "title": "Territory Sales Manager - Oklahoma/ North Texas",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4307076956",
+            "date_posted": "2025-11-12",
+            "source": "linkedin"
+          },
+          {
+            "title": "Middle Market Underwriter",
+            "location": "Alpharetta, GA",
+            "url": "https://www.linkedin.com/jobs/view/4316989336",
+            "date_posted": "2025-11-12",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Regional Sales Manager",
+            "location": "Alpharetta, GA",
+            "url": "https://www.linkedin.com/jobs/view/4321965546",
+            "date_posted": "2025-11-11",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Liability Claims Manager",
+            "location": "Dublin, OH",
+            "url": "https://www.linkedin.com/jobs/view/4321269449",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Construction Underwriter",
+            "location": "Illinois, United States",
+            "url": "https://www.linkedin.com/jobs/view/4321099632",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Territory Sales Manager - Pennsylvania",
+            "location": "Harrisburg, PA",
+            "url": "https://www.linkedin.com/jobs/view/4305239835",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Director of Inland Marine Underwriting",
+            "location": "Dublin, OH",
+            "url": "https://www.linkedin.com/jobs/view/4293046348",
+            "date_posted": "2025-11-02",
+            "source": "linkedin"
+          },
+          {
+            "title": "Territory Sales Manager - NV",
+            "location": "Nevada, United States",
+            "url": "https://www.linkedin.com/jobs/view/4311680291",
+            "date_posted": "2025-10-30",
+            "source": "linkedin"
+          },
+          {
+            "title": "IT Support Manager",
+            "location": "Dublin, OH",
+            "url": "https://www.linkedin.com/jobs/view/4319174650",
+            "date_posted": "2025-10-27",
+            "source": "linkedin"
+          },
+          {
+            "title": "Director of Manufacturing Underwriting",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4237091699",
+            "date_posted": "2025-10-26",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "45.0",
+        "Company Name": "M3 Insurance",
+        "Location": "Madison, Wisconsin",
+        "Website": "http://www.m3ins.com",
+        "Phone": "+1 608-273-0655",
+        "Current Headcount": "530",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "530",
+        "Days Tracked": "0",
+        "Active Jobs": "8",
+        "Industry": "insurance",
+        "Contact 1 Name": "Elizabeth Dettman",
+        "Contact 1 Title": "Chief Financial Officer",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/elizabeth-dettman-ba247764",
+        "Contact 2 Name": "Rich Twietmeyer",
+        "Contact 2 Title": "Executive Vice-President and Partner",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/richard-twietmeyer-88052434",
+        "Contact 3 Name": "Mike Victorson",
+        "Contact 3 Title": "CEO",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/mike-victorson-2986b23",
+        "job_details": [
+          {
+            "title": "Client Experience Coordinator",
+            "location": "Madison, WI, US",
+            "url": "https://www.indeed.com/viewjob?jk=527a271f95aabb12",
+            "date_posted": "2025-11-10",
+            "source": "indeed"
+          },
+          {
+            "title": "HRIS Manager",
+            "location": "Minneapolis, MN, US",
+            "url": "https://www.indeed.com/viewjob?jk=f9957526d0fa6230",
+            "date_posted": "2025-10-27",
+            "source": "indeed"
+          },
+          {
+            "title": "HRIS Manager",
+            "location": "Wauwatosa, WI, US",
+            "url": "https://www.indeed.com/viewjob?jk=7b5fb5d5324ec9cc",
+            "date_posted": "2025-10-15",
+            "source": "indeed"
+          },
+          {
+            "title": "Property and Casualty Client Manager - Small Market (Elevate)",
+            "location": "Madison, WI, US",
+            "url": "https://www.indeed.com/viewjob?jk=c54f28d9c3e062eb",
+            "date_posted": "2025-10-14",
+            "source": "indeed"
+          },
+          {
+            "title": "Cyber Client Manager",
+            "location": "Wauwatosa, WI, US",
+            "url": "https://www.indeed.com/viewjob?jk=cef5d3a965b96ecb",
+            "date_posted": "2025-10-14",
+            "source": "indeed"
+          },
+          {
+            "title": "Client Experience Coordinator",
+            "location": "Madison, WI",
+            "url": "https://www.linkedin.com/jobs/view/4335147357",
+            "date_posted": "2025-11-10",
+            "source": "linkedin"
+          },
+          {
+            "title": "HRIS Manager",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4332321543",
+            "date_posted": "2025-10-27",
+            "source": "linkedin"
+          },
+          {
+            "title": "HRIS Manager",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4315315396",
+            "date_posted": "2025-10-15",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "45.0",
+        "Company Name": "Relation Insurance Services",
+        "Location": "Chicago, Illinois",
+        "Website": "http://www.relationinsurance.com",
+        "Phone": "+1 800-404-4969",
+        "Current Headcount": "760",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "760",
+        "Days Tracked": "0",
+        "Active Jobs": "31",
+        "Industry": "insurance",
+        "Contact 1 Name": "Charissa Hartmann",
+        "Contact 1 Title": "Chief Financial Officer",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/charissa-hartmann-935a8467",
+        "Contact 2 Name": "Lisa Walker",
+        "Contact 2 Title": "VP, Director",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/lisa-walker-97111713",
+        "Contact 3 Name": "Timothy Hall",
+        "Contact 3 Title": "Chief Executive Officer",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/timothyjonhall",
+        "job_details": [
+          {
+            "title": "Client Service Specialist - Commercial Lines",
+            "location": "La Quinta, CA, US",
+            "url": "https://www.indeed.com/viewjob?jk=c37101391acae165",
+            "date_posted": "2025-11-12",
+            "source": "indeed"
+          },
+          {
+            "title": "Client Service Leader - Commercial Lines",
+            "location": "Charlotte, NC, US",
+            "url": "https://www.indeed.com/viewjob?jk=9a75be586d8513cd",
+            "date_posted": "2025-11-12",
+            "source": "indeed"
+          },
+          {
+            "title": "Account Manager, National Accounts",
+            "location": "Greenville, SC, US",
+            "url": "https://www.indeed.com/viewjob?jk=2a1114063a93ea98",
+            "date_posted": "2025-11-06",
+            "source": "indeed"
+          },
+          {
+            "title": "Account Manager - Commercial Lines",
+            "location": "Charlotte, NC, US",
+            "url": "https://www.indeed.com/viewjob?jk=9861b0fb6126e4a4",
+            "date_posted": "2025-11-05",
+            "source": "indeed"
+          },
+          {
+            "title": "Account Manager",
+            "location": "Stockton, CA, US",
+            "url": "https://www.indeed.com/viewjob?jk=b0cd576a2290076d",
+            "date_posted": "2025-11-04",
+            "source": "indeed"
+          },
+          {
+            "title": "Operations Coordinator",
+            "location": "San Diego, CA, US",
+            "url": "https://www.indeed.com/viewjob?jk=96f71ff735ae5315",
+            "date_posted": "2025-11-03",
+            "source": "indeed"
+          },
+          {
+            "title": "Client Service Specialist - Personal Lines",
+            "location": "Forest Park, IL, US",
+            "url": "https://www.indeed.com/viewjob?jk=ee695473d014a501",
+            "date_posted": "2025-10-28",
+            "source": "indeed"
+          },
+          {
+            "title": "Senior Account Manager - Commercial Lines",
+            "location": "Fresno, CA, US",
+            "url": "https://www.indeed.com/viewjob?jk=28f0d4dfa7b5e44a",
+            "date_posted": "2025-10-27",
+            "source": "indeed"
+          },
+          {
+            "title": "Account Coordinator - Commercial Lines",
+            "location": "Napa, CA, US",
+            "url": "https://www.indeed.com/viewjob?jk=a954d967ac300f0f",
+            "date_posted": "2025-10-23",
+            "source": "indeed"
+          },
+          {
+            "title": "Account Coordinator - Personal Lines",
+            "location": "Greensboro, NC, US",
+            "url": "https://www.indeed.com/viewjob?jk=b2b23694ebe9e546",
+            "date_posted": "2025-10-20",
+            "source": "indeed"
+          },
+          {
+            "title": "Account Coordinator - Commercial Lines",
+            "location": "Charlotte, NC, US",
+            "url": "https://www.indeed.com/viewjob?jk=46a582040fce21c3",
+            "date_posted": "2025-10-20",
+            "source": "indeed"
+          },
+          {
+            "title": "Account Manager - Personal Lines",
+            "location": "Greensboro, NC, US",
+            "url": "https://www.indeed.com/viewjob?jk=b92ee7aa475dba73",
+            "date_posted": "2025-10-14",
+            "source": "indeed"
+          },
+          {
+            "title": "Account Manager - Personal Lines",
+            "location": "Charlotte, NC",
+            "url": "https://www.linkedin.com/jobs/view/4335509593",
+            "date_posted": "2025-11-12",
+            "source": "linkedin"
+          },
+          {
+            "title": "Operations Coordinator",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4335273478",
+            "date_posted": "2025-11-10",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sales Executive - Sports & Entertainment",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4317073489",
+            "date_posted": "2025-11-10",
+            "source": "linkedin"
+          },
+          {
+            "title": "Account Coordinator - Personal Lines",
+            "location": "Greensboro, NC",
+            "url": "https://www.linkedin.com/jobs/view/4317061682",
+            "date_posted": "2025-11-10",
+            "source": "linkedin"
+          },
+          {
+            "title": "Account Manager, National Accounts",
+            "location": "Greenville, SC",
+            "url": "https://www.linkedin.com/jobs/view/4334732450",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Account Coordinator - Personal Lines",
+            "location": "Greensboro, NC",
+            "url": "https://www.linkedin.com/jobs/view/4305946858",
+            "date_posted": "2025-11-06",
+            "source": "linkedin"
+          },
+          {
+            "title": "Risk Advisor - Employee Benefits",
+            "location": "Texas, United States",
+            "url": "https://www.linkedin.com/jobs/view/4257714037",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          },
+          {
+            "title": "Vice President - Personal Lines",
+            "location": "Charlotte, NC",
+            "url": "https://www.linkedin.com/jobs/view/4310896786",
+            "date_posted": "2025-10-28",
+            "source": "linkedin"
+          },
+          {
+            "title": "Vice President - Personal Lines",
+            "location": "Dallas, TX",
+            "url": "https://www.linkedin.com/jobs/view/4310894871",
+            "date_posted": "2025-10-28",
+            "source": "linkedin"
+          },
+          {
+            "title": "Vice President - Commercial Lines",
+            "location": "Charlotte, NC",
+            "url": "https://www.linkedin.com/jobs/view/4311107549",
+            "date_posted": "2025-10-28",
+            "source": "linkedin"
+          },
+          {
+            "title": "Vice President - Personal Lines",
+            "location": "Chicago, IL",
+            "url": "https://www.linkedin.com/jobs/view/4311109551",
+            "date_posted": "2025-10-28",
+            "source": "linkedin"
+          },
+          {
+            "title": "Vice President - Personal Lines",
+            "location": "Tulsa, OK",
+            "url": "https://www.linkedin.com/jobs/view/4311111057",
+            "date_posted": "2025-10-28",
+            "source": "linkedin"
+          },
+          {
+            "title": "Vice President - Commercial Lines",
+            "location": "Dallas, TX",
+            "url": "https://www.linkedin.com/jobs/view/4311108554",
+            "date_posted": "2025-10-28",
+            "source": "linkedin"
+          },
+          {
+            "title": "Risk Advisor - Employee Benefits",
+            "location": "California, United States",
+            "url": "https://www.linkedin.com/jobs/view/4290923753",
+            "date_posted": "2025-10-28",
+            "source": "linkedin"
+          },
+          {
+            "title": "Director, Carrier Management",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4309623931",
+            "date_posted": "2025-10-24",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Lines Risk Advisor (Sales)",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4314527606",
+            "date_posted": "2025-10-21",
+            "source": "linkedin"
+          },
+          {
+            "title": "Client Service Specialist - Personal Lines",
+            "location": "Greensboro, NC",
+            "url": "https://www.linkedin.com/jobs/view/4309316285",
+            "date_posted": "nan",
+            "source": "linkedin"
+          },
+          {
+            "title": "Client Service Leader - Commercial Lines",
+            "location": "Columbia, SC",
+            "url": "https://www.linkedin.com/jobs/view/4335656281",
+            "date_posted": "nan",
+            "source": "linkedin"
+          },
+          {
+            "title": "Client Service Leader - Commercial Lines",
+            "location": "Greensboro, NC",
+            "url": "https://www.linkedin.com/jobs/view/4335776110",
+            "date_posted": "nan",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "45.0",
+        "Company Name": "AAA Life Insurance Company",
+        "Location": "Livonia, Michigan",
+        "Website": "",
+        "Phone": "+1 800-684-4222",
+        "Current Headcount": "990",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "990",
+        "Days Tracked": "0",
+        "Active Jobs": "6",
+        "Industry": "insurance",
+        "Contact 1 Name": "Raju Varma",
+        "Contact 1 Title": "President and CEO",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/rajutvarma",
+        "Contact 2 Name": "Kevin Heil",
+        "Contact 2 Title": "Senior Vice President, Chief Financial Officer and Treasurer",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/kevin-heil-cpa-cgma-b2693634",
+        "Contact 3 Name": "Michellee Garcia",
+        "Contact 3 Title": "Chief Executive Officer",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/michellee-garcia-4021b72b0",
+        "job_details": [
+          {
+            "title": "Director Investments Treasury and Capital Planning",
+            "location": "Livonia, MI, US",
+            "url": "https://www.indeed.com/viewjob?jk=78170b9537206046",
+            "date_posted": "2025-11-10",
+            "source": "indeed"
+          },
+          {
+            "title": "Director, Customer Engagement Platform",
+            "location": "Livonia, MI, US",
+            "url": "https://www.indeed.com/viewjob?jk=269c01b95c8559e3",
+            "date_posted": "2025-10-21",
+            "source": "indeed"
+          },
+          {
+            "title": "Senior Manager, Corporate Strategy",
+            "location": "Livonia, MI, US",
+            "url": "https://www.indeed.com/viewjob?jk=36a1f57b4b9b289f",
+            "date_posted": "2025-10-21",
+            "source": "indeed"
+          },
+          {
+            "title": "Director, Customer Engagement Platform",
+            "location": "Livonia, MI",
+            "url": "https://www.linkedin.com/jobs/view/4316994502",
+            "date_posted": "2025-11-12",
+            "source": "linkedin"
+          },
+          {
+            "title": "Director, Accident Insurance Direct Marketing \u2013 Customer Acquisition",
+            "location": "Livonia, MI",
+            "url": "https://www.linkedin.com/jobs/view/4265469457",
+            "date_posted": "2025-11-05",
+            "source": "linkedin"
+          },
+          {
+            "title": "Life Underwriter",
+            "location": "Livonia, MI",
+            "url": "https://www.linkedin.com/jobs/view/4333613297",
+            "date_posted": "2025-11-01",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "45.0",
+        "Company Name": "The Liberty Company Insurance Brokers, LLC",
+        "Location": "Gainesville, Florida",
+        "Website": "http://www.libertycompany.com",
+        "Phone": "+1 888-918-3960",
+        "Current Headcount": "650",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "650",
+        "Days Tracked": "0",
+        "Active Jobs": "9",
+        "Industry": "insurance",
+        "Contact 1 Name": "Mercedes Meseck",
+        "Contact 1 Title": "Senior Vice President & Partner",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/mercedesmeseck",
+        "Contact 2 Name": "Sean Borchardt",
+        "Contact 2 Title": "Senior Vice President/Partner",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/seanborchardt",
+        "Contact 3 Name": "Abe Bedros",
+        "Contact 3 Title": "Vice President",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/abe-bedros-cic-cisc-cris-7247bb13",
+        "job_details": [
+          {
+            "title": "Commercial Lines Account Executive",
+            "location": "Ponte Vedra Beach, FL",
+            "url": "https://www.linkedin.com/jobs/view/4314996460",
+            "date_posted": "2025-11-12",
+            "source": "linkedin"
+          },
+          {
+            "title": "Marketing Executive",
+            "location": "Newark, NJ",
+            "url": "https://www.linkedin.com/jobs/view/4339780074",
+            "date_posted": "2025-11-10",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Lines Account Manager",
+            "location": "Newark, NJ",
+            "url": "https://www.linkedin.com/jobs/view/4339950004",
+            "date_posted": "2025-11-10",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Marine Insurance Producer",
+            "location": "Houston, TX",
+            "url": "https://www.linkedin.com/jobs/view/4311987434",
+            "date_posted": "2025-11-05",
+            "source": "linkedin"
+          },
+          {
+            "title": "Account Manager",
+            "location": "Hollywood, FL",
+            "url": "https://www.linkedin.com/jobs/view/4337436583",
+            "date_posted": "2025-11-04",
+            "source": "linkedin"
+          },
+          {
+            "title": "Account Executive",
+            "location": "Newark, NJ",
+            "url": "https://www.linkedin.com/jobs/view/4331737840",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Lines Account Manager",
+            "location": "Irvine, CA",
+            "url": "https://www.linkedin.com/jobs/view/4253935493",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Lines Account Executive - Transportation",
+            "location": "Livingston, NJ",
+            "url": "https://www.linkedin.com/jobs/view/4318912613",
+            "date_posted": "2025-10-28",
+            "source": "linkedin"
+          },
+          {
+            "title": "Account Manager",
+            "location": "Harrisburg, PA",
+            "url": "https://www.linkedin.com/jobs/view/4296248128",
+            "date_posted": "nan",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "45.0",
+        "Company Name": "Berkshire Hathaway GUARD Insurance Companies",
+        "Location": "Wilkes-Barre, Pennsylvania",
+        "Website": "http://www.guard.com",
+        "Phone": "+1 570-825-9900",
+        "Current Headcount": "870",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "870",
+        "Days Tracked": "0",
+        "Active Jobs": "22",
+        "Industry": "insurance",
+        "Contact 1 Name": "Jason Saunders",
+        "Contact 1 Title": "Chief Financial Officer",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/jason-saunders-3533ba2",
+        "Contact 2 Name": "Adam Edelstein",
+        "Contact 2 Title": "Chief Executive Officer",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/adam-edelstein-822b9612",
+        "Contact 3 Name": "Kimberly Stratton",
+        "Contact 3 Title": "CEO and Founder",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/kimberly-stratton-9baa65126",
+        "job_details": [
+          {
+            "title": "Sr. Program Underwriter",
+            "location": "Fort Worth, TX, US",
+            "url": "https://www.indeed.com/viewjob?jk=4ca3ef9eb67adbfd",
+            "date_posted": "2025-11-10",
+            "source": "indeed"
+          },
+          {
+            "title": "VP, E&S Property Line Leader",
+            "location": "New York, NY, US",
+            "url": "https://www.indeed.com/viewjob?jk=2abb35c52b95f640",
+            "date_posted": "2025-11-07",
+            "source": "indeed"
+          },
+          {
+            "title": "Commercial Lines Underwriter",
+            "location": "Wilkes-Barre, PA, US",
+            "url": "https://www.indeed.com/viewjob?jk=f8325b78037eb637",
+            "date_posted": "2025-10-28",
+            "source": "indeed"
+          },
+          {
+            "title": "Service Training Supervisor",
+            "location": "Wilkes-Barre, PA, US",
+            "url": "https://www.indeed.com/viewjob?jk=f9b1594c171567a2",
+            "date_posted": "2025-10-20",
+            "source": "indeed"
+          },
+          {
+            "title": "Workers' Compensation Claims Supervisor (CA)",
+            "location": "Wilkes-Barre, PA, US",
+            "url": "https://www.indeed.com/viewjob?jk=a1cd4ad0b19d7721",
+            "date_posted": "2025-10-17",
+            "source": "indeed"
+          },
+          {
+            "title": "Claims Training Supervisor",
+            "location": "Wilkes-Barre, PA, US",
+            "url": "https://www.indeed.com/viewjob?jk=d57a7de4cad1a883",
+            "date_posted": "2025-10-16",
+            "source": "indeed"
+          },
+          {
+            "title": "Vice President, Statutory Accounting",
+            "location": "Wilkes-Barre, PA, US",
+            "url": "https://www.indeed.com/viewjob?jk=2bf52c53597fca1e",
+            "date_posted": "2025-10-16",
+            "source": "indeed"
+          },
+          {
+            "title": "Sr. Program Underwriter",
+            "location": "Parsippany, NJ",
+            "url": "https://www.linkedin.com/jobs/view/4335440907",
+            "date_posted": "2025-11-11",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sr. Program Underwriter",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4335570720",
+            "date_posted": "2025-11-11",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sr. Program Underwriter",
+            "location": "Wilkes-Barre, PA",
+            "url": "https://www.linkedin.com/jobs/view/4335480805",
+            "date_posted": "2025-11-11",
+            "source": "linkedin"
+          },
+          {
+            "title": "VP, E&S Property Line Leader",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4334778637",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "VP, E&S Property Line Leader",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4334857699",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "VP, E&S Property Line Leader",
+            "location": "Wilkes-Barre, PA",
+            "url": "https://www.linkedin.com/jobs/view/4334718806",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "VP, E&S Property Line Leader",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4334728607",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "VP, E&S Property Line Leader",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4334818471",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "VP, E&S Property Line Leader",
+            "location": "Conshohocken, PA",
+            "url": "https://www.linkedin.com/jobs/view/4334758641",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Lines Underwriter",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4332834754",
+            "date_posted": "2025-10-29",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Lines Underwriter",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4332764946",
+            "date_posted": "2025-10-29",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Lines Underwriter",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4332704918",
+            "date_posted": "2025-10-29",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Lines Underwriter",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4332754893",
+            "date_posted": "2025-10-29",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Lines Underwriter",
+            "location": "Parsippany, NJ",
+            "url": "https://www.linkedin.com/jobs/view/4332814873",
+            "date_posted": "2025-10-29",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Lines Underwriter",
+            "location": "Wilkes-Barre, PA",
+            "url": "https://www.linkedin.com/jobs/view/4332784756",
+            "date_posted": "2025-10-29",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "40.0",
+        "Company Name": "Renegade Insurance",
+        "Location": "Atlanta, Georgia",
+        "Website": "http://www.renegadeinsurance.com",
+        "Phone": "+1 770-268-3830",
+        "Current Headcount": "320",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "320",
+        "Days Tracked": "0",
+        "Active Jobs": "4",
+        "Industry": "insurance",
+        "Contact 1 Name": "Joshua Kay",
+        "Contact 1 Title": "Vice President of Products",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/joshua-kay-j-d",
+        "Contact 2 Name": "Keagan Shaw",
+        "Contact 2 Title": "Vice President of Sales Operations & Marketing",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/keagan-shaw-46a69b253",
+        "Contact 3 Name": "Angela Duncan",
+        "Contact 3 Title": "Agency Owner",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/empowerhermoney",
+        "job_details": [
+          {
+            "title": "Insurance Sales Agent/ Representative",
+            "location": "Porter, TX, US",
+            "url": "https://www.indeed.com/viewjob?jk=989f13329c7b265f",
+            "date_posted": "2025-11-02",
+            "source": "indeed"
+          },
+          {
+            "title": "Insurance Sales Agent/ Representative",
+            "location": "Hardeeville, SC, US",
+            "url": "https://www.indeed.com/viewjob?jk=98bfd4484c10f5df",
+            "date_posted": "2025-11-02",
+            "source": "indeed"
+          },
+          {
+            "title": "Insurance Sales Agent/ Representative",
+            "location": "Panama City, FL, US",
+            "url": "https://www.indeed.com/viewjob?jk=e0bc3512f488a9f8",
+            "date_posted": "2025-11-02",
+            "source": "indeed"
+          },
+          {
+            "title": "Insurance Sales Agent/ Representative",
+            "location": "Orlando, FL, US",
+            "url": "https://www.indeed.com/viewjob?jk=26031b2962e4fac5",
+            "date_posted": "2025-10-26",
+            "source": "indeed"
+          }
+        ]
+      },
+      {
+        "Composite Score": "40.0",
+        "Company Name": "Fetch Pet Insurance",
+        "Location": "New York, New York",
+        "Website": "http://www.fetchpet.com",
+        "Phone": "+1 833-589-7578",
+        "Current Headcount": "250",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "250",
+        "Days Tracked": "0",
+        "Active Jobs": "3",
+        "Industry": "insurance",
+        "Contact 1 Name": "David Zollenberg",
+        "Contact 1 Title": "Chief Financial Officer",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/david-zollenberg-5887751",
+        "Contact 2 Name": "Michael Sheahan",
+        "Contact 2 Title": "Vice President Finance",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/michael-sheahan-aab723291",
+        "Contact 3 Name": "Elizabeth Barlow",
+        "Contact 3 Title": "VP, Insurance Operations",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/elizabethrapp",
+        "job_details": [
+          {
+            "title": "Account Manager - Insurance & Employee Benefits Partnerships",
+            "location": "New York, NY",
+            "url": "https://www.linkedin.com/jobs/view/4314770633",
+            "date_posted": "2025-11-06",
+            "source": "linkedin"
+          },
+          {
+            "title": "Claims Manager",
+            "location": "New York, NY",
+            "url": "https://www.linkedin.com/jobs/view/4294248805",
+            "date_posted": "2025-11-05",
+            "source": "linkedin"
+          },
+          {
+            "title": "Pet Insurance Sales Agent",
+            "location": "Longmont, CO",
+            "url": "https://www.linkedin.com/jobs/view/4320304154",
+            "date_posted": "2025-11-01",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "40.0",
+        "Company Name": "Accelerant",
+        "Location": "Atlanta, Georgia",
+        "Website": "http://www.accelerant.ai",
+        "Phone": "",
+        "Current Headcount": "460",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "460",
+        "Days Tracked": "0",
+        "Active Jobs": "4",
+        "Industry": "insurance",
+        "Contact 1 Name": "Matthew Cook",
+        "Contact 1 Title": "President & CEO",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/matthew-cook-63b540343",
+        "Contact 2 Name": "Jurgen Meli",
+        "Contact 2 Title": "Chief Financial Officer",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/jurgen-meli-4482931b",
+        "Contact 3 Name": "Christina Clancy",
+        "Contact 3 Title": "Chief Financial Officer",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/christina-c-1b617147",
+        "job_details": [
+          {
+            "title": "Ceded Reinsurance Analyst",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4303051890",
+            "date_posted": "2025-11-06",
+            "source": "linkedin"
+          },
+          {
+            "title": "Operations Specialist",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4312776123",
+            "date_posted": "2025-11-06",
+            "source": "linkedin"
+          },
+          {
+            "title": "Director of Service Center Strategy & Operations",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4323995411",
+            "date_posted": "2025-10-24",
+            "source": "linkedin"
+          },
+          {
+            "title": "RevOps Data Manager",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4335799615",
+            "date_posted": "nan",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "40.0",
+        "Company Name": "Old Republic Specialty Insurance Group",
+        "Location": "Chicago, Illinois",
+        "Website": "http://www.oldrepublicinsurancegroup.com",
+        "Phone": "+1 312-346-8100",
+        "Current Headcount": "240",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "240",
+        "Days Tracked": "0",
+        "Active Jobs": "4",
+        "Industry": "insurance",
+        "Contact 1 Name": "Ron Wilson",
+        "Contact 1 Title": "Chief Executive Officer",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/ron-j-wilson-0b0b7586",
+        "Contact 2 Name": "Kevin McGowan",
+        "Contact 2 Title": "Executive Vice President & Chief Underwriting Officer - Cyber",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/kevin-mcgowan-82558616",
+        "Contact 3 Name": "Alexandra Saad",
+        "Contact 3 Title": "Vice President, Strategy",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/alexandrasaad",
+        "job_details": [
+          {
+            "title": "Marketing Manager",
+            "location": "Chicago, IL",
+            "url": "https://www.linkedin.com/jobs/view/4321927932",
+            "date_posted": "2025-11-11",
+            "source": "linkedin"
+          },
+          {
+            "title": "Complaints Program Manager",
+            "location": "Chicago, IL",
+            "url": "https://www.linkedin.com/jobs/view/4320435944",
+            "date_posted": "2025-11-03",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Underwriter",
+            "location": "Chicago, IL",
+            "url": "https://www.linkedin.com/jobs/view/4322143678",
+            "date_posted": "nan",
+            "source": "linkedin"
+          },
+          {
+            "title": "AVP, Generative AI",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4322112848",
+            "date_posted": "nan",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "40.0",
+        "Company Name": "Quility Insurance",
+        "Location": "Swannanoa, North Carolina",
+        "Website": "http://www.quility.com",
+        "Phone": "+1 888-784-5489",
+        "Current Headcount": "310",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "310",
+        "Days Tracked": "0",
+        "Active Jobs": "4",
+        "Industry": "insurance",
+        "Contact 1 Name": "Jennifer Yaross",
+        "Contact 1 Title": "Chief Financial Officer",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/jennifer-yaross-b72a061a",
+        "Contact 2 Name": "Casey Watkins",
+        "Contact 2 Title": "Co-Founder/CEO",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/caseylwatkins",
+        "Contact 3 Name": "Brandon Ellison",
+        "Contact 3 Title": "Co-Founder/CEO",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/brandon-ellison-12184758",
+        "job_details": [
+          {
+            "title": "Independent Life Insurance Agent",
+            "location": "Hartford, CT",
+            "url": "https://www.linkedin.com/jobs/view/4339795617",
+            "date_posted": "2025-11-12",
+            "source": "linkedin"
+          },
+          {
+            "title": "Independent Life Insurance Agent",
+            "location": "Arlington, TX",
+            "url": "https://www.linkedin.com/jobs/view/4340055433",
+            "date_posted": "2025-11-12",
+            "source": "linkedin"
+          },
+          {
+            "title": "Independent Life Insurance Agent",
+            "location": "Charleston, SC",
+            "url": "https://www.linkedin.com/jobs/view/4339935803",
+            "date_posted": "2025-11-12",
+            "source": "linkedin"
+          },
+          {
+            "title": "Agent Payment Specialist",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4320015553",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
         "Composite Score": "40.0",
         "Company Name": "Questpro",
         "Location": "Dallas, Texas",
@@ -203,7 +3287,7 @@
         "Growth Rate %": "0.0",
         "Previous Headcount": "56",
         "Days Tracked": "0",
-        "Active Jobs": "21",
+        "Active Jobs": "24",
         "Industry": "insurance",
         "Contact 1 Name": "",
         "Contact 1 Title": "",
@@ -221,13 +3305,6 @@
         "Contact 3 Phone": "",
         "Contact 3 LinkedIn": "",
         "job_details": [
-          {
-            "title": "Insurance Agent Sugarland, TX",
-            "location": "Rosenberg, TX",
-            "url": "https://www.linkedin.com/jobs/view/4307098269",
-            "date_posted": "2025-11-12",
-            "source": "linkedin"
-          },
           {
             "title": "E&S Property Underwriter (Non Admitted)",
             "location": "Lisle, IL",
@@ -299,13 +3376,6 @@
             "source": "linkedin"
           },
           {
-            "title": "Account Executive | Investigations",
-            "location": "Illinois, United States",
-            "url": "https://www.linkedin.com/jobs/view/4315087699",
-            "date_posted": "2025-11-06",
-            "source": "linkedin"
-          },
-          {
             "title": "Commercial Underwriter | Carrier",
             "location": "Baton Rouge, LA",
             "url": "https://www.linkedin.com/jobs/view/4314292958",
@@ -334,6 +3404,20 @@
             "source": "linkedin"
           },
           {
+            "title": "VP of Marketing",
+            "location": "Redlands, CA",
+            "url": "https://www.linkedin.com/jobs/view/4314052075",
+            "date_posted": "2025-11-04",
+            "source": "linkedin"
+          },
+          {
+            "title": "Director of Curriculum",
+            "location": "Dallas, TX",
+            "url": "https://www.linkedin.com/jobs/view/4301990318",
+            "date_posted": "2025-10-30",
+            "source": "linkedin"
+          },
+          {
             "title": "Commercial Account Manager",
             "location": "Texas, United States",
             "url": "https://www.linkedin.com/jobs/view/4310984079",
@@ -345,6 +3429,13 @@
             "location": "Alexandria, VA",
             "url": "https://www.linkedin.com/jobs/view/4310040016",
             "date_posted": "2025-10-28",
+            "source": "linkedin"
+          },
+          {
+            "title": "Account Executive | Investigations | IL, MI, OH",
+            "location": "Illinois, United States",
+            "url": "https://www.linkedin.com/jobs/view/4319136175",
+            "date_posted": "2025-10-27",
             "source": "linkedin"
           },
           {
@@ -362,9 +3453,227 @@
             "source": "linkedin"
           },
           {
+            "title": "Sales Manager",
+            "location": "Dallas, TX",
+            "url": "https://www.linkedin.com/jobs/view/4317968464",
+            "date_posted": "2025-10-23",
+            "source": "linkedin"
+          },
+          {
             "title": "Account Manager - Commercial Lines",
             "location": "Dallas, TX",
             "url": "https://www.linkedin.com/jobs/view/4288073499",
+            "date_posted": "nan",
+            "source": "linkedin"
+          },
+          {
+            "title": "Associate Commercial Account Manager",
+            "location": "Fort Worth, TX",
+            "url": "https://www.linkedin.com/jobs/view/4317716066",
+            "date_posted": "nan",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "40.0",
+        "Company Name": "Preferred Mutual Insurance Company",
+        "Location": "New Berlin, New York",
+        "Website": "http://www.preferredmutual.com",
+        "Phone": "+1 800-333-7642",
+        "Current Headcount": "330",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "330",
+        "Days Tracked": "0",
+        "Active Jobs": "3",
+        "Industry": "insurance",
+        "Contact 1 Name": "Benedikt Sander",
+        "Contact 1 Title": "Chief Executive Officer",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/benedikt-sander-36748a",
+        "Contact 2 Name": "Randy Hay",
+        "Contact 2 Title": "VP",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/randy-hay-46495114",
+        "Contact 3 Name": "Mike Dehetre",
+        "Contact 3 Title": "EVP, Chief Underwriting Officer",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/mikedehetre",
+        "job_details": [
+          {
+            "title": "Senior Manager, Commercial Lines Underwriting",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4319832316",
+            "date_posted": "2025-10-30",
+            "source": "linkedin"
+          },
+          {
+            "title": "Underwriter - Commercial Lines",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4319289255",
+            "date_posted": "2025-10-24",
+            "source": "linkedin"
+          },
+          {
+            "title": "Auto PD Claims Manager",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4321786493",
+            "date_posted": "2025-10-17",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "35.0",
+        "Company Name": "Next Insurance",
+        "Location": "Palo Alto, California",
+        "Website": "http://www.nextinsurance.com",
+        "Phone": "+1 855-222-5919",
+        "Current Headcount": "710",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "710",
+        "Days Tracked": "0",
+        "Active Jobs": "4",
+        "Industry": "insurance",
+        "Contact 1 Name": "Guy Goldstein",
+        "Contact 1 Title": "CEO",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/guygoldstein",
+        "Contact 2 Name": "Jeff Garretson",
+        "Contact 2 Title": "Vice President Claims",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/jeff-garretson-7702ab55",
+        "Contact 3 Name": "Amacalli Duran-Pereda",
+        "Contact 3 Title": "Partner Manager",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/amacalli-duran-pereda-2821b0157",
+        "job_details": [
+          {
+            "title": "Insurance Product Manager",
+            "location": "Boston, MA",
+            "url": "https://www.linkedin.com/jobs/view/4315023533",
+            "date_posted": "2025-11-06",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sr. Manager, Corporate Finance",
+            "location": "Palo Alto, CA",
+            "url": "https://www.linkedin.com/jobs/view/4319517115",
+            "date_posted": "2025-10-29",
+            "source": "linkedin"
+          },
+          {
+            "title": "Product Manager",
+            "location": "Palo Alto, CA",
+            "url": "https://www.linkedin.com/jobs/view/4318856071",
+            "date_posted": "2025-10-25",
+            "source": "linkedin"
+          },
+          {
+            "title": "Insurance Product Manager, GL",
+            "location": "Boston, MA",
+            "url": "https://www.linkedin.com/jobs/view/4315024510",
+            "date_posted": "2025-10-24",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "35.0",
+        "Company Name": "Coalition, Inc.",
+        "Location": "San Francisco, California",
+        "Website": "http://www.coalitioninc.com",
+        "Phone": "+1 833-866-1337",
+        "Current Headcount": "770",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "770",
+        "Days Tracked": "0",
+        "Active Jobs": "4",
+        "Industry": "insurance",
+        "Contact 1 Name": "Jim Young",
+        "Contact 1 Title": "Chief Financial Officer",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/jim-young-595375",
+        "Contact 2 Name": "Joshua Motta",
+        "Contact 2 Title": "Co-Founder & CEO",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/joshuamotta",
+        "Contact 3 Name": "Heather Ingledue",
+        "Contact 3 Title": "Partner Growth Manager",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/heatheringledue2021",
+        "job_details": [
+          {
+            "title": "Claims Manager",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4333809394",
+            "date_posted": "2025-11-03",
+            "source": "linkedin"
+          },
+          {
+            "title": "Capacity Program Manager",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4311168408",
+            "date_posted": "2025-10-28",
+            "source": "linkedin"
+          },
+          {
+            "title": "Adoption Case Manager Support Specialist-Manatee",
+            "location": "Bradenton, FL",
+            "url": "https://www.linkedin.com/jobs/view/4323957297",
+            "date_posted": "2025-10-24",
+            "source": "linkedin"
+          },
+          {
+            "title": "Claims Manager, Executive Risks",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4335656797",
+            "date_posted": "nan",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "35.0",
+        "Company Name": "Veracity Insurance Solutions, LLC",
+        "Location": "Pleasant Grove, Utah",
+        "Website": "http://www.veracityinsurance.com",
+        "Phone": "+1 866-395-1308",
+        "Current Headcount": "170",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "170",
+        "Days Tracked": "0",
+        "Active Jobs": "1",
+        "Industry": "insurance",
+        "Contact 1 Name": "Anik Ghosh",
+        "Contact 1 Title": "CEO and Founder",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/anik-ghosh-33ba2b261",
+        "Contact 2 Name": "Clint Bishop",
+        "Contact 2 Title": "VP of Marketing",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/clintbishop",
+        "Contact 3 Name": "Brent Waldron",
+        "Contact 3 Title": "Vice President of Finance",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/brent-g-waldron-cpa-8b970a3",
+        "job_details": [
+          {
+            "title": "Account Manager",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4313089208",
             "date_posted": "nan",
             "source": "linkedin"
           }
@@ -387,22 +3696,291 @@
         "Contact 1 Email": "email_not_unlocked@domain.com",
         "Contact 1 Phone": "",
         "Contact 1 LinkedIn": "http://www.linkedin.com/in/cuberoj",
-        "Contact 2 Name": "Joe Tofilon",
-        "Contact 2 Title": "VP of Sales & Partnerships",
+        "Contact 2 Name": "Ethan Jones",
+        "Contact 2 Title": "Vice President, Enterprise Sales",
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/joe-tofilon",
-        "Contact 3 Name": "Ethan Jones",
-        "Contact 3 Title": "Vice President, Enterprise Sales",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/ethanjones22",
+        "Contact 3 Name": "Joe Tofilon",
+        "Contact 3 Title": "VP of Sales & Partnerships",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/ethanjones22",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/joe-tofilon",
         "job_details": [
           {
             "title": "Account Manager",
             "location": "Miami, FL",
             "url": "https://www.linkedin.com/jobs/view/4338115555",
             "date_posted": "2025-11-07",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "35.0",
+        "Company Name": "Skyward Specialty Insurance",
+        "Location": "Houston, Texas",
+        "Website": "http://www.skywardinsurance.com",
+        "Phone": "+1 713-935-4800",
+        "Current Headcount": "580",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "580",
+        "Days Tracked": "0",
+        "Active Jobs": "4",
+        "Industry": "insurance",
+        "Contact 1 Name": "Josh O'Neill",
+        "Contact 1 Title": "Vice President, E&S Brokerage",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/josh-o-neill-a2367a11",
+        "Contact 2 Name": "Tim Brewer",
+        "Contact 2 Title": "Vice President",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/tim-brewer-afsb-4958121ab",
+        "Contact 3 Name": "Matthew Brown",
+        "Contact 3 Title": "Vice President",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/matthew-brown-39458955",
+        "job_details": [
+          {
+            "title": "Claims Technical Director - Global Property",
+            "location": "Houston, TX",
+            "url": "https://www.linkedin.com/jobs/view/4305629986",
+            "date_posted": "2025-11-06",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Underwriter, Renewable Energy",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4304483137",
+            "date_posted": "2025-11-04",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Underwriter - Transactional Commercial Surety",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4291636585",
+            "date_posted": "2025-10-30",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior UW or Asst Vice President, Inland Marine",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4280439154",
+            "date_posted": "2025-10-29",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "35.0",
+        "Company Name": "Coterie Insurance",
+        "Location": "Appleton, Wisconsin",
+        "Website": "http://www.coterieinsurance.com",
+        "Phone": "+1 855-566-1011",
+        "Current Headcount": "150",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "150",
+        "Days Tracked": "0",
+        "Active Jobs": "1",
+        "Industry": "insurance",
+        "Contact 1 Name": "Marc Frenkel",
+        "Contact 1 Title": "Chief Financial Officer",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/marc-frenkel-66287931",
+        "Contact 2 Name": "Paul Ziska",
+        "Contact 2 Title": "Vice President",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/paz035",
+        "Contact 3 Name": "David McFarland",
+        "Contact 3 Title": "Founder & CEO",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/davidmcfarland23",
+        "job_details": [
+          {
+            "title": "Actuarial Manager",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4331320143",
+            "date_posted": "2025-10-24",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "35.0",
+        "Company Name": "Frontline Insurance",
+        "Location": "Lake Mary, Florida",
+        "Website": "http://www.frontlineinsurance.com",
+        "Phone": "+1 877-744-5224",
+        "Current Headcount": "530",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "530",
+        "Days Tracked": "0",
+        "Active Jobs": "4",
+        "Industry": "insurance",
+        "Contact 1 Name": "Benjamin Treuil",
+        "Contact 1 Title": "Executive Vice President of Finance/CFO",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/benjamin-treuil-688985a",
+        "Contact 2 Name": "Jennifer Clark",
+        "Contact 2 Title": "Vice President",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/jclark21",
+        "Contact 3 Name": "Jennifer Zuniga",
+        "Contact 3 Title": "Vice President of Claims",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/jennifer-colleen-zuniga",
+        "job_details": [
+          {
+            "title": "Agile Practice Manager - Scrum Master",
+            "location": "Lake Mary, FL, US",
+            "url": "https://www.indeed.com/viewjob?jk=8e2f820333b29083",
+            "date_posted": "2025-11-07",
+            "source": "indeed"
+          },
+          {
+            "title": "Agency Operations Administrative Coordinator",
+            "location": "Lake Mary, FL, US",
+            "url": "https://www.indeed.com/viewjob?jk=3ce2bf33804b2f57",
+            "date_posted": "2025-11-05",
+            "source": "indeed"
+          },
+          {
+            "title": "Agile Practice Manager - Scrum Master",
+            "location": "Lake Mary, FL",
+            "url": "https://www.linkedin.com/jobs/view/4338036138",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Agency Operations Administrative Coordinator",
+            "location": "Lake Mary, FL",
+            "url": "https://www.linkedin.com/jobs/view/4331478026",
+            "date_posted": "2025-10-30",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "35.0",
+        "Company Name": "Tower Hill Insurance Group",
+        "Location": "Gainesville, Florida",
+        "Website": "http://www.thig.com",
+        "Phone": "+1 352-332-8800",
+        "Current Headcount": "560",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "560",
+        "Days Tracked": "0",
+        "Active Jobs": "4",
+        "Industry": "insurance",
+        "Contact 1 Name": "Lane Bussey",
+        "Contact 1 Title": "Chief Financial Officer",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/lane-bussey-268850104",
+        "Contact 2 Name": "Kirk Undefined",
+        "Contact 2 Title": "Chief Executive Officer",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/kirk-undefined-1161442a8",
+        "Contact 3 Name": "Kirk La",
+        "Contact 3 Title": "Group Chief Executive Officer",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/kirk-la-44253119",
+        "job_details": [
+          {
+            "title": "Quality Assurance Lead - Personal Lines Underwriting",
+            "location": "Gainesville, FL, US",
+            "url": "https://www.indeed.com/viewjob?jk=958719576a371440",
+            "date_posted": "2025-11-10",
+            "source": "indeed"
+          },
+          {
+            "title": "Underwriting Technician, Personal Lines",
+            "location": "Gainesville, FL, US",
+            "url": "https://www.indeed.com/viewjob?jk=2db17a5eae6a1dad",
+            "date_posted": "2025-11-07",
+            "source": "indeed"
+          },
+          {
+            "title": "Quality Assurance Lead - Personal Lines Underwriting",
+            "location": "Gainesville, FL",
+            "url": "https://www.linkedin.com/jobs/view/4335573095",
+            "date_posted": "2025-11-11",
+            "source": "linkedin"
+          },
+          {
+            "title": "Underwriting Technician, Personal Lines",
+            "location": "Gainesville, FL",
+            "url": "https://www.linkedin.com/jobs/view/4335092407",
+            "date_posted": "2025-11-08",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "35.0",
+        "Company Name": "National Association of Insurance Commissioners (NAIC)",
+        "Location": "Kansas City, Missouri",
+        "Website": "http://www.naic.org",
+        "Phone": "+1 816-842-3600",
+        "Current Headcount": "740",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "740",
+        "Days Tracked": "0",
+        "Active Jobs": "4",
+        "Industry": "public policy",
+        "Contact 1 Name": "Jeffrey Johnston",
+        "Contact 1 Title": "CFO",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/jeff-johnston-53ab514",
+        "Contact 2 Name": "James Woody",
+        "Contact 2 Title": "Chief Financial Officer",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/james-woody-21201b4",
+        "Contact 3 Name": "Gary Anderson",
+        "Contact 3 Title": "Chief Executive Officer",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/gary-anderson-93760451",
+        "job_details": [
+          {
+            "title": "Member Services Division Coordinator",
+            "location": "Kansas City, MO",
+            "url": "https://www.linkedin.com/jobs/view/4321310090",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Member Services Division Coordinator",
+            "location": "Kansas City, MO",
+            "url": "https://www.linkedin.com/jobs/view/4321213619",
+            "date_posted": "2025-11-06",
+            "source": "linkedin"
+          },
+          {
+            "title": "Member Services Division Coordinator",
+            "location": "Kansas City, MO",
+            "url": "https://www.linkedin.com/jobs/view/4321074418",
+            "date_posted": "2025-11-06",
+            "source": "linkedin"
+          },
+          {
+            "title": "Security Operations Center Manager",
+            "location": "Kansas City, MO",
+            "url": "https://www.linkedin.com/jobs/view/4317459996",
+            "date_posted": "2025-10-22",
             "source": "linkedin"
           }
         ]
@@ -440,6 +4018,101 @@
             "location": "Kingston, NY",
             "url": "https://www.linkedin.com/jobs/view/4331455107",
             "date_posted": "2025-10-30",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "35.0",
+        "Company Name": "Pekin Insurance",
+        "Location": "Pekin, Illinois",
+        "Website": "http://www.pekininsurance.com",
+        "Phone": "+1 800-322-0160",
+        "Current Headcount": "720",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "720",
+        "Days Tracked": "0",
+        "Active Jobs": "4",
+        "Industry": "insurance",
+        "Contact 1 Name": "Ryan Hanson",
+        "Contact 1 Title": "Chief Financial Officer",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/ryan--hanson",
+        "Contact 2 Name": "Amy Darling",
+        "Contact 2 Title": "Vice President",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/amy-darling-72930677",
+        "Contact 3 Name": "Peggy Collins",
+        "Contact 3 Title": "Vice President",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/peggy-collins-87960733",
+        "job_details": [
+          {
+            "title": "Commercial Lines Underwriter I - Renewal",
+            "location": "Pekin, IL, US",
+            "url": "https://www.indeed.com/viewjob?jk=c608813400dd5746",
+            "date_posted": "2025-10-16",
+            "source": "indeed"
+          },
+          {
+            "title": "Director of Treasury",
+            "location": "Pekin, IL",
+            "url": "https://www.linkedin.com/jobs/view/4216710634",
+            "date_posted": "2025-11-05",
+            "source": "linkedin"
+          },
+          {
+            "title": "Information Technology Project Manager",
+            "location": "Pekin, IL",
+            "url": "https://www.linkedin.com/jobs/view/4302101270",
+            "date_posted": "2025-10-31",
+            "source": "linkedin"
+          },
+          {
+            "title": "Commercial Lines Underwriter I - Renewal",
+            "location": "Pekin, IL",
+            "url": "https://www.linkedin.com/jobs/view/4315241614",
+            "date_posted": "2025-10-16",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "35.0",
+        "Company Name": "Rate Insurance",
+        "Location": "Schaumburg, Illinois",
+        "Website": "",
+        "Phone": "+1 866-947-5397",
+        "Current Headcount": "160",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "160",
+        "Days Tracked": "0",
+        "Active Jobs": "1",
+        "Industry": "insurance",
+        "Contact 1 Name": "Jared S",
+        "Contact 1 Title": "VP Account Manager",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/jared-s-272a579b",
+        "Contact 2 Name": "Lisa Ibrahim",
+        "Contact 2 Title": "VP of Sales",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/lisa-ibrahim-99802821a",
+        "Contact 3 Name": "Dominic Tassi",
+        "Contact 3 Title": "Senior Vice President",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/dominictassi",
+        "job_details": [
+          {
+            "title": "Commercial Account Manager",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4321798070",
+            "date_posted": "2025-11-11",
             "source": "linkedin"
           }
         ]
@@ -519,200 +4192,597 @@
         ]
       },
       {
-        "Composite Score": "35.0",
-        "Company Name": "American Property Casualty Insurance Association",
-        "Location": "Washington, District of Columbia",
-        "Website": "http://www.apci.org",
-        "Phone": "+1 202-828-7100",
-        "Current Headcount": "130",
+        "Composite Score": "30.0",
+        "Company Name": "Embrace Pet Insurance",
+        "Location": "Warrensville Heights, Ohio",
+        "Website": "http://www.embracepetinsurance.com",
+        "Phone": "+1 800-511-9172",
+        "Current Headcount": "230",
         "Growth Rate %": "0.0",
-        "Previous Headcount": "130",
+        "Previous Headcount": "230",
         "Days Tracked": "0",
         "Active Jobs": "1",
         "Industry": "insurance",
-        "Contact 1 Name": "David Sampson",
-        "Contact 1 Title": "President & CEO",
+        "Contact 1 Name": "Fay Mohajer",
+        "Contact 1 Title": "Corporate Accounant, CEO, President",
         "Contact 1 Email": "email_not_unlocked@domain.com",
         "Contact 1 Phone": "",
-        "Contact 1 LinkedIn": "http://www.linkedin.com/in/david-a-sampson-23a54911",
-        "Contact 2 Name": "Lauren Pavluk",
-        "Contact 2 Title": "Vice President",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/fay-mohajer-1a74698",
+        "Contact 2 Name": "David Rodgers",
+        "Contact 2 Title": "VP of Marketing",
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/lauren-pavluk-396117110",
-        "Contact 3 Name": "Mark Sektnan",
-        "Contact 3 Title": "Vice President",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/davidjrodgers",
+        "Contact 3 Name": "Jeremy Klein",
+        "Contact 3 Title": "VP of Finance",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/mark-sektnan-9481897",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/jeremy-klein-11430844",
         "job_details": [
           {
-            "title": "Director/Sr Director Personal Lines",
-            "location": "Chicago, IL",
-            "url": "https://www.linkedin.com/jobs/view/4333908957",
-            "date_posted": "2025-11-03",
+            "title": "Licensed Insurance Agent",
+            "location": "Cleveland, OH",
+            "url": "https://www.linkedin.com/jobs/view/4332779602",
+            "date_posted": "2025-10-29",
             "source": "linkedin"
           }
         ]
       },
       {
-        "Composite Score": "35.0",
-        "Company Name": "Marquee Insurance Group (MIG)",
-        "Location": "Roswell, Georgia",
-        "Website": "http://www.marqueeig.com",
-        "Phone": "+1 678-483-8151",
-        "Current Headcount": "80",
+        "Composite Score": "30.0",
+        "Company Name": "Pets Best Insurance Services, LLC",
+        "Location": "Boise, Idaho",
+        "Website": "http://www.petsbest.com",
+        "Phone": "+1 877-738-7237",
+        "Current Headcount": "370",
         "Growth Rate %": "0.0",
-        "Previous Headcount": "80",
+        "Previous Headcount": "370",
         "Days Tracked": "0",
         "Active Jobs": "1",
         "Industry": "insurance",
-        "Contact 1 Name": "Evan Cheney",
-        "Contact 1 Title": "Vice President of Engineering",
+        "Contact 1 Name": "Greg McDonald",
+        "Contact 1 Title": "Chief Executive Officer",
         "Contact 1 Email": "email_not_unlocked@domain.com",
         "Contact 1 Phone": "",
-        "Contact 1 LinkedIn": "http://www.linkedin.com/in/evan-cheney-99035a197",
-        "Contact 2 Name": "Brett Dykes",
-        "Contact 2 Title": "Senior Vice President",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/greg-mcdonald-515a51b",
+        "Contact 2 Name": "Whitney Thurston",
+        "Contact 2 Title": "AVP, Digital Product Owner",
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/brett-dykes",
-        "Contact 3 Name": "Kevin Bharadwaj",
-        "Contact 3 Title": "Vice President of Sales",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/whitney-thurston",
+        "Contact 3 Name": "Joan Beckert",
+        "Contact 3 Title": "AVP",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/kevin-bharadwaj-28574352",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/joan-beckert",
         "job_details": [
           {
-            "title": "Operations Specialist",
-            "location": "Roswell, GA",
-            "url": "https://www.linkedin.com/jobs/view/4311474863",
+            "title": "Senior Marketing Account Executive",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4312067438",
+            "date_posted": "2025-10-30",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "30.0",
+        "Company Name": "Insurance Recruiting Solutions",
+        "Location": "Waukee, Iowa",
+        "Website": "http://www.insurancerecruitingsolutions.com",
+        "Phone": "",
+        "Current Headcount": "5",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "5",
+        "Days Tracked": "0",
+        "Active Jobs": "6",
+        "Industry": "insurance",
+        "Contact 1 Name": "",
+        "Contact 1 Title": "",
+        "Contact 1 Email": "",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "",
+        "Contact 2 Name": "",
+        "Contact 2 Title": "",
+        "Contact 2 Email": "",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "",
+        "Contact 3 Name": "",
+        "Contact 3 Title": "",
+        "Contact 3 Email": "",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "",
+        "job_details": [
+          {
+            "title": "Senior Casualty Underwriter \u2013 Primary & Excess",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4314679490",
+            "date_posted": "2025-11-10",
+            "source": "linkedin"
+          },
+          {
+            "title": "Senior Product Manager",
+            "location": "Tampa, FL",
+            "url": "https://www.linkedin.com/jobs/view/4334707283",
+            "date_posted": "2025-11-07",
+            "source": "linkedin"
+          },
+          {
+            "title": "Underwriting Director  - Commercial Auto",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4311138531",
+            "date_posted": "2025-11-03",
+            "source": "linkedin"
+          },
+          {
+            "title": "Claims Director",
+            "location": "Chicago, IL",
+            "url": "https://www.linkedin.com/jobs/view/4308466653",
+            "date_posted": "2025-10-27",
+            "source": "linkedin"
+          },
+          {
+            "title": "Pricing Manager",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4335624948",
+            "date_posted": "nan",
+            "source": "linkedin"
+          },
+          {
+            "title": "Territory Sales Manager",
+            "location": "Sacramento, CA",
+            "url": "https://www.linkedin.com/jobs/view/4315866381",
             "date_posted": "nan",
             "source": "linkedin"
           }
         ]
       },
       {
-        "Composite Score": "35.0",
-        "Company Name": "WalkerHughes Insurance",
-        "Location": "Indianapolis, Indiana",
-        "Website": "http://www.walkerhughes.com",
-        "Phone": "+1 800-651-7895",
-        "Current Headcount": "95",
+        "Composite Score": "30.0",
+        "Company Name": "Westfield Specialty Insurance",
+        "Location": "Berkeley Heights, New Jersey",
+        "Website": "http://www.westfieldspecialty.com",
+        "Phone": "+1 800-243-0210",
+        "Current Headcount": "500",
         "Growth Rate %": "0.0",
-        "Previous Headcount": "95",
+        "Previous Headcount": "500",
         "Days Tracked": "0",
         "Active Jobs": "1",
         "Industry": "insurance",
-        "Contact 1 Name": "Nick Mehdikhan",
-        "Contact 1 Title": "EVP, Chief Sales Officer",
+        "Contact 1 Name": "Christine Dickenson",
+        "Contact 1 Title": "Vice President",
         "Contact 1 Email": "email_not_unlocked@domain.com",
         "Contact 1 Phone": "",
-        "Contact 1 LinkedIn": "http://www.linkedin.com/in/nmehdikhan",
-        "Contact 2 Name": "Benjamin Schoettmer",
-        "Contact 2 Title": "CEO | WalkerHughes Insurance",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/christine-dickenson-195a038",
+        "Contact 2 Name": "Jan Tourangeau",
+        "Contact 2 Title": "Vice President",
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/benjamin-schoettmer",
-        "Contact 3 Name": "Peyton Richardson",
-        "Contact 3 Title": "Senior Vice President",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/jan-tourangeau-397a499",
+        "Contact 3 Name": "Nicole Noland",
+        "Contact 3 Title": "Vice President",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/peytonrichardson",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/nicole-noland-198aa637",
         "job_details": [
           {
-            "title": "Commercial Lines Account Manager",
-            "location": "Lebanon, IN, US",
-            "url": "https://www.indeed.com/viewjob?jk=48dff311a493dd1f",
+            "title": "Underwriter, US Environmental",
+            "location": "Chicago, IL",
+            "url": "https://www.linkedin.com/jobs/view/4314433768",
+            "date_posted": "2025-11-04",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "30.0",
+        "Company Name": "EquiTrust Life Insurance Company",
+        "Location": "Chicago, Illinois",
+        "Website": "http://www.equitrust.com",
+        "Phone": "+1 515-226-6300",
+        "Current Headcount": "390",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "390",
+        "Days Tracked": "0",
+        "Active Jobs": "2",
+        "Industry": "insurance",
+        "Contact 1 Name": "Qi Tang",
+        "Contact 1 Title": "VP",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/qi-david-tang-5124a24",
+        "Contact 2 Name": "Tommy Jondall",
+        "Contact 2 Title": "Regional Vice President",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/tommy-jondall-7117b6100",
+        "Contact 3 Name": "Gary Fischer",
+        "Contact 3 Title": "Regional Vice President",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/gary-fischer-61674211",
+        "job_details": [
+          {
+            "title": "Application Development Manager (Contract to Hire)",
+            "location": "West Des Moines, IA, US",
+            "url": "https://www.indeed.com/viewjob?jk=86bbc8b2a70256d9",
+            "date_posted": "2025-10-29",
+            "source": "indeed"
+          },
+          {
+            "title": "Marketing Coordinator",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4314089439",
+            "date_posted": "2025-11-04",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "30.0",
+        "Company Name": "Insurance Supermarket International USA",
+        "Location": "Miami, Florida",
+        "Website": "",
+        "Phone": "+1 855-696-9795",
+        "Current Headcount": "300",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "300",
+        "Days Tracked": "0",
+        "Active Jobs": "1",
+        "Industry": "insurance",
+        "Contact 1 Name": "Andrew Hamill",
+        "Contact 1 Title": "Vice President, US Individual Sales",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/andrew-hamill",
+        "Contact 2 Name": "Jonathan Hakim",
+        "Contact 2 Title": "SVP Direct to Consumer Division",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/jonathan-hakim-a8966514a",
+        "Contact 3 Name": "Collin Goes",
+        "Contact 3 Title": "Director of Accounting",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/collin-goes-cpa-ca-460a9262",
+        "job_details": [
+          {
+            "title": "Life Insurance Specialist",
+            "location": "",
+            "url": "https://www.linkedin.com/jobs/view/4282238799",
+            "date_posted": "2025-11-09",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "30.0",
+        "Company Name": "Rivercity Insurance & Financial Services",
+        "Location": "New Madrid, Missouri",
+        "Website": "http://www.rivercityins.com",
+        "Phone": "+1 800-899-7392",
+        "Current Headcount": "2",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "2",
+        "Days Tracked": "0",
+        "Active Jobs": "22",
+        "Industry": "insurance",
+        "Contact 1 Name": "",
+        "Contact 1 Title": "",
+        "Contact 1 Email": "",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "",
+        "Contact 2 Name": "",
+        "Contact 2 Title": "",
+        "Contact 2 Email": "",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "",
+        "Contact 3 Name": "",
+        "Contact 3 Title": "",
+        "Contact 3 Email": "",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "",
+        "job_details": [
+          {
+            "title": "Sales Manager",
+            "location": "Miami, FL",
+            "url": "https://www.linkedin.com/jobs/view/4307074521",
+            "date_posted": "2025-10-27",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sales Manager",
+            "location": "Fort Lauderdale, FL",
+            "url": "https://www.linkedin.com/jobs/view/4307057900",
+            "date_posted": "2025-10-27",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sales Manager",
+            "location": "Port St Lucie, FL",
+            "url": "https://www.linkedin.com/jobs/view/4307078101",
+            "date_posted": "2025-10-27",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sales Manager",
+            "location": "Jacksonville, FL",
+            "url": "https://www.linkedin.com/jobs/view/4307064811",
+            "date_posted": "2025-10-27",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sales Manager",
+            "location": "Charlotte, NC",
+            "url": "https://www.linkedin.com/jobs/view/4308854338",
+            "date_posted": "2025-10-27",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sales Manager",
+            "location": "Urban Honolulu, HI",
+            "url": "https://www.linkedin.com/jobs/view/4318375905",
+            "date_posted": "2025-10-24",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sales Manager",
+            "location": "Paradise, NV",
+            "url": "https://www.linkedin.com/jobs/view/4318378751",
+            "date_posted": "2025-10-24",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sales Manager",
+            "location": "Las Vegas, NV",
+            "url": "https://www.linkedin.com/jobs/view/4318387429",
+            "date_posted": "2025-10-24",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sales Manager",
+            "location": "Burlington, VT",
+            "url": "https://www.linkedin.com/jobs/view/4318385533",
+            "date_posted": "2025-10-24",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sales Manager",
+            "location": "Portland, ME",
+            "url": "https://www.linkedin.com/jobs/view/4318386535",
+            "date_posted": "2025-10-24",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sales Manager",
+            "location": "Manchester, NH",
+            "url": "https://www.linkedin.com/jobs/view/4318379839",
+            "date_posted": "2025-10-24",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sales Manager",
+            "location": "Denver, CO",
+            "url": "https://www.linkedin.com/jobs/view/4317968387",
+            "date_posted": "2025-10-23",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sales Manager",
+            "location": "Hillsboro, OR",
+            "url": "https://www.linkedin.com/jobs/view/4317978049",
+            "date_posted": "2025-10-23",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sales Manager",
+            "location": "Aurora, CO",
+            "url": "https://www.linkedin.com/jobs/view/4317974070",
+            "date_posted": "2025-10-23",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sales Manager",
+            "location": "Boston, MA",
+            "url": "https://www.linkedin.com/jobs/view/4317969052",
+            "date_posted": "2025-10-23",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sales Manager",
+            "location": "Alexandria, VA",
+            "url": "https://www.linkedin.com/jobs/view/4317969050",
+            "date_posted": "2025-10-23",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sales Manager",
+            "location": "Bellevue, WA",
+            "url": "https://www.linkedin.com/jobs/view/4317968211",
+            "date_posted": "2025-10-23",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sales Manager",
+            "location": "Hartford, CT",
+            "url": "https://www.linkedin.com/jobs/view/4317959887",
+            "date_posted": "2025-10-23",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sales Manager",
+            "location": "Arlington, VA",
+            "url": "https://www.linkedin.com/jobs/view/4317951919",
+            "date_posted": "2025-10-23",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sales Manager",
+            "location": "Tacoma, WA",
+            "url": "https://www.linkedin.com/jobs/view/4317961523",
+            "date_posted": "2025-10-23",
+            "source": "linkedin"
+          },
+          {
+            "title": "Insurance Specialist",
+            "location": "North Port, FL",
+            "url": "https://www.linkedin.com/jobs/view/4316992055",
+            "date_posted": "2025-10-21",
+            "source": "linkedin"
+          },
+          {
+            "title": "Sales Manager",
+            "location": "Austin, Texas Metropolitan Area",
+            "url": "https://www.linkedin.com/jobs/view/4316959985",
+            "date_posted": "2025-10-21",
+            "source": "linkedin"
+          }
+        ]
+      },
+      {
+        "Composite Score": "25.0",
+        "Company Name": "UFG Insurance",
+        "Location": "Cedar Rapids, Iowa",
+        "Website": "http://www.ufginsurance.com",
+        "Phone": "+1 800-553-7937",
+        "Current Headcount": "880",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "880",
+        "Days Tracked": "0",
+        "Active Jobs": "1",
+        "Industry": "insurance",
+        "Contact 1 Name": "Christine Zetocka",
+        "Contact 1 Title": "Vice President",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/christine-zetocka-aic-ais-scla-819bbb1b8",
+        "Contact 2 Name": "Robert Rey",
+        "Contact 2 Title": "Vice President and Branch Manager",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/robert-rey-a2585628",
+        "Contact 3 Name": "Doug Penn",
+        "Contact 3 Title": "Retired From United",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/douglas-penn-97a69b45",
+        "job_details": [
+          {
+            "title": "Sr Production Underwriter",
+            "location": "Westminster, CO, US",
+            "url": "https://www.indeed.com/viewjob?jk=408cdc0c53b4db2d",
             "date_posted": "2025-10-28",
             "source": "indeed"
           }
         ]
       },
       {
-        "Composite Score": "35.0",
-        "Company Name": "Peachy Insurance",
-        "Location": "Atlanta, Georgia",
-        "Website": "http://www.peachyinsurance.com",
-        "Phone": "+1 404-600-1660",
-        "Current Headcount": "42",
+        "Composite Score": "25.0",
+        "Company Name": "Infinity Insurance",
+        "Location": "Birmingham, Alabama",
+        "Website": "http://www.infinityauto.com",
+        "Phone": "+1 205-870-4000",
+        "Current Headcount": "900",
         "Growth Rate %": "0.0",
-        "Previous Headcount": "42",
+        "Previous Headcount": "900",
         "Days Tracked": "0",
-        "Active Jobs": "2",
+        "Active Jobs": "1",
         "Industry": "insurance",
-        "Contact 1 Name": "Paris Kerr",
-        "Contact 1 Title": "Sales Manager",
+        "Contact 1 Name": "Chris Williamson",
+        "Contact 1 Title": "Regional Vice President",
         "Contact 1 Email": "email_not_unlocked@domain.com",
         "Contact 1 Phone": "",
-        "Contact 1 LinkedIn": "http://www.linkedin.com/in/paris-kerr-669a14174",
-        "Contact 2 Name": "Paola Serna",
-        "Contact 2 Title": "Customer Experience Manager",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/chris-williamson-801b7363",
+        "Contact 2 Name": "Glenn Dick",
+        "Contact 2 Title": "AVP",
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/paola-serna-994263105",
-        "Contact 3 Name": "Patrick Oliver",
-        "Contact 3 Title": "Customer Experience Manager",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/glenn-dick-5107197",
+        "Contact 3 Name": "Vincent Castaldo",
+        "Contact 3 Title": "AVP",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/patrick-oliver-a7a31723",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/vincent-castaldo-0b7aa512",
         "job_details": [
           {
-            "title": "Licensed Insurance Agent",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4298517082",
-            "date_posted": "2025-11-09",
-            "source": "linkedin"
-          },
+            "title": "Health and Life Insurance Agent",
+            "location": "Beltsville, MD, US",
+            "url": "https://www.indeed.com/viewjob?jk=e3c3684ad16f1957",
+            "date_posted": "2025-11-06",
+            "source": "indeed"
+          }
+        ]
+      },
+      {
+        "Composite Score": "25.0",
+        "Company Name": "National Interstate Insurance Company",
+        "Location": "Richfield, Ohio",
+        "Website": "http://www.natl.com",
+        "Phone": "+1 330-659-8900",
+        "Current Headcount": "730",
+        "Growth Rate %": "0.0",
+        "Previous Headcount": "730",
+        "Days Tracked": "0",
+        "Active Jobs": "1",
+        "Industry": "insurance",
+        "Contact 1 Name": "Julie McGraw",
+        "Contact 1 Title": "Senior Vice President and Chief Financial Officer",
+        "Contact 1 Email": "email_not_unlocked@domain.com",
+        "Contact 1 Phone": "",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/julie-mcgraw-b179ba3",
+        "Contact 2 Name": "Dave Michelson",
+        "Contact 2 Title": "President & CEO",
+        "Contact 2 Email": "email_not_unlocked@domain.com",
+        "Contact 2 Phone": "",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/dave-michelson-3330a41a",
+        "Contact 3 Name": "Katie Smith",
+        "Contact 3 Title": "Chief Executive Officer",
+        "Contact 3 Email": "email_not_unlocked@domain.com",
+        "Contact 3 Phone": "",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/katie-smith-92902a14a",
+        "job_details": [
           {
-            "title": "Account Manager",
-            "location": "Atlanta, GA",
-            "url": "https://www.linkedin.com/jobs/view/4318368348",
-            "date_posted": "2025-10-24",
+            "title": "Executive Assistant for C-Suite Executive",
+            "location": "Richfield, OH",
+            "url": "https://www.linkedin.com/jobs/view/4299641098",
+            "date_posted": "2025-10-25",
             "source": "linkedin"
           }
         ]
       },
       {
-        "Composite Score": "35.0",
-        "Company Name": "Anzen Insurance",
-        "Location": "San Francisco, California",
-        "Website": "http://www.anzen.com",
-        "Phone": "+1 415-301-5657",
-        "Current Headcount": "41",
+        "Composite Score": "25.0",
+        "Company Name": "Kinsale Insurance",
+        "Location": "Richmond, Virginia",
+        "Website": "http://www.kinsaleins.com",
+        "Phone": "+1 804-289-1272",
+        "Current Headcount": "660",
         "Growth Rate %": "0.0",
-        "Previous Headcount": "41",
+        "Previous Headcount": "660",
         "Days Tracked": "0",
-        "Active Jobs": "2",
+        "Active Jobs": "1",
         "Industry": "insurance",
-        "Contact 1 Name": "Paul Kline",
-        "Contact 1 Title": "Vice President of Sales",
+        "Contact 1 Name": "Bryan Petrucelli",
+        "Contact 1 Title": "Executive Vice President & CFO",
         "Contact 1 Email": "email_not_unlocked@domain.com",
         "Contact 1 Phone": "",
-        "Contact 1 LinkedIn": "http://www.linkedin.com/in/pauljkline",
-        "Contact 2 Name": "Myah Waldvogel",
-        "Contact 2 Title": "Senior Vice President",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/bryan-petrucelli-55912312",
+        "Contact 2 Name": "Hannah Taylor",
+        "Contact 2 Title": "Vice President",
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/myah-waldvogel-91994611",
-        "Contact 3 Name": "Sara Renz",
-        "Contact 3 Title": "SVP, Operations",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/hannah-taylor-09652778",
+        "Contact 3 Name": "Sheikh Uddin",
+        "Contact 3 Title": "CEO/Co-Founder",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/sararenz",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/sheikh-uddin-453307194",
         "job_details": [
           {
-            "title": "Wholesale Broker",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4304803305",
-            "date_posted": "2025-10-20",
-            "source": "linkedin"
-          },
-          {
-            "title": "Account Manager",
-            "location": "",
-            "url": "https://www.linkedin.com/jobs/view/4304804260",
-            "date_posted": "2025-10-20",
+            "title": "Associate Underwriter",
+            "location": "Richmond, VA",
+            "url": "https://www.linkedin.com/jobs/view/4312287922",
+            "date_posted": "2025-10-15",
             "source": "linkedin"
           }
         ]

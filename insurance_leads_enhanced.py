@@ -41,9 +41,16 @@ APOLLO_BASE_URL = "https://api.apollo.io/v1"
 
 # Target insurance company criteria
 TARGET_CRITERIA = {
-    'industries': ['Insurance', 'Insurance Agencies and Brokerages', 'Commercial Insurance'],
+    'industries': [
+        'Insurance',
+        'Insurance Agencies and Brokerages',
+        'Commercial Insurance',
+        'Personal Lines Insurance',
+        'Wealth Management',
+        'Financial Services'
+    ],
     'employee_ranges': ["1,10", "10,20", "20,50", "51,100", "101,200", "201,300"],  # 1-300 employees
-    'job_titles': ["CEO", "CFO", "President", "VP", "Director", "Manager", "Owner", "Partner"],
+    'job_titles': ["CEO", "CFO", "President", "VP", "Director", "Manager", "Owner", "Partner", "Advisor"],
 }
 
 class EnhancedLeadsPipeline:
@@ -194,9 +201,10 @@ class EnhancedLeadsPipeline:
             return {'count': 0, 'jobs': []}
 
         try:
+            # Broader search to include insurance, wealth management, and financial services
             jobs_df = scrape_jobs(
                 site_name=["indeed", "linkedin"],
-                search_term=f'"{company_name}" insurance',  # Broader search
+                search_term=f'"{company_name}"',  # Very broad - company name only
                 location="United States",
                 results_wanted=30,  # Increased from 20
                 hours_old=720,  # 30 days
@@ -224,24 +232,28 @@ class EnhancedLeadsPipeline:
                     'remote', 'work from home', 'work-from-home', 'wfh'
                 ]
 
-                # INCLUDE these insurance-specific roles
+                # INCLUDE these insurance/financial/wealth management roles
                 include_keywords = [
                     # Sales & Production
                     'producer', 'account manager', 'account executive', 'account specialist',
                     'commercial lines', 'personal lines', 'broker', 'agent',
-                    # Risk & Underwriting
+                    # Risk & Underwriting & Advisory
                     'underwriter', 'risk advisor', 'risk consultant', 'risk manager',
+                    'commercial risk advisor', 'risk assessment', 'risk analyst',
                     # Operations & Management
                     'operations manager', 'operations director', 'operations specialist',
                     'marketing manager', 'marketing director', 'marketing coordinator',
                     'business development', 'client services',
-                    # Finance & Admin
+                    # Finance & Admin & Wealth Management
                     'accountant', 'accounting manager', 'finance manager', 'controller',
+                    'wealth advisor', 'financial advisor', 'financial planner',
+                    'portfolio manager', 'investment advisor',
                     # Leadership
                     'director', 'vp', 'vice president', 'ceo', 'cfo', 'coo',
                     'president', 'executive', 'manager', 'supervisor',
                     # Technical
-                    'insurance analyst', 'insurance specialist', 'insurance coordinator'
+                    'insurance analyst', 'insurance specialist', 'insurance coordinator',
+                    'analyst', 'coordinator', 'specialist'
                 ]
 
                 filtered_jobs = []
@@ -374,16 +386,16 @@ class EnhancedLeadsPipeline:
         return min(score, 100.0)
 
     def is_insurance_company(self, company: Dict) -> bool:
-        """Filter to ensure company is actually in insurance industry"""
+        """Filter to ensure company is actually in insurance/wealth management/financial services"""
         industry = (company.get('industry', '') or '').lower()
         company_name = (company.get('name', '') or '').lower()
 
-        # Exclude non-insurance industries
+        # Exclude non-relevant industries (REMOVED 'financial services' from exclusions)
         excluded_industries = [
             'staffing', 'recruiting', 'information technology', 'it services',
             'publishing', 'human resources', 'consulting', 'outsourcing',
             'offshoring', 'higher education', 'mental health', 'nonprofit',
-            'financial services', 'government'
+            'government'
         ]
 
         # Check if industry matches excluded list
@@ -391,14 +403,18 @@ class EnhancedLeadsPipeline:
             if excluded in industry:
                 return False
 
-        # Whitelist insurance-related keywords
-        insurance_keywords = ['insurance', 'underwriting', 'broker', 'risk management']
+        # Whitelist relevant keywords (expanded to include wealth management, financial services, advisory)
+        relevant_keywords = [
+            'insurance', 'underwriting', 'broker', 'risk management',
+            'wealth management', 'wealth', 'financial services', 'financial advisor',
+            'advisory', 'asset management'
+        ]
 
-        # Check if company name or industry contains insurance keywords
-        has_insurance_keyword = any(keyword in industry or keyword in company_name
-                                   for keyword in insurance_keywords)
+        # Check if company name or industry contains relevant keywords
+        has_relevant_keyword = any(keyword in industry or keyword in company_name
+                                   for keyword in relevant_keywords)
 
-        return has_insurance_keyword
+        return has_relevant_keyword
 
     def process_companies(self, companies: List[Dict]) -> List[Dict]:
         """Process companies and gather all signals"""
@@ -411,16 +427,20 @@ class EnhancedLeadsPipeline:
             print(f"Processing {i}/{len(companies)}: {company.get('name', 'Unknown')}", end="\r")
 
             try:
-                # Filter out non-insurance companies
+                # Filter out non-relevant companies (non-insurance/wealth management)
                 if not self.is_insurance_company(company):
                     filtered_count += 1
+                    logger.debug(f"  ✗ Filtered {company.get('name')}: Not relevant industry")
                     continue
 
-                # Filter companies over 300 employees
+                # CRITICAL: Filter companies over 300 employees
                 current_headcount = company.get('estimated_num_employees', 0)
                 if current_headcount > 300:
                     filtered_count += 1
+                    logger.info(f"  ✗ Filtered {company.get('name')}: Too large ({current_headcount} employees > 300 cap)")
                     continue
+
+                logger.debug(f"  ✓ Processing {company.get('name')}: {current_headcount} employees")
 
                 company_id = company.get('id')
                 company_name = company.get('name', '')

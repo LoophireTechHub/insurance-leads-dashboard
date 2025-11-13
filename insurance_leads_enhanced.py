@@ -390,12 +390,25 @@ class EnhancedLeadsPipeline:
         industry = (company.get('industry', '') or '').lower()
         company_name = (company.get('name', '') or '').lower()
 
+        # CRITICAL: Exclude recruiting/staffing companies by name
+        recruiting_name_keywords = [
+            'recruiting', 'staffing', 'search group', 'executive search',
+            'talent', 'jonus', 'headhunter', 'placement', 'resource',
+            'consulting group', 'hire', 'recruitment', 'workforce'
+        ]
+
+        # Check company name for recruiting keywords
+        for keyword in recruiting_name_keywords:
+            if keyword in company_name:
+                logger.info(f"  ✗ Filtered {company.get('name')}: Recruiting/Staffing company (name: '{keyword}')")
+                return False
+
         # Exclude non-relevant industries (REMOVED 'financial services' from exclusions)
         excluded_industries = [
             'staffing', 'recruiting', 'information technology', 'it services',
             'publishing', 'human resources', 'consulting', 'outsourcing',
             'offshoring', 'higher education', 'mental health', 'nonprofit',
-            'government'
+            'government', 'employment services', 'talent acquisition'
         ]
 
         # Check if industry matches excluded list

@@ -1,14 +1,14 @@
 [
   {
     "date": "2025-11-13",
-    "timestamp": "November 13, 2025 at 01:36 PM EST",
+    "timestamp": "November 13, 2025 at 02:37 PM EST",
     "stats": {
       "total_leads": 13,
       "high_score": 1,
       "growing": 0,
       "hiring": 13,
       "with_contacts": 12,
-      "last_updated": "November 13, 2025 at 01:36 PM EST",
+      "last_updated": "November 13, 2025 at 02:37 PM EST",
       "update_date": "2025-11-13"
     },
     "leads": [
@@ -29,16 +29,16 @@
         "Contact 1 Email": "email_not_unlocked@domain.com",
         "Contact 1 Phone": "",
         "Contact 1 LinkedIn": "http://www.linkedin.com/in/jarango-owino-996629174",
-        "Contact 2 Name": "Doug Densmore",
-        "Contact 2 Title": "VP",
+        "Contact 2 Name": "Rob Owen",
+        "Contact 2 Title": "Vice President",
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/doug-densmore-8a703853",
-        "Contact 3 Name": "Rob Owen",
-        "Contact 3 Title": "Vice President",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/rob-owen-cpcu-aai-arm-9abba123",
+        "Contact 3 Name": "Doug Densmore",
+        "Contact 3 Title": "VP",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/rob-owen-cpcu-aai-arm-9abba123",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/doug-densmore-8a703853",
         "job_details": [
           {
             "title": "Regional Sales Manager (Midwest) - National General",
@@ -203,7 +203,7 @@
         "Growth Rate %": "0.0",
         "Previous Headcount": "56",
         "Days Tracked": "0",
-        "Active Jobs": "23",
+        "Active Jobs": "21",
         "Industry": "insurance",
         "Contact 1 Name": "",
         "Contact 1 Title": "",
@@ -221,6 +221,13 @@
         "Contact 3 Phone": "",
         "Contact 3 LinkedIn": "",
         "job_details": [
+          {
+            "title": "Insurance Agent Sugarland, TX",
+            "location": "Rosenberg, TX",
+            "url": "https://www.linkedin.com/jobs/view/4307098269",
+            "date_posted": "2025-11-12",
+            "source": "linkedin"
+          },
           {
             "title": "E&S Property Underwriter (Non Admitted)",
             "location": "Lisle, IL",
@@ -292,6 +299,13 @@
             "source": "linkedin"
           },
           {
+            "title": "Account Executive | Investigations",
+            "location": "Illinois, United States",
+            "url": "https://www.linkedin.com/jobs/view/4315087699",
+            "date_posted": "2025-11-06",
+            "source": "linkedin"
+          },
+          {
             "title": "Commercial Underwriter | Carrier",
             "location": "Baton Rouge, LA",
             "url": "https://www.linkedin.com/jobs/view/4314292958",
@@ -320,13 +334,6 @@
             "source": "linkedin"
           },
           {
-            "title": "Director of Curriculum",
-            "location": "Dallas, TX",
-            "url": "https://www.linkedin.com/jobs/view/4301990318",
-            "date_posted": "2025-10-30",
-            "source": "linkedin"
-          },
-          {
             "title": "Commercial Account Manager",
             "location": "Texas, United States",
             "url": "https://www.linkedin.com/jobs/view/4310984079",
@@ -338,13 +345,6 @@
             "location": "Alexandria, VA",
             "url": "https://www.linkedin.com/jobs/view/4310040016",
             "date_posted": "2025-10-28",
-            "source": "linkedin"
-          },
-          {
-            "title": "Account Executive | Investigations | IL, MI, OH",
-            "location": "Illinois, United States",
-            "url": "https://www.linkedin.com/jobs/view/4319136175",
-            "date_posted": "2025-10-27",
             "source": "linkedin"
           },
           {
@@ -362,23 +362,9 @@
             "source": "linkedin"
           },
           {
-            "title": "Sales Manager",
-            "location": "Dallas, TX",
-            "url": "https://www.linkedin.com/jobs/view/4317968464",
-            "date_posted": "2025-10-23",
-            "source": "linkedin"
-          },
-          {
             "title": "Account Manager - Commercial Lines",
             "location": "Dallas, TX",
             "url": "https://www.linkedin.com/jobs/view/4288073499",
-            "date_posted": "nan",
-            "source": "linkedin"
-          },
-          {
-            "title": "Associate Commercial Account Manager",
-            "location": "Fort Worth, TX",
-            "url": "https://www.linkedin.com/jobs/view/4317716066",
             "date_posted": "nan",
             "source": "linkedin"
           }
@@ -581,21 +567,21 @@
         "Days Tracked": "0",
         "Active Jobs": "1",
         "Industry": "insurance",
-        "Contact 1 Name": "Kevin Bharadwaj",
-        "Contact 1 Title": "Vice President of Sales",
+        "Contact 1 Name": "Evan Cheney",
+        "Contact 1 Title": "Vice President of Engineering",
         "Contact 1 Email": "email_not_unlocked@domain.com",
         "Contact 1 Phone": "",
-        "Contact 1 LinkedIn": "http://www.linkedin.com/in/kevin-bharadwaj-28574352",
-        "Contact 2 Name": "Evan Cheney",
-        "Contact 2 Title": "Vice President of Engineering",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/evan-cheney-99035a197",
+        "Contact 2 Name": "Brett Dykes",
+        "Contact 2 Title": "Senior Vice President",
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/evan-cheney-99035a197",
-        "Contact 3 Name": "Brett Dykes",
-        "Contact 3 Title": "Senior Vice President",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/brett-dykes",
+        "Contact 3 Name": "Kevin Bharadwaj",
+        "Contact 3 Title": "Vice President of Sales",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/brett-dykes",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/kevin-bharadwaj-28574352",
         "job_details": [
           {
             "title": "Operations Specialist",
@@ -699,16 +685,16 @@
         "Days Tracked": "0",
         "Active Jobs": "2",
         "Industry": "insurance",
-        "Contact 1 Name": "Myah Waldvogel",
-        "Contact 1 Title": "Senior Vice President",
+        "Contact 1 Name": "Paul Kline",
+        "Contact 1 Title": "Vice President of Sales",
         "Contact 1 Email": "email_not_unlocked@domain.com",
         "Contact 1 Phone": "",
-        "Contact 1 LinkedIn": "http://www.linkedin.com/in/myah-waldvogel-91994611",
-        "Contact 2 Name": "Paul Kline",
-        "Contact 2 Title": "Vice President of Sales",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/pauljkline",
+        "Contact 2 Name": "Myah Waldvogel",
+        "Contact 2 Title": "Senior Vice President",
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/pauljkline",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/myah-waldvogel-91994611",
         "Contact 3 Name": "Sara Renz",
         "Contact 3 Title": "SVP, Operations",
         "Contact 3 Email": "email_not_unlocked@domain.com",

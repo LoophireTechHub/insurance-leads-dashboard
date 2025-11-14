@@ -85,24 +85,39 @@ class EnhancedLeadsPipeline:
             json.dump(self.company_history, f, indent=2)
 
     def search_insurance_companies(self, limit: int = 500) -> List[Dict]:
-        """Search for insurance companies via Apollo with pagination"""
-        logger.info(f"🔍 Searching for insurance companies via Apollo...")
+        """Search for insurance companies via Apollo with pagination - PHOENIX METRO AREA FOCUS"""
+        logger.info(f"🔍 Searching for insurance companies in Greater Phoenix area via Apollo...")
 
         companies = []
         headers = {"X-Api-Key": self.apollo_token, "Content-Type": "application/json"}
+
+        # Greater Phoenix metropolitan area cities
+        phoenix_metro_cities = [
+            "Phoenix, Arizona",
+            "Scottsdale, Arizona",
+            "Tempe, Arizona",
+            "Mesa, Arizona",
+            "Chandler, Arizona",
+            "Glendale, Arizona",
+            "Gilbert, Arizona",
+            "Peoria, Arizona",
+            "Surprise, Arizona",
+            "Goodyear, Arizona",
+            "Avondale, Arizona"
+        ]
 
         # Paginate through results for each industry
         for industry in TARGET_CRITERIA['industries']:
             industry_companies = []
             page = 1
-            max_pages = 5  # Get 5 pages = 500 companies per industry
+            max_pages = 10  # Increased to get more Phoenix companies
 
-            while page <= max_pages and len(industry_companies) < 200:
+            while page <= max_pages and len(industry_companies) < 500:
                 try:
                     search_data = {
                         "q_organization_keyword_tags": [industry],
                         "organization_num_employees_ranges": TARGET_CRITERIA['employee_ranges'],
-                        "organization_locations": ["United States"],
+                        "organization_locations": phoenix_metro_cities,  # PHOENIX METRO FOCUS
                         "page": page,
                         "per_page": 100
                     }
@@ -196,17 +211,17 @@ class EnhancedLeadsPipeline:
         return growth_signal
 
     def search_company_jobs(self, company_name: str) -> Dict:
-        """Search for active job postings from a company - returns count and job details"""
+        """Search for active job postings from a company in Phoenix area - returns count and job details"""
         if not JOBSPY_AVAILABLE:
             return {'count': 0, 'jobs': []}
 
         try:
-            # Broader search to include insurance, wealth management, and financial services
+            # Phoenix area job search
             jobs_df = scrape_jobs(
                 site_name=["indeed", "linkedin"],
-                search_term=f'"{company_name}"',  # Very broad - company name only
-                location="United States",
-                results_wanted=30,  # Increased from 20
+                search_term=f'"{company_name}"',  # Company name only
+                location="Phoenix, AZ",  # PHOENIX METRO AREA FOCUS
+                results_wanted=50,  # Increased to catch more Phoenix jobs
                 hours_old=720,  # 30 days
                 country_indeed='USA',
                 linkedin_fetch_description=False
@@ -256,11 +271,20 @@ class EnhancedLeadsPipeline:
                     'analyst', 'coordinator', 'specialist'
                 ]
 
+                # Phoenix metro cities for location filtering
+                phoenix_areas = ['phoenix', 'scottsdale', 'tempe', 'mesa', 'chandler',
+                                'glendale', 'gilbert', 'peoria', 'surprise', 'goodyear',
+                                'avondale', 'arizona', 'az']
+
                 filtered_jobs = []
                 for _, job in matching_jobs.iterrows():
                     title = str(job.get('title', '') or '').lower()
                     location = str(job.get('location', '') or '').lower()
                     description = str(job.get('description', '') or '').lower()
+
+                    # CRITICAL: ONLY include Phoenix area jobs
+                    if not any(city in location for city in phoenix_areas):
+                        continue
 
                     # SKIP if title contains any exclude keywords
                     if any(keyword in title for keyword in exclude_keywords):
@@ -268,12 +292,13 @@ class EnhancedLeadsPipeline:
 
                     # SKIP if location indicates remote-only (no hybrid/onsite mention)
                     remote_indicators = ['remote', 'work from home', 'wfh', 'telecommute']
-                    onsite_indicators = ['hybrid', 'onsite', 'on-site', 'on site', 'in-office', 'office']
+                    onsite_indicators = ['hybrid', 'onsite', 'on-site', 'on site', 'in-office', 'office',
+                                        'phoenix', 'scottsdale', 'tempe', 'mesa', 'chandler']
 
                     has_remote = any(indicator in location for indicator in remote_indicators)
                     has_onsite = any(indicator in location for indicator in onsite_indicators)
 
-                    # If remote without onsite/hybrid, skip
+                    # If remote without onsite/hybrid, skip (unless it's in Phoenix area)
                     if has_remote and not has_onsite:
                         continue
 

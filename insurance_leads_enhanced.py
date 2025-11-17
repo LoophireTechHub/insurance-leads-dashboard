@@ -216,15 +216,15 @@ class EnhancedLeadsPipeline:
             return {'count': 0, 'jobs': []}
 
         try:
-            # Phoenix area job search
+            # ENHANCED: LinkedIn-first strategy with higher limits
             jobs_df = scrape_jobs(
-                site_name=["indeed", "linkedin"],
+                site_name=["linkedin", "indeed"],  # LinkedIn first (better data quality)
                 search_term=f'"{company_name}"',  # Company name only
                 location="Phoenix, AZ",  # PHOENIX METRO AREA FOCUS
-                results_wanted=50,  # Increased to catch more Phoenix jobs
-                hours_old=720,  # 30 days
+                results_wanted=100,  # INCREASED from 50 to 100 for more results
+                hours_old=1440,  # INCREASED from 720 to 1440 (60 days instead of 30)
                 country_indeed='USA',
-                linkedin_fetch_description=False
+                linkedin_fetch_description=True  # CHANGED: Fetch descriptions for better filtering
             )
 
             if jobs_df is not None and not jobs_df.empty:
@@ -606,8 +606,8 @@ class EnhancedLeadsPipeline:
         logger.info("Enhanced Insurance Leads Pipeline - Multi-Signal Detection")
         logger.info("="*60)
 
-        # Step 1: Search for insurance companies
-        companies = self.search_insurance_companies(limit=200)
+        # Step 1: Search for insurance companies - INCREASED from 200 to 400 for more coverage
+        companies = self.search_insurance_companies(limit=400)
 
         if not companies:
             logger.warning("No companies found")

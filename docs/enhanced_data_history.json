@@ -1,14 +1,14 @@
 [
   {
     "date": "2025-11-17",
-    "timestamp": "November 17, 2025 at 01:36 PM EST",
+    "timestamp": "November 17, 2025 at 05:41 PM EST",
     "stats": {
       "total_leads": 9,
       "high_score": 0,
       "growing": 0,
       "hiring": 9,
       "with_contacts": 8,
-      "last_updated": "November 17, 2025 at 01:36 PM EST",
+      "last_updated": "November 17, 2025 at 05:41 PM EST",
       "update_date": "2025-11-17"
     },
     "leads": [
@@ -85,11 +85,11 @@
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
         "Contact 2 LinkedIn": "http://www.linkedin.com/in/john-flanagan-a0649246",
-        "Contact 3 Name": "Mark Wheeler",
+        "Contact 3 Name": "Matt Clemmons",
         "Contact 3 Title": "Regional Vice President",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/mark-wheeler-41b7b610",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/matt-clemmons-a25b2526",
         "job_details": [
           {
             "title": "Account Development Manager",
@@ -177,16 +177,16 @@
         "Days Tracked": "0",
         "Active Jobs": "1",
         "Industry": "insurance",
-        "Contact 1 Name": "Aaron Setchell",
+        "Contact 1 Name": "Tyler Kueter",
         "Contact 1 Title": "Regional Vice President",
         "Contact 1 Email": "email_not_unlocked@domain.com",
         "Contact 1 Phone": "",
-        "Contact 1 LinkedIn": "http://www.linkedin.com/in/aaron-setchell-8746b323",
-        "Contact 2 Name": "Tyler Kueter",
+        "Contact 1 LinkedIn": "http://www.linkedin.com/in/tyler-kueter-a98b234a",
+        "Contact 2 Name": "Aaron Setchell",
         "Contact 2 Title": "Regional Vice President",
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/tyler-kueter-a98b234a",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/aaron-setchell-8746b323",
         "Contact 3 Name": "Monica Spurgeon",
         "Contact 3 Title": "Senior Vice President",
         "Contact 3 Email": "email_not_unlocked@domain.com",

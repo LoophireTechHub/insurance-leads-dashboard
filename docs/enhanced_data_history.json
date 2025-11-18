@@ -1,14 +1,14 @@
 [
   {
     "date": "2025-11-18",
-    "timestamp": "November 18, 2025 at 01:40 PM EST",
+    "timestamp": "November 18, 2025 at 03:56 PM EST",
     "stats": {
       "total_leads": 16,
       "high_score": 0,
       "growing": 0,
       "hiring": 16,
       "with_contacts": 13,
-      "last_updated": "November 18, 2025 at 01:40 PM EST",
+      "last_updated": "November 18, 2025 at 03:56 PM EST",
       "update_date": "2025-11-18"
     },
     "leads": [
@@ -189,16 +189,16 @@
         "Contact 1 Email": "email_not_unlocked@domain.com",
         "Contact 1 Phone": "",
         "Contact 1 LinkedIn": "http://www.linkedin.com/in/don-dady-2325132b7",
-        "Contact 2 Name": "Robert Savarese",
-        "Contact 2 Title": "VICE President - National Sales Director",
+        "Contact 2 Name": "Beth Hudson",
+        "Contact 2 Title": "Regional Vice President",
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/robert-e-savarese-jr-66a69911",
-        "Contact 3 Name": "Beth Hudson",
-        "Contact 3 Title": "Regional Vice President",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/beth-hudson-360b4a106",
+        "Contact 3 Name": "Michael Ferrer",
+        "Contact 3 Title": "Vice President - National Sales Director",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/beth-hudson-360b4a106",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/michaelaferrer",
         "job_details": [
           {
             "title": "Marketing Manager",
@@ -356,11 +356,11 @@
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
         "Contact 2 LinkedIn": "http://www.linkedin.com/in/isaac-nelson",
-        "Contact 3 Name": "Chris Wooster",
-        "Contact 3 Title": "Creative Director",
+        "Contact 3 Name": "Allison Ferre",
+        "Contact 3 Title": "Director of Communications",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/chriswooster",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/allisoncferre",
         "job_details": [
           {
             "title": "Platform Product Manager",
@@ -437,11 +437,11 @@
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
         "Contact 2 LinkedIn": "http://www.linkedin.com/in/simon-goldin",
-        "Contact 3 Name": "Alex Raffio",
+        "Contact 3 Name": "Ulysses Zackery",
         "Contact 3 Title": "Financial Advisor",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/alex-raffio-87999b159",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/ulysses-zackery-882345208",
         "job_details": [
           {
             "title": "Financial Advisor",

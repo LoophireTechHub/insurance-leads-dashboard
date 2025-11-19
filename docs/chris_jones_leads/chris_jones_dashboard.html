@@ -188,6 +188,30 @@
         .apply-btn:hover {
             transform: translateY(-2px);
         }
+        .activity-dropdown {
+            position: relative;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .activity-dropdown select {
+            padding: 8px 15px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            background: white;
+            font-size: 0.85em;
+            font-weight: 600;
+            color: #2d3748;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .activity-dropdown select:hover {
+            border-color: #f5576c;
+        }
+        .activity-dropdown select.has-activity {
+            background: #d4edda;
+            border-color: #28a745;
+            color: #155724;
+        }
         .loading {
             text-align: center;
             padding: 50px;
@@ -255,7 +279,7 @@
         </div>
 
         <div class="jobs-table">
-            <h2>Property & Casualty Insurance Jobs (<span id="jobCount">0</span> positions)</h2>
+            <h2>Commercial Insurance Jobs (<span id="jobCount">0</span> positions)</h2>
             <div class="jobs-grid" id="jobsGrid">
                 <div class="loading">
                     <div class="loading-spinner"></div>
@@ -348,6 +372,9 @@
                     companyInfoHTML += '</div>';
                 }
 
+                const jobId = job.url || `job-${Math.random()}`;
+                const savedActivity = localStorage.getItem(`activity-${jobId}`) || '';
+
                 const card = document.createElement('div');
                 card.className = 'job-card';
                 card.innerHTML = `
@@ -355,6 +382,14 @@
                         <div>
                             <div class="job-title">${title}</div>
                             <div class="job-company">${job.company || 'N/A'}</div>
+                        </div>
+                        <div class="activity-dropdown">
+                            <select class="activity-select ${savedActivity ? 'has-activity' : ''}" data-job-id="${jobId}">
+                                <option value="">Activity</option>
+                                <option value="called" ${savedActivity === 'called' ? 'selected' : ''}>Called</option>
+                                <option value="linkedin" ${savedActivity === 'linkedin' ? 'selected' : ''}>LinkedIn</option>
+                                <option value="emailed" ${savedActivity === 'emailed' ? 'selected' : ''}>Emailed</option>
+                            </select>
                         </div>
                     </div>
                     <div class="job-details">
@@ -366,6 +401,21 @@
                     <a href="${job.url || '#'}" target="_blank" class="apply-btn">View Job →</a>
                     ${contactsHTML}
                 `;
+
+                // Add event listener for activity tracking
+                const select = card.querySelector('.activity-select');
+                select.addEventListener('change', function(e) {
+                    const activityValue = e.target.value;
+                    const jobId = e.target.dataset.jobId;
+
+                    if (activityValue) {
+                        localStorage.setItem(`activity-${jobId}`, activityValue);
+                        e.target.classList.add('has-activity');
+                    } else {
+                        localStorage.removeItem(`activity-${jobId}`);
+                        e.target.classList.remove('has-activity');
+                    }
+                });
 
                 grid.appendChild(card);
             });

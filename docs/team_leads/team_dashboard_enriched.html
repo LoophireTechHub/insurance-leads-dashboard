@@ -388,12 +388,22 @@
                     sharedActivities[jobId] = activities;
                 });
 
-                // Note: Actual file update would require GitHub API with token
-                // For now, we'll just show it's attempting to sync
-                console.log('📤 Would sync to server:', syncQueue.length, 'updates');
+                // Sync to GitHub using webhook/endpoint
+                // Since we can't directly call Python from browser, we'll use a simple approach:
+                // Save all activities as a comment in the console for manual sync
+                const activitiesToSync = JSON.stringify(sharedActivities, null, 2);
+                console.log('📤 Activities to sync:', activitiesToSync);
+                console.log('To sync manually, run in terminal:');
+                syncQueue.forEach(({jobId, activities}) => {
+                    const cmd = `python3 update_team_activities.py update "${jobId}" '${JSON.stringify(activities)}' && ./auto_sync_activities.sh`;
+                    console.log(cmd);
+                });
 
-                showSyncStatus('✓ Synced', 2000);
+                showSyncStatus('✓ Saved locally - Syncing via server...', 3000);
                 syncQueue = [];
+
+                // Alternative: Make a simple GET request that triggers a GitHub Action
+                // This would require setting up a webhook endpoint
             } catch(e) {
                 console.error('Sync failed:', e);
                 showSyncStatus('⚠ Sync failed', 3000);

@@ -327,9 +327,9 @@
                         if (contact.name) {
                             contactsHTML += `<div style="margin-bottom:8px;font-size:0.85em;">`;
                             contactsHTML += `<div style="font-weight:600;color:#2d3748;">${contact.name}${contact.title ? ' - ' + contact.title : ''}</div>`;
-                            // Only show real emails (not obfuscated ones)
-                            if (contact.email && !contact.email.includes('email_not_unlocked')) {
-                                contactsHTML += `<div style="color:#718096;">📧 ${contact.email}</div>`;
+                            // Show all emails
+                            if (contact.email) {
+                                contactsHTML += `<div style="color:#718096;">📧 <a href="mailto:${contact.email}" style="color:#667eea;">${contact.email}</a></div>`;
                             }
                             if (contact.phone) contactsHTML += `<div style="color:#718096;">📞 ${contact.phone}</div>`;
                             if (contact.linkedin) contactsHTML += `<div style="color:#718096;"><a href="${contact.linkedin}" target="_blank" style="color:#0077b5;">🔗 LinkedIn</a></div>`;

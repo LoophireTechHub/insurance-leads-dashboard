@@ -313,6 +313,55 @@
     <script>
         let allJobs = [];
 
+        // Activity management functions
+        function saveActivities(jobId, activities) {
+            try {
+                localStorage.setItem(`activities-${jobId}`, JSON.stringify(activities));
+                console.log('✓ Saved activities for', jobId, ':', activities);
+                return true;
+            } catch(e) {
+                console.error('✗ Failed to save activities:', e);
+                return false;
+            }
+        }
+
+        function loadActivities(jobId) {
+            try {
+                return JSON.parse(localStorage.getItem(`activities-${jobId}`) || '{}');
+            } catch(e) {
+                console.error('Error loading activities:', e);
+                return {};
+            }
+        }
+
+        // Event delegation for all activity checkboxes
+        document.addEventListener('change', function(e) {
+            if (e.target.type === 'checkbox' && e.target.closest('.activity-tracker')) {
+                e.stopPropagation();
+                const tracker = e.target.closest('.activity-tracker');
+                const jobId = tracker.dataset.jobId;
+                const checkboxes = tracker.querySelectorAll('input[type="checkbox"]');
+                const activities = {};
+
+                // Collect all checked activities
+                checkboxes.forEach(cb => {
+                    const activityType = cb.getAttribute('data-activity');
+                    if (cb.checked) {
+                        activities[activityType] = true;
+                    }
+                });
+
+                // Save to localStorage
+                if (Object.keys(activities).length > 0) {
+                    saveActivities(jobId, activities);
+                    tracker.classList.add('has-activity');
+                } else {
+                    localStorage.removeItem(`activities-${jobId}`);
+                    tracker.classList.remove('has-activity');
+                }
+            }
+        });
+
         async function loadJobs() {
             try {
                 const response = await fetch('chris_jones_pc_data.json?t=' + new Date().getTime());
@@ -396,7 +445,7 @@
                 // Create a safe unique ID for this job
                 const jobId = job.url || `job-${Math.random()}`;
                 const safeId = btoa(jobId).replace(/[^a-zA-Z0-9]/g, '').substring(0, 20);
-                const savedActivities = JSON.parse(localStorage.getItem(`activities-${jobId}`) || '{}');
+                const savedActivities = loadActivities(jobId);
 
                 const card = document.createElement('div');
                 card.className = 'job-card';
@@ -431,37 +480,6 @@
                     <a href="${job.url || '#'}" target="_blank" class="apply-btn">View Job →</a>
                     ${contactsHTML}
                 `;
-
-                // Add event listeners for activity checkboxes
-                const tracker = card.querySelector('.activity-tracker');
-                const checkboxes = tracker.querySelectorAll('input[type="checkbox"]');
-
-                checkboxes.forEach(checkbox => {
-                    checkbox.addEventListener('change', function(e) {
-                        e.stopPropagation(); // Prevent event bubbling
-                        const jobId = tracker.dataset.jobId;
-                        const activities = {};
-
-                        // Collect all checked activities
-                        checkboxes.forEach(cb => {
-                            const activityType = cb.getAttribute('data-activity');
-                            if (cb.checked) {
-                                activities[activityType] = true;
-                            }
-                        });
-
-                        // Save to localStorage
-                        if (Object.keys(activities).length > 0) {
-                            localStorage.setItem(`activities-${jobId}`, JSON.stringify(activities));
-                            tracker.classList.add('has-activity');
-                        } else {
-                            localStorage.removeItem(`activities-${jobId}`);
-                            tracker.classList.remove('has-activity');
-                        }
-
-                        console.log('Saved activities for', jobId, ':', activities);
-                    });
-                });
 
                 grid.appendChild(card);
             });

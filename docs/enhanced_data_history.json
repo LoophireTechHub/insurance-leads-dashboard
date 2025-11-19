@@ -1,14 +1,14 @@
 [
   {
     "date": "2025-11-19",
-    "timestamp": "November 19, 2025 at 09:03 PM EST",
+    "timestamp": "November 19, 2025 at 09:25 PM EST",
     "stats": {
       "total_leads": 16,
       "high_score": 0,
       "growing": 0,
       "hiring": 16,
       "with_contacts": 13,
-      "last_updated": "November 19, 2025 at 09:03 PM EST",
+      "last_updated": "November 19, 2025 at 09:25 PM EST",
       "update_date": "2025-11-19"
     },
     "leads": [
@@ -189,16 +189,16 @@
         "Contact 1 Email": "email_not_unlocked@domain.com",
         "Contact 1 Phone": "",
         "Contact 1 LinkedIn": "http://www.linkedin.com/in/don-dady-2325132b7",
-        "Contact 2 Name": "Michael Ferrer",
-        "Contact 2 Title": "Vice President - National Sales Director",
+        "Contact 2 Name": "Robert McClain",
+        "Contact 2 Title": "Regional Vice President",
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/michaelaferrer",
-        "Contact 3 Name": "Robert McClain",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/robert-mcclain-65721a26",
+        "Contact 3 Name": "Beth Hudson",
         "Contact 3 Title": "Regional Vice President",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/robert-mcclain-65721a26",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/beth-hudson-360b4a106",
         "job_details": [
           {
             "title": "Marketing Manager",
@@ -432,16 +432,16 @@
         "Contact 1 Email": "email_not_unlocked@domain.com",
         "Contact 1 Phone": "",
         "Contact 1 LinkedIn": "http://www.linkedin.com/in/dan-capote-6673b5b",
-        "Contact 2 Name": "Alex Raffio",
+        "Contact 2 Name": "Ulysses Zackery",
         "Contact 2 Title": "Financial Advisor",
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/alex-raffio-87999b159",
-        "Contact 3 Name": "Ulysses Zackery",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/ulysses-zackery-882345208",
+        "Contact 3 Name": "Alex Raffio",
         "Contact 3 Title": "Financial Advisor",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/ulysses-zackery-882345208",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/alex-raffio-87999b159",
         "job_details": [
           {
             "title": "Financial Advisor",
@@ -576,11 +576,11 @@
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
         "Contact 2 LinkedIn": "http://www.linkedin.com/in/scott-o-keeffe-8080722a",
-        "Contact 3 Name": "Rosemary Tipton",
+        "Contact 3 Name": "Susanna Joiner",
         "Contact 3 Title": "Vice President",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/rosemary-tipton-7255701b0",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/susanna-joiner-8648a83",
         "job_details": [
           {
             "title": "Relationship Manager",

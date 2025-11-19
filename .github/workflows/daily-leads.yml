@@ -50,8 +50,66 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git fetch origin main
+        
+        # Add all changes
         git add -A
-        git commit -m "Update leads dashboard - $(date)" || echo "Nothing to commit"
-        git pull --rebase origin main || true
-        git push origin main
+        
+        # Check if there are changes to commit
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+          exit 0
+        fi
+        
+        # Commit changes
+        git commit -m "Update leads dashboard - $(date)"
+        
+        # Pull with rebase, auto-resolving conflicts by keeping our version for JSON files
+        git pull --rebase origin main --strategy-option=ours || {
+          echo "Rebase failed, attempting to resolve conflicts..."
+          
+          # For each conflicted file, take our version
+          git status --porcelain | grep '^UU' | awk '{print $2}' | while read file; do
+            echo "Resolving conflict in $file by keeping our version"
+            git checkout --ours "$file"
+            git add "$file"
+          done
+          
+          # Continue rebase if we resolved conflicts
+          if git status --porcelain | grep -q '^UU'; then
+            echo "Still have unresolved conflicts, aborting"
+            git rebase --abort
+            exit 1
+          else
+            git rebase --continue || true
+          fi
+        }
+        
+        # Push changes with retry logic
+        MAX_RETRIES=3
+        RETRY_COUNT=0
+        
+        while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+          if git push origin main; then
+            echo "Successfully pushed changes"
+            exit 0
+          else
+            echo "Push failed, attempt $((RETRY_COUNT + 1)) of $MAX_RETRIES"
+            RETRY_COUNT=$((RETRY_COUNT + 1))
+            
+            if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
+              echo "Pulling latest changes and retrying..."
+              git pull --rebase origin main --strategy-option=ours || {
+                # Resolve conflicts again
+                git status --porcelain | grep '^UU' | awk '{print $2}' | while read file; do
+                  git checkout --ours "$file"
+                  git add "$file"
+                done
+                git rebase --continue || true
+              }
+              sleep 2
+            fi
+          fi
+        done
+        
+        echo "Failed to push after $MAX_RETRIES attempts"
+        exit 1

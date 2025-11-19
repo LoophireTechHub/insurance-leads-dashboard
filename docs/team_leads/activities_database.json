@@ -1,4 +1,9 @@
 {
-  "last_updated": "2025-01-19T00:00:00Z",
-  "activities": {}
+  "last_updated": "2025-11-19T21:37:49.842952Z",
+  "activities": {
+    "https://test-job-url.com": {
+      "called": true,
+      "linkedin": true
+    }
+  }
 }

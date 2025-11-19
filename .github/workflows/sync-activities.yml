@@ -1,0 +1,41 @@
+name: Sync Team Activities
+
+on:
+  # Run every 5 minutes to sync activities
+  schedule:
+    - cron: '*/5 * * * *'
+
+  # Allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  sync-activities:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'Activity Sync Bot'
+          git config --global user.email 'bot@loophire.com'
+
+          # Check if activities database has changes
+          git add docs/team_leads/activities_database.json || true
+
+          # Only commit if there are changes
+          if ! git diff --cached --quiet; then
+            git commit -m "Sync team activities - $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+            git push
+            echo "✓ Synced activities to GitHub"
+          else
+            echo "ℹ No activity changes to sync"
+          fi

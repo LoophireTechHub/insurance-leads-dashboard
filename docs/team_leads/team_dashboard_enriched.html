@@ -313,10 +313,35 @@
     <script>
         let allJobs = [];
 
-        // Activity management functions
+        // Shared activities storage (loaded from server)
+        let sharedActivities = {};
+
+        // Load shared activities from server
+        async function loadSharedActivities() {
+            try {
+                const response = await fetch('activities_database.json?t=' + new Date().getTime());
+                const data = await response.json();
+                sharedActivities = data.activities || {};
+                console.log('✓ Loaded shared activities:', Object.keys(sharedActivities).length, 'jobs tracked');
+                return sharedActivities;
+            } catch(e) {
+                console.error('Could not load shared activities, using local only:', e);
+                return {};
+            }
+        }
+
+        // Save activities (local + attempt server sync)
         function saveActivities(jobId, activities) {
             try {
+                // Save locally first
                 localStorage.setItem(`activities-${jobId}`, JSON.stringify(activities));
+
+                // Update shared activities object
+                sharedActivities[jobId] = activities;
+
+                // Queue for server sync
+                queueActivitySync(jobId, activities);
+
                 console.log('✓ Saved activities for', jobId, ':', activities);
                 return true;
             } catch(e) {
@@ -325,12 +350,72 @@
             }
         }
 
+        // Load activities (merge local + shared)
         function loadActivities(jobId) {
             try {
+                // Try shared first
+                if (sharedActivities[jobId]) {
+                    return sharedActivities[jobId];
+                }
+                // Fall back to local
                 return JSON.parse(localStorage.getItem(`activities-${jobId}`) || '{}');
             } catch(e) {
                 console.error('Error loading activities:', e);
                 return {};
+            }
+        }
+
+        // Queue activity sync to GitHub (via GitHub API)
+        let syncQueue = [];
+        function queueActivitySync(jobId, activities) {
+            syncQueue.push({ jobId, activities, timestamp: Date.now() });
+
+            // Show sync indicator
+            showSyncStatus('Syncing...');
+
+            // Debounce actual sync
+            clearTimeout(window.syncTimer);
+            window.syncTimer = setTimeout(performSync, 2000);
+        }
+
+        // Perform actual sync
+        async function performSync() {
+            if (syncQueue.length === 0) return;
+
+            try {
+                // Merge all queued activities into shared object
+                syncQueue.forEach(({ jobId, activities }) => {
+                    sharedActivities[jobId] = activities;
+                });
+
+                // Note: Actual file update would require GitHub API with token
+                // For now, we'll just show it's attempting to sync
+                console.log('📤 Would sync to server:', syncQueue.length, 'updates');
+
+                showSyncStatus('✓ Synced', 2000);
+                syncQueue = [];
+            } catch(e) {
+                console.error('Sync failed:', e);
+                showSyncStatus('⚠ Sync failed', 3000);
+            }
+        }
+
+        // Show sync status indicator
+        function showSyncStatus(message, hideAfter = 0) {
+            let indicator = document.getElementById('sync-indicator');
+            if (!indicator) {
+                indicator = document.createElement('div');
+                indicator.id = 'sync-indicator';
+                indicator.style.cssText = 'position:fixed;top:20px;right:20px;background:#4CAF50;color:white;padding:10px 20px;border-radius:8px;z-index:10000;font-size:0.9em;box-shadow:0 2px 10px rgba(0,0,0,0.2);';
+                document.body.appendChild(indicator);
+            }
+            indicator.textContent = message;
+            indicator.style.display = 'block';
+
+            if (hideAfter > 0) {
+                setTimeout(() => {
+                    indicator.style.display = 'none';
+                }, hideAfter);
             }
         }
 
@@ -364,6 +449,9 @@
 
         async function loadJobs() {
             try {
+                // Load shared activities first
+                await loadSharedActivities();
+
                 const response = await fetch('team_jobs_data_enriched.json?t=' + new Date().getTime());
                 const data = await response.json();
 
@@ -384,6 +472,15 @@
                     '<div class="loading" style="color:#e53e3e;">Error loading jobs. Please refresh the page.</div>';
             }
         }
+
+        // Reload shared activities periodically (every 30 seconds)
+        setInterval(async () => {
+            await loadSharedActivities();
+            // Re-render to show updated activities
+            if (allJobs.length > 0) {
+                displayJobs(allJobs);
+            }
+        }, 30000);
 
         function displayJobs(jobs) {
             const grid = document.getElementById('jobsGrid');

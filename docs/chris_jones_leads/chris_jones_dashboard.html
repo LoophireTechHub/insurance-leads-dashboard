@@ -188,29 +188,50 @@
         .apply-btn:hover {
             transform: translateY(-2px);
         }
-        .activity-dropdown {
+        .activity-tracker {
             position: relative;
-            display: inline-block;
-            margin-top: 10px;
-        }
-        .activity-dropdown select {
-            padding: 8px 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            background: white;
+            padding: 10px 12px;
             border: 2px solid #e2e8f0;
             border-radius: 8px;
-            background: white;
             font-size: 0.85em;
+            min-width: 140px;
+        }
+        .activity-tracker.has-activity {
+            background: #f0fdf4;
+            border-color: #22c55e;
+        }
+        .activity-label {
             font-weight: 600;
-            color: #2d3748;
+            color: #64748b;
+            font-size: 0.9em;
+            margin-bottom: 2px;
+        }
+        .activity-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
             cursor: pointer;
-            transition: all 0.2s;
+            padding: 2px 0;
+            transition: color 0.2s;
         }
-        .activity-dropdown select:hover {
-            border-color: #f5576c;
+        .activity-option:hover {
+            color: #f5576c;
         }
-        .activity-dropdown select.has-activity {
-            background: #d4edda;
-            border-color: #28a745;
-            color: #155724;
+        .activity-option input[type="checkbox"] {
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+            accent-color: #22c55e;
+        }
+        .activity-option label {
+            cursor: pointer;
+            color: #2d3748;
+            font-weight: 500;
+            user-select: none;
         }
         .loading {
             text-align: center;
@@ -373,7 +394,7 @@
                 }
 
                 const jobId = job.url || `job-${Math.random()}`;
-                const savedActivity = localStorage.getItem(`activity-${jobId}`) || '';
+                const savedActivities = JSON.parse(localStorage.getItem(`activities-${jobId}`) || '{}');
 
                 const card = document.createElement('div');
                 card.className = 'job-card';
@@ -383,13 +404,20 @@
                             <div class="job-title">${title}</div>
                             <div class="job-company">${job.company || 'N/A'}</div>
                         </div>
-                        <div class="activity-dropdown">
-                            <select class="activity-select ${savedActivity ? 'has-activity' : ''}" data-job-id="${jobId}">
-                                <option value="">Activity</option>
-                                <option value="called" ${savedActivity === 'called' ? 'selected' : ''}>Called</option>
-                                <option value="linkedin" ${savedActivity === 'linkedin' ? 'selected' : ''}>LinkedIn</option>
-                                <option value="emailed" ${savedActivity === 'emailed' ? 'selected' : ''}>Emailed</option>
-                            </select>
+                        <div class="activity-tracker ${Object.keys(savedActivities).length > 0 ? 'has-activity' : ''}" data-job-id="${jobId}">
+                            <div class="activity-label">Activity</div>
+                            <div class="activity-option">
+                                <input type="checkbox" id="called-${jobId}" ${savedActivities.called ? 'checked' : ''}>
+                                <label for="called-${jobId}">📞 Called</label>
+                            </div>
+                            <div class="activity-option">
+                                <input type="checkbox" id="linkedin-${jobId}" ${savedActivities.linkedin ? 'checked' : ''}>
+                                <label for="linkedin-${jobId}">💼 LinkedIn</label>
+                            </div>
+                            <div class="activity-option">
+                                <input type="checkbox" id="emailed-${jobId}" ${savedActivities.emailed ? 'checked' : ''}>
+                                <label for="emailed-${jobId}">📧 Emailed</label>
+                            </div>
                         </div>
                     </div>
                     <div class="job-details">
@@ -402,19 +430,32 @@
                     ${contactsHTML}
                 `;
 
-                // Add event listener for activity tracking
-                const select = card.querySelector('.activity-select');
-                select.addEventListener('change', function(e) {
-                    const activityValue = e.target.value;
-                    const jobId = e.target.dataset.jobId;
+                // Add event listeners for activity checkboxes
+                const tracker = card.querySelector('.activity-tracker');
+                const checkboxes = tracker.querySelectorAll('input[type="checkbox"]');
 
-                    if (activityValue) {
-                        localStorage.setItem(`activity-${jobId}`, activityValue);
-                        e.target.classList.add('has-activity');
-                    } else {
-                        localStorage.removeItem(`activity-${jobId}`);
-                        e.target.classList.remove('has-activity');
-                    }
+                checkboxes.forEach(checkbox => {
+                    checkbox.addEventListener('change', function() {
+                        const jobId = tracker.dataset.jobId;
+                        const activities = {};
+
+                        // Collect all checked activities
+                        checkboxes.forEach(cb => {
+                            const activityType = cb.id.split('-')[0]; // 'called', 'linkedin', or 'emailed'
+                            if (cb.checked) {
+                                activities[activityType] = true;
+                            }
+                        });
+
+                        // Save to localStorage
+                        if (Object.keys(activities).length > 0) {
+                            localStorage.setItem(`activities-${jobId}`, JSON.stringify(activities));
+                            tracker.classList.add('has-activity');
+                        } else {
+                            localStorage.removeItem(`activities-${jobId}`);
+                            tracker.classList.remove('has-activity');
+                        }
+                    });
                 });
 
                 grid.appendChild(card);

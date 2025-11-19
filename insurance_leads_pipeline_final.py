@@ -87,9 +87,9 @@ class LeadsPipeline:
         logger.info(f"🔍 Scraping multiple job boards with JobSpy for: {search_term}")
 
         try:
-            # Scrape from Indeed, LinkedIn, ZipRecruiter, and Glassdoor
+            # Scrape from Indeed, LinkedIn, and Google (Google aggregates from many sources)
             jobs_df = scrape_jobs(
-                site_name=["indeed", "linkedin", "zip_recruiter", "glassdoor"],
+                site_name=["indeed", "linkedin", "google"],
                 search_term=search_term,
                 location="United States",
                 results_wanted=results_wanted,

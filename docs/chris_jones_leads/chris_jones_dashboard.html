@@ -393,7 +393,9 @@
                     companyInfoHTML += '</div>';
                 }
 
+                // Create a safe unique ID for this job
                 const jobId = job.url || `job-${Math.random()}`;
+                const safeId = btoa(jobId).replace(/[^a-zA-Z0-9]/g, '').substring(0, 20);
                 const savedActivities = JSON.parse(localStorage.getItem(`activities-${jobId}`) || '{}');
 
                 const card = document.createElement('div');
@@ -407,16 +409,16 @@
                         <div class="activity-tracker ${Object.keys(savedActivities).length > 0 ? 'has-activity' : ''}" data-job-id="${jobId}">
                             <div class="activity-label">Activity</div>
                             <div class="activity-option">
-                                <input type="checkbox" id="called-${jobId}" ${savedActivities.called ? 'checked' : ''}>
-                                <label for="called-${jobId}">📞 Called</label>
+                                <input type="checkbox" id="called-${safeId}" data-activity="called" ${savedActivities.called ? 'checked' : ''}>
+                                <label for="called-${safeId}">📞 Called</label>
                             </div>
                             <div class="activity-option">
-                                <input type="checkbox" id="linkedin-${jobId}" ${savedActivities.linkedin ? 'checked' : ''}>
-                                <label for="linkedin-${jobId}">💼 LinkedIn</label>
+                                <input type="checkbox" id="linkedin-${safeId}" data-activity="linkedin" ${savedActivities.linkedin ? 'checked' : ''}>
+                                <label for="linkedin-${safeId}">💼 LinkedIn</label>
                             </div>
                             <div class="activity-option">
-                                <input type="checkbox" id="emailed-${jobId}" ${savedActivities.emailed ? 'checked' : ''}>
-                                <label for="emailed-${jobId}">📧 Emailed</label>
+                                <input type="checkbox" id="emailed-${safeId}" data-activity="emailed" ${savedActivities.emailed ? 'checked' : ''}>
+                                <label for="emailed-${safeId}">📧 Emailed</label>
                             </div>
                         </div>
                     </div>
@@ -435,13 +437,14 @@
                 const checkboxes = tracker.querySelectorAll('input[type="checkbox"]');
 
                 checkboxes.forEach(checkbox => {
-                    checkbox.addEventListener('change', function() {
+                    checkbox.addEventListener('change', function(e) {
+                        e.stopPropagation(); // Prevent event bubbling
                         const jobId = tracker.dataset.jobId;
                         const activities = {};
 
                         // Collect all checked activities
                         checkboxes.forEach(cb => {
-                            const activityType = cb.id.split('-')[0]; // 'called', 'linkedin', or 'emailed'
+                            const activityType = cb.getAttribute('data-activity');
                             if (cb.checked) {
                                 activities[activityType] = true;
                             }
@@ -455,6 +458,8 @@
                             localStorage.removeItem(`activities-${jobId}`);
                             tracker.classList.remove('has-activity');
                         }
+
+                        console.log('Saved activities for', jobId, ':', activities);
                     });
                 });
 

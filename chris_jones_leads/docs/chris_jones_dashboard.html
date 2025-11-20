@@ -257,7 +257,7 @@
         <div class="header">
             <h1>📊 Chris Jones Lead Dashboard - Property & Casualty</h1>
             <p>US-Wide P&C Insurance Jobs (Companies <300 employees) with Contact Information</p>
-            <p class="last-update">Last updated: <span id="lastUpdate">Loading...</span></p>
+            <p class="last-update">Last updated: <span id="lastUpdate">Loading...</span> | Dashboard v2.1 (Sorted)</p>
             <p class="last-update">Enriched: <span id="enrichedCount">--</span> jobs with contact info</p>
         </div>
 
@@ -377,11 +377,14 @@
                 document.getElementById('enrichedCount').textContent = data.enriched_count || 0;
 
                 // Sort jobs by date_posted (newest first)
+                console.log('Before sort - First 3 jobs:', data.jobs.slice(0, 3).map(j => ({title: j.title, date: j.date_posted})));
                 allJobs = data.jobs.sort((a, b) => {
                     const dateA = new Date(a.date_posted || '1900-01-01');
                     const dateB = new Date(b.date_posted || '1900-01-01');
                     return dateB - dateA; // Descending order (newest first)
                 });
+                console.log('After sort - First 3 jobs:', allJobs.slice(0, 3).map(j => ({title: j.title, date: j.date_posted})));
+                console.log('Dashboard v2.1 - Sorting applied successfully');
                 displayJobs(allJobs);
             } catch (error) {
                 console.error('Error loading jobs:', error);

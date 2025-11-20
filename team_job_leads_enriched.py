@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Chris Jones Lead Dashboard - US-Wide Property & Casualty Insurance Jobs
-Pulls P&C insurance jobs (companies <300 employees) and enriches with hiring manager contact info via Apollo API
+Team Insurance Job Leads - US-Wide Commercial Insurance Jobs with Contact Enrichment
+Pulls 500+ commercial insurance jobs and enriches with hiring manager contact info via Apollo API
 """
 
 import sys
@@ -62,49 +62,38 @@ def get_company_info_apollo(company_name: str, apollo_token: str, max_contacts: 
             'contacts': []
         }
 
-        # Search for contacts at this company using /contacts/search (reveals real emails)
-        # Try broader search first without title filtering to get ANY contacts
+        # Search for contacts at this company using /mixed_people/search (more contacts with LinkedIn)
         contact_search_data = {
             "organization_ids": [company_id],
+            "person_titles": [
+                "CEO", "CFO", "President", "VP", "Vice President",
+                "Director", "Manager", "Owner", "Partner",
+                "HR Manager", "HR Director", "Talent Acquisition",
+                "Recruiter", "Hiring Manager"
+            ],
             "page": 1,
-            "per_page": max_contacts * 2  # Get more results to filter
+            "per_page": max_contacts
         }
 
         contact_response = requests.post(
-            f"{APOLLO_BASE_URL}/contacts/search",
+            f"{APOLLO_BASE_URL}/mixed_people/search",
             headers=headers,
             json=contact_search_data,
             timeout=10
         )
 
         if contact_response.status_code == 200:
-            all_contacts = contact_response.json().get('contacts', [])
+            people = contact_response.json().get('people', [])
 
-            # Prioritize contacts with real emails and important titles
-            important_titles = ['ceo', 'president', 'owner', 'vp', 'vice president', 'director', 'manager', 'hr']
-
-            # Sort contacts: prioritize those with emails AND important titles
-            def contact_score(contact):
-                score = 0
-                if contact.get('email'):
-                    score += 100  # Has email = highest priority
-                title_lower = (contact.get('title', '') or '').lower()
-                if any(t in title_lower for t in important_titles):
-                    score += 50  # Has important title
-                return score
-
-            sorted_contacts = sorted(all_contacts, key=contact_score, reverse=True)
-
-            for contact in sorted_contacts[:max_contacts]:
-                # /contacts/search uses export credits and reveals real emails
-                if contact.get('name'):  # Only add if has name
-                    company_info['contacts'].append({
-                        'name': contact.get('name', ''),
-                        'title': contact.get('title', ''),
-                        'email': contact.get('email', ''),
-                        'phone': contact.get('sanitized_phone', ''),
-                        'linkedin': contact.get('linkedin_url', '')
-                    })
+            for person in people[:max_contacts]:
+                # /mixed_people/search returns more contacts with LinkedIn profiles
+                company_info['contacts'].append({
+                    'name': person.get('name', ''),
+                    'title': person.get('title', ''),
+                    'email': person.get('email', ''),
+                    'phone': person.get('phone_numbers', [{}])[0].get('sanitized_number', '') if person.get('phone_numbers') else '',
+                    'linkedin': person.get('linkedin_url', '')
+                })
 
         time.sleep(0.5)  # Rate limiting
         return company_info
@@ -114,17 +103,17 @@ def get_company_info_apollo(company_name: str, apollo_token: str, max_contacts: 
 
     return {'contacts': [], 'employee_count': None, 'website': None, 'phone': None}
 
-def get_chris_jones_pc_jobs():
-    """Get Property & Casualty insurance jobs across US (companies <300 employees) with contact enrichment"""
+def get_team_insurance_jobs():
+    """Get 500+ commercial insurance jobs across US for marketing team with contact enrichment"""
 
     print("=" * 80)
-    print("CHRIS JONES LEAD DASHBOARD - US-WIDE PROPERTY & CASUALTY")
+    print("TEAM INSURANCE JOB LEADS - US-WIDE COMMERCIAL INSURANCE")
     print("=" * 80)
     print()
-    print("🔍 Searching LinkedIn, Indeed, and ZipRecruiter for P&C insurance jobs...")
+    print("🔍 Searching LinkedIn, Indeed, and ZipRecruiter for commercial insurance jobs...")
     print("📍 Coverage: Entire United States")
     print("📅 Looking back 45 days")
-    print("🎯 Target: P&C jobs at companies <300 employees")
+    print("🎯 Target: 500+ jobs for marketing team")
     print("👤 Enriching with Apollo contact data...")
     print()
 
@@ -143,11 +132,11 @@ def get_chris_jones_pc_jobs():
         all_jobs = []
         search_sites = ["linkedin", "indeed", "zip_recruiter"]
 
-        # Search 1: Property & Casualty Producers
-        print("🔍 Search 1/6: P&C Producers...")
+        # Search 1: Commercial Lines specific
+        print("🔍 Search 1/6: Commercial Lines...")
         jobs1 = scrape_jobs(
             site_name=search_sites,
-            search_term="property casualty producer OR P&C producer OR property and casualty producer",
+            search_term="commercial lines producer OR commercial lines account manager",
             location="United States",
             results_wanted=200,
             hours_old=1080,
@@ -157,11 +146,11 @@ def get_chris_jones_pc_jobs():
             print(f"   Found {len(jobs1)} jobs")
             all_jobs.append(jobs1)
 
-        # Search 2: P&C Account Managers
-        print("🔍 Search 2/6: P&C Account Managers...")
+        # Search 2: Insurance Producers
+        print("🔍 Search 2/6: Insurance Producers...")
         jobs2 = scrape_jobs(
             site_name=search_sites,
-            search_term="property casualty account manager OR P&C account manager",
+            search_term="insurance producer OR producer insurance",
             location="United States",
             results_wanted=200,
             hours_old=1080,
@@ -171,11 +160,11 @@ def get_chris_jones_pc_jobs():
             print(f"   Found {len(jobs2)} jobs")
             all_jobs.append(jobs2)
 
-        # Search 3: P&C Underwriters
-        print("🔍 Search 3/6: P&C Underwriters...")
+        # Search 3: Commercial Underwriters
+        print("🔍 Search 3/6: Commercial Underwriters...")
         jobs3 = scrape_jobs(
             site_name=search_sites,
-            search_term="property casualty underwriter OR P&C underwriter",
+            search_term="commercial underwriter OR underwriter commercial lines",
             location="United States",
             results_wanted=200,
             hours_old=1080,
@@ -185,11 +174,11 @@ def get_chris_jones_pc_jobs():
             print(f"   Found {len(jobs3)} jobs")
             all_jobs.append(jobs3)
 
-        # Search 4: P&C Brokers
-        print("🔍 Search 4/6: P&C Brokers...")
+        # Search 4: Account Managers
+        print("🔍 Search 4/6: Insurance Account Managers...")
         jobs4 = scrape_jobs(
             site_name=search_sites,
-            search_term="property casualty broker OR P&C broker",
+            search_term="account manager insurance OR account executive insurance",
             location="United States",
             results_wanted=200,
             hours_old=1080,
@@ -199,11 +188,11 @@ def get_chris_jones_pc_jobs():
             print(f"   Found {len(jobs4)} jobs")
             all_jobs.append(jobs4)
 
-        # Search 5: Commercial Lines (related to P&C)
-        print("🔍 Search 5/6: Commercial Lines...")
+        # Search 5: Insurance Brokers
+        print("🔍 Search 5/6: Insurance Brokers...")
         jobs5 = scrape_jobs(
             site_name=search_sites,
-            search_term="commercial lines producer OR commercial lines account manager",
+            search_term="insurance broker OR commercial insurance broker",
             location="United States",
             results_wanted=200,
             hours_old=1080,
@@ -213,11 +202,11 @@ def get_chris_jones_pc_jobs():
             print(f"   Found {len(jobs5)} jobs")
             all_jobs.append(jobs5)
 
-        # Search 6: P&C Account Executives
-        print("🔍 Search 6/6: P&C Account Executives...")
+        # Search 6: Insurance Sales & Risk Advisors
+        print("🔍 Search 6/6: Insurance Sales & Risk Advisors...")
         jobs6 = scrape_jobs(
             site_name=search_sites,
-            search_term="property casualty account executive OR P&C account executive",
+            search_term="insurance sales OR risk advisor OR insurance consultant",
             location="United States",
             results_wanted=200,
             hours_old=1080,
@@ -332,19 +321,17 @@ def get_chris_jones_pc_jobs():
             unique_companies = team_jobs['company'].unique()
 
             # CRITICAL: Limit companies to prevent credit burn
-            MAX_COMPANIES_TO_ENRICH = 50
+            MAX_COMPANIES_TO_ENRICH = 100
             print(f"📊 Found {len(unique_companies)} unique companies")
             print(f"⚠️  CREDIT PROTECTION: Limiting to {MAX_COMPANIES_TO_ENRICH} companies max")
 
             companies_to_enrich = unique_companies[:MAX_COMPANIES_TO_ENRICH]
             print(f"📊 Will enrich: {len(companies_to_enrich)} companies")
             print(f"⏳ This may take a few minutes...")
-            print(f"💰 Est. credits: {len(companies_to_enrich) * 3} (assuming 3 contacts/company)")
             print()
 
             # Create company -> info mapping (contacts + company size)
             company_info_map = {}
-            total_credits_used = 0
 
             for i, company_name in enumerate(companies_to_enrich, 1):
                 if pd.isna(company_name) or company_name == '':
@@ -354,15 +341,12 @@ def get_chris_jones_pc_jobs():
                 company_info = get_company_info_apollo(company_name, apollo_token, max_contacts=3)
                 if company_info:
                     company_info_map[company_name] = company_info
-                    # Track approximate credits (3 per company with contacts)
-                    if company_info.get('contacts'):
-                        total_credits_used += len(company_info['contacts'])
 
                 time.sleep(0.6)  # Rate limiting
 
             print()
             print(f"✅ Enriched {len(company_info_map)} companies with contact and company data")
-            print(f"💰 Approximate credits used: {total_credits_used}")
+            print(f"ℹ️  Note: This script uses /mixed_people/search (LinkedIn profiles, no email reveal credits)")
             print()
 
             # Add company info and contacts to jobs
@@ -386,31 +370,31 @@ def get_chris_jones_pc_jobs():
                         team_jobs.at[idx, f'contact_{i}_phone'] = contact.get('phone', '')
                         team_jobs.at[idx, f'contact_{i}_linkedin'] = contact.get('linkedin', '')
 
-        # Filter companies to 300 employees or less
+        # Filter companies to 500 employees or less
         if apollo_enabled:
             print("=" * 80)
-            print("🔍 FILTERING COMPANIES BY SIZE (300 EMPLOYEES OR LESS)")
+            print("🔍 FILTERING COMPANIES BY SIZE (500 EMPLOYEES OR LESS)")
             print("=" * 80)
             print()
 
             original_count = len(team_jobs)
 
-            # Filter jobs where company_size is <= 300 or unknown
+            # Filter jobs where company_size is <= 500 or unknown
             team_jobs = team_jobs[
                 (team_jobs['company_size'].isna()) |
                 (team_jobs['company_size'] == '') |
                 (team_jobs['company_size'].astype(str).str.strip() == '') |
-                (pd.to_numeric(team_jobs['company_size'], errors='coerce') <= 300)
+                (pd.to_numeric(team_jobs['company_size'], errors='coerce') <= 500)
             ].copy()
 
             filtered_count = original_count - len(team_jobs)
             print(f"📊 Original jobs: {original_count}")
-            print(f"📊 Filtered out (>300 employees): {filtered_count}")
+            print(f"📊 Filtered out (>500 employees): {filtered_count}")
             print(f"✅ Remaining jobs: {len(team_jobs)}")
             print()
 
         print("=" * 80)
-        print(f"CHRIS JONES P&C LEADS SUMMARY - {len(team_jobs)} JOBS")
+        print(f"TEAM JOB LEADS SUMMARY - {len(team_jobs)} JOBS")
         print("=" * 80)
         print()
 
@@ -448,12 +432,12 @@ def get_chris_jones_pc_jobs():
             print(f"👤 Jobs with Contact Info: {enriched_count}")
         print()
 
-        # Save to CSV for Chris Jones
+        # Save to CSV for marketing team
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        output_dir = Path("chris_jones_leads/output")
+        output_dir = Path("team_leads/output")
         output_dir.mkdir(parents=True, exist_ok=True)
 
-        output_file = output_dir / f"chris_jones_pc_jobs_{timestamp}.csv"
+        output_file = output_dir / f"team_insurance_jobs_enriched_{timestamp}.csv"
 
         # Save with all columns including company info and contacts
         save_columns = ['title', 'company', 'location', 'date_posted', 'job_url']
@@ -478,7 +462,6 @@ def get_chris_jones_pc_jobs():
                 'location': str(job.get('location', '') or ''),
                 'date_posted': job.get('date_posted').strftime('%Y-%m-%d') if pd.notna(job.get('date_posted')) else 'N/A',
                 'url': str(job.get('job_url', '') or ''),
-                'source': str(job.get('site', '') or job.get('source', '') or 'Indeed'),  # Add job source
                 'description': str(job.get('description', '') or '')[:200]  # First 200 chars
             }
 
@@ -506,7 +489,7 @@ def get_chris_jones_pc_jobs():
 
             json_output.append(job_data)
 
-        json_file = output_dir / f"chris_jones_pc_jobs_{timestamp}.json"
+        json_file = output_dir / f"team_insurance_jobs_enriched_{timestamp}.json"
         with open(json_file, 'w', encoding='utf-8') as f:
             json.dump(json_output, f, indent=2)
 
@@ -526,7 +509,7 @@ def get_chris_jones_pc_jobs():
             'jobs': json_output
         }
 
-        dashboard_file = Path("chris_jones_leads/docs/chris_jones_pc_data.json")
+        dashboard_file = Path("team_leads/docs/team_jobs_data_enriched.json")
         dashboard_file.parent.mkdir(parents=True, exist_ok=True)
 
         with open(dashboard_file, 'w', encoding='utf-8') as f:
@@ -535,7 +518,7 @@ def get_chris_jones_pc_jobs():
         print(f"📁 Dashboard data saved to: {dashboard_file}")
         print()
         print("=" * 80)
-        print("✅ CHRIS JONES P&C LEADS COMPLETE")
+        print("✅ TEAM JOB LEADS COMPLETE")
         print("=" * 80)
 
     except Exception as error:
@@ -544,4 +527,4 @@ def get_chris_jones_pc_jobs():
         traceback.print_exc()
 
 if __name__ == "__main__":
-    get_chris_jones_pc_jobs()
+    get_team_insurance_jobs()

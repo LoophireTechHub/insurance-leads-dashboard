@@ -314,34 +314,47 @@
         let allJobs = [];
 
         // API configuration
-        const API_BASE_URL = 'http://localhost:5000/api';
+        // For local development, set to 'http://localhost:5000/api'
+        // For production/GitHub Pages, set to null to use JSON file only
+        const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+            ? 'http://localhost:5000/api'
+            : null;
 
         // Shared activities storage (loaded from server)
         let sharedActivities = {};
 
-        // Load shared activities from API server
+        // Load shared activities from API server or JSON file
         async function loadSharedActivities() {
-            try {
-                // Try API first
-                const response = await fetch(`${API_BASE_URL}/activities`);
-                if (response.ok) {
-                    const data = await response.json();
-                    if (data.success) {
-                        sharedActivities = data.activities || {};
-                        console.log('✓ Loaded activities from API:', Object.keys(sharedActivities).length, 'jobs tracked');
-                        return sharedActivities;
+            // If API is configured (localhost), try it first
+            if (API_BASE_URL) {
+                try {
+                    const response = await fetch(`${API_BASE_URL}/activities`);
+                    if (response.ok) {
+                        const data = await response.json();
+                        if (data.success) {
+                            sharedActivities = data.activities || {};
+                            console.log('✓ Loaded activities from API:', Object.keys(sharedActivities).length, 'jobs tracked');
+                            return sharedActivities;
+                        }
                     }
+                } catch(e) {
+                    console.log('API not available, trying JSON file fallback...');
                 }
-            } catch(e) {
-                console.log('API not available, trying JSON file fallback...');
             }
 
-            // Fallback to JSON file
+            // Load from JSON file (GitHub Pages mode)
             try {
                 const response = await fetch('activities_database.json?t=' + new Date().getTime());
                 const data = await response.json();
                 sharedActivities = data.activities || {};
                 console.log('✓ Loaded activities from JSON:', Object.keys(sharedActivities).length, 'jobs tracked');
+
+                // Show GitHub Pages mode message
+                if (!API_BASE_URL) {
+                    console.log('📄 Running in GitHub Pages mode - activities load from JSON file');
+                    console.log('ℹ️ Changes will save locally. To enable real-time sync, run the API server locally.');
+                }
+
                 return sharedActivities;
             } catch(e) {
                 console.warn('Could not load shared activities:', e);
@@ -396,13 +409,22 @@
             window.syncTimer = setTimeout(performSync, 1000);
         }
 
-        // Perform actual sync to API
+        // Perform actual sync to API (or skip if GitHub Pages mode)
         async function performSync() {
             if (syncQueue.length === 0) return;
 
             const batch = [...syncQueue];
             syncQueue = [];
 
+            // If no API configured (GitHub Pages), just save locally
+            if (!API_BASE_URL) {
+                showSyncStatus('💾 Saved locally (GitHub Pages mode)', '#3b82f6', 2000);
+                console.log(`💾 Saved ${batch.length} activity update(s) to localStorage (GitHub Pages mode)`);
+                console.log('ℹ️ Run the daily sync workflow to share activities across team');
+                return;
+            }
+
+            // Try to sync via API (localhost mode)
             try {
                 // Send each activity update to API
                 const promises = batch.map(async ({ jobId, activities }) => {

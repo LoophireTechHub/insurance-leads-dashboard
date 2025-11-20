@@ -376,7 +376,12 @@
                 document.getElementById('recent7').textContent = data.recent_7_days;
                 document.getElementById('enrichedCount').textContent = data.enriched_count || 0;
 
-                allJobs = data.jobs;
+                // Sort jobs by date_posted (newest first)
+                allJobs = data.jobs.sort((a, b) => {
+                    const dateA = new Date(a.date_posted || '1900-01-01');
+                    const dateB = new Date(b.date_posted || '1900-01-01');
+                    return dateB - dateA; // Descending order (newest first)
+                });
                 displayJobs(allJobs);
             } catch (error) {
                 console.error('Error loading jobs:', error);

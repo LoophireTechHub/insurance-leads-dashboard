@@ -474,6 +474,7 @@
                     <div class="job-details">
                         <div class="job-detail">📍 ${job.location || 'Location not specified'}</div>
                         <div class="job-detail">📅 ${job.date_posted || 'Date not available'}</div>
+                        <div class="job-detail">🔗 Source: <span style="color:#667eea;font-weight:600;">${(job.source || 'Indeed').charAt(0).toUpperCase() + (job.source || 'Indeed').slice(1)}</span></div>
                     </div>
                     ${companyInfoHTML}
                     ${roleBadge}

@@ -45,6 +45,33 @@ jobs:
     - name: Generate enhanced dashboard
       run: |
         python generate_enhanced_dashboard.py
+
+    - name: Append to weekly leads archive
+      run: |
+        python3 -c "
+from weekly_leads_manager import WeeklyLeadsManager
+import json
+
+# Load latest jobs
+with open('docs/team_leads/team_jobs_data_enriched.json', 'r') as f:
+    data = json.load(f)
+
+# Initialize manager
+manager = WeeklyLeadsManager('docs/team_leads/team_jobs_data_weekly.json')
+
+# Add this week's batch
+manager.add_weekly_batch(data.get('jobs', []), {
+    'total_jobs': data.get('total_jobs', 0),
+    'commercial_specific': data.get('commercial_specific', 0),
+    'producers': data.get('producers', 0),
+    'account_managers': data.get('account_managers', 0),
+    'underwriters': data.get('underwriters', 0),
+    'enriched_count': data.get('enriched_count', 0)
+})
+
+manager.save()
+print(f'Added {len(data.get(\"jobs\", []))} jobs to weekly archive')
+"
     
     - name: Commit and push dashboard
       run: |

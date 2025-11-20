@@ -1,0 +1,1669 @@
+[
+  {
+    "company_id": "54a1dced7468695860e66915",
+    "company_name": "Annexus Group",
+    "website": "http://www.annexus.com",
+    "phone": "+1 866-949-1077",
+    "location": "Scottsdale, Arizona",
+    "current_headcount": 140,
+    "industry": "financial services",
+    "headcount_growth": {
+      "is_growing": false,
+      "growth_rate": 0.0,
+      "previous_headcount": 140,
+      "current_headcount": 140,
+      "days_tracked": 0
+    },
+    "active_jobs": 1,
+    "job_details": [
+      {
+        "title": "Marketing Manager",
+        "location": "Scottsdale, AZ",
+        "url": "https://www.linkedin.com/jobs/view/4312384501",
+        "date_posted": "2025-10-09",
+        "source": "linkedin"
+      }
+    ],
+    "news": {
+      "has_news": false,
+      "news_type": null,
+      "news_date": null,
+      "news_summary": null
+    },
+    "contact_count": 5,
+    "contacts": [
+      {
+        "id": "6744293810966d00016bf68c",
+        "first_name": "Don",
+        "last_name": "Dady",
+        "name": "Don Dady",
+        "linkedin_url": "http://www.linkedin.com/in/don-dady-2325132b7",
+        "title": "Chief Executive Officer",
+        "email_status": "unavailable",
+        "photo_url": "https://static.licdn.com/aero-v1/sc/h/9c8pery4andzj6ohjkjp54ma2",
+        "twitter_url": null,
+        "github_url": null,
+        "facebook_url": null,
+        "extrapolated_email_confidence": null,
+        "headline": "Chief Executive Officer at Annexus Group",
+        "email": "email_not_unlocked@domain.com",
+        "organization_id": "54a1dced7468695860e66915",
+        "employment_history": [
+          {
+            "_id": "6918ecc85f4397000181cd97",
+            "created_at": null,
+            "current": true,
+            "degree": null,
+            "description": null,
+            "emails": null,
+            "end_date": null,
+            "grade_level": null,
+            "kind": null,
+            "major": null,
+            "org_matched_by_name": null,
+            "organization_id": "54a1dced7468695860e66915",
+            "organization_name": "Annexus Group",
+            "raw_address": null,
+            "start_date": null,
+            "title": "Chief Executive Officer",
+            "updated_at": null,
+            "id": "6918ecc85f4397000181cd97",
+            "key": "6918ecc85f4397000181cd97"
+          }
+        ],
+        "street_address": "",
+        "city": "Marbella",
+        "state": "Andalucia",
+        "country": "Spain",
+        "postal_code": null,
+        "formatted_address": "Marbella, M\u00e1laga, Spain",
+        "time_zone": "Europe/Madrid",
+        "organization": {
+          "id": "54a1dced7468695860e66915",
+          "name": "Annexus Group",
+          "website_url": "http://www.annexus.com",
+          "blog_url": null,
+          "angellist_url": null,
+          "linkedin_url": "http://www.linkedin.com/company/the-annexus-group",
+          "twitter_url": "https://twitter.com/annexus",
+          "facebook_url": "https://www.facebook.com/annexusgroup/",
+          "primary_phone": {
+            "number": "+1 866-949-1077",
+            "source": "Owler",
+            "sanitized_number": "+18669491077"
+          },
+          "languages": [
+            "English"
+          ],
+          "alexa_ranking": null,
+          "phone": "+1 866-949-1077",
+          "linkedin_uid": "1570432",
+          "founded_year": 2006,
+          "publicly_traded_symbol": null,
+          "publicly_traded_exchange": null,
+          "logo_url": "https://zenprospect-production.s3.amazonaws.com/uploads/pictures/6917227d8f08a70001cb6521/picture",
+          "crunchbase_url": null,
+          "primary_domain": "annexus.com",
+          "sic_codes": [
+            "6361"
+          ],
+          "naics_codes": [
+            "5231"
+          ],
+          "sanitized_phone": "+18669491077",
+          "organization_headcount_six_month_growth": 0.02608695652173913,
+          "organization_headcount_twelve_month_growth": 0.102803738317757,
+          "organization_headcount_twenty_four_month_growth": 0.2291666666666667
+        },
+        "account_id": "6893b4d547c5880019b91154",
+        "account": {
+          "id": "6893b4d547c5880019b91154",
+          "name": "Annexus Group",
+          "website_url": "http://www.annexus.com",
+          "blog_url": null,
+          "angellist_url": null,
+          "linkedin_url": "http://www.linkedin.com/company/the-annexus-group",
+          "twitter_url": "https://twitter.com/annexus",
+          "facebook_url": "https://www.facebook.com/annexusgroup/",
+          "primary_phone": {
+            "number": "+1 866-949-1077",
+            "source": "Owler",
+            "sanitized_number": "+18669491077"
+          },
+          "languages": [
+            "English"
+          ],
+          "alexa_ranking": null,
+          "phone": "+1 866-949-1077",
+          "linkedin_uid": "1570432",
+          "founded_year": 2006,
+          "publicly_traded_symbol": null,
+          "publicly_traded_exchange": null,
+          "logo_url": "https://zenprospect-production.s3.amazonaws.com/uploads/pictures/6917227d8f08a70001cb6521/picture",
+          "crunchbase_url": null,
+          "primary_domain": "annexus.com",
+          "sic_codes": [
+            "6361"
+          ],
+          "naics_codes": [
+            "5231"
+          ],
+          "sanitized_phone": "+18669491077",
+          "raw_address": "16767 n perimeter dr, 300, scottsdale, arizona 85260, us",
+          "street_address": "16767 N Perimeter Dr",
+          "city": "Scottsdale",
+          "state": "Arizona",
+          "country": "United States",
+          "postal_code": "85260",
+          "domain": "annexus.com",
+          "team_id": "662a9b907180be01c7a767cd",
+          "organization_id": "54a1dced7468695860e66915",
+          "account_stage_id": "662a9b907180be01c7a767d8",
+          "source": "deployment",
+          "original_source": "deployment",
+          "creator_id": "662a9b927180be01c7a7690b",
+          "owner_id": "662a9b927180be01c7a7690b",
+          "created_at": "2025-08-06T20:02:29.442Z",
+          "phone_status": "no_status",
+          "hubspot_id": null,
+          "salesforce_id": null,
+          "crm_owner_id": null,
+          "parent_account_id": null,
+          "suggested_from_rule_engine_config_id": null,
+          "account_playbook_statuses": [],
+          "existence_level": "full",
+          "label_ids": [],
+          "typed_custom_fields": {},
+          "custom_field_errors": null,
+          "modality": "account",
+          "source_display_name": "Requested from Apollo",
+          "crm_record_url": null,
+          "last_activity_date": "2025-08-06T20:03:29.000+00:00"
+        },
+        "departments": [
+          "c_suite"
+        ],
+        "subdepartments": [
+          "executive"
+        ],
+        "seniority": "c_suite",
+        "functions": [],
+        "intent_strength": null,
+        "show_intent": true,
+        "email_domain_catchall": false,
+        "revealed_for_current_team": true
+      },
+      {
+        "id": "66fbcc89acc75000017b5827",
+        "first_name": "Ryan",
+        "last_name": "Edmonds",
+        "name": "Ryan Edmonds",
+        "linkedin_url": "http://www.linkedin.com/in/ryanledmonds",
+        "title": "Vice President-National Sales Director",
+        "email_status": "verified",
+        "photo_url": "https://media.licdn.com/dms/image/v2/C5603AQHp4sr0eMkZsg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1576533002018?e=2147483647&v=beta&t=g6gmpKy0hOatsgNVImMnobVcvl0fURkKHzJgZZTHlu4",
+        "twitter_url": null,
+        "github_url": null,
+        "facebook_url": null,
+        "extrapolated_email_confidence": null,
+        "headline": "Vice President - National Sales Director",
+        "email": "email_not_unlocked@domain.com",
+        "organization_id": "54a1dced7468695860e66915",
+        "employment_history": [
+          {
+            "_id": "6909d1b207cbf00001c6a29c",
+            "created_at": null,
+            "current": true,
+            "degree": null,
+            "description": null,
+            "emails": null,
+            "end_date": null,
+            "grade_level": null,
+            "kind": null,
+            "major": null,
+            "org_matched_by_name": null,
+            "organization_id": "54a1dced7468695860e66915",
+            "organization_name": "Annexus Group",
+            "raw_address": null,
+            "start_date": "2019-11-01",
+            "title": "Vice President-National Sales Director",
+            "updated_at": null,
+            "id": "6909d1b207cbf00001c6a29c",
+            "key": "6909d1b207cbf00001c6a29c"
+          },
+          {
+            "_id": "6909d1b207cbf00001c6a29d",
+            "created_at": null,
+            "current": false,
+            "degree": null,
+            "description": null,
+            "emails": null,
+            "end_date": "2019-11-01",
+            "grade_level": null,
+            "kind": null,
+            "major": null,
+            "org_matched_by_name": null,
+            "organization_id": "54a13a5a69702d267a12ea00",
+            "organization_name": "Pacific Life Insurance Company",
+            "raw_address": null,
+            "start_date": "2012-01-01",
+            "title": "LTC Regional Director",
+            "updated_at": null,
+            "id": "6909d1b207cbf00001c6a29d",
+            "key": "6909d1b207cbf00001c6a29d"
+          },
+          {
+            "_id": "6909d1b207cbf00001c6a29e",
+            "created_at": null,
+            "current": false,
+            "degree": null,
+            "description": null,
+            "emails": null,
+            "end_date": "2012-01-01",
+            "grade_level": null,
+            "kind": null,
+            "major": null,
+            "org_matched_by_name": null,
+            "organization_id": "56e0c175f3e5bb7ed600044e",
+            "organization_name": "Lincoln Financial Group",
+            "raw_address": null,
+            "start_date": "2007-04-01",
+            "title": "Regional Marketing Director",
+            "updated_at": null,
+            "id": "6909d1b207cbf00001c6a29e",
+            "key": "6909d1b207cbf00001c6a29e"
+          },
+          {
+            "_id": "6909d1b207cbf00001c6a29f",
+            "created_at": null,
+            "current": false,
+            "degree": null,
+            "description": null,
+            "emails": null,
+            "end_date": "2007-04-01",
+            "grade_level": null,
+            "kind": null,
+            "major": null,
+            "org_matched_by_name": null,
+            "organization_id": "60f2f77efd2ea20001da5054",
+            "organization_name": "Curian Capital",
+            "raw_address": null,
+            "start_date": "2002-12-01",
+            "title": "Regional Business Consultant",
+            "updated_at": null,
+            "id": "6909d1b207cbf00001c6a29f",
+            "key": "6909d1b207cbf00001c6a29f"
+          },
+          {
+            "_id": "6909d1b207cbf00001c6a2a0",
+            "created_at": null,
+            "current": false,
+            "degree": null,
+            "description": null,
+            "emails": null,
+            "end_date": "2002-12-01",
+            "grade_level": null,
+            "kind": null,
+            "major": null,
+            "org_matched_by_name": null,
+            "organization_id": "6219e96b02396c008d39e743",
+            "organization_name": "Sun Life Financial",
+            "raw_address": null,
+            "start_date": "1998-03-01",
+            "title": "Vice President",
+            "updated_at": null,
+            "id": "6909d1b207cbf00001c6a2a0",
+            "key": "6909d1b207cbf00001c6a2a0"
+          }
+        ],
+        "street_address": "",
+        "city": "Whitefish",
+        "state": "Montana",
+        "country": "United States",
+        "postal_code": null,
+        "formatted_address": "Whitefish, MT, USA",
+        "time_zone": "America/Denver",
+        "organization": {
+          "id": "54a1dced7468695860e66915",
+          "name": "Annexus Group",
+          "website_url": "http://www.annexus.com",
+          "blog_url": null,
+          "angellist_url": null,
+          "linkedin_url": "http://www.linkedin.com/company/the-annexus-group",
+          "twitter_url": "https://twitter.com/annexus",
+          "facebook_url": "https://www.facebook.com/annexusgroup/",
+          "primary_phone": {
+            "number": "+1 866-949-1077",
+            "source": "Owler",
+            "sanitized_number": "+18669491077"
+          },
+          "languages": [
+            "English"
+          ],
+          "alexa_ranking": null,
+          "phone": "+1 866-949-1077",
+          "linkedin_uid": "1570432",
+          "founded_year": 2006,
+          "publicly_traded_symbol": null,
+          "publicly_traded_exchange": null,
+          "logo_url": "https://zenprospect-production.s3.amazonaws.com/uploads/pictures/6917227d8f08a70001cb6521/picture",
+          "crunchbase_url": null,
+          "primary_domain": "annexus.com",
+          "sic_codes": [
+            "6361"
+          ],
+          "naics_codes": [
+            "5231"
+          ],
+          "sanitized_phone": "+18669491077",
+          "organization_headcount_six_month_growth": 0.02608695652173913,
+          "organization_headcount_twelve_month_growth": 0.102803738317757,
+          "organization_headcount_twenty_four_month_growth": 0.2291666666666667
+        },
+        "account_id": "6893b4d547c5880019b91154",
+        "account": {
+          "id": "6893b4d547c5880019b91154",
+          "name": "Annexus Group",
+          "website_url": "http://www.annexus.com",
+          "blog_url": null,
+          "angellist_url": null,
+          "linkedin_url": "http://www.linkedin.com/company/the-annexus-group",
+          "twitter_url": "https://twitter.com/annexus",
+          "facebook_url": "https://www.facebook.com/annexusgroup/",
+          "primary_phone": {
+            "number": "+1 866-949-1077",
+            "source": "Owler",
+            "sanitized_number": "+18669491077"
+          },
+          "languages": [
+            "English"
+          ],
+          "alexa_ranking": null,
+          "phone": "+1 866-949-1077",
+          "linkedin_uid": "1570432",
+          "founded_year": 2006,
+          "publicly_traded_symbol": null,
+          "publicly_traded_exchange": null,
+          "logo_url": "https://zenprospect-production.s3.amazonaws.com/uploads/pictures/6917227d8f08a70001cb6521/picture",
+          "crunchbase_url": null,
+          "primary_domain": "annexus.com",
+          "sic_codes": [
+            "6361"
+          ],
+          "naics_codes": [
+            "5231"
+          ],
+          "sanitized_phone": "+18669491077",
+          "raw_address": "16767 n perimeter dr, 300, scottsdale, arizona 85260, us",
+          "street_address": "16767 N Perimeter Dr",
+          "city": "Scottsdale",
+          "state": "Arizona",
+          "country": "United States",
+          "postal_code": "85260",
+          "domain": "annexus.com",
+          "team_id": "662a9b907180be01c7a767cd",
+          "organization_id": "54a1dced7468695860e66915",
+          "account_stage_id": "662a9b907180be01c7a767d8",
+          "source": "deployment",
+          "original_source": "deployment",
+          "creator_id": "662a9b927180be01c7a7690b",
+          "owner_id": "662a9b927180be01c7a7690b",
+          "created_at": "2025-08-06T20:02:29.442Z",
+          "phone_status": "no_status",
+          "hubspot_id": null,
+          "salesforce_id": null,
+          "crm_owner_id": null,
+          "parent_account_id": null,
+          "suggested_from_rule_engine_config_id": null,
+          "account_playbook_statuses": [],
+          "existence_level": "full",
+          "label_ids": [],
+          "typed_custom_fields": {},
+          "custom_field_errors": null,
+          "modality": "account",
+          "source_display_name": "Requested from Apollo",
+          "crm_record_url": null,
+          "last_activity_date": "2025-08-06T20:03:29.000+00:00"
+        },
+        "departments": [
+          "master_sales"
+        ],
+        "subdepartments": [
+          "sales"
+        ],
+        "seniority": "vp",
+        "functions": [
+          "sales"
+        ],
+        "intent_strength": null,
+        "show_intent": true,
+        "email_domain_catchall": false,
+        "revealed_for_current_team": true
+      },
+      {
+        "id": "57d987e3a6da98729bd58351",
+        "first_name": "Beth",
+        "last_name": "Hudson",
+        "name": "Beth Hudson",
+        "linkedin_url": "http://www.linkedin.com/in/beth-hudson-360b4a106",
+        "title": "Regional Vice President",
+        "email_status": "verified",
+        "photo_url": "https://media.licdn.com/dms/image/v2/C5603AQG9rTUqhbplTg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1625156772594?e=2147483647&v=beta&t=TjxZdDexsbeVLLO0t6QkmOlDB5dbyxpI6iGnxEYm4pg",
+        "twitter_url": null,
+        "github_url": null,
+        "facebook_url": null,
+        "extrapolated_email_confidence": null,
+        "headline": "Regional Vice President at Annexus",
+        "email": "email_not_unlocked@domain.com",
+        "organization_id": "54a1dced7468695860e66915",
+        "employment_history": [
+          {
+            "_id": "6911cdfb587b470001f7a6e7",
+            "created_at": null,
+            "current": true,
+            "degree": null,
+            "description": null,
+            "emails": null,
+            "end_date": null,
+            "grade_level": null,
+            "kind": null,
+            "major": null,
+            "org_matched_by_name": null,
+            "organization_id": "54a1dced7468695860e66915",
+            "organization_name": "Annexus Group",
+            "raw_address": null,
+            "start_date": "2025-09-01",
+            "title": "Regional Vice President",
+            "updated_at": null,
+            "id": "6911cdfb587b470001f7a6e7",
+            "key": "6911cdfb587b470001f7a6e7"
+          },
+          {
+            "_id": "6911cdfb587b470001f7a6e8",
+            "created_at": null,
+            "current": false,
+            "degree": null,
+            "description": null,
+            "emails": null,
+            "end_date": "2025-09-01",
+            "grade_level": null,
+            "kind": null,
+            "major": null,
+            "org_matched_by_name": null,
+            "organization_id": "5f4146ac9511730001d207b3",
+            "organization_name": "Nationwide",
+            "raw_address": null,
+            "start_date": "2021-06-01",
+            "title": "Regional Annuity Wholesaler",
+            "updated_at": null,
+            "id": "6911cdfb587b470001f7a6e8",
+            "key": "6911cdfb587b470001f7a6e8"
+          },
+          {
+            "_id": "6911cdfb587b470001f7a6e9",
+            "created_at": null,
+            "current": false,
+            "degree": null,
+            "description": null,
+            "emails": null,
+            "end_date": "2021-06-01",
+            "grade_level": null,
+            "kind": null,
+            "major": null,
+            "org_matched_by_name": null,
+            "organization_id": "54a1360d69702d3cbb772001",
+            "organization_name": "Nationwide",
+            "raw_address": null,
+            "start_date": "2015-01-01",
+            "title": "Regional Internal Wholesaler",
+            "updated_at": null,
+            "id": "6911cdfb587b470001f7a6e9",
+            "key": "6911cdfb587b470001f7a6e9"
+          },
+          {
+            "_id": "6911cdfb587b470001f7a6ea",
+            "created_at": null,
+            "current": false,
+            "degree": null,
+            "description": null,
+            "emails": null,
+            "end_date": "2015-01-01",
+            "grade_level": null,
+            "kind": null,
+            "major": null,
+            "org_matched_by_name": null,
+            "organization_id": "54a1360d69702d3cbb772001",
+            "organization_name": "Nationwide",
+            "raw_address": null,
+            "start_date": "2009-03-01",
+            "title": "Sr. Analyst, Internal Sales and Service",
+            "updated_at": null,
+            "id": "6911cdfb587b470001f7a6ea",
+            "key": "6911cdfb587b470001f7a6ea"
+          },
+          {
+            "_id": "6911cdfb587b470001f7a6eb",
+            "created_at": null,
+            "current": false,
+            "degree": null,
+            "description": null,
+            "emails": null,
+            "end_date": "2009-03-01",
+            "grade_level": null,
+            "kind": null,
+            "major": null,
+            "org_matched_by_name": null,
+            "organization_id": "54a1360d69702d3cbb772001",
+            "organization_name": "Nationwide",
+            "raw_address": null,
+            "start_date": "2007-11-01",
+            "title": "Internal Sales and Service Representative",
+            "updated_at": null,
+            "id": "6911cdfb587b470001f7a6eb",
+            "key": "6911cdfb587b470001f7a6eb"
+          }
+        ],
+        "street_address": "",
+        "city": "Columbus",
+        "state": "Ohio",
+        "country": "United States",
+        "postal_code": null,
+        "formatted_address": "Columbus, OH, USA",
+        "time_zone": "America/New_York",
+        "organization": {
+          "id": "54a1dced7468695860e66915",
+          "name": "Annexus Group",
+          "website_url": "http://www.annexus.com",
+          "blog_url": null,
+          "angellist_url": null,
+          "linkedin_url": "http://www.linkedin.com/company/the-annexus-group",
+          "twitter_url": "https://twitter.com/annexus",
+          "facebook_url": "https://www.facebook.com/annexusgroup/",
+          "primary_phone": {
+            "number": "+1 866-949-1077",
+            "source": "Owler",
+            "sanitized_number": "+18669491077"
+          },
+          "languages": [
+            "English"
+          ],
+          "alexa_ranking": null,
+          "phone": "+1 866-949-1077",
+          "linkedin_uid": "1570432",
+          "founded_year": 2006,
+          "publicly_traded_symbol": null,
+          "publicly_traded_exchange": null,
+          "logo_url": "https://zenprospect-production.s3.amazonaws.com/uploads/pictures/6917227d8f08a70001cb6521/picture",
+          "crunchbase_url": null,
+          "primary_domain": "annexus.com",
+          "sic_codes": [
+            "6361"
+          ],
+          "naics_codes": [
+            "5231"
+          ],
+          "sanitized_phone": "+18669491077",
+          "organization_headcount_six_month_growth": 0.02608695652173913,
+          "organization_headcount_twelve_month_growth": 0.102803738317757,
+          "organization_headcount_twenty_four_month_growth": 0.2291666666666667
+        },
+        "account_id": "6893b4d547c5880019b91154",
+        "account": {
+          "id": "6893b4d547c5880019b91154",
+          "name": "Annexus Group",
+          "website_url": "http://www.annexus.com",
+          "blog_url": null,
+          "angellist_url": null,
+          "linkedin_url": "http://www.linkedin.com/company/the-annexus-group",
+          "twitter_url": "https://twitter.com/annexus",
+          "facebook_url": "https://www.facebook.com/annexusgroup/",
+          "primary_phone": {
+            "number": "+1 866-949-1077",
+            "source": "Owler",
+            "sanitized_number": "+18669491077"
+          },
+          "languages": [
+            "English"
+          ],
+          "alexa_ranking": null,
+          "phone": "+1 866-949-1077",
+          "linkedin_uid": "1570432",
+          "founded_year": 2006,
+          "publicly_traded_symbol": null,
+          "publicly_traded_exchange": null,
+          "logo_url": "https://zenprospect-production.s3.amazonaws.com/uploads/pictures/6917227d8f08a70001cb6521/picture",
+          "crunchbase_url": null,
+          "primary_domain": "annexus.com",
+          "sic_codes": [
+            "6361"
+          ],
+          "naics_codes": [
+            "5231"
+          ],
+          "sanitized_phone": "+18669491077",
+          "raw_address": "16767 n perimeter dr, 300, scottsdale, arizona 85260, us",
+          "street_address": "16767 N Perimeter Dr",
+          "city": "Scottsdale",
+          "state": "Arizona",
+          "country": "United States",
+          "postal_code": "85260",
+          "domain": "annexus.com",
+          "team_id": "662a9b907180be01c7a767cd",
+          "organization_id": "54a1dced7468695860e66915",
+          "account_stage_id": "662a9b907180be01c7a767d8",
+          "source": "deployment",
+          "original_source": "deployment",
+          "creator_id": "662a9b927180be01c7a7690b",
+          "owner_id": "662a9b927180be01c7a7690b",
+          "created_at": "2025-08-06T20:02:29.442Z",
+          "phone_status": "no_status",
+          "hubspot_id": null,
+          "salesforce_id": null,
+          "crm_owner_id": null,
+          "parent_account_id": null,
+          "suggested_from_rule_engine_config_id": null,
+          "account_playbook_statuses": [],
+          "existence_level": "full",
+          "label_ids": [],
+          "typed_custom_fields": {},
+          "custom_field_errors": null,
+          "modality": "account",
+          "source_display_name": "Requested from Apollo",
+          "crm_record_url": null,
+          "last_activity_date": "2025-08-06T20:03:29.000+00:00"
+        },
+        "departments": [],
+        "subdepartments": [],
+        "seniority": "vp",
+        "functions": [],
+        "intent_strength": null,
+        "show_intent": true,
+        "email_domain_catchall": false,
+        "revealed_for_current_team": true
+      }
+    ],
+    "composite_score": 35.0
+  },
+  {
+    "company_id": "5e55e544f43c6c0001ef197a",
+    "company_name": "The Arizona Group Insurance Brokers",
+    "website": "http://www.arizonagroup.com",
+    "phone": "+1 480-892-8755",
+    "location": "Mesa, Arizona",
+    "current_headcount": 68,
+    "industry": "insurance",
+    "headcount_growth": {
+      "is_growing": false,
+      "growth_rate": 0.0,
+      "previous_headcount": 68,
+      "current_headcount": 68,
+      "days_tracked": 0
+    },
+    "active_jobs": 2,
+    "job_details": [
+      {
+        "title": "Commerical Lines Client Service Agent",
+        "location": "Mesa, AZ",
+        "url": "https://www.linkedin.com/jobs/view/4304296097",
+        "date_posted": "2025-11-14",
+        "source": "linkedin"
+      },
+      {
+        "title": "Commercial Lines Client Service Agent",
+        "location": "Mesa, AZ",
+        "url": "https://www.linkedin.com/jobs/view/4306775758",
+        "date_posted": "2025-10-21",
+        "source": "linkedin"
+      }
+    ],
+    "news": {
+      "has_news": false,
+      "news_type": null,
+      "news_date": null,
+      "news_summary": null
+    },
+    "contact_count": 2,
+    "contacts": [
+      {
+        "id": "5c549c1480f93e7a39c8a371",
+        "first_name": "Monica",
+        "last_name": "Hill",
+        "name": "Monica Hill",
+        "linkedin_url": "http://www.linkedin.com/in/monica-hill-366b45135",
+        "title": "Account Manager",
+        "email_status": "verified",
+        "photo_url": "https://media.licdn.com/dms/image/v2/D5603AQGXUrSZpvq1JA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1724039007610?e=2147483647&v=beta&t=kTOyU-wI3EJmFCQFRUO3ht9Moq8XqF0ojBaL5zy7cQ4",
+        "twitter_url": null,
+        "github_url": null,
+        "facebook_url": null,
+        "extrapolated_email_confidence": null,
+        "headline": "Account Manager at The Arizona Group Insurance Brokers",
+        "email": "email_not_unlocked@domain.com",
+        "organization_id": "5e55e544f43c6c0001ef197a",
+        "employment_history": [
+          {
+            "_id": "69111c85ee329a00014b199d",
+            "created_at": null,
+            "current": true,
+            "degree": null,
+            "description": null,
+            "emails": null,
+            "end_date": null,
+            "grade_level": null,
+            "kind": null,
+            "major": null,
+            "org_matched_by_name": null,
+            "organization_id": "5e55e544f43c6c0001ef197a",
+            "organization_name": "The Arizona Group Insurance Brokers",
+            "raw_address": null,
+            "start_date": "2001-07-01",
+            "title": "Account Manager",
+            "updated_at": null,
+            "id": "69111c85ee329a00014b199d",
+            "key": "69111c85ee329a00014b199d"
+          }
+        ],
+        "street_address": "",
+        "city": "Mesa",
+        "state": "Arizona",
+        "country": "United States",
+        "postal_code": null,
+        "formatted_address": "Mesa, AZ, USA",
+        "time_zone": "America/Phoenix",
+        "organization": {
+          "id": "5e55e544f43c6c0001ef197a",
+          "name": "The Arizona Group Insurance Brokers",
+          "website_url": "http://www.arizonagroup.com",
+          "blog_url": null,
+          "angellist_url": null,
+          "linkedin_url": "http://www.linkedin.com/company/the-arizona-group",
+          "twitter_url": "https://twitter.com/the_azgroup",
+          "facebook_url": "https://facebook.com/TheArizonaGroup",
+          "primary_phone": {
+            "number": "+1 480-892-8755",
+            "source": "Owler",
+            "sanitized_number": "+14808928755"
+          },
+          "languages": [
+            "English"
+          ],
+          "alexa_ranking": null,
+          "phone": "+1 480-892-8755",
+          "linkedin_uid": "291239",
+          "founded_year": 1993,
+          "publicly_traded_symbol": null,
+          "publicly_traded_exchange": null,
+          "logo_url": "https://zenprospect-production.s3.amazonaws.com/uploads/pictures/690b2d2cb9350c0001a1afef/picture",
+          "crunchbase_url": null,
+          "primary_domain": "arizonagroup.com",
+          "sic_codes": [
+            "6361"
+          ],
+          "naics_codes": [
+            "52421"
+          ],
+          "sanitized_phone": "+14808928755",
+          "organization_headcount_six_month_growth": 0.1,
+          "organization_headcount_twelve_month_growth": 0.1956521739130435,
+          "organization_headcount_twenty_four_month_growth": 0.375
+        },
+        "account_id": "6744b05f28a44e0001125d24",
+        "account": {
+          "id": "6744b05f28a44e0001125d24",
+          "name": "The Arizona Group Insurance Brokers",
+          "website_url": "http://www.arizonagroup.com",
+          "blog_url": null,
+          "angellist_url": null,
+          "linkedin_url": "http://www.linkedin.com/company/the-arizona-group",
+          "twitter_url": "https://twitter.com/the_azgroup",
+          "facebook_url": "https://facebook.com/TheArizonaGroup",
+          "primary_phone": {
+            "number": "+1 480-892-8755",
+            "source": "Owler",
+            "sanitized_number": "+14808928755"
+          },
+          "languages": [
+            "English"
+          ],
+          "alexa_ranking": null,
+          "phone": "+1 480-892-8755",
+          "linkedin_uid": "291239",
+          "founded_year": 1993,
+          "publicly_traded_symbol": null,
+          "publicly_traded_exchange": null,
+          "logo_url": "https://zenprospect-production.s3.amazonaws.com/uploads/pictures/690b2d2cb9350c0001a1afef/picture",
+          "crunchbase_url": null,
+          "primary_domain": "arizonagroup.com",
+          "sic_codes": [
+            "6361"
+          ],
+          "naics_codes": [
+            "52421"
+          ],
+          "sanitized_phone": "+14808928755",
+          "raw_address": "1125 e southern ave, mesa, arizona, united states",
+          "street_address": "1125 East Southern Avenue",
+          "city": "Mesa",
+          "state": "Arizona",
+          "country": "United States",
+          "postal_code": "85204",
+          "domain": "arizonagroup.com",
+          "team_id": "662a9b907180be01c7a767cd",
+          "organization_id": "5e55e544f43c6c0001ef197a",
+          "account_stage_id": "662a9b907180be01c7a767da",
+          "source": "deployment",
+          "original_source": "deployment",
+          "creator_id": "662a9b927180be01c7a7690b",
+          "owner_id": "662a9b927180be01c7a7690b",
+          "created_at": "2024-11-25T17:14:07.229Z",
+          "phone_status": "no_status",
+          "hubspot_id": "26273109878",
+          "salesforce_id": null,
+          "crm_owner_id": "41191680",
+          "parent_account_id": null,
+          "suggested_from_rule_engine_config_id": null,
+          "account_playbook_statuses": [],
+          "existence_level": "full",
+          "label_ids": [],
+          "typed_custom_fields": {
+            "67c8aa1635d3a10021887fc2": "Reasoning and Analysis\n\nTo analyze Loophire, it's essential to understand its offerings and target audience. Loophire is a recruitment platform founded in 2019 by Chris Jones, a former recruiter and staffing agency owner. The company uses automation technology and high-touch services to streamline the hiring process for small to medium-sized businesses. Loophire's mission is to simplify hiring by connecting impactful job seekers with companies where they can thrive. The platform serves various industries, including insurance, professional services, and light industrial sectors.\n\nLoophire's services include candidate matching, interview scheduling, and facilitating the hiring process. The company emphasizes simplicity and guaranteed results, making it appealing to overworked business managers who need efficient hiring solutions. Understanding Loophire's focus on small to medium-sized businesses and its industry-specific expertise is crucial for identifying potential clients.\n\nThe analysis involves examining Loophire's website for key information about its services, target industries, and the types of companies it typically serves. This includes reviewing the \"About Us,\" \"Employers,\" and \"Industries\" sections to grasp the company's offerings and target segments.\n\nICP Fit Criteria\n\n- Company Size: Small to medium-sized businesses are the primary target for Loophire's services.\n- Industry Alignment: Companies in the insurance, professional services, and light industrial sectors are more likely to be a fit.\n- Hiring Challenges: Businesses struggling with inefficient hiring processes or those looking to streamline their recruitment efforts may benefit from Loophire's services.\n- Technology Adoption: Companies open to using automation technology in their hiring processes are potential fits.\n\nHigh-Value Fit Criteria\n\n- Active Job Postings: Companies with multiple job openings, especially in roles that Loophire specializes in, indicate a strong need for recruitment solutions.\n- Expansion Plans: Businesses announcing growth initiatives or expansions may require efficient hiring processes to meet their staffing needs.\n- Technology Integration: Companies already using HR technology or automation tools might be more receptive to Loophire's platform.\n\nDisqualification Criteria\n\n- Large Enterprise Focus: Loophire primarily serves small to medium-sized businesses, so large enterprises might not be the best fit.\n- Incompatible Industry: Companies outside Loophire's specialized industries may not benefit as much from its services.\n\nResearch Sources\n\n- Company Website: Official product pages, \"About\" sections, and industry-specific solutions.\n- Job Boards: Active job postings related to Loophire's specialized roles.\n- Public Registries/Databases: Government or nonprofit filings, if relevant.\n- Company News and Press Releases: Announcements about growth initiatives or technology adoption.",
+            "67c8aa1635d3a1001151de42": "Detailed log of research steps taken\n1. Initial Research: Started by visiting the target company's URL, https://arizonagroup.com, to gather information about its business model, services, and target industries.\n2. Company Overview: Explored the \"About Us\" section to understand the company's mission, values, and primary services.\n3. Services and Industries: Reviewed sections related to services offered and industries served to identify potential alignment with Loophire's expertise.\n4. Job Openings: Searched for active job postings to assess hiring needs and potential fit with Loophire's recruitment solutions.\n5. Technology and Integration: Examined the company's tech stack to identify any relevant technologies that might indicate openness to automation or HR technology.\n6. News and Updates: Looked for recent news or press releases that could indicate growth initiatives or technology adoption.\n\nDescription of business and business model\nArizona Group's specific business model and services were not detailed in the initial search results. However, the company's website would typically provide insights into its operations, target markets, and service offerings. For a comprehensive analysis, reviewing the company's official website and related public information is essential.\n\nObserved indicators of fit\nWithout specific details on Arizona Group's business model or industry focus, it's challenging to determine if they align with Loophire's target sectors (insurance, professional services, light industrial). If Arizona Group operates within these industries or faces hiring challenges, they might be a potential fit for Loophire's services.\n\nObserved indicators of disqualification\nIf Arizona Group is a large enterprise or operates outside Loophire's specialized industries, they might not be the best fit for Loophire's services, which primarily cater to small to medium-sized businesses.\n\nRelevant company news or updates identified\nNo specific news or updates were identified during this research. Checking company news sections or press releases would provide more insights into any recent developments or initiatives.\n\nRelevant technologies identified in tech stack\nThe tech stack includes Amazon AWS, which could indicate an openness to cloud-based solutions and potentially automation technologies. Google Tag Manager and Google Maps suggest a focus on digital presence and analytics. However, none of these technologies directly relate to HR or recruitment processes.\n\nRelevant job openings and hiring needs\nNo specific job openings were identified during this research. Checking job boards or the company's careers page would provide more detailed information on their hiring needs.",
+            "67c8aa1735d3a10019a339de": "Qualification Status: Possible Fit\n\nDetail: After a comprehensive analysis of Arizona Group, the research yielded limited insights about the company's specific business model and operations. The initial investigation did not reveal clear disqualification factors, but also did not uncover strong indicators of a high-value fit for Loophire's recruitment services.\n\nThe company's tech stack, which includes Amazon AWS, Google Tag Manager, and Google Maps, suggests a digital-forward approach and potential openness to technology solutions. However, these technologies do not directly indicate a specific need for recruitment automation or hiring services.\n\nKey limitations in the research include:\n- Lack of clear information about company size\n- No identified job postings or hiring needs\n- Unclear industry alignment with Loophire's core sectors (insurance, professional services, light industrial)\n\nThe qualification status of \"Possible Fit\" is assigned because:\n1. No explicit disqualification criteria were identified\n2. The company appears to have a digital infrastructure that might be receptive to technological solutions\n3. Insufficient information exists to definitively categorize the company as a high-value target or completely irrelevant\n\nTo progress this opportunity, additional research would be required to:\n- Confirm the company's industry\n- Understand their current hiring processes\n- Verify their company size and potential need for recruitment automation\n- Identify any specific hiring challenges or expansion plans\n\nThe current data suggests Arizona Group warrants further investigation but does not present an immediate, compelling case for Loophire's recruitment platform."
+          },
+          "custom_field_errors": null,
+          "modality": "account",
+          "source_display_name": "Requested from Apollo",
+          "crm_record_url": null,
+          "last_activity_date": "2025-08-01T15:50:46.000+00:00"
+        },
+        "departments": [
+          "master_sales"
+        ],
+        "subdepartments": [
+          "account_management"
+        ],
+        "seniority": "manager",
+        "functions": [],
+        "intent_strength": null,
+        "show_intent": true,
+        "email_domain_catchall": true,
+        "revealed_for_current_team": true
+      },
+      {
+        "id": "5f487adc6a9e970001aa1f22",
+        "first_name": "Alison",
+        "last_name": "Brunz",
+        "name": "Alison Brunz",
+        "linkedin_url": "http://www.linkedin.com/in/alison-brunz-79b078185",
+        "title": "Account Manager",
+        "email_status": "verified",
+        "photo_url": "https://media.licdn.com/dms/image/v2/C4E03AQE2i0k0k0iD7w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1555520363769?e=2147483647&v=beta&t=s1sH_ng3p_OElyF6FF6YP0DsE_KicJqU0qZ8w9mG60E",
+        "twitter_url": null,
+        "github_url": null,
+        "facebook_url": null,
+        "extrapolated_email_confidence": null,
+        "headline": "Account Manager at The Arizona Group",
+        "email": "email_not_unlocked@domain.com",
+        "organization_id": "5e55e544f43c6c0001ef197a",
+        "employment_history": [
+          {
+            "_id": "6919075ecf089000012272d0",
+            "created_at": null,
+            "current": true,
+            "degree": null,
+            "description": null,
+            "emails": null,
+            "end_date": null,
+            "grade_level": null,
+            "kind": null,
+            "major": null,
+            "org_matched_by_name": false,
+            "organization_id": "5e55e544f43c6c0001ef197a",
+            "organization_name": "The Arizona Group Insurance Brokers",
+            "raw_address": null,
+            "start_date": "2025-02-01",
+            "title": "Account Manager",
+            "updated_at": null,
+            "id": "6919075ecf089000012272d0",
+            "key": "6919075ecf089000012272d0"
+          },
+          {
+            "_id": "6919075ecf089000012272d2",
+            "created_at": null,
+            "current": false,
+            "degree": null,
+            "description": null,
+            "emails": null,
+            "end_date": "2025-03-01",
+            "grade_level": null,
+            "kind": null,
+            "major": null,
+            "org_matched_by_name": false,
+            "organization_id": null,
+            "organization_name": "American Benefits",
+            "raw_address": null,
+            "start_date": "2019-02-01",
+            "title": "Account Assistant",
+            "updated_at": null,
+            "id": "6919075ecf089000012272d2",
+            "key": "6919075ecf089000012272d2"
+          }
+        ],
+        "street_address": "",
+        "city": "Phoenix",
+        "state": "Arizona",
+        "country": "United States",
+        "postal_code": null,
+        "formatted_address": "Phoenix, AZ, USA",
+        "time_zone": "America/Phoenix",
+        "organization": {
+          "id": "5e55e544f43c6c0001ef197a",
+          "name": "The Arizona Group Insurance Brokers",
+          "website_url": "http://www.arizonagroup.com",
+          "blog_url": null,
+          "angellist_url": null,
+          "linkedin_url": "http://www.linkedin.com/company/the-arizona-group",
+          "twitter_url": "https://twitter.com/the_azgroup",
+          "facebook_url": "https://facebook.com/TheArizonaGroup",
+          "primary_phone": {
+            "number": "+1 480-892-8755",
+            "source": "Owler",
+            "sanitized_number": "+14808928755"
+          },
+          "languages": [
+            "English"
+          ],
+          "alexa_ranking": null,
+          "phone": "+1 480-892-8755",
+          "linkedin_uid": "291239",
+          "founded_year": 1993,
+          "publicly_traded_symbol": null,
+          "publicly_traded_exchange": null,
+          "logo_url": "https://zenprospect-production.s3.amazonaws.com/uploads/pictures/690b2d2cb9350c0001a1afef/picture",
+          "crunchbase_url": null,
+          "primary_domain": "arizonagroup.com",
+          "sic_codes": [
+            "6361"
+          ],
+          "naics_codes": [
+            "52421"
+          ],
+          "sanitized_phone": "+14808928755",
+          "organization_headcount_six_month_growth": 0.1,
+          "organization_headcount_twelve_month_growth": 0.1956521739130435,
+          "organization_headcount_twenty_four_month_growth": 0.375
+        },
+        "account_id": "6744b05f28a44e0001125d24",
+        "account": {
+          "id": "6744b05f28a44e0001125d24",
+          "name": "The Arizona Group Insurance Brokers",
+          "website_url": "http://www.arizonagroup.com",
+          "blog_url": null,
+          "angellist_url": null,
+          "linkedin_url": "http://www.linkedin.com/company/the-arizona-group",
+          "twitter_url": "https://twitter.com/the_azgroup",
+          "facebook_url": "https://facebook.com/TheArizonaGroup",
+          "primary_phone": {
+            "number": "+1 480-892-8755",
+            "source": "Owler",
+            "sanitized_number": "+14808928755"
+          },
+          "languages": [
+            "English"
+          ],
+          "alexa_ranking": null,
+          "phone": "+1 480-892-8755",
+          "linkedin_uid": "291239",
+          "founded_year": 1993,
+          "publicly_traded_symbol": null,
+          "publicly_traded_exchange": null,
+          "logo_url": "https://zenprospect-production.s3.amazonaws.com/uploads/pictures/690b2d2cb9350c0001a1afef/picture",
+          "crunchbase_url": null,
+          "primary_domain": "arizonagroup.com",
+          "sic_codes": [
+            "6361"
+          ],
+          "naics_codes": [
+            "52421"
+          ],
+          "sanitized_phone": "+14808928755",
+          "raw_address": "1125 e southern ave, mesa, arizona, united states",
+          "street_address": "1125 East Southern Avenue",
+          "city": "Mesa",
+          "state": "Arizona",
+          "country": "United States",
+          "postal_code": "85204",
+          "domain": "arizonagroup.com",
+          "team_id": "662a9b907180be01c7a767cd",
+          "organization_id": "5e55e544f43c6c0001ef197a",
+          "account_stage_id": "662a9b907180be01c7a767da",
+          "source": "deployment",
+          "original_source": "deployment",
+          "creator_id": "662a9b927180be01c7a7690b",
+          "owner_id": "662a9b927180be01c7a7690b",
+          "created_at": "2024-11-25T17:14:07.229Z",
+          "phone_status": "no_status",
+          "hubspot_id": "26273109878",
+          "salesforce_id": null,
+          "crm_owner_id": "41191680",
+          "parent_account_id": null,
+          "suggested_from_rule_engine_config_id": null,
+          "account_playbook_statuses": [],
+          "existence_level": "full",
+          "label_ids": [],
+          "typed_custom_fields": {
+            "67c8aa1635d3a10021887fc2": "Reasoning and Analysis\n\nTo analyze Loophire, it's essential to understand its offerings and target audience. Loophire is a recruitment platform founded in 2019 by Chris Jones, a former recruiter and staffing agency owner. The company uses automation technology and high-touch services to streamline the hiring process for small to medium-sized businesses. Loophire's mission is to simplify hiring by connecting impactful job seekers with companies where they can thrive. The platform serves various industries, including insurance, professional services, and light industrial sectors.\n\nLoophire's services include candidate matching, interview scheduling, and facilitating the hiring process. The company emphasizes simplicity and guaranteed results, making it appealing to overworked business managers who need efficient hiring solutions. Understanding Loophire's focus on small to medium-sized businesses and its industry-specific expertise is crucial for identifying potential clients.\n\nThe analysis involves examining Loophire's website for key information about its services, target industries, and the types of companies it typically serves. This includes reviewing the \"About Us,\" \"Employers,\" and \"Industries\" sections to grasp the company's offerings and target segments.\n\nICP Fit Criteria\n\n- Company Size: Small to medium-sized businesses are the primary target for Loophire's services.\n- Industry Alignment: Companies in the insurance, professional services, and light industrial sectors are more likely to be a fit.\n- Hiring Challenges: Businesses struggling with inefficient hiring processes or those looking to streamline their recruitment efforts may benefit from Loophire's services.\n- Technology Adoption: Companies open to using automation technology in their hiring processes are potential fits.\n\nHigh-Value Fit Criteria\n\n- Active Job Postings: Companies with multiple job openings, especially in roles that Loophire specializes in, indicate a strong need for recruitment solutions.\n- Expansion Plans: Businesses announcing growth initiatives or expansions may require efficient hiring processes to meet their staffing needs.\n- Technology Integration: Companies already using HR technology or automation tools might be more receptive to Loophire's platform.\n\nDisqualification Criteria\n\n- Large Enterprise Focus: Loophire primarily serves small to medium-sized businesses, so large enterprises might not be the best fit.\n- Incompatible Industry: Companies outside Loophire's specialized industries may not benefit as much from its services.\n\nResearch Sources\n\n- Company Website: Official product pages, \"About\" sections, and industry-specific solutions.\n- Job Boards: Active job postings related to Loophire's specialized roles.\n- Public Registries/Databases: Government or nonprofit filings, if relevant.\n- Company News and Press Releases: Announcements about growth initiatives or technology adoption.",
+            "67c8aa1635d3a1001151de42": "Detailed log of research steps taken\n1. Initial Research: Started by visiting the target company's URL, https://arizonagroup.com, to gather information about its business model, services, and target industries.\n2. Company Overview: Explored the \"About Us\" section to understand the company's mission, values, and primary services.\n3. Services and Industries: Reviewed sections related to services offered and industries served to identify potential alignment with Loophire's expertise.\n4. Job Openings: Searched for active job postings to assess hiring needs and potential fit with Loophire's recruitment solutions.\n5. Technology and Integration: Examined the company's tech stack to identify any relevant technologies that might indicate openness to automation or HR technology.\n6. News and Updates: Looked for recent news or press releases that could indicate growth initiatives or technology adoption.\n\nDescription of business and business model\nArizona Group's specific business model and services were not detailed in the initial search results. However, the company's website would typically provide insights into its operations, target markets, and service offerings. For a comprehensive analysis, reviewing the company's official website and related public information is essential.\n\nObserved indicators of fit\nWithout specific details on Arizona Group's business model or industry focus, it's challenging to determine if they align with Loophire's target sectors (insurance, professional services, light industrial). If Arizona Group operates within these industries or faces hiring challenges, they might be a potential fit for Loophire's services.\n\nObserved indicators of disqualification\nIf Arizona Group is a large enterprise or operates outside Loophire's specialized industries, they might not be the best fit for Loophire's services, which primarily cater to small to medium-sized businesses.\n\nRelevant company news or updates identified\nNo specific news or updates were identified during this research. Checking company news sections or press releases would provide more insights into any recent developments or initiatives.\n\nRelevant technologies identified in tech stack\nThe tech stack includes Amazon AWS, which could indicate an openness to cloud-based solutions and potentially automation technologies. Google Tag Manager and Google Maps suggest a focus on digital presence and analytics. However, none of these technologies directly relate to HR or recruitment processes.\n\nRelevant job openings and hiring needs\nNo specific job openings were identified during this research. Checking job boards or the company's careers page would provide more detailed information on their hiring needs.",
+            "67c8aa1735d3a10019a339de": "Qualification Status: Possible Fit\n\nDetail: After a comprehensive analysis of Arizona Group, the research yielded limited insights about the company's specific business model and operations. The initial investigation did not reveal clear disqualification factors, but also did not uncover strong indicators of a high-value fit for Loophire's recruitment services.\n\nThe company's tech stack, which includes Amazon AWS, Google Tag Manager, and Google Maps, suggests a digital-forward approach and potential openness to technology solutions. However, these technologies do not directly indicate a specific need for recruitment automation or hiring services.\n\nKey limitations in the research include:\n- Lack of clear information about company size\n- No identified job postings or hiring needs\n- Unclear industry alignment with Loophire's core sectors (insurance, professional services, light industrial)\n\nThe qualification status of \"Possible Fit\" is assigned because:\n1. No explicit disqualification criteria were identified\n2. The company appears to have a digital infrastructure that might be receptive to technological solutions\n3. Insufficient information exists to definitively categorize the company as a high-value target or completely irrelevant\n\nTo progress this opportunity, additional research would be required to:\n- Confirm the company's industry\n- Understand their current hiring processes\n- Verify their company size and potential need for recruitment automation\n- Identify any specific hiring challenges or expansion plans\n\nThe current data suggests Arizona Group warrants further investigation but does not present an immediate, compelling case for Loophire's recruitment platform."
+          },
+          "custom_field_errors": null,
+          "modality": "account",
+          "source_display_name": "Requested from Apollo",
+          "crm_record_url": null,
+          "last_activity_date": "2025-08-01T15:50:46.000+00:00"
+        },
+        "departments": [
+          "master_sales"
+        ],
+        "subdepartments": [
+          "account_management"
+        ],
+        "seniority": "manager",
+        "functions": [],
+        "intent_strength": null,
+        "show_intent": true,
+        "email_domain_catchall": true,
+        "revealed_for_current_team": true
+      }
+    ],
+    "composite_score": 35.0
+  },
+  {
+    "company_id": "54a1343c69702d2f9fe35800",
+    "company_name": "Delta Dental of Arizona",
+    "website": "http://www.deltadentalaz.com",
+    "phone": "+1 800-894-2701",
+    "location": "Scottsdale, Arizona",
+    "current_headcount": 140,
+    "industry": "insurance",
+    "headcount_growth": {
+      "is_growing": false,
+      "growth_rate": 0.0,
+      "previous_headcount": 140,
+      "current_headcount": 140,
+      "days_tracked": 0
+    },
+    "active_jobs": 3,
+    "job_details": [
+      {
+        "title": "Product Manager",
+        "location": "Scottsdale, AZ",
+        "url": "https://www.linkedin.com/jobs/view/4339960683",
+        "date_posted": "2025-11-11",
+        "source": "linkedin"
+      },
+      {
+        "title": "Director of IT Strategy",
+        "location": "Scottsdale, AZ",
+        "url": "https://www.linkedin.com/jobs/view/4339760750",
+        "date_posted": "2025-11-10",
+        "source": "linkedin"
+      },
+      {
+        "title": "Business Intelligence Manager",
+        "location": "Scottsdale, AZ",
+        "url": "https://www.linkedin.com/jobs/view/4324754852",
+        "date_posted": "2025-10-29",
+        "source": "linkedin"
+      }
+    ],
+    "news": {
+      "has_news": false,
+      "news_type": null,
+      "news_date": null,
+      "news_summary": null
+    },
+    "contact_count": 0,
+    "contacts": [],
+    "composite_score": 30.0
+  },
+  {
+    "company_id": "5e56ab12bfa92e0001666961",
+    "company_name": "Berkley Aspire (a Berkley Company)",
+    "website": "http://www.berkleyaspire.com",
+    "phone": "+1 480-444-5950",
+    "location": "Scottsdale, Arizona",
+    "current_headcount": 160,
+    "industry": "insurance",
+    "headcount_growth": {
+      "is_growing": false,
+      "growth_rate": 0.0,
+      "previous_headcount": 160,
+      "current_headcount": 160,
+      "days_tracked": 0
+    },
+    "active_jobs": 4,
+    "job_details": [
+      {
+        "title": "Underwriting Manager, Renewal",
+        "location": "Scottsdale, AZ",
+        "url": "https://www.linkedin.com/jobs/view/4336705774",
+        "date_posted": "2025-11-18",
+        "source": "linkedin"
+      },
+      {
+        "title": "E&S Executive Underwriter",
+        "location": "Scottsdale, AZ",
+        "url": "https://www.linkedin.com/jobs/view/4308451031",
+        "date_posted": "2025-11-12",
+        "source": "linkedin"
+      },
+      {
+        "title": "E&S Small Business Underwriter - Strategic Accounts",
+        "location": "Scottsdale, AZ",
+        "url": "https://www.linkedin.com/jobs/view/4333913641",
+        "date_posted": "2025-11-04",
+        "source": "linkedin"
+      },
+      {
+        "title": "E&S Business Development Underwriter - Strategic Accounts",
+        "location": "Scottsdale, AZ",
+        "url": "https://www.linkedin.com/jobs/view/4312726346",
+        "date_posted": "2025-10-09",
+        "source": "linkedin"
+      }
+    ],
+    "news": {
+      "has_news": false,
+      "news_type": null,
+      "news_date": null,
+      "news_summary": null
+    },
+    "contact_count": 0,
+    "contacts": [],
+    "composite_score": 30.0
+  },
+  {
+    "company_id": "54a1d27374686949e7850714",
+    "company_name": "Strategy Financial Group",
+    "website": "http://www.strategyfinancialgroup.com",
+    "phone": "+1 602-343-9301",
+    "location": "Phoenix, Arizona",
+    "current_headcount": 29,
+    "industry": "financial services",
+    "headcount_growth": {
+      "is_growing": false,
+      "growth_rate": 0.0,
+      "previous_headcount": 29,
+      "current_headcount": 29,
+      "days_tracked": 0
+    },
+    "active_jobs": 4,
+    "job_details": [
+      {
+        "title": "Client Service Specialist",
+        "location": "Phoenix, AZ, US",
+        "url": "https://www.indeed.com/viewjob?jk=6740e3c3bed0eaae",
+        "date_posted": "2025-11-17",
+        "source": "indeed"
+      },
+      {
+        "title": "Relationship Manager I",
+        "location": "Peoria, AZ, US",
+        "url": "https://www.indeed.com/viewjob?jk=5e65a0028d45eeaa",
+        "date_posted": "2025-10-03",
+        "source": "indeed"
+      },
+      {
+        "title": "Financial Advisor",
+        "location": "Phoenix, AZ",
+        "url": "https://www.linkedin.com/jobs/view/4300960575",
+        "date_posted": "2025-11-12",
+        "source": "linkedin"
+      },
+      {
+        "title": "Sales Manager",
+        "location": "Phoenix, AZ",
+        "url": "https://www.linkedin.com/jobs/view/4319570872",
+        "date_posted": "2025-10-28",
+        "source": "linkedin"
+      }
+    ],
+    "news": {
+      "has_news": false,
+      "news_type": null,
+      "news_date": null,
+      "news_summary": null
+    },
+    "contact_count": 0,
+    "contacts": [],
+    "composite_score": 30.0
+  },
+  {
+    "company_id": "54a11cfb69702d8ed4e8db00",
+    "company_name": "CNA National",
+    "website": "http://www.cnanational.com",
+    "phone": "+1 800-345-0191",
+    "location": "Scottsdale, Arizona",
+    "current_headcount": 270,
+    "industry": "insurance",
+    "headcount_growth": {
+      "is_growing": false,
+      "growth_rate": 0.0,
+      "previous_headcount": 270,
+      "current_headcount": 270,
+      "days_tracked": 0
+    },
+    "active_jobs": 3,
+    "job_details": [
+      {
+        "title": "Account Development Manager",
+        "location": "Scottsdale, AZ, US",
+        "url": "https://www.indeed.com/viewjob?jk=2a24551ca1b36ab8",
+        "date_posted": "2025-11-14",
+        "source": "indeed"
+      },
+      {
+        "title": "Senior Dealer Programs Analyst",
+        "location": "Scottsdale, AZ, US",
+        "url": "https://www.indeed.com/viewjob?jk=718b3e26552141ff",
+        "date_posted": "2025-10-24",
+        "source": "indeed"
+      },
+      {
+        "title": "Senior Dealer Program Analyst",
+        "location": "Scottsdale, AZ",
+        "url": "https://www.linkedin.com/jobs/view/4318615289",
+        "date_posted": "2025-10-24",
+        "source": "linkedin"
+      }
+    ],
+    "news": {
+      "has_news": false,
+      "news_type": null,
+      "news_date": null,
+      "news_summary": null
+    },
+    "contact_count": 0,
+    "contacts": [],
+    "composite_score": 25.0
+  },
+  {
+    "company_id": "54a263a174686935be1f471f",
+    "company_name": "Transtar Insurance Brokers, Inc.",
+    "website": "http://www.transtarinsurance.com",
+    "phone": "+1 480-579-2500",
+    "location": "Phoenix, Arizona",
+    "current_headcount": 53,
+    "industry": "insurance",
+    "headcount_growth": {
+      "is_growing": false,
+      "growth_rate": 0.0,
+      "previous_headcount": 53,
+      "current_headcount": 53,
+      "days_tracked": 0
+    },
+    "active_jobs": 2,
+    "job_details": [
+      {
+        "title": "Transtar - Billing Specialist",
+        "location": "Phoenix, AZ, US",
+        "url": "https://www.indeed.com/viewjob?jk=605e84e1fc836741",
+        "date_posted": "2025-10-22",
+        "source": "indeed"
+      },
+      {
+        "title": "IT Manager",
+        "location": "Phoenix, AZ",
+        "url": "https://www.linkedin.com/jobs/view/4335845987",
+        "date_posted": "2025-11-14",
+        "source": "linkedin"
+      }
+    ],
+    "news": {
+      "has_news": false,
+      "news_type": null,
+      "news_date": null,
+      "news_summary": null
+    },
+    "contact_count": 0,
+    "contacts": [],
+    "composite_score": 20.0
+  },
+  {
+    "company_id": "54a12aec69702db8782a1502",
+    "company_name": "Employee Benefits International (EBI)",
+    "website": "http://www.ebint.com",
+    "phone": "+1 602-800-5070",
+    "location": "Phoenix, Arizona",
+    "current_headcount": 22,
+    "industry": "insurance",
+    "headcount_growth": {
+      "is_growing": false,
+      "growth_rate": 0.0,
+      "previous_headcount": 22,
+      "current_headcount": 22,
+      "days_tracked": 0
+    },
+    "active_jobs": 2,
+    "job_details": [
+      {
+        "title": "Account Coordinator (on-site)",
+        "location": "Phoenix, AZ",
+        "url": "https://www.linkedin.com/jobs/view/4334728681",
+        "date_posted": "2025-11-07",
+        "source": "linkedin"
+      },
+      {
+        "title": "Employee Benefits Account Manager (on-site)",
+        "location": "Phoenix, AZ",
+        "url": "https://www.linkedin.com/jobs/view/4306804266",
+        "date_posted": "2025-09-26",
+        "source": "linkedin"
+      }
+    ],
+    "news": {
+      "has_news": false,
+      "news_type": null,
+      "news_date": null,
+      "news_summary": null
+    },
+    "contact_count": 0,
+    "contacts": [],
+    "composite_score": 20.0
+  },
+  {
+    "company_id": "5f459ae30bf97c008c8b3c4d",
+    "company_name": "Unlock Technologies",
+    "website": "http://www.unlock.com",
+    "phone": "+1 800-560-3450",
+    "location": "Tempe, Arizona",
+    "current_headcount": 180,
+    "industry": "financial services",
+    "headcount_growth": {
+      "is_growing": false,
+      "growth_rate": 0.0,
+      "previous_headcount": 180,
+      "current_headcount": 180,
+      "days_tracked": 0
+    },
+    "active_jobs": 2,
+    "job_details": [
+      {
+        "title": "Platform Product Manager",
+        "location": "Phoenix, AZ, US",
+        "url": "https://www.indeed.com/viewjob?jk=d3077386e5ff3041",
+        "date_posted": "2025-10-17",
+        "source": "indeed"
+      },
+      {
+        "title": "Platform Product Manager",
+        "location": "Phoenix, AZ",
+        "url": "https://www.linkedin.com/jobs/view/4316576064",
+        "date_posted": "2025-10-18",
+        "source": "linkedin"
+      }
+    ],
+    "news": {
+      "has_news": false,
+      "news_type": null,
+      "news_date": null,
+      "news_summary": null
+    },
+    "contact_count": 0,
+    "contacts": [],
+    "composite_score": 20.0
+  },
+  {
+    "company_id": "5b153853a6da987151d5c121",
+    "company_name": "Thomas Title & Escrow",
+    "website": "http://www.thomastitle.com",
+    "phone": "+1 480-222-1116",
+    "location": "Scottsdale, Arizona",
+    "current_headcount": 34,
+    "industry": "financial services",
+    "headcount_growth": {
+      "is_growing": false,
+      "growth_rate": 0.0,
+      "previous_headcount": 34,
+      "current_headcount": 34,
+      "days_tracked": 0
+    },
+    "active_jobs": 1,
+    "job_details": [
+      {
+        "title": "Business Development Officer",
+        "location": "Scottsdale, AZ",
+        "url": "https://www.linkedin.com/jobs/view/4338092108",
+        "date_posted": "2025-11-07",
+        "source": "linkedin"
+      }
+    ],
+    "news": {
+      "has_news": false,
+      "news_type": null,
+      "news_date": null,
+      "news_summary": null
+    },
+    "contact_count": 0,
+    "contacts": [],
+    "composite_score": 20.0
+  },
+  {
+    "company_id": "56d383eaf3e5bb22690038ca",
+    "company_name": "GoldBook Financial",
+    "website": "http://www.goldbookfinancial.com",
+    "phone": "+1 480-638-2100",
+    "location": "Scottsdale, Arizona",
+    "current_headcount": 80,
+    "industry": "financial services",
+    "headcount_growth": {
+      "is_growing": false,
+      "growth_rate": 0.0,
+      "previous_headcount": 80,
+      "current_headcount": 80,
+      "days_tracked": 0
+    },
+    "active_jobs": 2,
+    "job_details": [
+      {
+        "title": "Financial Advisor",
+        "location": "Scottsdale, AZ",
+        "url": "https://www.linkedin.com/jobs/view/4312734449",
+        "date_posted": "2025-10-31",
+        "source": "linkedin"
+      },
+      {
+        "title": "Experienced Financial Advisor",
+        "location": "Scottsdale, AZ",
+        "url": "https://www.linkedin.com/jobs/view/4312719869",
+        "date_posted": "2025-10-31",
+        "source": "linkedin"
+      }
+    ],
+    "news": {
+      "has_news": false,
+      "news_type": null,
+      "news_date": null,
+      "news_summary": null
+    },
+    "contact_count": 0,
+    "contacts": [],
+    "composite_score": 20.0
+  },
+  {
+    "company_id": "613074be72c35c0001187926",
+    "company_name": "MPI\u00ae Unlimited, LLC",
+    "website": "http://www.compoundinterest.com",
+    "phone": "+1 480-530-5840",
+    "location": "Gilbert, Arizona",
+    "current_headcount": 26,
+    "industry": "financial services",
+    "headcount_growth": {
+      "is_growing": false,
+      "growth_rate": 0.0,
+      "previous_headcount": 26,
+      "current_headcount": 26,
+      "days_tracked": 0
+    },
+    "active_jobs": 1,
+    "job_details": [
+      {
+        "title": "Client Account Manager",
+        "location": "Gilbert, AZ",
+        "url": "https://www.linkedin.com/jobs/view/4323907164",
+        "date_posted": "2025-10-23",
+        "source": "linkedin"
+      }
+    ],
+    "news": {
+      "has_news": false,
+      "news_type": null,
+      "news_date": null,
+      "news_summary": null
+    },
+    "contact_count": 0,
+    "contacts": [],
+    "composite_score": 20.0
+  },
+  {
+    "company_id": "559238577369643bdd497c00",
+    "company_name": "United Planners Financial Services",
+    "website": "http://www.unitedplanners.com",
+    "phone": "+1 480-991-0225",
+    "location": "Scottsdale, Arizona",
+    "current_headcount": 220,
+    "industry": "financial services",
+    "headcount_growth": {
+      "is_growing": false,
+      "growth_rate": 0.0,
+      "previous_headcount": 220,
+      "current_headcount": 220,
+      "days_tracked": 0
+    },
+    "active_jobs": 1,
+    "job_details": [
+      {
+        "title": "Relationship Manager",
+        "location": "Scottsdale, AZ, US",
+        "url": "https://www.indeed.com/viewjob?jk=ae0a013eef49b18b",
+        "date_posted": "2025-11-17",
+        "source": "indeed"
+      }
+    ],
+    "news": {
+      "has_news": false,
+      "news_type": null,
+      "news_date": null,
+      "news_summary": null
+    },
+    "contact_count": 0,
+    "contacts": [],
+    "composite_score": 15.0
+  },
+  {
+    "company_id": "5f3e7cf32ae68c00011b3392",
+    "company_name": "One Wealth",
+    "website": null,
+    "phone": "+1 909-399-1100",
+    "location": "Scottsdale, Arizona",
+    "current_headcount": 16,
+    "industry": "financial services",
+    "headcount_growth": {
+      "is_growing": false,
+      "growth_rate": 0.0,
+      "previous_headcount": 16,
+      "current_headcount": 16,
+      "days_tracked": 0
+    },
+    "active_jobs": 1,
+    "job_details": [
+      {
+        "title": "Investment Analyst and trading",
+        "location": "Scottsdale, AZ",
+        "url": "https://www.linkedin.com/jobs/view/4322259990",
+        "date_posted": "2025-11-13",
+        "source": "linkedin"
+      }
+    ],
+    "news": {
+      "has_news": false,
+      "news_type": null,
+      "news_date": null,
+      "news_summary": null
+    },
+    "contact_count": 0,
+    "contacts": [],
+    "composite_score": 15.0
+  },
+  {
+    "company_id": "689ad314f8ba36000d142149",
+    "company_name": "Joffe Insurance and Financial Services, Inc.",
+    "website": null,
+    "phone": null,
+    "location": "Gilbert, Arizona",
+    "current_headcount": 1,
+    "industry": "insurance",
+    "headcount_growth": {
+      "is_growing": false,
+      "growth_rate": 0.0,
+      "previous_headcount": 1,
+      "current_headcount": 1,
+      "days_tracked": 0
+    },
+    "active_jobs": 1,
+    "job_details": [
+      {
+        "title": "Account Executive Insurance & Investment Guide",
+        "location": "Gilbert, AZ, US",
+        "url": "https://www.indeed.com/viewjob?jk=a88115b4505c95be",
+        "date_posted": "2025-11-18",
+        "source": "indeed"
+      }
+    ],
+    "news": {
+      "has_news": false,
+      "news_type": null,
+      "news_date": null,
+      "news_summary": null
+    },
+    "contact_count": 0,
+    "contacts": [],
+    "composite_score": 10.0
+  },
+  {
+    "company_id": "5b84353c324d442c491adefc",
+    "company_name": "Toro Insurance Group",
+    "website": "http://www.toroins.com",
+    "phone": "+1 602-561-9074",
+    "location": "Mesa, Arizona",
+    "current_headcount": 8,
+    "industry": "insurance",
+    "headcount_growth": {
+      "is_growing": false,
+      "growth_rate": 0.0,
+      "previous_headcount": 8,
+      "current_headcount": 8,
+      "days_tracked": 0
+    },
+    "active_jobs": 1,
+    "job_details": [
+      {
+        "title": "Insurance Account Manager",
+        "location": "Mesa, AZ, US",
+        "url": "https://www.indeed.com/viewjob?jk=e7fd8669dfdc16a6",
+        "date_posted": "2025-10-14",
+        "source": "indeed"
+      }
+    ],
+    "news": {
+      "has_news": false,
+      "news_type": null,
+      "news_date": null,
+      "news_summary": null
+    },
+    "contact_count": 0,
+    "contacts": [],
+    "composite_score": 10.0
+  }
+]

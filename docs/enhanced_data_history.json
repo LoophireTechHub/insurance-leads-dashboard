@@ -1,14 +1,14 @@
 [
   {
     "date": "2025-11-20",
-    "timestamp": "November 20, 2025 at 01:38 PM EST",
+    "timestamp": "November 20, 2025 at 02:42 PM EST",
     "stats": {
       "total_leads": 16,
       "high_score": 0,
       "growing": 0,
       "hiring": 16,
       "with_contacts": 13,
-      "last_updated": "November 20, 2025 at 01:38 PM EST",
+      "last_updated": "November 20, 2025 at 02:42 PM EST",
       "update_date": "2025-11-20"
     },
     "leads": [
@@ -189,16 +189,16 @@
         "Contact 1 Email": "email_not_unlocked@domain.com",
         "Contact 1 Phone": "",
         "Contact 1 LinkedIn": "http://www.linkedin.com/in/don-dady-2325132b7",
-        "Contact 2 Name": "Robert McClain",
+        "Contact 2 Name": "Beth Hudson",
         "Contact 2 Title": "Regional Vice President",
         "Contact 2 Email": "email_not_unlocked@domain.com",
         "Contact 2 Phone": "",
-        "Contact 2 LinkedIn": "http://www.linkedin.com/in/robert-mcclain-65721a26",
-        "Contact 3 Name": "Ryan Edmonds",
-        "Contact 3 Title": "Vice President-National Sales Director",
+        "Contact 2 LinkedIn": "http://www.linkedin.com/in/beth-hudson-360b4a106",
+        "Contact 3 Name": "Robert McClain",
+        "Contact 3 Title": "Regional Vice President",
         "Contact 3 Email": "email_not_unlocked@domain.com",
         "Contact 3 Phone": "",
-        "Contact 3 LinkedIn": "http://www.linkedin.com/in/ryanledmonds",
+        "Contact 3 LinkedIn": "http://www.linkedin.com/in/robert-mcclain-65721a26",
         "job_details": [
           {
             "title": "Marketing Manager",

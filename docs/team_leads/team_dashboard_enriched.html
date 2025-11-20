@@ -313,36 +313,54 @@
     <script>
         let allJobs = [];
 
+        // API configuration
+        const API_BASE_URL = 'http://localhost:5000/api';
+
         // Shared activities storage (loaded from server)
         let sharedActivities = {};
 
-        // Load shared activities from server
+        // Load shared activities from API server
         async function loadSharedActivities() {
+            try {
+                // Try API first
+                const response = await fetch(`${API_BASE_URL}/activities`);
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data.success) {
+                        sharedActivities = data.activities || {};
+                        console.log('✓ Loaded activities from API:', Object.keys(sharedActivities).length, 'jobs tracked');
+                        return sharedActivities;
+                    }
+                }
+            } catch(e) {
+                console.log('API not available, trying JSON file fallback...');
+            }
+
+            // Fallback to JSON file
             try {
                 const response = await fetch('activities_database.json?t=' + new Date().getTime());
                 const data = await response.json();
                 sharedActivities = data.activities || {};
-                console.log('✓ Loaded shared activities:', Object.keys(sharedActivities).length, 'jobs tracked');
+                console.log('✓ Loaded activities from JSON:', Object.keys(sharedActivities).length, 'jobs tracked');
                 return sharedActivities;
             } catch(e) {
-                console.error('Could not load shared activities, using local only:', e);
+                console.warn('Could not load shared activities:', e);
                 return {};
             }
         }
 
-        // Save activities (local + attempt server sync)
-        function saveActivities(jobId, activities) {
+        // Save activities to API server
+        async function saveActivities(jobId, activities) {
             try {
-                // Save locally first
-                localStorage.setItem(`activities-${jobId}`, JSON.stringify(activities));
-
-                // Update shared activities object
+                // Update local memory first
                 sharedActivities[jobId] = activities;
+
+                // Also save to localStorage as backup
+                localStorage.setItem(`activities-${jobId}`, JSON.stringify(activities));
 
                 // Queue for server sync
                 queueActivitySync(jobId, activities);
 
-                console.log('✓ Saved activities for', jobId, ':', activities);
                 return true;
             } catch(e) {
                 console.error('✗ Failed to save activities:', e);
@@ -350,7 +368,7 @@
             }
         }
 
-        // Load activities (merge local + shared)
+        // Load activities (from shared storage)
         function loadActivities(jobId) {
             try {
                 // Try shared first
@@ -365,61 +383,73 @@
             }
         }
 
-        // Queue activity sync to GitHub (via GitHub API)
+        // Queue activity sync
         let syncQueue = [];
         function queueActivitySync(jobId, activities) {
             syncQueue.push({ jobId, activities, timestamp: Date.now() });
 
             // Show sync indicator
-            showSyncStatus('Syncing...');
+            showSyncStatus('Syncing...', '#4CAF50');
 
             // Debounce actual sync
             clearTimeout(window.syncTimer);
-            window.syncTimer = setTimeout(performSync, 2000);
+            window.syncTimer = setTimeout(performSync, 1000);
         }
 
-        // Perform actual sync
+        // Perform actual sync to API
         async function performSync() {
             if (syncQueue.length === 0) return;
 
+            const batch = [...syncQueue];
+            syncQueue = [];
+
             try {
-                // Merge all queued activities into shared object
-                syncQueue.forEach(({ jobId, activities }) => {
-                    sharedActivities[jobId] = activities;
+                // Send each activity update to API
+                const promises = batch.map(async ({ jobId, activities }) => {
+                    const response = await fetch(`${API_BASE_URL}/activities/${encodeURIComponent(jobId)}`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ activities })
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`API error: ${response.status}`);
+                    }
+
+                    const data = await response.json();
+                    if (!data.success) {
+                        throw new Error(data.error || 'Unknown error');
+                    }
+
+                    return data;
                 });
 
-                // Sync to GitHub using webhook/endpoint
-                // Since we can't directly call Python from browser, we'll use a simple approach:
-                // Save all activities as a comment in the console for manual sync
-                const activitiesToSync = JSON.stringify(sharedActivities, null, 2);
-                console.log('📤 Activities to sync:', activitiesToSync);
-                console.log('To sync manually, run in terminal:');
-                syncQueue.forEach(({jobId, activities}) => {
-                    const cmd = `python3 update_team_activities.py update "${jobId}" '${JSON.stringify(activities)}' && ./auto_sync_activities.sh`;
-                    console.log(cmd);
-                });
+                await Promise.all(promises);
+                showSyncStatus('✓ Synced to server', '#22c55e', 2000);
+                console.log(`✓ Synced ${batch.length} activity update(s) to server`);
 
-                showSyncStatus('✓ Saved locally - Syncing via server...', 3000);
-                syncQueue = [];
-
-                // Alternative: Make a simple GET request that triggers a GitHub Action
-                // This would require setting up a webhook endpoint
             } catch(e) {
                 console.error('Sync failed:', e);
-                showSyncStatus('⚠ Sync failed', 3000);
+                showSyncStatus('⚠ API offline - saved locally', '#f59e0b', 3000);
+
+                // Re-queue failed items
+                syncQueue.push(...batch);
             }
         }
 
         // Show sync status indicator
-        function showSyncStatus(message, hideAfter = 0) {
+        function showSyncStatus(message, color = '#4CAF50', hideAfter = 0) {
             let indicator = document.getElementById('sync-indicator');
             if (!indicator) {
                 indicator = document.createElement('div');
                 indicator.id = 'sync-indicator';
-                indicator.style.cssText = 'position:fixed;top:20px;right:20px;background:#4CAF50;color:white;padding:10px 20px;border-radius:8px;z-index:10000;font-size:0.9em;box-shadow:0 2px 10px rgba(0,0,0,0.2);';
+                indicator.style.cssText = 'position:fixed;top:20px;right:20px;color:white;padding:10px 20px;border-radius:8px;z-index:10000;font-size:0.9em;box-shadow:0 2px 10px rgba(0,0,0,0.2);transition:all 0.3s ease;';
                 document.body.appendChild(indicator);
             }
             indicator.textContent = message;
+            indicator.style.background = color;
             indicator.style.display = 'block';
 
             if (hideAfter > 0) {
@@ -483,14 +513,18 @@
             }
         }
 
-        // Reload shared activities periodically (every 30 seconds)
+        // Reload shared activities periodically (every 15 seconds for real-time sync)
         setInterval(async () => {
+            const before = Object.keys(sharedActivities).length;
             await loadSharedActivities();
-            // Re-render to show updated activities
-            if (allJobs.length > 0) {
+            const after = Object.keys(sharedActivities).length;
+
+            // Re-render if activities changed
+            if (before !== after && allJobs.length > 0) {
                 displayJobs(allJobs);
+                console.log(`♻️ Activities updated: ${before} → ${after} jobs tracked`);
             }
-        }, 30000);
+        }, 15000);
 
         function displayJobs(jobs) {
             const grid = document.getElementById('jobsGrid');

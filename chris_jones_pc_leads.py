@@ -332,9 +332,10 @@ def get_chris_jones_pc_jobs():
             unique_companies = team_jobs['company'].unique()
 
             # CRITICAL: Limit companies to prevent credit burn
-            MAX_COMPANIES_TO_ENRICH = 50
+            # User approved: Up to 100 credits max (Nov 20, 2025)
+            MAX_COMPANIES_TO_ENRICH = 120  # ~100 credits (some companies won't have contacts)
             print(f"📊 Found {len(unique_companies)} unique companies")
-            print(f"⚠️  CREDIT PROTECTION: Limiting to {MAX_COMPANIES_TO_ENRICH} companies max")
+            print(f"⚠️  CREDIT PROTECTION: Limiting to {MAX_COMPANIES_TO_ENRICH} companies max (target: ~100 credits)")
 
             companies_to_enrich = unique_companies[:MAX_COMPANIES_TO_ENRICH]
             print(f"📊 Will enrich: {len(companies_to_enrich)} companies")
